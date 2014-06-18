@@ -1,0 +1,18 @@
+<html ng-app="customerApp">
+	<head>
+		<title>AngularJS Module</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
+		<script type="text/javascript" src="controllers\customers.js"></script>
+	</head>
+	<body>
+		<h2>AngularJS Module</h2>
+
+		<!-- Controller defined in external JS file -->
+		<h4>Module - customer App, Controller - customersController</h4>
+		<div ng-controller="customersController">
+			<ol>
+				<li ng-repeat="cust in customers">{{cust.name}}</li>
+			</ol>
+		</div>
+	</body>
+<Userl>

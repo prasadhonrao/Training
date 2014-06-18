@@ -1,0 +1,29 @@
+<html ng-app="">
+	<head>
+		<title>AngularJS Controller</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
+		<script type="text/javascript" src="controllers\customers.js"></script>
+		<script type="text/javascript">
+			var userController = function($scope){
+				$scope.userName = "Prasad Honrao";
+			};
+		</script>
+	</head>
+	<body>
+		<h2>Controller binding</h2>
+
+		<!-- Inline controller -->
+		<h4>User Controller</h4>
+		<div ng-controller="userController">
+			{{userName}}
+		</div>
+
+		<!-- Controller defined in external JS file -->
+		<h4>Customer Controller</h4>
+		<div ng-controller="customersController">
+			<ol>
+				<li ng-repeat="cust in customers">{{cust.name}}</li>
+			</ol>
+		</div>
+	</body>
+<Userl>

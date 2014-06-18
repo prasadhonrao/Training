@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"Angular.sublime-project"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+}

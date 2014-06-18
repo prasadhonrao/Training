@@ -1,0 +1,13 @@
+<div>
+	<h3>Customer List</h3>
+		<div >
+			<ol>
+				<li ng-repeat="cust in customers | orderBy:'name'"> {{cust.name | uppercase}} - {{cust.company}}</li>
+			</ol>
+		</div>
+</div>
+
+<div>
+	<a href="#/home">Back to home page</a> <br>
+	<a href="#/add">Add New Customer</a> <br>
+</div>

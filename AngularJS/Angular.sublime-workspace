@@ -1,0 +1,395 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cu",
+				"customers"
+			],
+			[
+				"f",
+				"factory	AngularJS"
+			],
+			[
+				"cus",
+				"customerApp"
+			],
+			[
+				"input",
+				"input	input - submit"
+			],
+			[
+				"style",
+				"style	Attr"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"link",
+				"link	link - stylesheet"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"customer",
+				"customerModule"
+			],
+			[
+				"con",
+				"controller	AngularJS"
+			],
+			[
+				"custo",
+				"customerModule"
+			],
+			[
+				"ng-re",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"ng-in",
+				"ng-init	AngularJS"
+			],
+			[
+				"ng-i",
+				"ng-include	AngularJS"
+			],
+			[
+				"ngr",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"e",
+				"ejs"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"co",
+				"console"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"html",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sni",
+				"Snippet: Object Value JS"
+			],
+			[
+				"Snippet: ",
+				"Snippet: if"
+			],
+			[
+				"add",
+				"Package Control: Add Repository"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 228.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/app/partials/home.html",
+		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/app/partials/list.html",
+		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/app/controllers/customers.js",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/app/controllers/customers.js",
+		"/C/$/Code - Git/Training/AngularJS/06 Modules/src/app/controllers/customers.js",
+		"/C/$/Code - Git/Training/AngularJS/05 Controller/src/app/controllers/customers.js",
+		"/C/$/Code - Git/Training/AngularJS/02 Model Binding/src/app/css/style.css",
+		"/C/$/Code - Git/Training/AngularJS/01 Introduction/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/06 Modules/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/05 Controller/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/04 Filter/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/03 Directive/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/02 Model Binding/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/index.html",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/modules/customer.js",
+		"/C/$/Code - Git/Training/AngularJS/01 Introduction/src/index.html",
+		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/modules/customer.js",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/partials/list.html",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/partials/home.html",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/partials/add.html",
+		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/partials/list.html",
+		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/partials/home.html",
+		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/partials/add.html",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/index.html",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/partials/view1.html",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/partials/view0.html",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/partials/view2.html",
+		"/C/$/Code - Git/Training/AngularJS/02 Model Binding/src/index.html",
+		"/C/$/Code - Git/Training/AngularJS/02 Model Binding/src/css/style.css",
+		"/C/$/Code - Git/Training/AngularJS/02 Model Binding/src/style.css",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/templates/show_orders.html",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/templates/add_order.html",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/scripts/angular.min.js",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/views/index.html",
+		"/C/$/Code - Git/Training/AngularJS/06 Modules/src/modules/customer.js",
+		"/C/$/Code - Git/Training/AngularJS/06 Modules/src/index.html",
+		"/C/$/Code - Git/Training/AngularJS/Angular.sublime-project",
+		"/C/$/Code - Git/Training/AngularJS/06 Modules/src/controller.js",
+		"/C/$/Code - Trainings/AngularJS/06 Modules/src/modules/customer.js",
+		"/C/$/Code - Trainings/AngularJS/03 Directive/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/04 Filter/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/05 Controller/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/01 Introduction/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/02 Model Binding/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/05 Controller/src/controller.js",
+		"/C/$/Code - Trainings/AngularJS/03 Controller/src/controller.js",
+		"/C/$/Code - Trainings/AngularJS/03 Controller/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/05 Filter/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/04 Directive/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/01 Model Binding/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/02 ng-repeat/src/index.html",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/BrowserIntegration/BrowserIntegration.sublime-settings",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/server.js",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/views/vash/index.vash",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/views/vash/layout.vash",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/views/ejs/index.ejs",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/views/jade/layout.jade",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/views/ejs/layout.ejs",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/views/jade/index.jade",
+		"/C/$/Code - Trainings/NodeJS/NodeInVS/node_modules/underscore/package.json",
+		"/C/$/Code - Trainings/NodeJS/logger/logger.js",
+		"/C/Users/Prasad/a.csx",
+		"/C/$/Code - Scriptcs/test.csx",
+		"/C/$/Code - Scriptcs/constants.csx",
+		"/C/$/test.js",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/logger.js",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/node_modules/test.html",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/app.js",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/node_modules/express/node_modules/cookie/test/serialize.js",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/node_modules/express/node_modules/send/node_modules/mime/types/node.types",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/node_modules/express/node_modules/connect/node_modules/serve-index/node_modules/batch/index.js",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/node_modules/express/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/inherits/package.json",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/node_modules/express/node_modules/connect/node_modules/multiparty/test/bench-multipart-parser.js",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/node_modules/express/node_modules/connect/node_modules/multiparty/test/fixture/http/preamble/preamble.http",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/node_modules/express/node_modules/connect/node_modules/serve-index/node_modules/negotiator/lib/negotiator.js",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/node_modules/express/node_modules/connect/node_modules/serve-index/node_modules/negotiator/examples/encoding.js",
+		"/C/$/Code - Trainings/HTML/Basic/01helloWorld.html",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/NodeConsoleApp.njsproj",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"view",
+			">\n",
+			"constants",
+			"console",
+			">",
+			"console",
+			">\n",
+			"console"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"author"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Angular.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"log",
+				"logger.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
