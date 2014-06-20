@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"ng-c",
+				"ng-click	AngularJS"
+			],
+			[
+				"input",
+				"input	input - search"
+			],
+			[
+				"na",
+				"name	Attr"
+			],
+			[
+				"Git",
+				"GitHub"
+			],
+			[
+				"GitHub",
+				"GitHubController"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"co",
+				"com"
+			],
+			[
+				"task",
+				"task1"
+			],
+			[
+				"ta",
+				"task1"
+			],
+			[
+				"work",
+				"workCount"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
 				"cu",
 				"customers"
 			],
@@ -14,10 +70,6 @@
 			[
 				"cus",
 				"customerApp"
-			],
-			[
-				"input",
-				"input	input - submit"
 			],
 			[
 				"style",
@@ -82,22 +134,38 @@
 			[
 				"l",
 				"log"
-			],
-			[
-				"co",
-				"console"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "Apps/GitHubViewer/app/js/controller.js",
+			"settings":
+			{
+				"buffer_size": 1786,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 81.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"instal",
 				"Package Control: Install Package"
@@ -127,10 +195,6 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
 				"sni",
 				"Snippet: Object Value JS"
 			],
@@ -143,19 +207,11 @@
 				"Package Control: Add Repository"
 			],
 			[
-				"remo",
-				"Package Control: Remove Package"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"Package Control: in",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 464.0
+		"width": 472.0
 	},
 	"console":
 	{
@@ -176,21 +232,39 @@
 	},
 	"file_history":
 	[
+		"/C/$/Code - Git/Training/AngularJS/Apps/GitHubViewer/app/partials/userdetails.html",
+		"/C/$/Code - Git/Training/AngularJS/Apps/GitHubViewer/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/Apps/GitHubViewer/app/js/controller.js",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/app/partials/add.html",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/app/controllers/customers.js",
+		"/C/$/Code - Git/Training/AngularJS/Apps/GitHubViewer/app/css/style.css",
+		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/app/partials/add.html",
+		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/app/partials/list.html",
+		"/C/$/Code - Git/Training/AngularJS/06 Modules/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/05 Controller/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/02 Model Binding/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/Apps/GitHubViewer/app/style.css",
+		"/C/$/Code - Git/Training/AngularJS/Apps/GitHubViewer/app/js/app.js",
+		"/C/$/Code - Git/Training/AngularJS/angular-seed-master/app/index.html",
+		"/C/$/Software/Sublime Text Build 3059 x64/Data/Packages/Tag/Tag Package.sublime-settings",
+		"/C/$/Code - Git/Training/AngularJS/Apps/GitHubViewer/app/controllers/github.js",
+		"/C/$/Software/Sublime Text Build 3059 x64/Data/Packages/AngularJS/AngularJS-js-completions.sublime-settings",
+		"/C/$/Software/Sublime Text Build 3059 x64/Data/Packages/User/AngularJS-js-completions.sublime-settings",
+		"/C/$/Code - Git/Training/AngularJS/00 Apps/GitHubViewer/app/controllers/github.js",
+		"/C/$/Code - Git/Training/AngularJS/00 Apps/GitHubViewer/app/index.html",
+		"/C/$/Software/Sublime Text Build 3059 x64/Data/Packages/Modific/README.md",
+		"/C/$/Software/Sublime Text Build 3059 x64/Data/Packages/SideBarGit/SideBarGit.sublime-settings",
 		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/app/partials/home.html",
 		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/app/partials/list.html",
 		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/app/controllers/customers.js",
-		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/app/controllers/customers.js",
 		"/C/$/Code - Git/Training/AngularJS/06 Modules/src/app/controllers/customers.js",
 		"/C/$/Code - Git/Training/AngularJS/05 Controller/src/app/controllers/customers.js",
 		"/C/$/Code - Git/Training/AngularJS/02 Model Binding/src/app/css/style.css",
 		"/C/$/Code - Git/Training/AngularJS/01 Introduction/src/app/index.html",
-		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/app/index.html",
-		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/app/index.html",
-		"/C/$/Code - Git/Training/AngularJS/06 Modules/src/app/index.html",
-		"/C/$/Code - Git/Training/AngularJS/05 Controller/src/app/index.html",
 		"/C/$/Code - Git/Training/AngularJS/04 Filter/src/app/index.html",
 		"/C/$/Code - Git/Training/AngularJS/03 Directive/src/app/index.html",
-		"/C/$/Code - Git/Training/AngularJS/02 Model Binding/src/app/index.html",
 		"/C/$/Code - Git/Training/AngularJS/08 Factory/src/index.html",
 		"/C/$/Code - Git/Training/AngularJS/07 Routes/src/modules/customer.js",
 		"/C/$/Code - Git/Training/AngularJS/01 Introduction/src/index.html",
@@ -306,8 +380,86 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Apps/GitHubViewer/app/js/controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1786,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								614,
+								614
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

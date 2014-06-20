@@ -1,0 +1,26 @@
+<div> <!-- hide panel till app retrieves user info -->
+	<h2>{{user.name}}</h2>
+	<img ng-src="http://gravatar.com/avatar/{{user.gravatar_id}}" title="{{user.name}}">
+	<br>
+	<h2>Repositories</h2>
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th><a href="#" title="Sort by name" ng-click="onSort('name')">Name</a></th>
+					<th><a href="#" title="Sort by stars" ng-click="onSort('stargazers_count')">Stars</a></th>
+					<th><a href="#" title="Sort by language" ng-click="onSort('language')">Language</a></th>
+					<th><a href="#" title="Sort by date" ng-click="onSort('created_at')">Date</a></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="repo in repos | orderBy:repoSortOrder">
+					<td>{{repo.name}}</td>
+					<td>{{repo.stargazers_count | number}}</td>
+					<td>{{repo.language}}</td>
+					<td>{{repo.created_at | date:'short'}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+</div>
