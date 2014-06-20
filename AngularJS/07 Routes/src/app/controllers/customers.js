@@ -12,7 +12,7 @@ customerApp.config(['$routeProvider',
                         			templateUrl: 'partials/list.html'
                         	})
                           .when('/add', {
-                            	controller:'customerController',
+                            	controller:'customersController',
                     			    templateUrl: 'partials/add.html'
                         	})
                           .otherwise({
