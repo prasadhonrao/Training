@@ -2,17 +2,19 @@
 
 	var app = angular.module('GitHubViewer', []);
 
-	var GitHubController = function($scope,$http){
+	var GitHubController = function($scope, gitHub, $interval, $log, $anchorScroll, $location){
 
-		var onUserRetrieved = function(response){
-			$scope.user = response.data;
+		var onUserRetrieved = function(data){
+			$scope.user = data;
 
-			$http.get($scope.user.repos_url)
-				 .then(onRepositoriesRetrieved, onRepoError)
+			gitHub.getRepos($scope.user)
+				  .then(onRepositoriesRetrieved, onRepoError)
 		};
 
-		var onRepositoriesRetrieved = function(response){
-			$scope.repos = response.data;
+		var onRepositoriesRetrieved = function(data){
+			$scope.repos = data;
+			$location.hash("userDetails");
+			$anchorScroll();
 		};
 
 		var onRepoError = function(reason){
@@ -25,22 +27,42 @@
 			$scope.error = "Could not fetch the user";
 		};
 
-		$scope.onSearch = function(){
+		var decrementCountdown = function(){
+			$scope.countdown -= 1;
+			if ($scope.countdown < 1){
+				$scope.onSearch();
+			}
+		}
+
+		$scope.onSearch = function(username){
+			$log.info("Searching for " + $scope.username);
 			console.log($scope.username);
-			$http.get("https://api.github.com/users/" + $scope.username)
-			 	 .then(onUserRetrieved, onUserError);	
+			gitHub.getUser(username)
+			 	  .then(onUserRetrieved, onUserError);	
+			if (countdownInterval){
+				$interval.cancel(countdownInterval);
+				$scope.countdown = null;
+			}
 		};
 
 		$scope.onSort = function(sortParam){
 			$scope.repoSortOrder = sortParam;	
 		}
 
+		var countdownInterval = null;
+		var startCountdown = function(){
+			countdownInterval= $interval(decrementCountdown, 1000);
+		}
+
+		startCountdown();
+
 		$scope.appname = "GitHub Viewer";
 		$scope.username = "angular";
 		$scope.repoSortOrder = "name";
+		$scope.countdown = 10;
 	};
 
-	 app.controller('GitHubController', ["$scope","$http",GitHubController]); // passing array for bundiling and minification
+	 app.controller('GitHubController',GitHubController); 
 
 }());
 
