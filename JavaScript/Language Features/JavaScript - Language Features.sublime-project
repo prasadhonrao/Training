@@ -1,0 +1,49 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "01 Introduction"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "02 Comments"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "03 Variables"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "04 Control Statements"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "05 Null - Undefined"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "06 Objects"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "07 Equality"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "08 Functions"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "09 Error Handling"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "10 Types"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "11 NaN"
+		}
+	]
+}

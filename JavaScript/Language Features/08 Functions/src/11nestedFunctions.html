@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>08. JavaScript nested functions</title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript">
+		function doWork(){
+			console.log("doing work");
+		}
+
+		function monitorWork(f){
+			console.log("monitoring work");
+			return f();
+		}
+
+		monitorWork(doWork);
+	</script>
+</head>
+<body>
+	<h1>08. JavaScript nested functions</h1>
+</body>
+</html>

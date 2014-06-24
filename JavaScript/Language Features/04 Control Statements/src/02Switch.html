@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>04. JavaScript Control Statements : Switch</title>
+    <script type="text/javascript">
+        function write(message) {
+            console.log(message);
+        }
+
+        // Note : Switch case is case sensitive
+        var month = "March";
+
+        switch (month) {
+            case "January":
+            case "February":
+            case "March":
+                write(month + " comes in first quarter");
+                break;
+
+            case "April":
+            case "May":
+            case "June":
+                write(month + " comes in second quarter");
+                break;
+
+            case "July":
+            case "August":
+            case "September":
+                write(month + " comes in third quarter");
+                break;
+
+            case "October":
+            case "November":
+            case "December":
+                write(month + " comes in fourth quarter");
+                break;
+
+            default:
+                write("Please enter a valid month");
+        }
+    </script>
+</head>
+<body>
+       
+</body>
+</html>
