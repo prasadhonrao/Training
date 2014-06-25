@@ -1,26 +1,21 @@
-<html ng-app="GitHubViewer">
-<head>
-	<title>GitHub Viewer</title>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
-	<script type="text/javascript" src="js/controller.js"></script>
-	<script type="text/javascript" src="js/github.js"></script>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body ng-controller="GitHubController">
-	<h1>{{appname}}</h1>
-	<div class="error">
-		{{error}}
-	</div>
-	<div>
-		{{countdown}}
-	</div>
-	<div>
-		<form name="searchUser" ng-submit="onSearch(username)">
-			<input type="search" required placeholder="Username to find" ng-model="username">
-			<input type="submit" value="Serach">
-		</form>
-	</div>
-	
-	<div ng-include="'partials/userdetails.html'" ng-show="user"></div> 
-</body>
+<!DOCTYPE html>
+<html ng-app="githubViewer">
+
+  <head>
+    <script data-require="angular.js@*" data-semver="1.3.0-beta.5" src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>
+    <script data-require="angular-route@*" data-semver="1.2.14" src="http://code.angularjs.org/1.2.14/angular-route.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js\app.js"></script>
+    <script src="js\mainController.js"></script>
+    <script src="js\userController.js"></script>
+    <script src="js\repoController.js"></script>
+    <script src="js\githubService.js"></script>
+  </head>
+
+    <body>
+        <h1>Github Viewer</h1>
+        <div ng-view></div>
+    </body>
+
+
 </html>

@@ -1,0 +1,40 @@
+<div>
+    <h2>{{user.name}}</h2>
+    {{ error }}
+    <img ng-src="http://www.gravatar.com/avatar/{{user.gravatar_id}}" title="{{user.name}}">Order:
+    <!-- <select ng-model="repoSortOrder">
+        <option value="+name">Name</option>
+        <option value="-stargazers_count">Stars</option>
+        <option value="+language">Language</option>
+    </select> -->
+</div>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                <a href="" title="Sort by Name" ng-click="onSort('name')">Name</a>
+            </th>
+            <th>
+                <a href="" title="Sort by Stars" ng-click="onSort('stargazers_count')">Stars</a>
+            </th>
+            <th>
+                <a href="" title="Sort by Language" ng-click="onSort('language')">Language</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="repo in repos | orderBy:repoSortOrder">
+            <td>
+                <a href="#/repo/{{user.login}}/{{repo.name}}">
+                    {{repo.name}}
+                </a>
+            </td>
+            <td>{{repo.stargazers_count | number}}</td>
+            <td>{{repo.language}}</td>
+        </tr>
+    </tbody>
+</table>
+<a href="#/main">Back to search</a>
+

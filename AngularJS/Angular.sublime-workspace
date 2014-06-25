@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"html",
+				"html	html"
+			],
+			[
+				"a",
+				"animationController"
+			],
+			[
+				"Ani",
+				"animationController"
+			],
+			[
 				"input",
 				"input	input - submit"
 			],
@@ -46,10 +58,6 @@
 			[
 				"$inter",
 				"$interval	AngularJS"
-			],
-			[
-				"a",
-				"a	<a>"
 			],
 			[
 				"ng-c",
@@ -179,9 +187,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 81.0,
 		"selected_items":
 		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
 			[
 				"remo",
 				"Package Control: Remove Package"
@@ -239,7 +251,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 472.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -260,10 +272,15 @@
 	},
 	"file_history":
 	[
-		"/C/$/Code - Git/Training/AngularJS/09 Service - Angular/src/app/index.html",
-		"/C/$/Code - Git/Training/AngularJS/09 Service - Angular/src/app/js/github.js",
+		"/C/$/Code - Git/Training/JavaScript/01 Introduction/src/HelloWorld.html",
+		"/C/$/Code - Git/Training/AngularJS/10 Service - Custom/src/app/js/controller.js",
+		"/C/$/Code - Git/Training/AngularJS/10 Service - Custom/src/app/js/service.js",
+		"/C/$/Code - Git/Training/AngularJS/10 Service - Custom/src/app/index.html",
 		"/C/$/Code - Git/Training/AngularJS/Apps/GitHubViewer/app/js/controller.js",
+		"/C/$/Code - Git/Training/AngularJS/09 Service - Angular/src/app/index.html",
+		"/C/$/Code - Git/Training/AngularJS/09 Service - Angular/src/app/js/service.js",
 		"/C/$/Code - Git/Training/AngularJS/Apps/GitHubViewer/app/js/github.js",
+		"/C/$/Code - Git/Training/AngularJS/09 Service - Angular/src/app/js/github.js",
 		"/C/$/Code - Git/Training/AngularJS/05 Controller/src/app/controllers/customers.js",
 		"/C/$/Code - Git/Training/AngularJS/Apps/GitHubViewer/app/index.html",
 		"/C/$/Code - Git/Training/AngularJS/09 Service/src/app/index.html",
