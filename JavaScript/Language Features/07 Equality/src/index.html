@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>07. JavaScript Equality operators</title>
+	<script type="text/javascript">
+			// == with type conversion
+			console.log('1 == "1" ? ' + (1 == "1"));
+            console.log('0 == "" ? ' + (0 == ""));
+            console.log('A == "a" ? ' + ("A" == "a"));
+            
+            console.log('0 == true ? ' + (0 == true));
+            console.log('0 == "true" ? ' + (0 == "true"));
+            console.log('0 == false ? ' + (0 == false));
+            console.log('0 == "false" ? ' + (0 == "false"));
+            
+            console.log('1 == true ? ' + (1 == true));
+            console.log('1 == "true" ? ' + (1 == "true"));
+			console.log('1 == false ? ' + (1 == false));
+			console.log('1 == "false" ? ' + (1 == "false"));
+
+			// === strict equal
+            // objects are equal to themselves
+            var customer = {};
+            console.log('customer === customer ? ' + (customer === customer));
+
+            // objects are not equal to other objects even they contain same value
+            var anotherCustomer = {};
+            console.log('customer === anotherCustomer ? ' + (customer === anotherCustomer));
+
+            // primitive type equality
+            console.log("JavaScript === JavaScript ? " + ("JavaScript" === "JavaScript"));
+            console.log("JavaScript === JAVASCRIPT ? " + ("JavaScript" === "JAVASCRIPT"));
+            console.log("Microsoft === Apple ? " + ("Microsoft" === "Apple"));
+            console.log("13 === 13 ? " + ("13" === "13"));
+            console.log('1 === "1" ? ' + (1 === "1"));
+
+            // inequality
+            console.log("13 !== 14 ? " + ("13" !== "14"));
+	</script>
+</head>
+<body>
+	<h1>07. JavaScript Equality operators</h1>
+</body>
+</html>

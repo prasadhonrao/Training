@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>08. JavaScript Function Object</title>
+    <script type="text/javascript">
+            function hello(msg) {
+                console.log('Hello');
+            };
+
+            var paramLength = hello.length; // 
+            console.log("Number of parameters in function definition: " + paramLength);
+
+            var functionName = hello.name;
+            console.log("function name: " + functionName);
+
+            var functionbody = hello.toString();
+            console.log("function body: " + functionbody);
+    </script>
+</head>
+
+<body>
+    <h1>08. JavaScript Function Object</h1>
+</body>
+</html>

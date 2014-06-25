@@ -1,0 +1,482 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"getArgumentL",
+				"getArgumentsLength"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"is",
+				"isEmployeeMale"
+			],
+			[
+				"tp",
+				"typeof"
+			],
+			[
+				"cust",
+				"customerApp"
+			],
+			[
+				"view",
+				"view2"
+			],
+			[
+				"custom",
+				"customerApp"
+			],
+			[
+				"cu",
+				"customerApp"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"customer",
+				"customerController"
+			],
+			[
+				"con",
+				"controller	AngularJS"
+			],
+			[
+				"$ou",
+				"$routeProvider	AngularJS"
+			],
+			[
+				"cus",
+				"customerController"
+			],
+			[
+				"custo",
+				"customerModule"
+			],
+			[
+				"ng-re",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"ng-in",
+				"ng-init	AngularJS"
+			],
+			[
+				"ng-i",
+				"ng-include	AngularJS"
+			],
+			[
+				"ngr",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"e",
+				"ejs"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"co",
+				"console"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/node.sublime-build",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"AngularJS: Look Up Definition"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"html",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sni",
+				"Snippet: Object Value JS"
+			],
+			[
+				"Snippet: ",
+				"Snippet: if"
+			],
+			[
+				"add",
+				"Package Control: Add Repository"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 228.0,
+		"history":
+		[
+			"bower",
+			"bower install angularjs",
+			"install package angularjs",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/$/Code - Trainings/JavaScript/JavaScript - VS/14UnderscoreJS/14UnderscoreJS/01default.html",
+		"/C/$/Code - Trainings/JavaScript - VS/16Date/16Date/01default.html",
+		"/C/$/Code - Trainings/JavaScript/10 Types/src/date.html",
+		"/C/$/Code - Trainings/JavaScript - VS/14UnderscoreJS/14UnderscoreJS/01default.html",
+		"/C/$/Code - Trainings/JavaScript/11 NaN/src/index.html",
+		"/C/$/Code - Trainings/JavaScript - VS/18NaN/18NaN/01default.html",
+		"/C/$/Code - Trainings/JavaScript/10 Types/src/array.html",
+		"/C/$/Code - Trainings/JavaScript - VS/13Types/13Types/04Array.html",
+		"/C/$/Code - Trainings/JavaScript/10 Types/src/boolean.html",
+		"/C/$/Code - Trainings/JavaScript - VS/13Types/13Types/03Boolean.html",
+		"/C/$/Code - Trainings/JavaScript/10 Types/src/number.html",
+		"/C/$/Code - Trainings/JavaScript/10 Types/src/string.html",
+		"/C/$/Code - Trainings/JavaScript - VS/13Types/13Types/02Number.html",
+		"/C/$/Code - Trainings/JavaScript - VS/13Types/13Types/01String.html",
+		"/C/$/Code - Trainings/JavaScript/09 Error Handling/src/index.html",
+		"/C/$/Code - Trainings/JavaScript - VS/12ErrorHandling/12ErrorHandling/default.html",
+		"/C/$/Code - Trainings/JavaScript/08 Functions/src/11nestedFunctions.html",
+		"/C/$/Code - Trainings/JavaScript/08 Functions/src/12callbackFunction.html",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/12CallbackFunction.html",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/11SphagettiCode.html",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/Scripts/Employee.js",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/Scripts/Customer.js",
+		"/C/$/Code - Trainings/JavaScript/08 Functions/src/10namespace.html",
+		"/C/$/Code - Trainings/JavaScript/08 Functions/src/09this.html",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/10Namespace.html",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/09ThisKeyword.html",
+		"/C/$/Code - Trainings/JavaScript/08 Functions/src/08functionObject",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/08FunctionObject.html",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/08Closure.html",
+		"/C/$/Code - Trainings/JavaScript/08 Functions/src/07closure.html",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/07Closure.html",
+		"/C/$/Code - Trainings/JavaScript/08 Functions/src/06recursion.html",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/06Recursion.html",
+		"/C/$/Code - Trainings/JavaScript/08 Functions/src/05arguments.html",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/05Arguments.html",
+		"/C/$/Code - Trainings/JavaScript/08 Functions/src/04.parameterPassing",
+		"/C/$/Code - Trainings/JavaScript/08 Functions/src/03overloading.html",
+		"/C/$/Code - Trainings/JavaScript/08 Functions/src/02namedFunction.html",
+		"/C/$/Code - Trainings/JavaScript/08 Functions/src/01functions.html",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/04PassByValAndRef.html",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/03Overloading.html",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/02NamedFunctions.html",
+		"/C/$/Code - Trainings/JavaScript - VS/10Functions/10Functions/01StandardFunctions.html",
+		"/C/$/Code - Trainings/JavaScript/07 Equality/src/index.html",
+		"/C/$/Code - Trainings/JavaScript/06 Objects/src/index.html",
+		"/C/$/Code - Trainings/JavaScript - VS/09Equality/09Equality/default.html",
+		"/C/$/Code - Trainings/JavaScript - VS/08Objects/08Objects/01default.html",
+		"/C/$/Code - Trainings/JavaScript/05 Null - Undefined/src/undefined.html",
+		"/C/$/Code - Trainings/JavaScript/05 Null - Undefined/src/null.html",
+		"/C/$/Code - Trainings/JavaScript - VS/07UndefinedType/07UndefinedType/default.html",
+		"/C/$/Code - Trainings/JavaScript - VS/06NullType/06NullType/default.html",
+		"/C/$/Code - Trainings/JavaScript/04 Control Statements/src/06ForIn.html",
+		"/C/$/Code - Trainings/JavaScript/04 Control Statements/src/05For.html",
+		"/C/$/Code - Trainings/JavaScript/04 Control Statements/src/04DoWhile.html",
+		"/C/$/Code - Trainings/JavaScript/04 Control Statements/src/03While.html",
+		"/C/$/Code - Trainings/JavaScript/04 Control Statements/src/02Switch.html",
+		"/C/$/Code - Trainings/JavaScript/04 Control Statements/src/01IfElse.html",
+		"/C/$/Code - Trainings/JavaScript - VS/11ControlFlow/11ControlFlow/04ForIn.html",
+		"/C/$/Code - Trainings/JavaScript - VS/11ControlFlow/11ControlFlow/05While.html",
+		"/C/$/Code - Trainings/JavaScript - VS/11ControlFlow/11ControlFlow/03For.html",
+		"/C/$/Code - Trainings/JavaScript - VS/11ControlFlow/11ControlFlow/02Switch.html",
+		"/C/$/Code - Trainings/JavaScript - VS/11ControlFlow/11ControlFlow/01IfElse.html",
+		"/C/$/Code - Trainings/JavaScript - VS/11ControlFlow/11ControlFlow/06DoWhile.html",
+		"/C/$/Code - Trainings/JavaScript/01 Introduction/src/index.html",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/C/$/Code - Trainings/JavaScript/03 Variables/src/local-global.html",
+		"/C/$/Code - Trainings/JavaScript/03 Variables/src/global.html",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/BrowserIntegration/BrowserIntegration.sublime-settings",
+		"/C/$/Code - Trainings/JavaScript/02 Comments/src/index.html",
+		"/C/$/Code - Trainings/JavaScript/03 Variables/src/index.html",
+		"/C/$/Code - Trainings/JavaScript/03 Variables/src/local.html",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/AngularJS/AngularJS-completions.sublime-settings",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/$/Code - Trainings/JavaScript - VS/04GlobalVariables/04GlobalVariables/default.html",
+		"/C/$/Code - Trainings/JavaScript - VS/05LocalVariables/05LocalVariables/default.html",
+		"/C/$/Code - Trainings/JavaScript/01 Introduction/src/document.html",
+		"/C/$/Code - Trainings/JavaScript - VS/03Variables/03Variables/default.html",
+		"/C/$/Code - Trainings/JavaScript/02 Comments/src/default.html",
+		"/C/$/Code - Trainings/JavaScript/01 Introduction/src/default.html",
+		"/C/$/Code - Trainings/JavaScript/01 Introduction/src/noscript.html",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/$/Code - Trainings/AngularJS/07 Routes/src/modules/customer.js",
+		"/C/Users/Prasad/Desktop/t.js",
+		"/C/$/Code - Trainings/AngularJS/07 Routes/src/views/partials/view1.html",
+		"/C/$/Code - Trainings/AngularJS/07 Routes/src/views/partials/view2.html",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/User/node.sublime-build",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/AdvancedNewFile/README.md",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/C/$/Code - Trainings/AngularJS/06 Modules/src/modules/customer.js",
+		"/C/$/Code - Trainings/AngularJS/07 Routes/src/views/index.html",
+		"/C/$/Code - Trainings/AngularJS/06 Modules/src/controller.js",
+		"/C/$/Code - Trainings/AngularJS/06 Modules/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/Angular.sublime-project",
+		"/C/$/Code - Trainings/AngularJS/03 Directive/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/04 Filter/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/05 Controller/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/01 Introduction/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/02 Model Binding/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/05 Controller/src/controller.js",
+		"/C/$/Code - Trainings/AngularJS/03 Controller/src/controller.js",
+		"/C/$/Code - Trainings/AngularJS/03 Controller/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/05 Filter/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/04 Directive/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/01 Model Binding/src/index.html",
+		"/C/$/Code - Trainings/AngularJS/02 ng-repeat/src/index.html",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/server.js",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/views/vash/index.vash",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/views/vash/layout.vash",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/views/ejs/index.ejs",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/views/jade/layout.jade",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/views/ejs/layout.ejs",
+		"/C/$/Code - Trainings/NodeJS/TheBoard/views/jade/index.jade",
+		"/C/$/Code - Trainings/NodeJS/NodeInVS/node_modules/underscore/package.json",
+		"/C/$/Code - Trainings/NodeJS/logger/logger.js",
+		"/C/Users/Prasad/a.csx",
+		"/C/$/Code - Scriptcs/test.csx",
+		"/C/$/Code - Scriptcs/constants.csx",
+		"/C/$/test.js",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/logger.js",
+		"/C/Users/Prasad/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/node_modules/test.html",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/app.js",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/node_modules/express/node_modules/cookie/test/serialize.js",
+		"/C/$/Code - NodeJs/NodeConsoleApp/NodeConsoleApp/node_modules/express/node_modules/send/node_modules/mime/types/node.types"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"write",
+			"ctr",
+			"doctr",
+			"Indent",
+			"\n            ",
+			"view",
+			">\n",
+			"constants",
+			"console",
+			">",
+			"console",
+			">\n",
+			"console"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"console.log",
+			"counter",
+			"author"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 188.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "JavaScript - Language Features.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"log",
+				"logger.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
