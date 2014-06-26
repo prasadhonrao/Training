@@ -44,6 +44,18 @@
 		{
 			"follow_symlinks": true,
 			"path": "11 NaN"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "12 External JS"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "13 DOM Manipulation"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "14 Namespace"
 		}
 	]
 }
