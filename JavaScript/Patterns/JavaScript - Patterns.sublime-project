@@ -1,0 +1,25 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "01 Prototype"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "02 Module"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "03 Revealing Module"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "04 Revealing Prototype"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "05 IIFE"
+		}
+	]
+}
