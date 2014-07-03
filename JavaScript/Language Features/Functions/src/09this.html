@@ -18,6 +18,17 @@
         };
         obj.greet();
 
+        // bind
+        var obj = {
+            findThis: function () {
+                console.log(this);
+            }
+        };
+        obj.findThis();
+
+        var f = obj.findThis.bind(this); //bind to global obhect
+        f(); 
+
 
         function greetUser(message) {
             console.log(this + ' ' + message);

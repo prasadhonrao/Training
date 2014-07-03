@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>JavaScript IIFE with Namespace</title>
+	<script type="text/javascript">
+		(function(ns){
+
+			var currentDate = new Date();
+
+			ns.printTime = function(){
+				console.log(currentDate);
+			};
+
+		}(window.myNS = window.myNS || {}));
+	</script>
+
+	<script type="text/javascript">
+		(function(ns){
+			ns.printTime();	
+		}(window.myNS = window.myNS || {}));
+	</script>
+</head>
+<body>
+	<h1>JavaScript IIFE with Namespace</h1>
+</body>
+</html>
