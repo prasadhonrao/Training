@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript OO - Static Data properties</title>
+    <script src="common.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        // CLASS DECLARATION
+        function Customer(name) {
+            this.name = name;
+        }
+
+        // STATIC DATA DECLARATION
+        Customer.mailServer = "mail.MyCompany.com"
+        var server = Customer.mailServer;
+
+
+        // INSTANCE DATA DECLARATION
+        Customer newCust = new Customer();
+        newCust.name = "Prasad";
+       
+    </script>
+</body>
+</html>

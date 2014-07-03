@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript OO - API</title>
+    <script src="common.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        function SmtpClient() {
+            this.send = function (msg) {
+                write("Sending email to " + msg.to);
+            }
+        }
+
+        var msg = {
+            to: "Prasad.Honrao@MyCompany.com",
+            from: "Prasad.Honrao@MyCompany.com",
+            body: "test message",
+            subject: "Test"
+        };
+
+        var client = new SmtpClient();
+        client.send(msg);
+
+        // sending anonymous object
+        client.send({
+            to: "Prasad.Honrao@MyCompany.com",
+            from: "Prasad.Honrao@MyCompany.com",
+            body: "test message",
+            subject: "Test"
+        });
+
+
+        // Defining default property on function
+        SmtpClient.prototype.sendUsingDefault = function (msg) {
+            if (!msg.hasOwnProperty("from")) {
+                msg.from = "Prasad.Honrao@MyCompany.com";
+            }
+
+            write("Default from property value : " + msg.from);
+        };
+
+        // default property, note not sending from value
+        client.sendUsingDefault({
+            to: "Prasad.Honrao@MyCompany.com",
+            body: "test message",
+            subject: "Test"
+        });
+
+        
+    </script>
+</body>
+</html>

@@ -3,59 +3,79 @@
 	[
 		{
 			"follow_symlinks": true,
-			"path": "01 Introduction"
+			"path": "Introduction"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "02 Comments"
+			"path": "Comments"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "03 Variables"
+			"path": "Variables"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "04 Control Statements"
+			"path": "Control Statements"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "05 Null - Undefined"
+			"path": "Null - Undefined"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "06 Objects"
+			"path": "Objects"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "07 Equality"
+			"path": "Equality"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "08 Functions"
+			"path": "Types"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "09 Error Handling"
+			"path": "NaN"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "10 Types"
+			"path": "Functions"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "11 NaN"
+			"path": "Error Handling"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "12 External JS"
+			"path": "External JS"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "13 DOM Manipulation"
+			"path": "DOM Manipulation"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "14 Namespace"
+			"path": "OOP"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "Namespace"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "Regular Expression"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "Eval"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "Math Lib"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "UnderscoreJS"
 		}
 	]
 }

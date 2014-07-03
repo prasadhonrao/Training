@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript OO - Class Get, Set properties</title>
+    <script src="common.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        //Functions are used as classes
+        function Customer(name) {
+            var _name = name;
+
+            // Note this syntax doesn't work in older browsers like IE8, so run in Firefox
+            Object.defineProperty(this, "firstName", {
+                get: function () { return _name; },
+                set: function (value) { _name = value; }
+            });
+        }
+
+        var cust = new Customer("Prasad");
+        write(cust.firstName);
+
+        cust.firstName = "Rajveer";
+        write(cust.firstName);
+        
+    </script>
+</body>
+</html>

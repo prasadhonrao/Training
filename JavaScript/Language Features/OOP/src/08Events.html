@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript OO - Events</title>
+    <script src="common.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        // events defined in the function in the form of function!
+        function SmtpClient() {
+            this.send = function (msg) {
+                write("Sending email to " + msg.to);
+            },
+            this.complete = function (r) {
+                write("function completed");
+            },
+            this.error = function (e) {
+                write("error occurred");
+            },
+        }
+
+        var msg = {
+            to: "Prasad.Honrao@MyCompany.com",
+            from: "Prasad.Honrao@MyCompany.com",
+            body: "test message",
+            subject: "Test"
+        };
+
+        var client = new SmtpClient();
+        try {
+            client.send(msg);
+            client.complete();
+        } catch (e) {
+            client.error();
+        }
+        
+        
+    </script>
+</body>
+</html>

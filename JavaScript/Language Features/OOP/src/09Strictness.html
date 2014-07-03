@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript OO - Strictness</title>
+    <script src="common.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <!--   WHAT IS DISALLOWED?
+        undefined variables
+        duplicate properties
+        writing to read-only property
+        modifying argument objects inside function 
+-->
+    <script type="text/javascript">
+        "use strict";
+        var greet = "Hello World";
+        write(greet);
+        
+        goodbyeMsg = "good Bye";
+        //var goodbyeMsg = "good Bye";
+        
+
+        function SayHello() {
+            "use strict"; // strictness will be local to function
+            num1 = 10;
+            y = "bye";
+//            var num1 = 10;
+//            var y = "bye";
+            write(num1);
+            write(y);
+        }
+
+        SayHello();
+        
+    </script>
+</body>
+</html>

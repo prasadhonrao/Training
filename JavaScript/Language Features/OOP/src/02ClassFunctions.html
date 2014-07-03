@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript OO - Class functions</title>
+    <script src="common.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        function Customer(name, company) {
+            // public properties
+            this.name = name;
+            this.company = company;
+
+            // private member
+            var mailServer = "mail.MyCompany.com";
+
+            // public member function
+            this.sendMail = function (mailAddress) {
+                sendMailViaServer(mailAddress, mailServer);
+            };
+        }
+
+        var cust = new Customer("Prasad", "MyCompany");
+        cust.sendMail("Prasad.Honrao@MyCompany.com");
+
+        function sendMailViaServer(address, server) {
+            write("Sending mail to " + address + " using " + server);
+        }
+        
+    </script>
+</body>
+</html>
