@@ -23,7 +23,6 @@
             
             console.log(reverseCustomerName(customer).name);
             console.log(customer.name); // note original customer variable value has changed
-
         </script>
 </head>
 

@@ -1,26 +1,19 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
-        <title>JavaScript Control Statements : If - Else</title>
-    </head>
-    <body>
-        <h1>JavaScript Control Statements : If - Else</h1>
-        <p id="message">
-
-        <script type="text/javascript">
-            function write(message) {
-                document.getElementById('message').innerHTML += message + "</br>";
-            }
-
-            //if - else
-            var input = 100;
-            
-            if (input % 2 === 0) {
-                write(input + " is an even number");
-            }
-            else {
-                write(input + " is an odd number");
-            }
-        </script>
-    </body>
+<head>
+    <title>JavaScript Control Statements : If - Else</title>
+</head>
+<body>
+    <h1>JavaScript Control Statements : If - Else</h1>
+    <script type="text/javascript">
+        //if - else
+        var input = 100;
+        if (input % 2 === 0) {
+            console.log(input + " is an even number");
+        }
+        else {
+            console.log(input + " is an odd number");
+        }
+    </script>
+</body>
 </html>

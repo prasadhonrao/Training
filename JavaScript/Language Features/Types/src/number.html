@@ -22,8 +22,17 @@
         console.log(0.1 + 0.2);
         console.log((0.1 + 0.2).toFixed(2));
 
-        console.log(080); // Octal number - any number starts with 0;
-        console.log(0xffff); // Hex number - any number starts with 0x;
+        var octalNumber = 070;
+        console.log(octalNumber);
+        console.log("Type of octalNumber is " + typeof(octalNumber));        
+
+        var hexNumber = 0x123456;
+        console.log(hexNumber);
+        console.log("Type of octalNumber is " + typeof(hexNumber));        
+
+        var exponentNumber = 1.34e5; // this expression is equal to (1.34*10)pow 5 = 134000    
+        console.log(exponentNumber);
+        console.log("Type of exponentNumber is " + typeof(exponentNumber));                
 
         // special values
         console.log(Number.MIN_VALUE);

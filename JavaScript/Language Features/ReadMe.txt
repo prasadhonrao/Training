@@ -1,5 +1,4 @@
 Introduction
-Comments
 Variables
 Types
 Control Statements

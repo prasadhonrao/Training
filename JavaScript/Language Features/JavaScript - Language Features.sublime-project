@@ -7,10 +7,6 @@
 		},
 		{
 			"follow_symlinks": true,
-			"path": "Comments"
-		},
-		{
-			"follow_symlinks": true,
 			"path": "Variables"
 		},
 		{
