@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>08. JavaScript Functions Paramter Passing</title>
+    <title>JavaScript Functions Paramter Passing</title>
         <script type="text/javascript">
             var name = "Prasad";
             var customer = { name: "Prasad" };
@@ -28,6 +28,6 @@
 </head>
 
 <body>
-    <h1>08. JavaScript Functions Paramter Passing</h1>
+    <h1>JavaScript Functions Paramter Passing</h1>
 </body>
 </html>

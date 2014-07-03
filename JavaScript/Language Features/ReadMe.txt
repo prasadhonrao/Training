@@ -17,3 +17,5 @@ Regular Expression
 Eval
 Math Lib
 UnderscoreJS
+Closure
+IIFE

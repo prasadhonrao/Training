@@ -76,6 +76,14 @@
 		{
 			"follow_symlinks": true,
 			"path": "UnderscoreJS"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "Closure"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "IIFE"
 		}
 	]
 }
