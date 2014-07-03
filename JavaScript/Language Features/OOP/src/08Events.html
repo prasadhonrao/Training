@@ -2,22 +2,19 @@
 <html>
 <head>
     <title>JavaScript OO - Events</title>
-    <script src="app.js" type="text/javascript"></script>
 </head>
 <body>
-    
     <script type="text/javascript">
-
         // events defined in the function in the form of function!
         function SmtpClient() {
             this.send = function (msg) {
-                write("Sending email to " + msg.to);
+                console.log("Sending email to " + msg.to);
             },
             this.complete = function (r) {
-                write("function completed");
+                console.log("function completed");
             },
             this.error = function (e) {
-                write("error occurred");
+                console.log("error occurred");
             },
         }
 
@@ -35,7 +32,6 @@
         } catch (e) {
             client.error();
         }
-        
         
     </script>
 </body>

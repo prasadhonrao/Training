@@ -1,11 +1,11 @@
-(function(){
+(function () {
 
-	var createWorker = function(){
-		var task1 = function(){
+	var createWorker = function () {
+		var task1 = function () {
 			console.log("Doing Job1");
 		};
 
-		var task2 = function(){
+		var task2 = function () {
 			console.log("Doing Job2");
 		};
 

@@ -2,19 +2,18 @@
 <html>
 <head>
     <title>JavaScript OO - Extension Methods</title>
-    <script src="app.js" type="text/javascript"></script>
 </head>
 <body>
-    
+
     <script type="text/javascript">
 
         Array.prototype.giveMeCount = function () {
             return this.length;
         };
 
-        var a = ["1", "11"]
+        var a = ["1", "11"];
         var count = a.giveMeCount();
-        write(count);
+        console.log(count);
         
     </script>
 </body>

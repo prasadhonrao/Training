@@ -2,25 +2,20 @@
 <html>
 <head>
     <title>JavaScript OO - Reflection</title>
-    <script src="app.js" type="text/javascript"></script>
 </head>
 <body>
-    
     <script type="text/javascript">
-
         //Functions are used as classes
-
         function Customer(name, company) {
             //public properties
             this.name = name;
             this.company = company;
 
             //private variables
-            var mailserver = "mail.mycompany.com";
-
-            var sendMail = function () {
-                alert("sending email");
-            }
+            var mailserver = "mail.mycompany.com",
+                sendMail = function () {
+                    console.log("sending email");
+                }
         }
 
         var cust = new Customer("Prasad", "MyCompany");
@@ -29,7 +24,7 @@
             // DETECT PROPERTY
             // var has = cust.hasOwnProperty("name")
             // var isEnum = cust.propertyIsEnumerable("name");
-            write(prop + " : " + cust[prop]);
+            console.log(prop + " : " + cust[prop]);
         }
         
     </script>

@@ -2,35 +2,33 @@
 <html>
 <head>
     <title>JavaScript OO - Interface</title>
-    <script src="app.js" type="text/javascript"></script>
 </head>
 <body>
-    
-        <script type="text/javascript">
+    <script type="text/javascript">
 
-            //JS does not support interface like C#, however can be implemented like below
+        //JS does not support interface like C#, however can be implemented like below
 
-            function sendEmail(r) {
-                var to = r.email;
-                var name = r.name;
-                write(name);
-            }
+        function sendEmail(r) {
+            var to = r.email;
+            var name = r.name;
+            console.log(name);
+        }
 
-            function Customer(name, email) {
-                this.name = name;
-                this.email = email;
-            }
+        function Customer(name, email) {
+            this.name = name;
+            this.email = email;
+        }
 
-            var cust = new Customer("Prasad", "Prasad.Honrao@MyCompany.com");
-            sendEmail(cust);
+        var cust = new Customer("Prasad", "Prasad.Honrao@MyCompany.com");
+        sendEmail(cust);
 
-            // passing an object with required properties
-            var fakeObject = {
-                email: '',
-                name: 'Fake'
-            }
-            sendEmail(fakeObject);
+        // passing an object with required properties
+        var fakeObject = {
+            email: '',
+            name: 'Fake'
+        }
+        sendEmail(fakeObject);
         
-        </script>
+    </script>
 </body>
 </html>
