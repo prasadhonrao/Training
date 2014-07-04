@@ -1,7 +1,7 @@
 var Calculator = function () {
 	// private member variable
 	var addMessage = "calling add function",
-	subMessage = "calling sub function",
+		subMessage = "calling sub function",
 
 	// private member function
 	log = function (message) {
