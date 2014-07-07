@@ -12,5 +12,4 @@
 
 	var instance = Calculator();
 	console.log(instance.add(1,2));
-
 }());

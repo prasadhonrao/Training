@@ -7,7 +7,7 @@ var Calculator = function () {
 	log = function (message) {
 		console.log(message);
 	};
-	
+
 	//public members
 	return {
 		add : function (x, y) {
@@ -21,11 +21,9 @@ var Calculator = function () {
 	}
 };
 
-window.onload = function () {
-	var calc = new Calculator();
-	console.log(calc.add(1,2));
-	console.log(calc.sub(1,2));
-	// console.log(calc.log('test')); log function is private
-};
+var calc = new Calculator();
+console.log(calc.add(1,2));
+console.log(calc.sub(1,2));
+// console.log(calc.log('test')); log function is private
 
 
