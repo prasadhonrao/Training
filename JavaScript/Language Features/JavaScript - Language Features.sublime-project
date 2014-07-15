@@ -84,6 +84,10 @@
 		{
 			"follow_symlinks": true,
 			"path": "Strict"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "Bugs"
 		}
 	]
 }
