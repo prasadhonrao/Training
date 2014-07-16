@@ -1,7 +1,8 @@
-exports.s = function () {
+/*jslint white: true */
+exports.s = function() {
     console.log("s");
-}
+};
 
-exports.t = function () {
+exports.t = function() {
     console.log("t");
-}
+};
