@@ -9,7 +9,17 @@ equality
 missingNew
 commaOperator
 globalObjectCount - to check if any JS code is adding anything to global namespace
-
 Functions
     variableHoisting
     functionHoisting
+    declartionVsExpression
+Variables
+    reserveWords
+    accidentalGlobal
+    parseIntWithRadix
+    checkNaN
+Objects
+    ArrayConstructor
+    AraryPrototype
+    breakInheritance
+    writeToReadOnlyProperty
