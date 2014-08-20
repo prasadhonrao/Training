@@ -1,0 +1,12 @@
+﻿<Window x:Class="CustomerViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ListBox x:Name="CustomerListBox" HorizontalAlignment="Left" Height="250" Margin="10,60,0,0" VerticalAlignment="Top" Width="497" FontSize="16"/>
+        <Button x:Name="GetSQLDataButton" Content="Get Data Using SQL" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="130" Height="45" Click="GetSQLDataButton_Click"/>
+        <Button x:Name="GetXMLDataButton" Content="Get Data Using XML" HorizontalAlignment="Left" Margin="145,10,0,0" VerticalAlignment="Top" Width="130" Height="45" Click="GetXMLDataButton_Click"/>
+        <Button x:Name="ClearDataButton" Content="Clear Data" HorizontalAlignment="Left" Margin="388,10,0,0" VerticalAlignment="Top" Width="119" Height="45" Click="ClearDataButton_Click"/>
+
+    </Grid>
+</Window>

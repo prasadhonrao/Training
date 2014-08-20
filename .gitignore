@@ -1,0 +1,44 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/C#/Language Features/Interface/Concrete Class Vs Abstract Class Vs Interface/Concrete Class/obj/Debug
+/C#/Language Features/Interface/Concrete Class Vs Abstract Class Vs Interface/Interface/bin/Debug
+/C#/Language Features/Interface/Concrete Class Vs Abstract Class Vs Interface/Interface/obj/Debug
+/C#/Language Features/Interface/Concrete Class Vs Abstract Class Vs Interface/Abstract Class/obj/Debug
+/C#/Language Features/Interface/Dynamic Loading/CustomerRepository.Interface/obj/Debug
+/C#/Language Features/Interface/Dynamic Loading/CustomerRepository.SQL/obj/Debug
+/C#/Language Features/Interface/Dynamic Loading/CustomerRepository.XML/bin/Debug
+/C#/Language Features/Interface/Dynamic Loading/CustomerRepository.XML/obj/Debug
+/C#/Language Features/Interface/Dynamic Loading/CustomerViewer/bin/Debug
+/C#/Language Features/Interface/Dynamic Loading/CustomerViewer/obj/Debug
+/C#/Language Features/Interface/Explicit Interface/ExplicitImplementation/obj/Debug
+/C#/Language Features/Interface/Explicit Interface/ExplicitImplementation/bin/Debug
+/C#/Language Features/Classes/Abstract Class/bin/Debug
+/C#/Language Features/Classes/Abstract Class/obj/Debug
+/C#/Language Features/Classes/Partial Class/obj/Debug
+/C#/Language Features/Classes/Sealed Class/obj/Debug
+/C#/Language Features/Classes/Static Class/bin/Debug
+/C#/Language Features/Classes/Static Class/obj/Debug
+/C#/Language Features/Interface/Extensibility/CustomerRepository.CSV/bin/Debug
+/C#/Language Features/Interface/Extensibility/CustomerRepository.CSV/obj/Debug
+/C#/Language Features/Interface/Extensibility/CustomerRepository.Interface/obj/Debug
+/C#/Language Features/Interface/Extensibility/CustomerRepository.SQL/bin/Debug
+/C#/Language Features/Interface/Extensibility/CustomerRepository.SQL/obj/Debug
+/C#/Language Features/Interface/Extensibility/CustomerRepository.XML/bin/Debug
+/C#/Language Features/Interface/Extensibility/CustomerRepository.XML/obj/Debug
+/C#/Language Features/Interface/Extensibility/CustomerViewer/bin/Debug
+/C#/Language Features/Interface/Extensibility/CustomerViewer/obj/Debug
+/C#/Language Features/Interface/Future Proof/Interface Future Proofing/bin/Debug
+/C#/Language Features/Interface/Future Proof/Interface Future Proofing/obj/Debug
+/C#/Language Features/Interface/Interfce Comparer/InterfaceComparer/obj/Debug
+/C#/Language Features/Interface/MVVM/CustomerRepository.Fake/obj/Debug
+/C#/Language Features/Interface/MVVM/CustomerRepository.Interface/obj/Debug
+/C#/Language Features/Interface/MVVM/CustomerRepository.SQL/obj/Debug
+/C#/Language Features/Interface/MVVM/CustomerRepository.ViewModel/obj/Debug
+/C#/Language Features/Interface/MVVM/CustomerRepository.XML/bin/Debug
+/C#/Language Features/Interface/MVVM/CustomerRepository.XML/obj/Debug
+/C#/Language Features/Interface/MVVM/CustomerViewer/bin/Debug
+/C#/Language Features/Interface/MVVM/CustomerViewer.Test/obj/Debug
+/C#/Language Features/Interface/MVVM/CustomerViewer.Test/bin/Debug
+/C#/Language Features/Interface/MVVM/CustomerViewer/obj/Debug

@@ -1,0 +1,20 @@
+﻿<Window x:Class="CustomerViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="348" Width="601">
+    <Grid>
+        <ListBox x:Name="CustomerListBox" HorizontalAlignment="Left" Height="214" Margin="10,60,0,0" VerticalAlignment="Top" Width="573" FontSize="16">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="GetSQLDataButton" Content="Get Data Using SQL" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="130" Height="45" Click="GetSQLDataButton_Click"/>
+        <Button x:Name="GetXMLDataButton" Content="Get Data Using XML" HorizontalAlignment="Left" Margin="155,10,0,0" VerticalAlignment="Top" Width="130" Height="45" Click="GetXMLDataButton_Click"/>
+        <Button x:Name="ClearDataButton" Content="Clear Data" HorizontalAlignment="Left" Margin="462,10,0,0" VerticalAlignment="Top" Width="119" Height="45" Click="ClearDataButton_Click"/>
+        <Button x:Name="GetCSVDataButton" Content="Get Data Using CSV" HorizontalAlignment="Left" Margin="307,10,0,0" VerticalAlignment="Top" Width="130" Height="45" Click="GetCSVDataButton_Click"/>
+        <TextBlock x:Name="RepoTypeTextBlock" HorizontalAlignment="Left" Margin="10,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="571" Height="20"/>
+
+    </Grid>
+</Window>
