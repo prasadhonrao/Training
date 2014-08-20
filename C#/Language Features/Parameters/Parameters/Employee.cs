@@ -1,0 +1,8 @@
+﻿namespace Training.CSharp
+{
+    public class Employee
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+}
