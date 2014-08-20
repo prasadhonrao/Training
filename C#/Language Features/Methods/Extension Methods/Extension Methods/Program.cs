@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Xml;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace Training.CSharp
 {
@@ -41,9 +43,27 @@ namespace Training.CSharp
 
             var todayInLocalXmlFormat = DateTime.Now.ToXmlDateTime(XmlDateTimeSerializationMode.Local);
             Console.WriteLine(todayInLocalXmlFormat);
+
+            Console.WriteLine();
+            #endregion
+
+            #region Enum Extension
+            Console.WriteLine(Weekdays.Mon.GetName() + " " + Weekdays.Mon.GetDescription());
+            Console.WriteLine(Weekdays.Fri.GetName() + " " + Weekdays.Fri.GetDescription());
             #endregion
 
             Console.ReadLine();
         }
+    }
+
+    public enum Weekdays
+    {
+        [Description("Mondays are boring")]
+        Mon,
+        Tue,
+        Wed,
+        Thurs,
+        [Description("Exciting fridays")]
+        Fri
     }
 }
