@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Add Remove Events", "Add Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events With Built In Delegates", "Events With Built In Delegates\Events With Built In Delegates.csproj", "{C1582D07-4860-4094-A281-DB70FF33E817}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomEventsWithCustomEventArgs", "Events With EventArgs\CustomEventsWithCustomEventArgs.csproj", "{C2D47748-6F92-4439-8D74-F1D4821C3063}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events With EventArgs", "Events With EventArgs\Events With EventArgs.csproj", "{C2D47748-6F92-4439-8D74-F1D4821C3063}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events With Generic Delegates", "Events With Generic Delegates\Events With Generic Delegates.csproj", "{7FDF5D30-606D-4F9A-A94D-B79FF7590418}"
 EndProject
