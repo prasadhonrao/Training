@@ -1,0 +1,3 @@
+Action delegate does not return any value
+Func<T,TResult> delegate returns a value using TResult parameter
+Predicate<T> delegate can take any type argument, but always returns a boolean value

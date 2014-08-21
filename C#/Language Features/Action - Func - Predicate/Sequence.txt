@@ -1,0 +1,3 @@
+Action Delegate
+Func Delegate
+Predicate Delegate
