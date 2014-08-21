@@ -1,15 +1,14 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Add Remove Events")]
+[assembly: AssemblyTitle("Events With Lambdas")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("CustomEventsAddRemove")]
+[assembly: AssemblyProduct("CustomEventsWithLambdas")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1672fc52-5ed2-40d4-a0b9-0d3547e8aaec")]
+[assembly: Guid("81258de9-fb3f-4691-809f-b42560629fa5")]
 
 // Version information for an assembly consists of the following four values:
 //
