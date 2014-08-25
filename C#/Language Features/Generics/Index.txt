@@ -5,6 +5,7 @@ Basic
 	Generic Delegates
 	Performance
 	Default Value Expression
+	Generic Type With Static Fields
 Constraints
 	Reference Type Constraints
 	Value Type Constraints
