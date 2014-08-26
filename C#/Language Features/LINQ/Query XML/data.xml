@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <Products>
+    <Product Name="West Side Story" Price="9.99" SupplierID="1" />
+    <Product Name="Assassins" Price="14.99" SupplierID="2" />
+    <Product Name="Frogs" Price="13.99" SupplierID="1" />
+    <Product Name="Sweeney Todd" Price="10.99" SupplierID="3" />
+  </Products>
+  <Suppliers>
+    <Supplier Name="Solely Sondheim" SupplierID="1" />
+    <Supplier Name="CD-by-CD-by-Sondheim" SupplierID="2" />
+    <Supplier Name="Barbershop CDs" SupplierID="3" />
+  </Suppliers>
+</Data>
