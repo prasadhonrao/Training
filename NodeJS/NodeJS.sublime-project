@@ -1,0 +1,29 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "Introduction"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "Dependency Management"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "Package Management"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "HTTP Server"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "Express App"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "View Engines"
+		}
+	]
+}

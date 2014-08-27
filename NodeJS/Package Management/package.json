@@ -1,0 +1,16 @@
+{
+  "name": "PackageManagement",
+  "version": "0.0.1",
+  "description": "Application to demonstrate package management feature in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Prasad Honrao",
+  "license": "BSD",
+  "dependencies": {
+    "underscore": "~1.6.0",
+    "express": "~4.8.5"
+  }
+}

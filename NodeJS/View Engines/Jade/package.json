@@ -1,0 +1,13 @@
+{
+  "name": "Jade",
+  "version": "0.0.1",
+  "description": "Jade View Engine demo",
+  "main": "index.js",
+  "repository": "",
+  "author": "Prasad Honrao",
+  "license": "BSD",
+  "dependencies": {
+    "express": "~4.8.5",
+    "jade": "~1.5.0"
+  }
+}

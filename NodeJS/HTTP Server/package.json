@@ -1,0 +1,9 @@
+{
+  "name": "HTTPServer",
+  "version": "0.0.1",
+  "description": "HTTP Server introduction",
+  "main": "index.js",
+  "repository": "",
+  "author": "\"Prasad Honrao\"",
+  "license": "BSD"
+}

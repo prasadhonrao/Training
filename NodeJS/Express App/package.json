@@ -1,0 +1,12 @@
+{
+  "name": "ExpressApp",
+  "version": "0.0.1",
+  "description": "Express App Introduction",
+  "main": "index.js",
+  "repository": "",
+  "author": "Prasad Honrao",
+  "license": "BSD",
+  "dependencies": {
+    "express": "~4.8.5"
+  }
+}

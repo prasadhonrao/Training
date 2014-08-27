@@ -1,0 +1,6 @@
+@html.extend('layout', function(model) {
+    @html.block("body", function(model){
+        <h2>@model.title</h2>
+        <p> This is a child page
+    })
+})
