@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.CastleWindsor", "Depende
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.Autofac", "Dependency Injection\Containers\DI.Autofac\DI.Autofac.csproj", "{559D85DE-CE2F-4C76-ABF5-7889C2F8464E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{5E77E572-8E5D-43A2-A580-F530A8EFB5F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{559D85DE-CE2F-4C76-ABF5-7889C2F8464E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{559D85DE-CE2F-4C76-ABF5-7889C2F8464E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{559D85DE-CE2F-4C76-ABF5-7889C2F8464E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E77E572-8E5D-43A2-A580-F530A8EFB5F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E77E572-8E5D-43A2-A580-F530A8EFB5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E77E572-8E5D-43A2-A580-F530A8EFB5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E77E572-8E5D-43A2-A580-F530A8EFB5F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
