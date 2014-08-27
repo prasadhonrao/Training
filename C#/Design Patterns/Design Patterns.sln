@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template Method", "Template Method\Template Method.csproj", "{01D53F26-A42B-4A79-9986-4173F26BFDBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chain of Responsibility", "Chain of Responsibility\Chain of Responsibility.csproj", "{172C9536-7537-4A42-A9F3-8411DBCFF4AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{01D53F26-A42B-4A79-9986-4173F26BFDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01D53F26-A42B-4A79-9986-4173F26BFDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01D53F26-A42B-4A79-9986-4173F26BFDBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{172C9536-7537-4A42-A9F3-8411DBCFF4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{172C9536-7537-4A42-A9F3-8411DBCFF4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{172C9536-7537-4A42-A9F3-8411DBCFF4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{172C9536-7537-4A42-A9F3-8411DBCFF4AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
