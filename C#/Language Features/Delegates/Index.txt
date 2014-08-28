@@ -1,4 +1,5 @@
 Introduction
+Delegate Invocation List
 Custom Delegates
 Custom Multicast Delegates
 Add Remove Delegates
