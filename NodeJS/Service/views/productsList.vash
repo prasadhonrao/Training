@@ -1,0 +1,15 @@
+@html.extend('layout', function(model) {
+    @html.block("body", function(model){
+        <h2>@model.title</h2>
+
+        @if (model.error) {
+            <p>Error occured : @model.error </p>
+        }
+
+        @model.products.forEach(function(product){
+            <div>
+                <a href="#"> @product.ProductName </a>
+            </div>
+        })
+    })
+})

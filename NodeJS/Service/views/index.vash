@@ -1,0 +1,9 @@
+@html.extend('layout', function(model) {
+    @html.block("body", function(model){
+        <h3>
+        <a href="/customers/index">Customers</a>
+        </br>
+        <h3>
+        <a href="/products/index">Products</a>
+    })
+})
