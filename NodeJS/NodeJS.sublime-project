@@ -24,6 +24,14 @@
 		{
 			"follow_symlinks": true,
 			"path": "View Engines"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "Controllers"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "Service"
 		}
 	]
 }

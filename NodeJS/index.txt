@@ -7,3 +7,7 @@ View Engines
 	Jade
 	EJS
 	Vash
+Constrollers
+	Single
+	Multiple
+Service
