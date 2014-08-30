@@ -32,6 +32,10 @@
 		{
 			"follow_symlinks": true,
 			"path": "Service"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "Async"
 		}
 	]
 }
