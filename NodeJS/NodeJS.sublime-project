@@ -36,6 +36,14 @@
 		{
 			"follow_symlinks": true,
 			"path": "Async"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "EdgeJS"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "File System"
 		}
 	]
 }
