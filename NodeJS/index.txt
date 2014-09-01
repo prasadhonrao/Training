@@ -7,8 +7,10 @@ View Engines
 	Jade
 	EJS
 	Vash
-Constrollers
+Controllers
 	Single
 	Multiple
 Service
 Async
+EdgeJS
+File System
