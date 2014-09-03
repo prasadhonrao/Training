@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Index.txt = Index.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dynamic Keyword", "dynamic Keyword\dynamic Keyword.csproj", "{12376830-C38B-438B-8B85-BEF21A631ABB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{A2F859C1-25F7-4A17-B09E-5BAB99C0D99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2F859C1-25F7-4A17-B09E-5BAB99C0D99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2F859C1-25F7-4A17-B09E-5BAB99C0D99D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12376830-C38B-438B-8B85-BEF21A631ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12376830-C38B-438B-8B85-BEF21A631ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12376830-C38B-438B-8B85-BEF21A631ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12376830-C38B-438B-8B85-BEF21A631ABB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
