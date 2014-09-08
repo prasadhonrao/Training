@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Text;
 
 namespace Training.CSharp
@@ -136,11 +137,44 @@ namespace Training.CSharp
         }
 
         [TestMethod]
-        public void String_Joing_Test()
+        public void String_Join_Test()
         {
             string[] colors = { "red", "blue", "green"};
             string commaColors = string.Join(", ", colors);
             Assert.AreEqual("red, blue, green", commaColors);
+        }
+
+        [TestMethod]
+        public void String_Split_Test()
+        {
+            string name = "Prasad Honrao";
+            string[] result = name.Split(new char[] {' '});
+            Assert.IsTrue(result.Length == 2);
+            Assert.AreEqual(result[0], "Prasad");
+        }
+
+        [TestMethod]
+        public void String_Split_Using_Comma_Test()
+        {
+            string numbers = "1, 2, 3, 4, 5, 6, 7";
+            string[] result = numbers.Split(new char[] {','});
+            foreach (var number in result)
+            {
+                Console.WriteLine(number);
+            }
+            Assert.IsTrue(result.Length == 7);
+        }
+
+        [TestMethod]
+        public void String_Split_Using_Comma_Missing_Value_Test()
+        {
+            string numbers = "1,, 3,, 5, 6, 7";
+            string[] result = numbers.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+            foreach (var number in result)
+            {
+                Console.WriteLine(number);
+            }
+            Assert.IsTrue(result.Length == 5);
         }
     }
 }
