@@ -7,7 +7,7 @@
     <ProjectGuid>{8B9D5D69-02C3-479C-BEAF-C0E6DAFBEFB1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Training.CSharp</RootNamespace>
+    <RootNamespace>Performance</RootNamespace>
     <AssemblyName>Performance</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

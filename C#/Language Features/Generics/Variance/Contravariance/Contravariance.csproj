@@ -7,7 +7,7 @@
     <ProjectGuid>{52C75841-3690-470B-9EC7-BFEFD6F736EB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Training.CSharp</RootNamespace>
+    <RootNamespace>Contravariance</RootNamespace>
     <AssemblyName>Contravariance</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -1,4 +1,4 @@
-﻿namespace Training.CSharp
+﻿namespace Introduction
 {
     public class Animal
     {

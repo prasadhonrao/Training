@@ -1,18 +1,18 @@
 Basic
 	Introduction
-	Generic Type
-	Generic Method
-	Generic Delegates
+	Generic.Type
+	Generic.Method
+	Generic.Delegates
 	Performance
-	Default Value Expression
-	Generic Type With Static Fields
+	Default.Value.Expression
+	Generic.Type.With.Static.Fields
 Constraints
-	Reference Type Constraints
-	Value Type Constraints
-	Constructor Type Constraints
-	Conversion Type Constraints
+	Reference.Type.Constraints
+	Value.Type.Constraints
+	Constructor.Type.Constraints
+	Conversion.Type.Constraints
 Pattern
-	List Size Resize Pattern
+	List.Size.Resize.Pattern
 Collections
 	Queue
 	Stack
@@ -27,7 +27,7 @@ Collections
 	ConcurrentQueue
 	ConcurrentStack
 Reflection
-	Generics Wit hReflection
+	Generics.With.Reflection
 Variance
 	Covariance
 	Contravariance

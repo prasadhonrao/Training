@@ -7,7 +7,7 @@
     <ProjectGuid>{4862F6A0-ECC6-4E8E-8613-173769DA1FAE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Training.CSharp</RootNamespace>
+    <RootNamespace>Covariance</RootNamespace>
     <AssemblyName>Covariance</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

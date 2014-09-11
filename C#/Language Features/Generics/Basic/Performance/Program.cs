@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Training.CSharp
+namespace Performance
 {
     class Program
     {

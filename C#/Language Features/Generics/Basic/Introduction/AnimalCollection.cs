@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace Training.CSharp
+namespace Introduction
 {
     public class AnimalCollection : ArrayList
     {

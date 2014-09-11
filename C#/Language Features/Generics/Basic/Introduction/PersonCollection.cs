@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace Training.CSharp
+namespace Introduction
 {
     public class PersonCollection : ArrayList
     {
