@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html >
+<html data-ng-app="FlightPicker">
+<head>
+    <title>Flight Picker</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="app/css/style.css" rel="stylesheet" />
+</head>
+<body data-ng-controller="flightsController">
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Flight Picker</h1>
+            <p class="lead">Basic flight picker app built with AngularJS and Bootstrap.</p>
+        </div>
+
+        <div class="alert alert-success" role="alert" data-ng-show="selectedFlight">
+            Congratulations, you have made a great selection with {{selectedFlight.airLine}}
+        </div>
+
+        <div data-ng-repeat="flight in flights" class="col-md-4">
+            <div class="flightContainer well well-lg">
+                <h3>{{flight.airLine}}</h3>
+                From {{flight.from}} To {{flight.to}}
+                Stops at {{flight.stops}}
+                <br />
+                Start Date {{flight.startDate | date}}
+                <br />
+                Arrival Date {{flight.endDate | date}}
+                <br />
+                {{flight.duration}} hrs
+                <hr />
+                <div class="row">
+                    <div class="col-md-4">{{flight.price | currency}}</div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-success pull-right" data-ng-click="selectFlight(flight)">Select</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="app/module/flightsModule.js"></script>
+    <script src="app/controllers/flightsController.js"></script>
+    <script src="app/services/flightService.js"></script>
+</body>
+</html>

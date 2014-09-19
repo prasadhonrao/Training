@@ -92,6 +92,10 @@
 		{
 			"follow_symlinks": true,
 			"path": "__Proto__"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "Crazy"
 		}
 	]
 }
