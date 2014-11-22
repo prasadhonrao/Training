@@ -1,0 +1,24 @@
+﻿<Window x:Class="Basic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="157*"/>
+            <RowDefinition Height="162*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="InputTextBox" 
+                 Height="100" 
+                 Width="200" 
+                 Grid.Row="0" 
+                 Text="Input some text here..." 
+                 FontSize="20px" ></TextBox>
+        
+        <TextBox x:Name="OutputTextBox" 
+                 Height="100" 
+                 Width="200" 
+                 Grid.Row="1"  
+                 Text="{Binding ElementName=InputTextBox, Path=Text}" 
+                 FontSize="20px"></TextBox>
+    </Grid>
+</Window>

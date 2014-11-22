@@ -1,0 +1,11 @@
+﻿<Window x:Class="StackPanelLayout.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="StackPanel Layout" Height="350" Width="525">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Enter your name" Margin="10" Height="20" VerticalAlignment="Top" />
+            <TextBox Height="20" Width="100" Margin="10" VerticalAlignment="Top"/>
+        </StackPanel>
+    </Grid>
+</Window>

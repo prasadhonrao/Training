@@ -1,0 +1,17 @@
+﻿<Window x:Class="WPFDesktopUIControls.TabPanelExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tab Control" Height="300" Width="300">
+    <Grid>
+        <TabControl>
+            <TabItem Header="First" />
+            <TabItem Header="Second">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Input your name" />
+                    <TextBox Text="Prasad" Height="25" VerticalAlignment="Top" />
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Third" />
+        </TabControl>
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+﻿<Window x:Class="ElementDataBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        
+        <Slider TickFrequency="2" IsSnapToTickEnabled="True" Maximum="100" Minimum="0" Name="mySlider"  />
+        <TextBlock Text="{Binding Value, ElementName=mySlider}" />
+    </StackPanel>
+</Window>
