@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Prasad Honrao" />
+    <meta name="description" content="jQuery selector additional features" />
+    <meta name="keywords" content="HTML, jQuery, JavaScript" />
+    <meta charset="utf-8" />
+    <title>jQuery selector additional features</title>
+    <style type="text/css">
+        .highlight
+        {
+            background-color: Yellow;
+        }
+    </style>
+    <script src="../Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //alert("DOM loaded");
+            // 1. Contains
+            /*
+            var prasadDiv = $('div:contains("Prasad")');
+            alert(prasadDiv.length);
+            */
+
+            // 2. first-child
+            /*
+            var first = $('span:first-child');
+            first.css('background-color', 'Yellow');
+            */
+
+            // 3. value ends with specific word
+            /*
+            var startEventButtons = $('input[value^="Events"]');
+            alert(startEventButtons.length);
+            */
+
+            // 4. value ends with specific word
+            /*
+            var endEventButtons = $('input[value$="Events"]');
+            alert(endEventButtons.length);
+            */
+
+            // 5. contains specific word
+            /*
+            var allEventButtons = $('input[value*="Events"]');
+            alert(allEventButtons.length);
+            */
+
+            // 6. prev , next
+            /*
+            var two = $('li:contains("Three")').prev().addClass('highlight');
+            var four = $('li:contains("Three")').next().addClass('highlight');
+            */
+
+            // 7. siblings
+            /*
+            $('li:contains("Three")').siblings().addClass('highlight');
+            */
+
+            // 8. parent
+            /*
+            $('li:contains("Three")').parent().addClass('highlight');
+            */
+
+            // 9. nth-child -- this is 1 based  
+            /*
+            $('li:nth-child(1)').addClass('highlight');
+            $('li:nth-child(4)').addClass('highlight');
+            */
+
+            // 10. Header
+            /*
+            $(':header').addClass('highlight');
+            */
+
+            // 11. Fill in empty paragraphs
+            /*
+            $('p:empty').text("This was an empty paragraph").addClass('highlight');
+            */
+
+        });
+    
+    </script>
+</head>
+<body>
+    <h4>
+        jQuery selector additional features</h4>
+    <div id="first">
+        Prasad
+    </div>
+    <div id="second">
+        <span>My blog</span> <span>http://www.PrasadHonrao.com</span>
+    </div>
+    <div id="third">
+        Prasad Honrao
+    </div>
+    <input type="button" value="Local Events" />
+    <input type="button" value="National Events" />
+    <input type="button" value="Global Events" />
+    <input type="button" value="Events missing" />
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+    <p></p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Listbox change event legacy way</title>
+    <script src="Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.input').change(function () {
+                $('#outputDiv').text($(this).val());
+            });
+        });
+    
+    </script>
+</head>
+<body>
+    <h3>Handle change event for multiple input elements</h3>
+    <select id="lstCity" class="input">
+        <option id="1" value="Mumbai">Mumbai</option>
+        <option id="2" value="London">London</option>
+        <option id="3" value="NY">New York</option>
+    </select>
+    <br />
+    <textarea id="inputText" class="input" rows="5"></textarea>
+
+    <div id="outputDiv"></div>
+</body>
+</html>

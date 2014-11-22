@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Prasad Honrao" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="HTML" />
+    <meta charset="utf-8" />
+    <title>jQuery Button Click Event Handling</title>
+     
+
+    <script type="text/javascript">
+        function cancelButton_click() {
+            alert('Cancel button clicked');
+        }
+    
+    </script>
+</head>
+<body>
+    <input type="button" id="okButton" value="Submit" />
+    <!-- hooking up event in HTML is not the best practice -->
+    <input type="button" id="cancelButton" onclick="cancelButton_click()" value="Cancel" /> 
+    <script type="text/javascript">
+        var button = document.getElementById('okButton');
+
+        if (document.addEventListener) {
+            button.addEventListener('click', function () {
+                alert('Ok button clicked in IE 9 or above or in other browser');
+            });
+        }
+        else {
+            button.attachEvent('onclick', function () {
+                alert('Ok button clicked in IE');
+            });
+        }
+    
+    </script>
+</body>
+</html>

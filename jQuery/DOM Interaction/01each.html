@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <title>jQuery - Iterating through nodes using each</title>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //alert("DOM loaded...");
+
+            // 1. Iterate through all DIVs
+            $('div.red').each(function (index) {
+                $(this).html("Text added to div using jQuery - Index " + index).css('background-color', 'lightgreen');
+            });
+        });
+    
+    </script>
+
+</head>
+<body>
+    <div id="first" class="red"></div>
+    <div id="second"></div>
+    <div id="third"></div>
+</body>
+</html>
+    

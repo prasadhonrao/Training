@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery - Mouse Events</title>
+    <style>
+        .Highlight
+        {
+            background-color:Yellow
+        }
+        
+    </style>
+    <script src="Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#mainDiv').mouseenter(function () {
+                $(this).addClass('Highlight').css('cursor','pointer');
+            });
+
+            $('#mainDiv').mouseleave(function () {
+                $(this).removeClass('Highlight');
+            });
+        });
+    
+    </script>
+</head>
+<body>
+    <div id="mainDiv">Hover mouse over the text</div>
+</body>
+</html>

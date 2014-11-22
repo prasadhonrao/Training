@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Listbox change event legacy way</title>
+    <script type="text/javascript">
+        function lstCity_onChange() {
+            var lst = document.getElementById('lstCity');
+            var outputDiv = document.getElementById('outputDiv');
+            outputDiv.innerHTML = lst.value;
+        }
+    
+    </script>
+</head>
+<body>
+    <select id="lstCity" onchange="lstCity_onChange()">
+        <option id="1" value="Mumbai">Mumbai</option>
+        <option id="2" value="London">London</option>
+        <option id="3" value="NY">New York</option>
+    </select>
+    <div id="outputDiv"></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="Prasad Honrao" name="author">
+        <meta content="HTML Form Submission Using JavaScript" name="description">
+        <meta content="HTML, Form, JavaScript" name="keywords">
+        <title>HTML Form Submission Using JavaScript</title>
+
+        <script type="text/javascript">
+
+            function submitUsingScript() {
+                var response = confirm("Submitting using script?");
+                if (response){
+                    document.getElementById("profileForm").submit();
+                }
+            }
+
+            function onProfileSubmit() {
+                return confirm("Do you want to submit the form?");
+            }
+        </script>
+    </head>
+    <body>
+        <form id="profileForm" action="formSubmitUsingScriptResult.cshtml" method="post" onsubmit="return onProfileSubmit()" > <!-- onsubmit event handles form submission -->
+            <input id="firstName" name="firstName" type="text">
+            <input type="button" id="btnSubmit" name="btnSubmit" value="Submit using Script" onclick="submitUsingScript()">
+
+            <input type="submit" id="btnSubmitAnother" name="btnSubmitAnother" value="Submit using Form" />
+
+        </form>
+    </body>
+</html>

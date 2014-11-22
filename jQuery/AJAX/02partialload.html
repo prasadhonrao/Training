@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Prasad Honrao" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="HTML" />
+    <meta charset="utf-8" />
+    <title>jQuery - Ajax Features</title>
+    <script src="Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            //alert("DOM loaded...");
+
+            $('#ShowAuthorNameButton').click(function () {
+                $('#outputDiv').load('../Content/Author.html #website');
+            });
+        });
+    
+    </script>
+</head>
+<body>
+    <input type="button" id="ShowAuthorNameButton" value="Show Author Info" />
+    <div id="outputDiv">
+    </div>
+</body>
+</html>

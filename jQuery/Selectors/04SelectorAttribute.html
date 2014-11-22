@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Prasad Honrao" />
+    <meta name="description" content="jQuery selector by attribute" />
+    <meta name="keywords" content="HTML, jQuery, JavaScript" />
+    <meta charset="utf-8" />
+    <title>jQuery selector by attribute</title>
+    <script src="../Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // 1. Get all the elements in DOM which has class attributes
+            var classElements = $('[class]');
+            alert(classElements.length);
+
+            // 2. Get all the elements in DOM whose class attribute value set to blue
+            var blueClassElements = $('[class="blue"]');
+            alert(blueClassElements.length);
+
+            // 3. Get all span elements in DOM whose class attribute value set to blue
+            var blueSpanClassElements = $('span[class="blue"]');
+            alert(blueSpanClassElements.length);
+
+            // 4. Get all the input text elements within the DOM and set its background color to Yellow.
+            var inputTextElement = $('input[type="text"]');
+            //alert(inputTextElement.length);
+            inputTextElement.css('background-color', 'Yellow');
+
+            // 5. Get all the input text elements or all the elements with blue class within the DOM and set its background color to Green.
+            var inputTextElement = $('input[type="text"],[class="blue"]');
+            //alert(inputTextElement.length);
+            inputTextElement.css('background-color', 'Green');
+
+        });
+    </script>
+</head>
+<body>
+    <h4>
+        jQuery Selector - Attribute</h4>
+    <div id="main">
+        <p class="blue">
+            This is first paragraph</p>
+        <div class="red">
+            This is a div
+        </div>
+        <span class="blue">this is a span </span>
+    </div>
+
+    <form id="frmMain" method=post>
+        <input type = "text" id = "txtFirstName" />
+        <input type = "text" id = "txtLastName" />
+        
+    </form>
+
+</body>
+</html>

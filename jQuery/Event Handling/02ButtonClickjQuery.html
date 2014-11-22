@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Prasad Honrao" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="HTML" />
+    <meta charset="utf-8" />
+    <title>jQuery Button Click Event Handling</title>
+    <script src="Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var button = $('#okButton');
+            button.click(function () {
+                var value = $('#firstName').val();
+                $('#outputDiv').text(value);
+            });
+        });
+    
+    </script>
+</head>
+<body>
+    <input type=text id="firstName" />
+    <input type="button" id="okButton" value="Submit" />
+    <div id="outputDiv">
+        </div>
+</body>
+</html>

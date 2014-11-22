@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Form submission result</title>
+    </head>
+    <body>
+        <h1>Search Results</h1>        
+        @*@if(Request.Params.AllKeys.Contains("query"))
+        {
+            <span id="result">You searched for @Request.Params["query"]</span>
+        }
+        else
+        {
+            <span id="noResult">You did not specify any 'query' parameter</span>
+        }*@
+    </body>
+</html>

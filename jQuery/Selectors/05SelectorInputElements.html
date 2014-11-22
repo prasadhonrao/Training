@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Prasad Honrao" />
+    <meta name="description" content="jQuery selector by attribute" />
+    <meta name="keywords" content="HTML, jQuery, JavaScript" />
+    <meta charset="utf-8" />
+    <title>jQuery selector by attribute</title>
+    <script src="../Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // 1. :input takes into consideration all input elements like textArea, Select which does not have input type
+            /*
+            var inputs = $(':input');
+            alert($(inputs[1]).val());
+            */
+
+            // 2. Get value of all the elements
+            /*
+            $(':input').each(function () {
+            alert($(this).val());
+            });
+            */
+
+            // 3. Assign a value to input controls
+            /*
+            $(':input').each(function () {
+                var element = ($(this));
+                element.val('jQuery');
+            });
+            */
+
+            // 4. Get all the text elements
+            
+            $(':text').each(function () {
+            var element = ($(this));
+            element.val('jQuery');
+            });
+            
+
+        });
+    </script>
+</head>
+<body>
+    <h4>
+        jQuery Selector - Input Elements</h4>
+    <form id="frmMain" method="post" action="">
+    <table>
+        <tr>
+            <td>
+                First Name
+            </td>
+            <td>
+                <input type="text" id="txtFirstName" value="Prasad" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Last Name
+            </td>
+            <td>
+                <input type="text" id="txtLastName" value="Honrao" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Comments
+            </td>
+            <td>
+                <textarea rows="5" cols="30" id="commentTextBox"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gender
+            </td>
+            <td>
+                <select id="gender">
+                    <option value="M" selected>Male</option>
+                    <option value="F">Female</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="submitButton" value="Submit" />
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

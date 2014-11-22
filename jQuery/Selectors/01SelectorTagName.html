@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Prasad Honrao" />
+    <meta name="description" content="jQuery selecting by tag name" />
+    <meta name="keywords" content="HTML, jQuery, Selector" />
+    <meta charset="utf-8" />
+    <title>jQuery selecting by tag name</title>
+    <style type="text/css">
+        .paragraph
+        {
+            background-color: Yellow;
+        }
+        
+        #second
+        {
+            background-color: Green;
+            color: White;
+        }
+        
+        .orangeParagraph
+        {
+            background-color: Orange;
+        }
+    </style>
+    <script src="../Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // 1. Find all paragraphs and apply some CSS value
+            /*
+            var paragraphs = $('p');
+            alert("You have " + paragraphs.length + " paragraphs in the document");
+            paragraphs.css('font-style', 'italic');
+            //paragraphs.fadeOut(500).fadeIn(500);
+            */
+
+            // 2. Iterate through all the paragraphs using jQuery syntax
+
+//            var paragraphs = $('p').each(function () {
+//                //alert($(this).html());
+//                $(this).addClass('orangeParagraph');
+//            });
+
+
+            // 3. Find all divs and paragraphs
+            /*
+            var divAndparas = $('div,p');
+            alert("You have total " + divAndparas.length + " div and paragraphs in the document");
+            */
+
+        });
+    </script>
+</head>
+<!-- 
+    $('p') - single tag
+    $('p,a,span) - multiple tags
+    $('table tr') - return all tr tags which are descendents to table
+-->
+<body>
+    <h4>
+        jQuery Selector - Tag Name</h4>
+    <div id="main">
+        <p class="paragraph">
+            This is first paragraph</p>
+        <p id="second">
+            <strong>This is second paragraph</strong></p>
+        <p id="third">
+            This is third paragraph</p>
+    </div>
+</body>
+</html>

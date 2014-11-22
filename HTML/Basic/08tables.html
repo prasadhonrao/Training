@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prasad Honrao" />
+    <meta name="description" content="This page demonstrates how to build HTML tables" />
+    <meta name="keywords" content="HTML, Tables" />
+    <title>HTML Table</title>
+</head>
+
+<!-- Table structure :
+    Caption
+    Header
+    Body
+    Footer
+-->
+
+<body>
+    <table id="listTable" border=10; cellpadding=10px; cellspacing=10px; summary="Summary information goes here">
+
+    <!-- CAPTION -->
+    <caption>List elements</caption>
+     
+        <!-- HEADER -->
+        <thead>
+            <tr>
+                <th>List Types</th> 
+                <th>Tags</th> 
+                <th>Uses</th> 
+            </tr>
+        </thead>
+
+        <!-- BODY -->
+        <tbody>
+            <tr>
+                <td>Unordered</td>
+                <td>&lt;ul&gt;,&lt;li&gt;</td>
+                <td rowspan="2">Display simple list of items</td>
+            </tr>
+            <tr>
+                <td>Ordered</td>
+                <td>&lt;ol&gt;,&lt;li&gt;</td>
+            </tr>
+        </tbody>
+    
+        <!-- FOOTER -->
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    List can be styled in many ways.
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>

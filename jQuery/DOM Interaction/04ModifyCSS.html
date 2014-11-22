@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <title>jQuery - Modify DOM</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //alert("DOM loaded...");
+
+            // 1. Modify CSS 
+            //var div = $("#mainDiv").css('background-color', 'gray');
+
+            // 2. Modify Multiple CSS properties
+            var div = $("#mainDiv").css({
+                'color':'red',
+                'font-weight': 'bold',
+                'font-size':'x-large'
+            });
+        });
+    
+    </script>
+</head>
+<body>
+    <div id="mainDiv">
+        Main Div</div>
+</body>
+</html>

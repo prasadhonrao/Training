@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Prasad Honrao" />
+    <meta name="description" content="jQuery selecting by id" />
+    <meta name="keywords" content="HTML, jQuery, Selector" />
+    <meta charset="utf-8" />
+    <title>jQuery selecting by id</title>
+    <style type="text/css">
+        .paragraph
+        {
+            background-color: Yellow;
+        }
+        
+        #second
+        {
+            background-color: Chocolate;
+        }
+    </style>
+    <script src="../Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // 1. Find paragraph with specific id
+
+            var paragraphWithSecondId = $('#second');
+            paragraphWithSecondId.css('font-size', 'x-large');
+            //paragraphWithSecondId.text("Paragraph text was changed using jQuery");
+            //paragraphWithSecondId.html("<h2>Paragraph text was changed using jQuery</h2>");
+            //paragraphWithSecondId.prepend("Great - ");
+            //paragraphWithSecondId.append(" - WOW");
+            //alert(paragraphWithSecondId.html());
+        });
+    </script>
+</head>
+<!-- 
+    $('p') - single tag
+    $('p,a,span) - multiple tags
+    $('table tr') - return all tr tags which are descendents to table
+-->
+<body>
+    <h4>
+        jQuery Selector - Id</h4>
+    <div id="main">
+        <p class="paragraph">
+            This is first paragraph</p>
+        <p id="second">
+            <strong>This is second paragraph</strong></p>
+        <p id="third">
+            This is third paragraph</p>
+    </div>
+    <div id="form">
+        <input type="submit" id="clickMe" value="Click Me" />
+    </div>
+</body>
+</html>

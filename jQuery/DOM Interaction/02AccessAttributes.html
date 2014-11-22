@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <title>jQuery - Iterating through nodes using each</title>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //alert("DOM loaded...");
+
+            // 1. Iterate through all DIVs
+            $('div.red').each(function (index) {
+                var value = $('#first').attr('class');
+                console.log(value);
+
+                $('#second').attr('style', 'background-color:red');
+
+                $('#third').attr({
+                    style:'border:2px solid black',
+                });
+            });
+
+            // 2. setting attribute
+            $('div.red').each(function (index) {
+                $('#second').attr('style', 'background-color:red');
+            });
+
+            // 3. Setting multiple attributes
+            $('div.red').each(function (index) {
+                $('#third').attr({
+//                    style:'border:2px solid black',
+//                    style:'background-color:lightgreen',
+                    style:'font-size:x-large',
+                    title:'tooltip text'
+                });
+            });
+        });
+    
+    </script>
+
+</head>
+<body>
+    <div id="first" class="red"></div>
+    <div id="second">Second</div>
+    <div id="third">Third</div>
+</body>
+</html>
+    

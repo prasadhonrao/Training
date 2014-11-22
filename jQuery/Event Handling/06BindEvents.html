@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery - Bind Events</title>
+        <style>
+        .Highlight
+        {
+            background-color:Yellow
+        }
+        
+    </style>
+
+    <script src="Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#bindButton').click(function () {
+                bindEvents();
+            });
+
+            $('#unbindButton').click(function () {
+                unbindEvents();
+            });
+
+            function bindEvents() {
+                // bind can be useful when you want to bind multiple events or replace event dynamically with string variable
+                $('#mainDiv').bind('mouseenter mouseleave', function () {
+                    $(this).toggleClass('Highlight');
+                });
+
+                $('#mainDiv').bind('click', function () {
+                    alert('You clicked me!');
+                });
+
+            }
+
+            function unbindEvents() {
+                $('#mainDiv').unbind(); //unbinds all events
+            }
+        });
+    
+    </script>
+</head>
+<body>
+    <h3 id="mainDiv">jQuery is so much fun!</h3>
+   <input type=button id="bindButton" value="Bind Events" />
+   <input type=button id="unbindButton" value="Unbind Events" />
+</body>
+</html>
+    

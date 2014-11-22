@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Prasad Honrao" />
+    <meta name="description" content="jQuery selecting by class name" />
+    <meta name="keywords" content="HTML, jQuery, Selector" />
+    <meta charset="utf-8" />
+    <title>jQuery selecting by class name</title>
+    <style type="text/css">
+        body
+        {
+            background-color: Azure;
+        }
+    </style>
+    <script src="../Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // 1. Find all DOM elements with class blue
+            /*
+            var top = $('.blue'); // this will iterate thru all DOM elements. Performance intensive since it scans DOM
+            top.css('font-style', 'italic');
+            */
+
+            // 2. Find all span elements with class blue. More efficient since it doesn't scan entire DOM
+            /*
+            $('span.blue').css('font-size', 'xx-large');
+            */
+
+            // 3. Find all DOM elements with class either blue or red
+            /*
+            var topPara = $('.blue,.red'); // this will iterate thru only paragraph elements
+            topPara.css('font-size', 'xx-large');
+            topPara.css('color', 'red');
+            */
+
+        });
+    </script>
+</head>
+<body>
+    <h4>
+        jQuery Selector - Class Name</h4>
+    <div id="main">
+        <p class="blue">
+            This is first paragraph</p>
+        <div class="red">
+            This is a div
+        </div>
+        <span class="blue">this is a span </span>
+    </div>
+    <div id="form">
+        <input type="submit" id="clickMe" value="Click Me" />
+    </div>
+</body>
+</html>
