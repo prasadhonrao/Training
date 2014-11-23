@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="Common_Controls.TextBoxControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Common_Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="TextBox Control With Different Input Scope" 
+                       FontSize="20" 
+                       Foreground="Yellow"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       />
+            <TextBox x:Name="NumberTextBox" 
+                     HorizontalAlignment="Left" 
+                     Height="50" 
+                     Margin="25, 50, 0,0" 
+                     InputScope="Number"
+                     Text="Number InputScope" 
+                     VerticalAlignment="Top" 
+                     Width="300"/>
+            <TextBox x:Name="NameOrPhoneTextBox" 
+                     HorizontalAlignment="Left" 
+                     Height="50" 
+                     Margin="25, 50, 0,0" 
+                     InputScope="NameOrPhoneNumber"
+                     Text="Number or Phone InputScope" 
+                     VerticalAlignment="Top" 
+                     Width="300"/>
+            <TextBox x:Name="ChatTextBox" 
+                     HorizontalAlignment="Left" 
+                     Height="50" 
+                     Margin="25, 50, 0,0" 
+                     InputScope="Chat"
+                     Text="Chat InputScope" 
+                     VerticalAlignment="Top" 
+                     Width="300"/>
+        </StackPanel>
+    </Grid>
+</Page>

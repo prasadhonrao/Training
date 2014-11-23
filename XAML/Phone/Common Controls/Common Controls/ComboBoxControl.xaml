@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="Common_Controls.ComboBoxControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Common_Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Your favorite character"
+                       FontSize="20"
+                       Margin="25, 25, 0,0"/>
+            <ComboBox Margin="25,10,0,0">
+                <ComboBoxItem>Curly</ComboBoxItem>
+                <ComboBoxItem>Larry</ComboBoxItem>
+                <ComboBoxItem>Moe</ComboBoxItem>
+            </ComboBox>
+            <TextBlock Text="Your favorite color"
+                       FontSize="20"
+                       Margin="25, 25, 0,0"/>
+            <ComboBox Margin="25,10,0,0">
+                <ComboBoxItem>Red</ComboBoxItem>
+                <ComboBoxItem>Orange</ComboBoxItem>
+                <ComboBoxItem>Yellow</ComboBoxItem>
+                <ComboBoxItem>Green</ComboBoxItem>
+                <ComboBoxItem>Blue</ComboBoxItem>
+                <ComboBoxItem>Indigo</ComboBoxItem>
+                <ComboBoxItem>Voilet</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+    </Grid>
+</Page>
