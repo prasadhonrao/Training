@@ -44,9 +44,11 @@ namespace WPFDesktopUIControls
             if ((bool)TabletCheckBox.IsChecked)
                 sb.Append("Tablet ");
 
+            sb.AppendLine();
             sb.Append("Your job :");
-            sb.AppendLine(JobsComboBox.SelectedValue.ToString());
+            sb.Append(JobsComboBox.SelectedValue != null ? JobsComboBox.SelectedValue.ToString() : "Not Selected");
 
+            sb.AppendLine();
             sb.Append("Birthdate:");
             sb.AppendLine(BirthDateCalendar.SelectedDate.ToString());
 

@@ -15,11 +15,11 @@ namespace WPFDesktopUIControls
     {
         public App()
         {
-            //this.StartupUri = new Uri("BasicControls.xaml", UriKind.RelativeOrAbsolute);
+            this.StartupUri = new Uri("BasicControls.xaml", UriKind.RelativeOrAbsolute);
             //this.StartupUri = new Uri("MenuExample.xaml", UriKind.RelativeOrAbsolute);
             //this.StartupUri = new Uri("TabPanelExample.xaml", UriKind.RelativeOrAbsolute);
             //this.StartupUri = new Uri("GridControlExample.xaml", UriKind.RelativeOrAbsolute);
-            this.StartupUri = new Uri("TreeViewExample.xaml", UriKind.RelativeOrAbsolute);
+            //this.StartupUri = new Uri("TreeViewExample.xaml", UriKind.RelativeOrAbsolute);
         }
     }
 }
