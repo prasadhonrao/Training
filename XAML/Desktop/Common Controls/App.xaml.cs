@@ -21,6 +21,8 @@ namespace Common_Controls
             this.StartupUri = new Uri("MenuControl.xaml", UriKind.RelativeOrAbsolute);
             this.StartupUri = new Uri("ViewBoxControl.xaml", UriKind.RelativeOrAbsolute);
             this.StartupUri = new Uri("TreeViewControl.xaml", UriKind.RelativeOrAbsolute);
+            this.StartupUri = new Uri("ScrollViewerControl.xaml", UriKind.RelativeOrAbsolute);
+            
         }
     }
 }

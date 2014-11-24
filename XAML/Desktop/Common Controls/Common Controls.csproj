@@ -53,6 +53,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ScrollViewerControl.xaml.cs">
+      <DependentUpon>ScrollViewerControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TreeViewControl.xaml.cs">
       <DependentUpon>TreeViewControl.xaml</DependentUpon>
     </Compile>
@@ -86,6 +89,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MenuControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ScrollViewerControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
