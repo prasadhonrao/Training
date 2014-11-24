@@ -1,24 +1,24 @@
 ﻿<Window x:Class="Basic.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Data Binding - Basic" Height="136" Width="525" WindowStyle="ToolWindow" ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="157*"/>
-            <RowDefinition Height="162*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="InputTextBox" 
-                 Height="100" 
-                 Width="200" 
-                 Grid.Row="0" 
-                 Text="Input some text here..." 
-                 FontSize="20px" ></TextBox>
         
+        <TextBox x:Name="InputTextBox" 
+                 Text="Input some text here..." 
+                 Margin="10"
+                 FontSize="20px">
+        </TextBox>
+
         <TextBox x:Name="OutputTextBox" 
-                 Height="100" 
-                 Width="200" 
                  Grid.Row="1"  
+                 Margin="10"
                  Text="{Binding ElementName=InputTextBox, Path=Text}" 
-                 FontSize="20px"></TextBox>
+                 FontSize="20px">
+        </TextBox>
     </Grid>
 </Window>
