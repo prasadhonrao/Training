@@ -1,0 +1,15 @@
+﻿<Window x:Class="Common_Controls.ViewBoxControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ViewBox Control" Height="300" Width="300">
+    <StackPanel>
+            <TextBlock FontSize="14" 
+                   HorizontalAlignment="Center"
+                       TextWrapping="Wrap"
+                   Text="ViewBox maintains image aspect ratio, even if you resize the window" />
+        <Viewbox HorizontalAlignment="Center" Height="Auto" VerticalAlignment="Center" Width="Auto">
+            <Image Source="Images\smiley.jpg"></Image>
+        </Viewbox>
+
+    </StackPanel>
+</Window>
