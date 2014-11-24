@@ -1,0 +1,48 @@
+﻿<Window x:Class="Common_Controls.ButtonControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Button Control" Height="300" Width="300" ResizeMode="NoResize" WindowStyle="ToolWindow">
+    <StackPanel>
+        <StackPanel x:Name="ButtonContainerStackPanel" 
+                    Background="AliceBlue"
+                    Orientation="Horizontal">
+            <Button x:Name="Button1"
+                Content="1"
+                Height="50"
+                Width="50"
+                FontSize="20"
+                Margin="10"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                />
+            <Button x:Name="Button2"
+                Content="2"
+                Height="50"
+                Width="50"
+                FontSize="20"
+                Margin="10"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" />
+            <Button x:Name="Button3"
+                Content="3"
+                Height="50"
+                Width="50"
+                FontSize="20"
+                Margin="10"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" />
+            <Button x:Name="Button4"
+                Content="4"
+                Height="50"
+                Width="50"
+                FontSize="20"
+                Margin="10"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" />
+        </StackPanel>
+        
+        <StackPanel>
+
+        </StackPanel>
+    </StackPanel>
+</Window>
