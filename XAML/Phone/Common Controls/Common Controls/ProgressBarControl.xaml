@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="Common_Controls.ProgressBarControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Common_Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Margin="10"
+                       Text="Slider and ProgressBar Controls"
+                       Foreground="Yellow"
+                       HorizontalAlignment="Center"
+                       FontSize="20" />
+
+            <Slider x:Name="numberSlider"
+                    Maximum="100"
+                    Foreground="White"
+                    Value="10"
+                    Height="50" 
+                    Margin="10"
+                    Width="200"/>
+
+            <ProgressBar Maximum="100"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="Tomato"
+                         Background="Beige"
+                         Value="{Binding ElementName=numberSlider, Path=Value, Mode=OneWay}"
+                         Height="20"
+                         Width="200" 
+                         IsEnabled="True"
+                         />
+        </StackPanel>
+    </Grid>
+</Page>

@@ -99,7 +99,8 @@ namespace Common_Controls
                 //    throw new Exception("Failed to create initial page");
                 //}
 
-                rootFrame.Navigate(typeof(ComboBoxControl));
+                //rootFrame.Navigate(typeof(ComboBoxControl));
+                rootFrame.Navigate(typeof(ProgressBarControl));
             }
 
             // Ensure the current window is active
