@@ -1,7 +1,11 @@
 ﻿<Window x:Class="Common_Controls.ButtonControl"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Button Control" Height="300" Width="300" ResizeMode="NoResize" WindowStyle="ToolWindow">
+        Title="Button Control" 
+        Height="300" 
+        Width="300" 
+        ResizeMode="NoResize" 
+        WindowStyle="ToolWindow">
     <StackPanel>
         <StackPanel x:Name="ButtonContainerStackPanel" 
                     Background="AliceBlue"

@@ -57,6 +57,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CalendarControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +71,9 @@
     </Compile>
     <Compile Include="ButtonControl.xaml.cs">
       <DependentUpon>ButtonControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarControl.xaml.cs">
+      <DependentUpon>CalendarControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
