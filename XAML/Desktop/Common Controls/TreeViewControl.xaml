@@ -1,0 +1,19 @@
+﻿<Window x:Class="Common_Controls.TreeViewControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TreeView Control" Height="300" Width="300">
+    <StackPanel>
+        <TreeView Height="Auto" Margin="10" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" >
+            <TreeViewItem Header="File">
+                <TreeViewItem Header="New"/>
+                <TreeViewItem Header="Open"/>
+                <TreeViewItem Header="Exit"/>
+            </TreeViewItem>
+            <TreeViewItem Header="Edit">
+                <TreeViewItem Header="Cut" />
+            </TreeViewItem>
+            <TreeViewItem Header="Help" />
+        </TreeView>
+
+    </StackPanel>
+</Window>
