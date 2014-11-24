@@ -1,0 +1,32 @@
+﻿<Window x:Class="Common_Controls.MenuControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menu Control" Height="300" Width="300"
+        ResizeMode="NoResize" 
+        WindowStyle="ToolWindow">
+    <StackPanel>
+        <Menu Margin="10">
+            <MenuItem Header="FILE">
+                <MenuItem Header="New" />
+                <MenuItem Header="Open" />
+            </MenuItem>
+            <MenuItem Header="EDIT">
+                <MenuItem Command="Cut" />
+                <!-- Note Command property automatically sets header, short cut key etc -->
+                <MenuItem Command="Copy" />
+                <MenuItem Command="Paste" />
+                <Separator />
+                <MenuItem Command="SelectAll" />
+            </MenuItem>
+            <MenuItem Header="HELP">
+                <MenuItem Header="About" />
+            </MenuItem>
+        </Menu>
+        <TextBox Text="This is a sample text"
+                 Height="200"
+                 Margin="10"
+                 FontSize="20"
+                 HorizontalAlignment="Left"
+                 Width="270" />
+    </StackPanel>
+</Window>
