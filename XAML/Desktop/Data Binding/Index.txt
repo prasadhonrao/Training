@@ -1,5 +1,6 @@
 Basic
 Element Data Binding
+Static Data Binding
 ListBox Data Binding - Uses Data Context
 PropertyChangedNotification - INPC
 One Way Data Binding

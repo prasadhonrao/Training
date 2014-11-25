@@ -1,0 +1,18 @@
+﻿<Window x:Class="StaticDataBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        Title="Data Binding - Static Data Binding" Height="100" Width="500" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+    
+    <Window.Resources>
+        <sys:String x:Key="XamlMessage">XAML is everywhere - desktop, tablets and phones</sys:String>
+    </Window.Resources>
+    
+    <StackPanel VerticalAlignment="Center">
+
+        <TextBlock Text="{StaticResource ResourceKey=XamlMessage}" 
+                   FontSize="20"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+    </StackPanel>
+</Window>
