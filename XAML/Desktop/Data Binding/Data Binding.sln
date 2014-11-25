@@ -13,6 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBoxDataBinding", "ListB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementDataBinding", "ElementDataBinding\ElementDataBinding.csproj", "{E8FCE970-BF2B-4720-A385-9CAB31625287}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{771FBA43-7887-4FF3-AAE9-F356EEACD5AF}"
+	ProjectSection(SolutionItems) = preProject
+		Index.txt = Index.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
