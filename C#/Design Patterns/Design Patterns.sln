@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.22310.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template Method", "Template Method\Template Method.csproj", "{01D53F26-A42B-4A79-9986-4173F26BFDBC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chain of Responsibility", "Chain of Responsibility\Chain of Responsibility.csproj", "{172C9536-7537-4A42-A9F3-8411DBCFF4AE}"
@@ -30,6 +32,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.Autofac", "Dependency Injection\Containers\DI.Autofac\DI.Autofac.csproj", "{559D85DE-CE2F-4C76-ABF5-7889C2F8464E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{5E77E572-8E5D-43A2-A580-F530A8EFB5F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVVM", "MVVM", "{6ED6D850-9944-4A51-9696-21B5DC0E3BF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM", "MVVM\MVVM\MVVM.csproj", "{885CF413-AED0-4AFD-9B3E-4E3F7EE78C6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +95,10 @@ Global
 		{5E77E572-8E5D-43A2-A580-F530A8EFB5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E77E572-8E5D-43A2-A580-F530A8EFB5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E77E572-8E5D-43A2-A580-F530A8EFB5F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{885CF413-AED0-4AFD-9B3E-4E3F7EE78C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{885CF413-AED0-4AFD-9B3E-4E3F7EE78C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{885CF413-AED0-4AFD-9B3E-4E3F7EE78C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{885CF413-AED0-4AFD-9B3E-4E3F7EE78C6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,5 +115,6 @@ Global
 		{E95DF455-CEC4-43EE-B26B-319D9F6CCD35} = {1490056D-7EA6-4AAD-8E6C-14B726B6EC8F}
 		{BA99AE95-75B4-47B8-A6CE-30D8B61B8DEB} = {1490056D-7EA6-4AAD-8E6C-14B726B6EC8F}
 		{559D85DE-CE2F-4C76-ABF5-7889C2F8464E} = {1490056D-7EA6-4AAD-8E6C-14B726B6EC8F}
+		{885CF413-AED0-4AFD-9B3E-4E3F7EE78C6F} = {6ED6D850-9944-4A51-9696-21B5DC0E3BF7}
 	EndGlobalSection
 EndGlobal
