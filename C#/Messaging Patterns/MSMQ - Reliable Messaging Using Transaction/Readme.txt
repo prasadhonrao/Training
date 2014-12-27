@@ -1,0 +1,2 @@
+Transactional message queue helps application to persist message in the queue in case of any exception in the message processing handler.
+Run multiple instances of the handler and kill one of the handler to demonstrate same message gets picked up by another handler.

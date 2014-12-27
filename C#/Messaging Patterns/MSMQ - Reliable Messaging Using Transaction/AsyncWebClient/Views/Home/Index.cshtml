@@ -1,0 +1,20 @@
+﻿@model Entity.UnsubscribeCommand
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div>
+    <h3>Enter your email address to unsubscribe</h3>
+    <br />
+
+    @using (Html.BeginForm("Unsubscribe", "Home", FormMethod.Post))
+    {
+        <div>
+            @Html.TextBoxFor(m => m.EmailAddress)
+            <input type="submit" value="Unsubscribe" />
+        </div>
+
+    }
+
+</div>
