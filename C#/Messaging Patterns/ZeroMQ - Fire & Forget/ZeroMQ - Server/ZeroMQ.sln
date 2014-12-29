@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22310.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroMQ - Server", "ZeroMQ - Server.csproj", "{2BA1D23E-0096-4DEE-BE07-F89DABD51833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroMQ - Client", "..\ZeroMQ - Client\ZeroMQ - Client.csproj", "{CE8FDCEF-9377-422D-990B-C18C8F8DBDF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BA1D23E-0096-4DEE-BE07-F89DABD51833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BA1D23E-0096-4DEE-BE07-F89DABD51833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BA1D23E-0096-4DEE-BE07-F89DABD51833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BA1D23E-0096-4DEE-BE07-F89DABD51833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE8FDCEF-9377-422D-990B-C18C8F8DBDF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8FDCEF-9377-422D-990B-C18C8F8DBDF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE8FDCEF-9377-422D-990B-C18C8F8DBDF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE8FDCEF-9377-422D-990B-C18C8F8DBDF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
