@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="Commands.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Commands.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <local:MainPageViewModel />
+    </Page.DataContext>
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50">
+        <TextBox FontSize="20"
+                 x:Name="CustomerName"
+                 Text="{Binding Path=Title}" />
+
+        <Button FontSize="20"
+                HorizontalAlignment="Stretch"
+                Content="Show Customer"
+                Command="{Binding NavigateCommand}"
+                CommandParameter="{Binding ElementName=CustomerName, Path=Text}"/>
+    </StackPanel>
+</Page>
