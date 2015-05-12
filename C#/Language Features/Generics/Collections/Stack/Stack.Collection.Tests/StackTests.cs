@@ -68,5 +68,20 @@ namespace Stack.Collection.Tests
             Assert.AreSame("Colin", employees.Pop().Name);
             Assert.AreEqual(2, employees.Count);
         }
+
+        [TestMethod]
+        public void Stack_Convert_To_Array_Test()
+        {
+            var numbers = new Stack<int>();
+            numbers.Push(1);
+            numbers.Push(2);
+            numbers.Push(3);
+
+            var numbersAsArray = numbers.ToArray();
+
+            numbers.Pop();
+            Assert.AreEqual(2, numbers.Count);
+            Assert.AreEqual(3, numbersAsArray.Length);
+        }
     }
 }
