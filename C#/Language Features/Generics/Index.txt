@@ -1,5 +1,7 @@
 Basic
 	Introduction
+	CircularBuffer
+	CircularBuffer.Tests
 	Generic.Type
 	Generic.Method
 	Generic.Delegates
@@ -11,12 +13,11 @@ Constraints
 	Value.Type.Constraints
 	Constructor.Type.Constraints
 	Conversion.Type.Constraints
-Pattern
-	List.Size.Resize.Pattern
 Collections
 	Queue
 	Stack
 	List
+		Basic - ListResizePattern
 	HashSet
 	LinkedList
 	Dictionary

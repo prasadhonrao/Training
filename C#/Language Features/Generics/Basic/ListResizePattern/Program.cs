@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace List.Size.Resize.Pattern
+namespace ListResizePattern
 {
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
             int capacity = -1;
             var numbers = new List<int>();
