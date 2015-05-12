@@ -68,5 +68,20 @@ namespace Queue.Collection.Tests
             Assert.AreSame("Prasad", employees.Dequeue().Name);
             Assert.AreEqual(2, employees.Count);
         }
+
+        [TestMethod]
+        public void Queue_Convert_To_Array_Test()
+        {
+            var numbers = new Queue<int>();
+            numbers.Enqueue(1);
+            numbers.Enqueue(2);
+            numbers.Enqueue(3);
+
+            var numbersAsArray = numbers.ToArray();
+
+            numbers.Dequeue();
+            Assert.AreEqual(2, numbers.Count);
+            Assert.AreEqual(3, numbersAsArray.Length);
+        }
     }
 }
