@@ -19,6 +19,18 @@ namespace Dictionary.Collection.Tests
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Dictionary_Add_DuplicateKey_Test()
+        {
+            var numbers = new Dictionary<int, string>();
+            numbers.Add(1, "One");
+            numbers.Add(1, "Two");
+            numbers.Add(3, "Three");
+
+            Assert.AreEqual(3, numbers.Count);
+        }
+
+        [TestMethod]
         public void Dictionary_Get_Item_Test()
         {
             var numbers = new Dictionary<int, string>();
