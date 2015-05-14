@@ -126,6 +126,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularBuffer.Tests", "Bas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListResizePattern", "Basic\ListResizePattern\ListResizePattern.csproj", "{1665170F-8DDA-49CD-8286-D2AAEAB24F37}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImmutableQueue", "ImmutableQueue", "{C90B0BD7-E81E-4B4A-A973-693139210E80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmutableQueue.Collection", "Collections\ImmutableQueue\ImmutableQueue.Collection\ImmutableQueue.Collection.csproj", "{CF0823CB-9FA7-45D6-AB8B-82FEADC02111}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmutableQueue.Collection.Tests", "Collections\ImmutableQueue\ImmutableQueue.Collection.Tests\ImmutableQueue.Collection.Tests.csproj", "{BE128D5D-8762-4964-ABFF-B90939D70A0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -300,6 +306,14 @@ Global
 		{1665170F-8DDA-49CD-8286-D2AAEAB24F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1665170F-8DDA-49CD-8286-D2AAEAB24F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1665170F-8DDA-49CD-8286-D2AAEAB24F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF0823CB-9FA7-45D6-AB8B-82FEADC02111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF0823CB-9FA7-45D6-AB8B-82FEADC02111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF0823CB-9FA7-45D6-AB8B-82FEADC02111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF0823CB-9FA7-45D6-AB8B-82FEADC02111}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE128D5D-8762-4964-ABFF-B90939D70A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE128D5D-8762-4964-ABFF-B90939D70A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE128D5D-8762-4964-ABFF-B90939D70A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE128D5D-8762-4964-ABFF-B90939D70A0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -359,5 +373,8 @@ Global
 		{4523A394-A9BE-4C49-87D9-07CA84841603} = {3C0EDA49-7B5A-4F3A-84B8-E4AA41E951E6}
 		{17710543-8997-49AE-93E1-1B1BAFD65B4E} = {3C0EDA49-7B5A-4F3A-84B8-E4AA41E951E6}
 		{1665170F-8DDA-49CD-8286-D2AAEAB24F37} = {3C0EDA49-7B5A-4F3A-84B8-E4AA41E951E6}
+		{C90B0BD7-E81E-4B4A-A973-693139210E80} = {AF9E5A1D-397F-45C2-B836-C583A56D64E6}
+		{CF0823CB-9FA7-45D6-AB8B-82FEADC02111} = {C90B0BD7-E81E-4B4A-A973-693139210E80}
+		{BE128D5D-8762-4964-ABFF-B90939D70A0A} = {C90B0BD7-E81E-4B4A-A973-693139210E80}
 	EndGlobalSection
 EndGlobal
