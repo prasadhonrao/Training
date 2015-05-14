@@ -8,6 +8,12 @@ namespace Training.CSharp
 {
     class Program
     {
+		/*
+			first ?? second
+			1. Evaluate first
+			2. If the result is non-null, that's the result of the whole expression
+			3. Otherwise, evaluate second; the result then becomes the result of whole expression
+		*/
         static void Main(string[] args)
         {
             // ?? checks for null value
