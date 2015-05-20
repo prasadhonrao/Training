@@ -31,6 +31,22 @@ namespace Dictionary.Collection.Tests
         }
 
         [TestMethod]
+        public void Dictionary_AddUpdate_Using_Indexer_Test()
+        {
+            var stock = new Dictionary<string, int>()
+            {
+                {"Mufti", 10},
+                {"Lewis", 20},
+                {"Killer", 5}
+            };
+
+            stock["Killer"] = 15;
+            stock["Local"] = 100;
+            Assert.AreEqual(15, stock["Killer"]);
+            Assert.AreEqual(100, stock["Local"]);
+        }
+
+        [TestMethod]
         public void Dictionary_Get_Item_Test()
         {
             var numbers = new Dictionary<int, string>();
@@ -67,7 +83,6 @@ namespace Dictionary.Collection.Tests
             numbers.Clear();
             Assert.AreEqual(0, numbers.Count);
         }
-
 
         [TestMethod]
         public void Dictionary_Add_CustomObject_Test()
