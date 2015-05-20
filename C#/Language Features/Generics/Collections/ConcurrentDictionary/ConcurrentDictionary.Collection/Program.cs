@@ -11,23 +11,30 @@ namespace ConcurrentDictionary.Collection
     {
         static void Main(string[] args)
         {
-            int NUMITEMS = 64;
-            int initialCapacity = 101;
+            var stock = new ConcurrentDictionary<string, int>();
 
-            // The higher the concurrencyLevel, the higher the theoretical number of operations 
-            // that could be performed concurrently on the ConcurrentDictionary.  However, global 
-            // operations like resizing the dictionary take longer as the concurrencyLevel rises.  
-            // For the purposes of this example, we'll compromise at numCores * 2. 
-            int numProcs = Environment.ProcessorCount;
-            int concurrencyLevel = numProcs * 2;
+            // Try Add is thread safe method
+            stock.TryAdd("Levis", 100);
+            stock.TryAdd("Killer", 35);
+            stock.TryAdd("Mufti", 75);
 
-            // Construct the dictionary with the desired concurrencyLevel and initialCapacity
-            var cd = new ConcurrentDictionary<int, int>(concurrencyLevel, initialCapacity);
+            Console.WriteLine("Available stock");
+            foreach (var item in stock)
+            {
+                Console.WriteLine("{0} : {1}", item.Key, item.Value);
+            }
 
-            // Initialize the dictionary 
-            for (int i = 0; i < NUMITEMS; i++) cd[i] = i * i;
+            // Try to add duplicate key
+            var success = stock.TryAdd("Killer", 10);
+            Console.WriteLine("TryAdd succeeded? {0}", success);
 
-            Console.WriteLine("The square of 23 is {0} (should be {1})", cd[23], 23 * 23);
+            Console.WriteLine();
+
+            // TryRemove
+            int levis;
+            var levisRemoved = stock.TryRemove("Levis", out levis);
+            Console.WriteLine("Levis stock value {0}", levis);
+            Console.WriteLine("Levis removed successfully? {0}", levisRemoved);
 
             Console.ReadLine();
         }
