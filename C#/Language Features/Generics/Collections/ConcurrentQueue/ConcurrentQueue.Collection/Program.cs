@@ -12,37 +12,42 @@ namespace ConcurrentQueue.Collection
     {
         static void Main(string[] args)
         {
-            // Construct a ConcurrentQueue.
-            var cq = new ConcurrentQueue<int>();
+            var orders = new ConcurrentQueue<string>();
+            Console.WriteLine("*** Single thread environment ***");
+            PlaceOrder(orders, "Mark");
+            PlaceOrder(orders, "Steve");
+            PlaceOrder(orders, "Adam");
 
-            // Populate the queue. 
-            for (int i = 0; i < 10000; i++) cq.Enqueue(i);
-
-            // Peek at the first element. 
-            int result;
-            if (!cq.TryPeek(out result))
+            foreach (var order in orders)
             {
-                Console.WriteLine("CQ: TryPeek failed when it should have succeeded");
-            }
-            else if (result != 0)
-            {
-                Console.WriteLine("CQ: Expected TryPeek result of 0, got {0}", result);
+                Console.WriteLine("ORDER : " + order);
             }
 
-            int outerSum = 0;
-            // An action to consume the ConcurrentQueue.
-            Action action = () =>
+            Console.WriteLine("*** Multithreaded environment ***");
+            orders = new ConcurrentQueue<string>();
+            
+            // Unexpected results if run on multiple threads
+            Task task1 = Task.Run(() => PlaceOrder(orders, "Jack"));
+            Task task2 = Task.Run(() => PlaceOrder(orders, "Pete"));
+            Task task3 = Task.Run(() => PlaceOrder(orders, "Andy"));
+            Task.WaitAll(task1, task2, task3);
+
+            foreach (var order in orders)
             {
-                int localSum = 0;
-                int localValue;
-                while (cq.TryDequeue(out localValue)) localSum += localValue;
-                Interlocked.Add(ref outerSum, localSum);
-            };
+                Console.WriteLine("ORDER : " + order);
+            }
 
-            // Start 4 concurrent consuming actions.
-            Parallel.Invoke(action, action, action, action);
+            Console.ReadLine();
+        }
 
-            Console.WriteLine("outerSum = {0}, should be 49995000", outerSum);
+        static void PlaceOrder(ConcurrentQueue<string> orders, string name)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Thread.Sleep(1);
+                var orderName = string.Format("{0} wants T-Shirt {1}", name, i);
+                orders.Enqueue(orderName);
+            }
         }
     }
 }
