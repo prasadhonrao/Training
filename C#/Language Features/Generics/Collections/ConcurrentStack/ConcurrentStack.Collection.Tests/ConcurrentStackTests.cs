@@ -48,5 +48,19 @@ namespace ConcurrentStack.Collection.Tests
             Assert.IsTrue(success);
             Assert.IsTrue(firstItem == "Yellow");
         }
+
+        [TestMethod]
+        public void ConcurrentStack_Clear_Test()
+        {
+            var cs = new ConcurrentStack<string>();
+            cs.Push("Red");
+            cs.Push("Orange");
+            cs.Push("Yellow");
+
+            cs.Clear();
+            
+            Assert.IsTrue(cs.Count == 0);
+            Assert.IsTrue(cs.IsEmpty);
+        }
     }
 }
