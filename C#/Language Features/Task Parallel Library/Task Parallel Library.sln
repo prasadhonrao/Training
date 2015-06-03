@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task Race Solution", "Task 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sequential vs Parallel Code", "Sequential vs Parallel Code\Sequential vs Parallel Code.csproj", "{816EA1BC-4173-4400-98A1-346601BDDACD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task Result Harvest", "Task Result Harvest\Task Result Harvest.csproj", "{FED6522A-7835-44D3-85A0-A14F84E9EBEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,10 @@ Global
 		{816EA1BC-4173-4400-98A1-346601BDDACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{816EA1BC-4173-4400-98A1-346601BDDACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{816EA1BC-4173-4400-98A1-346601BDDACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED6522A-7835-44D3-85A0-A14F84E9EBEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED6522A-7835-44D3-85A0-A14F84E9EBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED6522A-7835-44D3-85A0-A14F84E9EBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED6522A-7835-44D3-85A0-A14F84E9EBEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
