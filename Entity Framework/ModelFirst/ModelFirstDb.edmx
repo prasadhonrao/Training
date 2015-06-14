@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ModelFirstDb.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ModelFirstDbStoreContainer">
+    <EntitySet Name="Customers" EntityType="ModelFirstDb.Store.Customers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Bars" EntityType="ModelFirstDb.Store.Bars" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Addresses" EntityType="ModelFirstDb.Store.Addresses" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="CustomerBar" Association="ModelFirstDb.Store.CustomerBar">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Bar" EntitySet="Bars" />
+    </AssociationSet>
+    <AssociationSet Name="CustomerAddress" Association="ModelFirstDb.Store.CustomerAddress">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="BarAddress" Association="ModelFirstDb.Store.BarAddress">
+      <End Role="Bar" EntitySet="Bars" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bars">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="Address_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Addresses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Street" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="CustomerBar">
+    <End Role="Customer" Type="ModelFirstDb.Store.Customers" Multiplicity="1" />
+    <End Role="Bar" Type="ModelFirstDb.Store.Bars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Bar">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CustomerAddress">
+    <End Role="Customer" Type="ModelFirstDb.Store.Customers" Multiplicity="*" />
+    <End Role="Address" Type="ModelFirstDb.Store.Addresses" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="Address_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BarAddress">
+    <End Role="Bar" Type="ModelFirstDb.Store.Bars" Multiplicity="*" />
+    <End Role="Address" Type="ModelFirstDb.Store.Addresses" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Bar">
+        <PropertyRef Name="Address_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ModelFirstDb" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="ModelFirstDbContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Customers" EntityType="ModelFirstDb.Customer" />
+          <EntitySet Name="Bars" EntityType="ModelFirstDb.Bar" />
+          <AssociationSet Name="CustomerBar" Association="ModelFirstDb.CustomerBar">
+            <End Role="Customer" EntitySet="Customers" />
+            <End Role="Bar" EntitySet="Bars" />
+          </AssociationSet>
+          <EntitySet Name="Addresses" EntityType="ModelFirstDb.Address" />
+          <AssociationSet Name="CustomerAddress" Association="ModelFirstDb.CustomerAddress">
+            <End Role="Customer" EntitySet="Customers" />
+            <End Role="Address" EntitySet="Addresses" />
+          </AssociationSet>
+          <AssociationSet Name="BarAddress" Association="ModelFirstDb.BarAddress">
+            <End Role="Bar" EntitySet="Bars" />
+            <End Role="Address" EntitySet="Addresses" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <NavigationProperty Name="Bars" Relationship="ModelFirstDb.CustomerBar" FromRole="Customer" ToRole="Bar" />
+          <NavigationProperty Name="Address" Relationship="ModelFirstDb.CustomerAddress" FromRole="Customer" ToRole="Address" />
+        </EntityType>
+        <EntityType Name="Bar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <NavigationProperty Name="Customer" Relationship="ModelFirstDb.CustomerBar" FromRole="Bar" ToRole="Customer" />
+          <Property Name="CustomerId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Address" Relationship="ModelFirstDb.BarAddress" FromRole="Bar" ToRole="Address" />
+        </EntityType>
+        <Association Name="CustomerBar">
+          <End Type="ModelFirstDb.Customer" Role="Customer" Multiplicity="1" />
+          <End Type="ModelFirstDb.Bar" Role="Bar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Bar">
+              <PropertyRef Name="CustomerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Street" Type="String" Nullable="false" />
+          <Property Name="City" Type="String" Nullable="false" />
+          <NavigationProperty Name="Customer" Relationship="ModelFirstDb.CustomerAddress" FromRole="Address" ToRole="Customer" />
+          <NavigationProperty Name="Bar" Relationship="ModelFirstDb.BarAddress" FromRole="Address" ToRole="Bar" />
+        </EntityType>
+        <Association Name="CustomerAddress">
+          <End Type="ModelFirstDb.Customer" Role="Customer" Multiplicity="1" />
+          <End Type="ModelFirstDb.Address" Role="Address" Multiplicity="1" />
+        </Association>
+        <Association Name="BarAddress">
+          <End Type="ModelFirstDb.Bar" Role="Bar" Multiplicity="1" />
+          <End Type="ModelFirstDb.Address" Role="Address" Multiplicity="1" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelFirstDbStoreContainer" CdmEntityContainer="ModelFirstDbContainer">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelFirstDb.Customer)">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bars">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelFirstDb.Bar)">
+        <MappingFragment StoreEntitySet="Bars">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelFirstDb.Address)">
+        <MappingFragment StoreEntitySet="Addresses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="City" ColumnName="City" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="CustomerAddress" TypeName="ModelFirstDb.CustomerAddress" StoreEntitySet="Customers">
+      <EndProperty Name="Address">
+        <ScalarProperty Name="Id" ColumnName="Address_Id" />
+      </EndProperty>
+      <EndProperty Name="Customer">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BarAddress" TypeName="ModelFirstDb.BarAddress" StoreEntitySet="Bars">
+      <EndProperty Name="Address">
+        <ScalarProperty Name="Id" ColumnName="Address_Id" />
+      </EndProperty>
+      <EndProperty Name="Bar">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

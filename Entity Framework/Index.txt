@@ -1,2 +1,10 @@
-1. DatabaseFirst
-2. ModelFirst
+1. DatabaseFirst - Explore Entities, Context, Read using LINQ, Lambda, Watch using SQL Profiler.
+2. ModelFirst - Blank designer with context, define entities using designer, relationship, association - inheritance, Read using LINQ
+3. DatabaseFirstCRUD - Perform CRUD operations using EF - DatabaseFirst approach
+4. CRUDUsingSP - Perform CRUD operations using EF - DatabaseFirst and stored procedure
+5. MasterDetailWindowsForm - AdventureWorks database - Customer -> SalesOrderHeader -> SalesOrderDetail. Define datasource for Customer
+6. MasterDetailWPF - AdventureWorks database - Customer -> SalesOrderHeader -> SalesOrderDetail. Define datasource for Customer
+7. LazyLoading - Console App, use Include("SalesOrderHeader") to load the data.
+8. ReadUsingDbView - Read database view using LINQ
+9. Entity Splitting - Map 2 entities in one (SalesOrderHeader and SalesOrderHeaderShippingDetails). Do not delete SalesOrderHeaderShippingDetails from store model.
+10. Table Splitting - Split one DB table into multiple entities (Product table split into 2 - Product, ProductPhoto)
