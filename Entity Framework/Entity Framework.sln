@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Complex Types", "Complex Ty
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP Mapping - Return Nothing", "SP Mapping - Return Nothing\SP Mapping - Return Nothing.csproj", "{A0D6EC67-9A4C-450C-BC3F-D03161D0FD47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP Mapping - Return Entity", "SP Mapping - Return Entity\SP Mapping - Return Entity.csproj", "{DC4CA29A-7B41-4460-980C-6190391AD229}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{A0D6EC67-9A4C-450C-BC3F-D03161D0FD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0D6EC67-9A4C-450C-BC3F-D03161D0FD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0D6EC67-9A4C-450C-BC3F-D03161D0FD47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC4CA29A-7B41-4460-980C-6190391AD229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC4CA29A-7B41-4460-980C-6190391AD229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC4CA29A-7B41-4460-980C-6190391AD229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC4CA29A-7B41-4460-980C-6190391AD229}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
