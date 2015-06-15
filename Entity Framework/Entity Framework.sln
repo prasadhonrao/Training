@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD Using SP", "CRUD Using
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Complex Types", "Complex Types\Complex Types.csproj", "{E8D2F80F-3946-49D0-996C-6D7814B1C0EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP Mapping - Return Nothing", "SP Mapping - Return Nothing\SP Mapping - Return Nothing.csproj", "{A0D6EC67-9A4C-450C-BC3F-D03161D0FD47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{E8D2F80F-3946-49D0-996C-6D7814B1C0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8D2F80F-3946-49D0-996C-6D7814B1C0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8D2F80F-3946-49D0-996C-6D7814B1C0EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0D6EC67-9A4C-450C-BC3F-D03161D0FD47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0D6EC67-9A4C-450C-BC3F-D03161D0FD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0D6EC67-9A4C-450C-BC3F-D03161D0FD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0D6EC67-9A4C-450C-BC3F-D03161D0FD47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

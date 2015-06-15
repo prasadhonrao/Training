@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("List.Size.Resize.Pattern")]
+[assembly: AssemblyTitle("SP Mapping - Return Nothing")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("List.Size.Resize.Pattern")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyCompany("CTS")]
+[assembly: AssemblyProduct("SP Mapping - Return Nothing")]
+[assembly: AssemblyCopyright("Copyright © CTS 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5ba69918-cfc4-4d37-954a-cc150b680809")]
+[assembly: Guid("a95cc40a-3e73-4a75-ab6b-97981327561e")]
 
 // Version information for an assembly consists of the following four values:
 //
