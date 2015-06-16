@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="31605223e6484547b5e88ea5f34ac0a6" Name="Diagram1">
+        <EntityTypeShape EntityType="AWModel.Vendor" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.InactiveVendor" Width="2.125" PointX="3.375" PointY="2" />
+        <InheritanceConnector EntityType="AWModel.InactiveVendor" />
+        <EntityTypeShape EntityType="AWModel.ActiveVendor" Width="2.125" PointX="3.375" PointY="0.625" />
+        <InheritanceConnector EntityType="AWModel.ActiveVendor" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
