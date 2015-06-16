@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0D1A8D64-42FE-44B4-BB03-BAFC34EA3FEC}</ProjectGuid>
+    <ProjectGuid>{8C593D5F-BCC5-409F-96F0-019F9B8448D0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ModelFirst</RootNamespace>
-    <AssemblyName>ModelFirst</AssemblyName>
+    <RootNamespace>Approach___Database_First</RootNamespace>
+    <AssemblyName>Approach - Database First</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -50,55 +50,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Address.cs">
-      <DependentUpon>ModelFirstDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Bar.cs">
-      <DependentUpon>ModelFirstDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Customer.cs">
-      <DependentUpon>ModelFirstDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelFirstDb.Context.cs">
+    <Compile Include="AWModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelFirstDb.Context.tt</DependentUpon>
+      <DependentUpon>AWModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="ModelFirstDb.cs">
+    <Compile Include="AWModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelFirstDb.tt</DependentUpon>
+      <DependentUpon>AWModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ModelFirstDb.Designer.cs">
+    <Compile Include="AWModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelFirstDb.edmx</DependentUpon>
+      <DependentUpon>AWModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Person.cs">
+      <DependentUpon>AWModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonPhone.cs">
+      <DependentUpon>AWModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneNumberType.cs">
+      <DependentUpon>AWModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="ModelFirstDb.edmx">
+    <EntityDeploy Include="AWModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelFirstDb.Designer.cs</LastGenOutput>
+      <LastGenOutput>AWModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="ModelFirstDb.edmx.diagram">
-      <DependentUpon>ModelFirstDb.edmx</DependentUpon>
+    <None Include="AWModel.edmx.diagram">
+      <DependentUpon>AWModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ModelFirstDb.Context.tt">
+    <Content Include="AWModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ModelFirstDb.Context.cs</LastGenOutput>
-      <DependentUpon>ModelFirstDb.edmx</DependentUpon>
+      <DependentUpon>AWModel.edmx</DependentUpon>
+      <LastGenOutput>AWModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="ModelFirstDb.edmx.sql" />
-    <Content Include="ModelFirstDb.tt">
+    <Content Include="AWModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ModelFirstDb.cs</LastGenOutput>
-      <DependentUpon>ModelFirstDb.edmx</DependentUpon>
+      <DependentUpon>AWModel.edmx</DependentUpon>
+      <LastGenOutput>AWModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

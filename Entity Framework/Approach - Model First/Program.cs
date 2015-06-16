@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ModelFirst
+namespace Approach___Model_First
 {
     class Program
     {

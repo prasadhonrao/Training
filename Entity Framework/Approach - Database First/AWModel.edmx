@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="AWModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="AWModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Person">
           <Key>
             <PropertyRef Name="BusinessEntityID" />
@@ -79,41 +79,29 @@
             <End Role="PersonPhone" EntitySet="PersonPhone" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="AWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="AWEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="People" EntityType="AWModel.Person" />
-          <EntitySet Name="PersonPhones" EntityType="AWModel.PersonPhone" />
-          <EntitySet Name="PhoneNumberTypes" EntityType="AWModel.PhoneNumberType" />
-          <AssociationSet Name="FK_PersonPhone_Person_BusinessEntityID" Association="AWModel.FK_PersonPhone_Person_BusinessEntityID">
-            <End Role="Person" EntitySet="People" />
-            <End Role="PersonPhone" EntitySet="PersonPhones" />
-          </AssociationSet>
-          <AssociationSet Name="FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" Association="AWModel.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID">
-            <End Role="PhoneNumberType" EntitySet="PhoneNumberTypes" />
-            <End Role="PersonPhone" EntitySet="PersonPhones" />
-          </AssociationSet>
-        </EntityContainer>
         <EntityType Name="Person">
           <Key>
             <PropertyRef Name="BusinessEntityID" />
           </Key>
           <Property Name="BusinessEntityID" Type="Int32" Nullable="false" />
-          <Property Name="PersonType" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="PersonType" Type="String" MaxLength="2" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="NameStyle" Type="Boolean" Nullable="false" />
           <Property Name="Title" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
-          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Suffix" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
           <Property Name="EmailPromotion" Type="Int32" Nullable="false" />
           <Property Name="AdditionalContactInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Demographics" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="rowguid" Type="Guid" Nullable="false" />
           <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
-          <NavigationProperty Name="PersonPhones" Relationship="AWModel.FK_PersonPhone_Person_BusinessEntityID" FromRole="Person" ToRole="PersonPhone" />
+          <NavigationProperty Name="PersonPhones" Relationship="Self.FK_PersonPhone_Person_BusinessEntityID" FromRole="Person" ToRole="PersonPhone" />
         </EntityType>
         <EntityType Name="PersonPhone">
           <Key>
@@ -122,24 +110,24 @@
             <PropertyRef Name="PhoneNumberTypeID" />
           </Key>
           <Property Name="BusinessEntityID" Type="Int32" Nullable="false" />
-          <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="PhoneNumberTypeID" Type="Int32" Nullable="false" />
           <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
-          <NavigationProperty Name="Person" Relationship="AWModel.FK_PersonPhone_Person_BusinessEntityID" FromRole="PersonPhone" ToRole="Person" />
-          <NavigationProperty Name="PhoneNumberType" Relationship="AWModel.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" FromRole="PersonPhone" ToRole="PhoneNumberType" />
+          <NavigationProperty Name="Person" Relationship="Self.FK_PersonPhone_Person_BusinessEntityID" FromRole="PersonPhone" ToRole="Person" />
+          <NavigationProperty Name="PhoneNumberType" Relationship="Self.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" FromRole="PersonPhone" ToRole="PhoneNumberType" />
         </EntityType>
         <EntityType Name="PhoneNumberType">
           <Key>
             <PropertyRef Name="PhoneNumberTypeID" />
           </Key>
           <Property Name="PhoneNumberTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
-          <NavigationProperty Name="PersonPhones" Relationship="AWModel.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" FromRole="PhoneNumberType" ToRole="PersonPhone" />
+          <NavigationProperty Name="PersonPhones" Relationship="Self.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" FromRole="PhoneNumberType" ToRole="PersonPhone" />
         </EntityType>
         <Association Name="FK_PersonPhone_Person_BusinessEntityID">
-          <End Type="AWModel.Person" Role="Person" Multiplicity="1" />
-          <End Type="AWModel.PersonPhone" Role="PersonPhone" Multiplicity="*" />
+          <End Role="Person" Type="Self.Person" Multiplicity="1" />
+          <End Role="PersonPhone" Type="Self.PersonPhone" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Person">
               <PropertyRef Name="BusinessEntityID" />
@@ -150,8 +138,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID">
-          <End Type="AWModel.PhoneNumberType" Role="PhoneNumberType" Multiplicity="1" />
-          <End Type="AWModel.PersonPhone" Role="PersonPhone" Multiplicity="*" />
+          <End Role="PhoneNumberType" Type="Self.PhoneNumberType" Multiplicity="1" />
+          <End Role="PersonPhone" Type="Self.PersonPhone" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="PhoneNumberType">
               <PropertyRef Name="PhoneNumberTypeID" />
@@ -161,7 +149,20 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        </Schema>
+        <EntityContainer Name="AWEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="People" EntityType="Self.Person" />
+          <EntitySet Name="PersonPhones" EntityType="Self.PersonPhone" />
+          <EntitySet Name="PhoneNumberTypes" EntityType="Self.PhoneNumberType" />
+          <AssociationSet Name="FK_PersonPhone_Person_BusinessEntityID" Association="Self.FK_PersonPhone_Person_BusinessEntityID">
+            <End Role="Person" EntitySet="People" />
+            <End Role="PersonPhone" EntitySet="PersonPhones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" Association="Self.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID">
+            <End Role="PhoneNumberType" EntitySet="PhoneNumberTypes" />
+            <End Role="PersonPhone" EntitySet="PersonPhones" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -170,38 +171,38 @@
           <EntitySetMapping Name="People">
             <EntityTypeMapping TypeName="AWModel.Person">
               <MappingFragment StoreEntitySet="Person">
-                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
-                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
-                <ScalarProperty Name="Demographics" ColumnName="Demographics" />
-                <ScalarProperty Name="AdditionalContactInfo" ColumnName="AdditionalContactInfo" />
-                <ScalarProperty Name="EmailPromotion" ColumnName="EmailPromotion" />
-                <ScalarProperty Name="Suffix" ColumnName="Suffix" />
-                <ScalarProperty Name="LastName" ColumnName="LastName" />
-                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
-                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
-                <ScalarProperty Name="Title" ColumnName="Title" />
-                <ScalarProperty Name="NameStyle" ColumnName="NameStyle" />
-                <ScalarProperty Name="PersonType" ColumnName="PersonType" />
                 <ScalarProperty Name="BusinessEntityID" ColumnName="BusinessEntityID" />
+                <ScalarProperty Name="PersonType" ColumnName="PersonType" />
+                <ScalarProperty Name="NameStyle" ColumnName="NameStyle" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+                <ScalarProperty Name="EmailPromotion" ColumnName="EmailPromotion" />
+                <ScalarProperty Name="AdditionalContactInfo" ColumnName="AdditionalContactInfo" />
+                <ScalarProperty Name="Demographics" ColumnName="Demographics" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PersonPhones">
             <EntityTypeMapping TypeName="AWModel.PersonPhone">
               <MappingFragment StoreEntitySet="PersonPhone">
-                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
-                <ScalarProperty Name="PhoneNumberTypeID" ColumnName="PhoneNumberTypeID" />
-                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
                 <ScalarProperty Name="BusinessEntityID" ColumnName="BusinessEntityID" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="PhoneNumberTypeID" ColumnName="PhoneNumberTypeID" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PhoneNumberTypes">
             <EntityTypeMapping TypeName="AWModel.PhoneNumberType">
               <MappingFragment StoreEntitySet="PhoneNumberType">
-                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="PhoneNumberTypeID" ColumnName="PhoneNumberTypeID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

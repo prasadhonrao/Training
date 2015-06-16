@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D7C3BDF0-4713-4E12-BF4D-815BE6D170BD}</ProjectGuid>
+    <ProjectGuid>{95DF3BFD-DD1E-48EB-A8D2-528F6910822E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DatabaseFirst</RootNamespace>
-    <AssemblyName>DatabaseFirst</AssemblyName>
+    <RootNamespace>Approach___Model_First</RootNamespace>
+    <AssemblyName>Approach - Model First</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -50,58 +50,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AWModel.Context.cs">
+    <Compile Include="Address.cs">
+      <DependentUpon>BeerBarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Beer.cs">
+      <DependentUpon>BeerBarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BeerBarModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AWModel.Context.tt</DependentUpon>
+      <DependentUpon>BeerBarModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="AWModel.cs">
+    <Compile Include="BeerBarModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AWModel.tt</DependentUpon>
+      <DependentUpon>BeerBarModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="AWModel.Designer.cs">
+    <Compile Include="BeerBarModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AWModel.edmx</DependentUpon>
+      <DependentUpon>BeerBarModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Person.cs">
-      <DependentUpon>AWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="PersonPhone.cs">
-      <DependentUpon>AWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="PhoneNumberType.cs">
-      <DependentUpon>AWModel.tt</DependentUpon>
+    <Compile Include="Customer.cs">
+      <DependentUpon>BeerBarModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="AWModel.edmx">
+    <EntityDeploy Include="BeerBarModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AWModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>BeerBarModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="AWModel.edmx.diagram">
-      <DependentUpon>AWModel.edmx</DependentUpon>
+    <None Include="BeerBarModel.edmx.diagram">
+      <DependentUpon>BeerBarModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="BeerBarModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BeerBarModel.Context.cs</LastGenOutput>
+      <DependentUpon>BeerBarModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="BeerBarModel.edmx.sql" />
+    <Content Include="BeerBarModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BeerBarModel.cs</LastGenOutput>
+      <DependentUpon>BeerBarModel.edmx</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AWModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AWModel.edmx</DependentUpon>
-      <LastGenOutput>AWModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="AWModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AWModel.edmx</DependentUpon>
-      <LastGenOutput>AWModel.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

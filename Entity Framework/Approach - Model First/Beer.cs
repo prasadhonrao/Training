@@ -7,22 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ModelFirst
+namespace Approach___Model_First
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Customer
+    public partial class Beer
     {
-        public Customer()
-        {
-            this.Bars = new HashSet<Bar>();
-        }
-    
         public int Id { get; set; }
         public string Name { get; set; }
+        public int CustomerId { get; set; }
     
-        public virtual ICollection<Bar> Bars { get; set; }
-        public virtual Address Address { get; set; }
+        public virtual Customer Customer { get; set; }
     }
 }

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DatabaseFirst
+namespace Approach___Database_First
 {
     using System;
     using System.Data.Entity;

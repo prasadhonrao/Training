@@ -7,19 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DatabaseFirst
+namespace Approach___Model_First
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class PersonPhone
+    public partial class Address
     {
-        public int BusinessEntityID { get; set; }
-        public string PhoneNumber { get; set; }
-        public int PhoneNumberTypeID { get; set; }
-        public System.DateTime ModifiedDate { get; set; }
+        public int Id { get; set; }
+        public string Street { get; set; }
+        public string City { get; set; }
+        public string Zip { get; set; }
     
-        public virtual Person Person { get; set; }
-        public virtual PhoneNumberType PhoneNumberType { get; set; }
+        public virtual Customer Customer { get; set; }
     }
 }

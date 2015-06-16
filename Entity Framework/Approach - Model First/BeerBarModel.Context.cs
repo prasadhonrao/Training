@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ModelFirst
+namespace Approach___Model_First
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ModelFirstDbContainer : DbContext
+    public partial class BeerBarModelContainer : DbContext
     {
-        public ModelFirstDbContainer()
-            : base("name=ModelFirstDbContainer")
+        public BeerBarModelContainer()
+            : base("name=BeerBarModelContainer")
         {
         }
     
@@ -26,7 +26,7 @@ namespace ModelFirst
         }
     
         public virtual DbSet<Customer> Customers { get; set; }
-        public virtual DbSet<Bar> Bars { get; set; }
+        public virtual DbSet<Beer> Beers { get; set; }
         public virtual DbSet<Address> Addresses { get; set; }
     }
 }
