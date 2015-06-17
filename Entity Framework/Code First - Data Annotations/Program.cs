@@ -9,6 +9,23 @@ using System.Data.Entity.Validation;
 
 namespace Code_First___Data_Annotations
 {
+    /*
+     * DATA ANNOTATIONS LIST
+     * Key
+     * MaxLength
+     * MinLength
+     * Required
+     * Column
+     * Table
+     * ConcurrenyCheck
+     * TimeStamp
+     * ComplexType
+     * InverseProperty
+     * ForeignKey
+     * DatabaseGenerated
+     * NotMapped
+     * */
+
     class Program
     {
         static void Main(string[] args)
