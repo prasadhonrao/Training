@@ -9,7 +9,9 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <h1>This is the original page!</h1>
+        <h1>Azure Website - Deployment Slot</h1>
+        <br />
+        <h3>This is the original page!</h3>
     </div>
     </form>
 </body>
