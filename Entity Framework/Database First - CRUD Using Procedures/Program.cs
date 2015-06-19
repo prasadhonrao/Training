@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CRUD_Using_SP
+namespace Database_First___CRUD_Using_Procedures
 {
     class Program
     {
         static void Main(string[] args)
         {
-            using (var context = new ContentDbContainer())
+            using (var context = new ContentEntities())
             {
                 context.Contents.Add(new Content { Text = "Inserted using SP" });
                 context.SaveChanges();

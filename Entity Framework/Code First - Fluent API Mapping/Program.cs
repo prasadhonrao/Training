@@ -23,7 +23,7 @@ namespace Code_First___Fluent_API_Mapping
         {
             modelBuilder.Entity<Actor>().ToTable("MovieActor")
                                         .HasKey(key => key.Id)
-                                        .Property(p => p.FirstName).IsRequired().HasMaxLength(50)
+                                        .Property(p => p.FirstName).IsRequired().HasMaxLength(50);
                                         
             modelBuilder.Entity<Movie>().HasKey(key => key.MovieId)
                                         .Property(p => p.Title).IsRequired().HasMaxLength(50);

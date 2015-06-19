@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2C80D024-6D8D-446A-A8EC-09E39348416B}</ProjectGuid>
+    <ProjectGuid>{6996F02A-459E-44C7-AC8B-7299C38BAEA9}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DatabaseFirstCRUD</RootNamespace>
-    <AssemblyName>DatabaseFirstCRUD</AssemblyName>
+    <RootNamespace>Database_First___CRUD_Using_Procedures</RootNamespace>
+    <AssemblyName>Database First - CRUD Using Procedures</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,12 +33,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -48,48 +50,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AWModel.Context.cs">
+    <Compile Include="Content.cs">
+      <DependentUpon>ContentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContentModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AWModel.Context.tt</DependentUpon>
+      <DependentUpon>ContentModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="AWModel.cs">
+    <Compile Include="ContentModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AWModel.tt</DependentUpon>
+      <DependentUpon>ContentModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="AWModel.Designer.cs">
+    <Compile Include="ContentModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AWModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="ProductCategory.cs">
-      <DependentUpon>AWModel.tt</DependentUpon>
+      <DependentUpon>ContentModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="AWModel.edmx">
+    <EntityDeploy Include="ContentModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AWModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>ContentModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="AWModel.edmx.diagram">
-      <DependentUpon>AWModel.edmx</DependentUpon>
+    <None Include="ContentModel.edmx.diagram">
+      <DependentUpon>ContentModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AWModel.Context.tt">
+    <Content Include="ContentModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AWModel.edmx</DependentUpon>
-      <LastGenOutput>AWModel.Context.cs</LastGenOutput>
+      <DependentUpon>ContentModel.edmx</DependentUpon>
+      <LastGenOutput>ContentModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="AWModel.tt">
+    <Content Include="ContentModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AWModel.edmx</DependentUpon>
-      <LastGenOutput>AWModel.cs</LastGenOutput>
+      <DependentUpon>ContentModel.edmx</DependentUpon>
+      <LastGenOutput>ContentModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

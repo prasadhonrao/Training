@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DatabaseFirstCRUD")]
+[assembly: AssemblyTitle("Database First - CRUD Using Procedures")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("CTS")]
-[assembly: AssemblyProduct("DatabaseFirstCRUD")]
+[assembly: AssemblyProduct("Database First - CRUD Using Procedures")]
 [assembly: AssemblyCopyright("Copyright © CTS 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6fa844af-7537-449a-9608-1b8751cc3dcb")]
+[assembly: Guid("2fafb9fc-9f7b-47cb-bccd-96dd99a7ae3c")]
 
 // Version information for an assembly consists of the following four values:
 //

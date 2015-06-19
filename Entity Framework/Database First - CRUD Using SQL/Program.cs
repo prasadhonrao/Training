@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DatabaseFirstCRUD
+namespace Database_First___CRUD_Using_SQL
 {
     class Program
     {
