@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Complex_Types
+namespace Database_First___Complex_Type
 {
     using System;
     using System.Data.Entity;

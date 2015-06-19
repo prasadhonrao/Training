@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Complex_Types
+namespace Database_First___Complex_Type
 {
     class Program
     {
@@ -15,7 +15,7 @@ namespace Complex_Types
                 var products = context.Products
                                       .Where(p => p.ProductAttributes.Color == "Blue")
                                       .Select(p => p.Name);
-                
+
                 foreach (var item in products)
                 {
                     Console.WriteLine(item);

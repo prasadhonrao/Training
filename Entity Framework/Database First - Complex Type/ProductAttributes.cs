@@ -7,14 +7,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Complex_Types
+namespace Database_First___Complex_Type
 {
     using System;
     
     public partial class ProductAttributes
     {
-        public string Color { get; set; }
         public string Size { get; set; }
+        public string Color { get; set; }
         public string Style { get; set; }
     }
 }

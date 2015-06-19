@@ -75,8 +75,8 @@
           <EntitySet Name="Products" EntityType="Self.Product" />
         </EntityContainer>
         <ComplexType Name="ProductAttributes">
-          <Property Type="String" Name="Color" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Size" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Color" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Style" MaxLength="2" FixedLength="true" Unicode="true" />
         </ComplexType>
       </Schema>
@@ -112,8 +112,8 @@
                 <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
                 <ComplexProperty Name="ProductAttributes">
                   <ScalarProperty Name="Style" ColumnName="Style" />
-                  <ScalarProperty Name="Size" ColumnName="Size" />
                   <ScalarProperty Name="Color" ColumnName="Color" />
+                  <ScalarProperty Name="Size" ColumnName="Size" />
                 </ComplexProperty>
               </MappingFragment>
             </EntityTypeMapping>
