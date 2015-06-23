@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AWModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Currency">
+          <Key>
+            <PropertyRef Name="CurrencyCode" />
+          </Key>
+          <Property Name="CurrencyCode" Type="nchar" MaxLength="3" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CurrencyRate">
+          <Key>
+            <PropertyRef Name="CurrencyRateID" />
+          </Key>
+          <Property Name="CurrencyRateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CurrencyRateDate" Type="datetime" Nullable="false" />
+          <Property Name="FromCurrencyCode" Type="nchar" MaxLength="3" Nullable="false" />
+          <Property Name="ToCurrencyCode" Type="nchar" MaxLength="3" Nullable="false" />
+          <Property Name="AverageRate" Type="money" Nullable="false" />
+          <Property Name="EndOfDayRate" Type="money" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PersonID" Type="int" />
+          <Property Name="StoreID" Type="int" />
+          <Property Name="TerritoryID" Type="int" />
+          <Property Name="AccountNumber" Type="varchar" MaxLength="10" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SalesOrderDetail">
+          <Key>
+            <PropertyRef Name="SalesOrderID" />
+            <PropertyRef Name="SalesOrderDetailID" />
+          </Key>
+          <Property Name="SalesOrderID" Type="int" Nullable="false" />
+          <Property Name="SalesOrderDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CarrierTrackingNumber" Type="nvarchar" MaxLength="25" />
+          <Property Name="OrderQty" Type="smallint" Nullable="false" />
+          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="SpecialOfferID" Type="int" Nullable="false" />
+          <Property Name="UnitPrice" Type="money" Nullable="false" />
+          <Property Name="UnitPriceDiscount" Type="money" Nullable="false" />
+          <Property Name="LineTotal" Type="numeric" Precision="38" Scale="6" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SalesOrderHeader">
+          <Key>
+            <PropertyRef Name="SalesOrderID" />
+          </Key>
+          <Property Name="SalesOrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RevisionNumber" Type="tinyint" Nullable="false" />
+          <Property Name="OrderDate" Type="datetime" Nullable="false" />
+          <Property Name="DueDate" Type="datetime" Nullable="false" />
+          <Property Name="ShipDate" Type="datetime" />
+          <Property Name="Status" Type="tinyint" Nullable="false" />
+          <Property Name="OnlineOrderFlag" Type="bit" Nullable="false" />
+          <Property Name="SalesOrderNumber" Type="nvarchar" MaxLength="25" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="PurchaseOrderNumber" Type="nvarchar" MaxLength="25" />
+          <Property Name="AccountNumber" Type="nvarchar" MaxLength="15" />
+          <Property Name="CustomerID" Type="int" Nullable="false" />
+          <Property Name="SalesPersonID" Type="int" />
+          <Property Name="TerritoryID" Type="int" />
+          <Property Name="BillToAddressID" Type="int" Nullable="false" />
+          <Property Name="ShipToAddressID" Type="int" Nullable="false" />
+          <Property Name="ShipMethodID" Type="int" Nullable="false" />
+          <Property Name="CreditCardID" Type="int" />
+          <Property Name="CreditCardApprovalCode" Type="varchar" MaxLength="15" />
+          <Property Name="CurrencyRateID" Type="int" />
+          <Property Name="SubTotal" Type="money" Nullable="false" />
+          <Property Name="TaxAmt" Type="money" Nullable="false" />
+          <Property Name="Freight" Type="money" Nullable="false" />
+          <Property Name="TotalDue" Type="money" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="Comment" Type="nvarchar" MaxLength="128" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_CurrencyRate_Currency_FromCurrencyCode">
+          <End Role="Currency" Type="Self.Currency" Multiplicity="1" />
+          <End Role="CurrencyRate" Type="Self.CurrencyRate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Currency">
+              <PropertyRef Name="CurrencyCode" />
+            </Principal>
+            <Dependent Role="CurrencyRate">
+              <PropertyRef Name="FromCurrencyCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CurrencyRate_Currency_ToCurrencyCode">
+          <End Role="Currency" Type="Self.Currency" Multiplicity="1" />
+          <End Role="CurrencyRate" Type="Self.CurrencyRate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Currency">
+              <PropertyRef Name="CurrencyCode" />
+            </Principal>
+            <Dependent Role="CurrencyRate">
+              <PropertyRef Name="ToCurrencyCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID">
+          <End Role="SalesOrderHeader" Type="Self.SalesOrderHeader" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SalesOrderDetail" Type="Self.SalesOrderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SalesOrderHeader">
+              <PropertyRef Name="SalesOrderID" />
+            </Principal>
+            <Dependent Role="SalesOrderDetail">
+              <PropertyRef Name="SalesOrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SalesOrderHeader_CurrencyRate_CurrencyRateID">
+          <End Role="CurrencyRate" Type="Self.CurrencyRate" Multiplicity="0..1" />
+          <End Role="SalesOrderHeader" Type="Self.SalesOrderHeader" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CurrencyRate">
+              <PropertyRef Name="CurrencyRateID" />
+            </Principal>
+            <Dependent Role="SalesOrderHeader">
+              <PropertyRef Name="CurrencyRateID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SalesOrderHeader_Customer_CustomerID">
+          <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+          <End Role="SalesOrderHeader" Type="Self.SalesOrderHeader" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="SalesOrderHeader">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AWModelStoreContainer">
+          <EntitySet Name="Currency" EntityType="Self.Currency" Schema="Sales" store:Type="Tables" />
+          <EntitySet Name="CurrencyRate" EntityType="Self.CurrencyRate" Schema="Sales" store:Type="Tables" />
+          <EntitySet Name="Customer" EntityType="Self.Customer" Schema="Sales" store:Type="Tables" />
+          <EntitySet Name="SalesOrderDetail" EntityType="Self.SalesOrderDetail" Schema="Sales" store:Type="Tables" />
+          <EntitySet Name="SalesOrderHeader" EntityType="Self.SalesOrderHeader" Schema="Sales" store:Type="Tables" />
+          <AssociationSet Name="FK_CurrencyRate_Currency_FromCurrencyCode" Association="Self.FK_CurrencyRate_Currency_FromCurrencyCode">
+            <End Role="Currency" EntitySet="Currency" />
+            <End Role="CurrencyRate" EntitySet="CurrencyRate" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CurrencyRate_Currency_ToCurrencyCode" Association="Self.FK_CurrencyRate_Currency_ToCurrencyCode">
+            <End Role="Currency" EntitySet="Currency" />
+            <End Role="CurrencyRate" EntitySet="CurrencyRate" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" Association="Self.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID">
+            <End Role="SalesOrderHeader" EntitySet="SalesOrderHeader" />
+            <End Role="SalesOrderDetail" EntitySet="SalesOrderDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" Association="Self.FK_SalesOrderHeader_CurrencyRate_CurrencyRateID">
+            <End Role="CurrencyRate" EntitySet="CurrencyRate" />
+            <End Role="SalesOrderHeader" EntitySet="SalesOrderHeader" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SalesOrderHeader_Customer_CustomerID" Association="Self.FK_SalesOrderHeader_Customer_CustomerID">
+            <End Role="Customer" EntitySet="Customer" />
+            <End Role="SalesOrderHeader" EntitySet="SalesOrderHeader" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="AWEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Currencies" EntityType="AWModel.Currency" />
+          <EntitySet Name="CurrencyRates" EntityType="AWModel.CurrencyRate" />
+          <EntitySet Name="Customers" EntityType="AWModel.Customer" />
+          <EntitySet Name="SalesOrderDetails" EntityType="AWModel.SalesOrderDetail" />
+          <EntitySet Name="SalesOrderHeaders" EntityType="AWModel.SalesOrderHeader" />
+          <AssociationSet Name="FK_CurrencyRate_Currency_FromCurrencyCode" Association="AWModel.FK_CurrencyRate_Currency_FromCurrencyCode">
+            <End Role="Currency" EntitySet="Currencies" />
+            <End Role="CurrencyRate" EntitySet="CurrencyRates" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CurrencyRate_Currency_ToCurrencyCode" Association="AWModel.FK_CurrencyRate_Currency_ToCurrencyCode">
+            <End Role="Currency" EntitySet="Currencies" />
+            <End Role="CurrencyRate" EntitySet="CurrencyRates" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" Association="AWModel.FK_SalesOrderHeader_CurrencyRate_CurrencyRateID">
+            <End Role="CurrencyRate" EntitySet="CurrencyRates" />
+            <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SalesOrderHeader_Customer_CustomerID" Association="AWModel.FK_SalesOrderHeader_Customer_CustomerID">
+            <End Role="Customer" EntitySet="Customers" />
+            <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" Association="AWModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID">
+            <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+            <End Role="SalesOrderDetail" EntitySet="SalesOrderDetails" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Currency">
+          <Key>
+            <PropertyRef Name="CurrencyCode" />
+          </Key>
+          <Property Name="CurrencyCode" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="true" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="CurrencyRates" Relationship="AWModel.FK_CurrencyRate_Currency_FromCurrencyCode" FromRole="Currency" ToRole="CurrencyRate" />
+          <NavigationProperty Name="CurrencyRates1" Relationship="AWModel.FK_CurrencyRate_Currency_ToCurrencyCode" FromRole="Currency" ToRole="CurrencyRate" />
+        </EntityType>
+        <EntityType Name="CurrencyRate">
+          <Key>
+            <PropertyRef Name="CurrencyRateID" />
+          </Key>
+          <Property Name="CurrencyRateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CurrencyRateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FromCurrencyCode" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="true" />
+          <Property Name="ToCurrencyCode" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="true" />
+          <Property Name="AverageRate" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="EndOfDayRate" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Currency" Relationship="AWModel.FK_CurrencyRate_Currency_FromCurrencyCode" FromRole="CurrencyRate" ToRole="Currency" />
+          <NavigationProperty Name="Currency1" Relationship="AWModel.FK_CurrencyRate_Currency_ToCurrencyCode" FromRole="CurrencyRate" ToRole="Currency" />
+          <NavigationProperty Name="SalesOrderHeaders" Relationship="AWModel.FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" FromRole="CurrencyRate" ToRole="SalesOrderHeader" />
+        </EntityType>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PersonID" Type="Int32" />
+          <Property Name="StoreID" Type="Int32" />
+          <Property Name="TerritoryID" Type="Int32" />
+          <Property Name="AccountNumber" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="SalesOrderHeaders" Relationship="AWModel.FK_SalesOrderHeader_Customer_CustomerID" FromRole="Customer" ToRole="SalesOrderHeader" />
+        </EntityType>
+        <EntityType Name="SalesOrderDetail">
+          <Key>
+            <PropertyRef Name="SalesOrderID" />
+            <PropertyRef Name="SalesOrderDetailID" />
+          </Key>
+          <Property Name="SalesOrderID" Type="Int32" Nullable="false" />
+          <Property Name="SalesOrderDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CarrierTrackingNumber" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="OrderQty" Type="Int16" Nullable="false" />
+          <Property Name="ProductID" Type="Int32" Nullable="false" />
+          <Property Name="SpecialOfferID" Type="Int32" Nullable="false" />
+          <Property Name="UnitPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="UnitPriceDiscount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="LineTotal" Type="Decimal" Nullable="false" Precision="38" Scale="6" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="SalesOrderHeader" Relationship="AWModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" FromRole="SalesOrderDetail" ToRole="SalesOrderHeader" />
+        </EntityType>
+        <EntityType Name="SalesOrderHeader">
+          <Key>
+            <PropertyRef Name="SalesOrderID" />
+          </Key>
+          <Property Name="SalesOrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RevisionNumber" Type="Byte" Nullable="false" />
+          <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DueDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ShipDate" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="Byte" Nullable="false" />
+          <Property Name="OnlineOrderFlag" Type="Boolean" Nullable="false" />
+          <Property Name="SalesOrderNumber" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="PurchaseOrderNumber" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="AccountNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerID" Type="Int32" Nullable="false" />
+          <Property Name="SalesPersonID" Type="Int32" />
+          <Property Name="TerritoryID" Type="Int32" />
+          <Property Name="BillToAddressID" Type="Int32" Nullable="false" />
+          <Property Name="ShipToAddressID" Type="Int32" Nullable="false" />
+          <Property Name="ShipMethodID" Type="Int32" Nullable="false" />
+          <Property Name="CreditCardID" Type="Int32" />
+          <Property Name="CreditCardApprovalCode" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="CurrencyRateID" Type="Int32" />
+          <Property Name="SubTotal" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="TaxAmt" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="Freight" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="TotalDue" Type="Decimal" Nullable="false" Precision="19" Scale="4" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="Comment" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="CurrencyRate" Relationship="AWModel.FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" FromRole="SalesOrderHeader" ToRole="CurrencyRate" />
+          <NavigationProperty Name="Customer" Relationship="AWModel.FK_SalesOrderHeader_Customer_CustomerID" FromRole="SalesOrderHeader" ToRole="Customer" />
+          <NavigationProperty Name="SalesOrderDetails" Relationship="AWModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" FromRole="SalesOrderHeader" ToRole="SalesOrderDetail" />
+        </EntityType>
+        <Association Name="FK_CurrencyRate_Currency_FromCurrencyCode">
+          <End Type="AWModel.Currency" Role="Currency" Multiplicity="1" />
+          <End Type="AWModel.CurrencyRate" Role="CurrencyRate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Currency">
+              <PropertyRef Name="CurrencyCode" />
+            </Principal>
+            <Dependent Role="CurrencyRate">
+              <PropertyRef Name="FromCurrencyCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CurrencyRate_Currency_ToCurrencyCode">
+          <End Type="AWModel.Currency" Role="Currency" Multiplicity="1" />
+          <End Type="AWModel.CurrencyRate" Role="CurrencyRate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Currency">
+              <PropertyRef Name="CurrencyCode" />
+            </Principal>
+            <Dependent Role="CurrencyRate">
+              <PropertyRef Name="ToCurrencyCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SalesOrderHeader_CurrencyRate_CurrencyRateID">
+          <End Type="AWModel.CurrencyRate" Role="CurrencyRate" Multiplicity="0..1" />
+          <End Type="AWModel.SalesOrderHeader" Role="SalesOrderHeader" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CurrencyRate">
+              <PropertyRef Name="CurrencyRateID" />
+            </Principal>
+            <Dependent Role="SalesOrderHeader">
+              <PropertyRef Name="CurrencyRateID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SalesOrderHeader_Customer_CustomerID">
+          <End Type="AWModel.Customer" Role="Customer" Multiplicity="1" />
+          <End Type="AWModel.SalesOrderHeader" Role="SalesOrderHeader" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="SalesOrderHeader">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID">
+          <End Type="AWModel.SalesOrderHeader" Role="SalesOrderHeader" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="AWModel.SalesOrderDetail" Role="SalesOrderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SalesOrderHeader">
+              <PropertyRef Name="SalesOrderID" />
+            </Principal>
+            <Dependent Role="SalesOrderDetail">
+              <PropertyRef Name="SalesOrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AWModelStoreContainer" CdmEntityContainer="AWEntities">
+          <EntitySetMapping Name="Currencies">
+            <EntityTypeMapping TypeName="AWModel.Currency">
+              <MappingFragment StoreEntitySet="Currency">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CurrencyRates">
+            <EntityTypeMapping TypeName="AWModel.CurrencyRate">
+              <MappingFragment StoreEntitySet="CurrencyRate">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="EndOfDayRate" ColumnName="EndOfDayRate" />
+                <ScalarProperty Name="AverageRate" ColumnName="AverageRate" />
+                <ScalarProperty Name="ToCurrencyCode" ColumnName="ToCurrencyCode" />
+                <ScalarProperty Name="FromCurrencyCode" ColumnName="FromCurrencyCode" />
+                <ScalarProperty Name="CurrencyRateDate" ColumnName="CurrencyRateDate" />
+                <ScalarProperty Name="CurrencyRateID" ColumnName="CurrencyRateID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Customers">
+            <EntityTypeMapping TypeName="AWModel.Customer">
+              <MappingFragment StoreEntitySet="Customer">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+                <ScalarProperty Name="TerritoryID" ColumnName="TerritoryID" />
+                <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+                <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SalesOrderDetails">
+            <EntityTypeMapping TypeName="AWModel.SalesOrderDetail">
+              <MappingFragment StoreEntitySet="SalesOrderDetail">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="LineTotal" ColumnName="LineTotal" />
+                <ScalarProperty Name="UnitPriceDiscount" ColumnName="UnitPriceDiscount" />
+                <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+                <ScalarProperty Name="SpecialOfferID" ColumnName="SpecialOfferID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+                <ScalarProperty Name="CarrierTrackingNumber" ColumnName="CarrierTrackingNumber" />
+                <ScalarProperty Name="SalesOrderDetailID" ColumnName="SalesOrderDetailID" />
+                <ScalarProperty Name="SalesOrderID" ColumnName="SalesOrderID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SalesOrderHeaders">
+            <EntityTypeMapping TypeName="AWModel.SalesOrderHeader">
+              <MappingFragment StoreEntitySet="SalesOrderHeader">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="TotalDue" ColumnName="TotalDue" />
+                <ScalarProperty Name="Freight" ColumnName="Freight" />
+                <ScalarProperty Name="TaxAmt" ColumnName="TaxAmt" />
+                <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+                <ScalarProperty Name="CurrencyRateID" ColumnName="CurrencyRateID" />
+                <ScalarProperty Name="CreditCardApprovalCode" ColumnName="CreditCardApprovalCode" />
+                <ScalarProperty Name="CreditCardID" ColumnName="CreditCardID" />
+                <ScalarProperty Name="ShipMethodID" ColumnName="ShipMethodID" />
+                <ScalarProperty Name="ShipToAddressID" ColumnName="ShipToAddressID" />
+                <ScalarProperty Name="BillToAddressID" ColumnName="BillToAddressID" />
+                <ScalarProperty Name="TerritoryID" ColumnName="TerritoryID" />
+                <ScalarProperty Name="SalesPersonID" ColumnName="SalesPersonID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+                <ScalarProperty Name="PurchaseOrderNumber" ColumnName="PurchaseOrderNumber" />
+                <ScalarProperty Name="SalesOrderNumber" ColumnName="SalesOrderNumber" />
+                <ScalarProperty Name="OnlineOrderFlag" ColumnName="OnlineOrderFlag" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+                <ScalarProperty Name="RevisionNumber" ColumnName="RevisionNumber" />
+                <ScalarProperty Name="SalesOrderID" ColumnName="SalesOrderID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
