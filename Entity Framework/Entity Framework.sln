@@ -50,6 +50,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database First - Integratio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database First - Colors and Diagrams", "Database First - Colors and Diagrams\Database First - Colors and Diagrams.csproj", "{CE0F8589-A1E6-42CA-8CB5-DA23B7E8F855}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database First - Enum Mapping", "Database First - Enum Mapping\Database First - Enum Mapping.csproj", "{C65628E7-CFC7-4BC5-AB43-2F885CC8C78A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -128,6 +130,10 @@ Global
 		{CE0F8589-A1E6-42CA-8CB5-DA23B7E8F855}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE0F8589-A1E6-42CA-8CB5-DA23B7E8F855}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE0F8589-A1E6-42CA-8CB5-DA23B7E8F855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C65628E7-CFC7-4BC5-AB43-2F885CC8C78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65628E7-CFC7-4BC5-AB43-2F885CC8C78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65628E7-CFC7-4BC5-AB43-2F885CC8C78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65628E7-CFC7-4BC5-AB43-2F885CC8C78A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -150,5 +156,6 @@ Global
 		{8065CD2B-7F0D-48E2-BFC7-F50A1B8C9F62} = {A8CF071F-6321-4312-9AC7-B8FE1C973CD0}
 		{372BB33F-A932-4CFC-A29E-AA0A1DB76534} = {A8CF071F-6321-4312-9AC7-B8FE1C973CD0}
 		{CE0F8589-A1E6-42CA-8CB5-DA23B7E8F855} = {A8CF071F-6321-4312-9AC7-B8FE1C973CD0}
+		{C65628E7-CFC7-4BC5-AB43-2F885CC8C78A} = {A8CF071F-6321-4312-9AC7-B8FE1C973CD0}
 	EndGlobalSection
 EndGlobal
