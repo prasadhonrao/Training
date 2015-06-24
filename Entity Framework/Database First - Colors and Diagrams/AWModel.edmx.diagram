@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a942f635447045479965961c1f11a48c" Name="Complete" ZoomLevel="67">
+        <EntityTypeShape EntityType="AWModel.Product" Width="1.5" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.ProductCategory" Width="1.5" PointX="1.5" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.ProductCostHistory" Width="1.5" PointX="5.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.ProductDescription" Width="1.5" PointX="3.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.ProductInventory" Width="1.5" PointX="5.25" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.ProductListPriceHistory" Width="1.5" PointX="5.25" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.ProductModel" Width="1.5" PointX="0.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.ProductModelIllustration" Width="1.5" PointX="3" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.ProductModelProductDescriptionCulture" Width="1.5" PointX="6" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.ProductPhoto" Width="1.5" PointX="6" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.ProductProductPhoto" Width="1.5" PointX="8.25" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.ProductReview" Width="1.5" PointX="5.25" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.ProductSubcategory" Width="1.5" PointX="0.75" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.ProductVendor" Width="1.5" PointX="8.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.PurchaseOrderDetail" Width="1.5" PointX="8.25" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.PurchaseOrderHeader" Width="1.5" PointX="6" PointY="34.625" IsExpanded="true" FillColor="Red" />
+        <EntityTypeShape EntityType="AWModel.ShipMethod" Width="1.5" PointX="3.75" PointY="35.25" IsExpanded="true" FillColor="Red" />
+        <EntityTypeShape EntityType="AWModel.Vendor" Width="1.5" PointX="6" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.Customer" Width="1.5" PointX="6.75" PointY="39.25" IsExpanded="true" FillColor="Red" />
+        <EntityTypeShape EntityType="AWModel.SalesOrderDetail" Width="1.5" PointX="11.25" PointY="33.75" IsExpanded="true" FillColor="Red" />
+        <EntityTypeShape EntityType="AWModel.SalesOrderHeader" Width="1.5" PointX="9" PointY="33.375" IsExpanded="true" FillColor="Red" />
+        <EntityTypeShape EntityType="AWModel.SalesOrderHeaderSalesReason" Width="1.5" PointX="11.25" PointY="37.375" IsExpanded="true" FillColor="Red" />
+        <EntityTypeShape EntityType="AWModel.ProductDocument" Width="1.5" PointX="5.25" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AWModel.vProductAndDescription" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" FillColor="64, 64, 0" />
+        <EntityTypeShape EntityType="AWModel.vProductModelCatalogDescription" Width="1.5" PointX="2.375" PointY="0.5" IsExpanded="true" FillColor="64, 64, 0" />
+        <EntityTypeShape EntityType="AWModel.vProductModelInstruction" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" FillColor="64, 64, 0" />
+        <AssociationConnector Association="AWModel.FK_Product_ProductModel_ProductModelID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_Product_ProductSubcategory_ProductSubcategoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_ProductCostHistory_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_ProductDocument_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_ProductInventory_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_ProductListPriceHistory_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_ProductProductPhoto_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_ProductReview_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_ProductVendor_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_PurchaseOrderDetail_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_ProductSubcategory_ProductCategory_ProductCategoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_ProductModelIllustration_ProductModel_ProductModelID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_ProductProductPhoto_ProductPhoto_ProductPhotoID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_ProductVendor_Vendor_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_PurchaseOrderHeader_ShipMethod_ShipMethodID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_PurchaseOrderHeader_Vendor_VendorID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_SalesOrderHeader_ShipMethod_ShipMethodID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_SalesOrderHeader_Customer_CustomerID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" ManuallyRouted="false" />
+        <AssociationConnector Association="AWModel.FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID" ManuallyRouted="false" />
+      </Diagram>
+      <Diagram DiagramId="e280084d7e094e568fcd7110709481eb" Name="Sales" ZoomLevel="97" >
+        <EntityTypeShape EntityType="AWModel.Customer" Width="1.5" PointX="0.625" PointY="0.5" />
+        <EntityTypeShape EntityType="AWModel.SalesOrderHeader" Width="1.5" PointX="3.125" PointY="1.875" />
+        <AssociationConnector Association="AWModel.FK_SalesOrderHeader_Customer_CustomerID" />
+        <EntityTypeShape EntityType="AWModel.ShipMethod" Width="1.5" PointX="0.875" PointY="3.625" />
+        <AssociationConnector Association="AWModel.FK_SalesOrderHeader_ShipMethod_ShipMethodID" />
+        <EntityTypeShape EntityType="AWModel.SalesOrderDetail" Width="1.5" PointX="5.375" PointY="2.125" />
+        <AssociationConnector Association="AWModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" />
+        <EntityTypeShape EntityType="AWModel.SalesOrderHeaderSalesReason" Width="1.5" PointX="5.375" PointY="5.875" />
+        <AssociationConnector Association="AWModel.FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID" />
+      </Diagram>
+      <Diagram DiagramId="5e62dc835c234440a17a1bfa91941e1e" Name="Products" ZoomLevel="100" >
+        <EntityTypeShape EntityType="AWModel.Product" Width="1.5" PointX="8.75" PointY="4.125" FillColor="Green" />
+        <EntityTypeShape EntityType="AWModel.ProductModel" Width="1.5" PointX="4.875" PointY="3.5" FillColor="Green" />
+        <AssociationConnector Association="AWModel.FK_Product_ProductModel_ProductModelID" />
+        <EntityTypeShape EntityType="AWModel.ProductSubcategory" Width="1.5" PointX="0.75" PointY="6" FillColor="Green" />
+        <AssociationConnector Association="AWModel.FK_Product_ProductSubcategory_ProductSubcategoryID" />
+        <EntityTypeShape EntityType="AWModel.ProductCostHistory" Width="1.5" PointX="1.375" PointY="0.875" FillColor="Green" />
+        <AssociationConnector Association="AWModel.FK_ProductCostHistory_Product_ProductID" />
+        <EntityTypeShape EntityType="AWModel.ProductDocument" Width="1.5" PointX="12.25" PointY="1.125" FillColor="Green" />
+        <AssociationConnector Association="AWModel.FK_ProductDocument_Product_ProductID" />
+        <EntityTypeShape EntityType="AWModel.ProductInventory" Width="1.5" PointX="14.5" PointY="4" FillColor="Green" />
+        <AssociationConnector Association="AWModel.FK_ProductInventory_Product_ProductID" />
+        <EntityTypeShape EntityType="AWModel.ProductListPriceHistory" Width="1.5" PointX="16" PointY="7.875" FillColor="Green" />
+        <AssociationConnector Association="AWModel.FK_ProductListPriceHistory_Product_ProductID" />
+        <EntityTypeShape EntityType="AWModel.ProductProductPhoto" Width="1.5" PointX="16" PointY="11.75" FillColor="Green" />
+        <AssociationConnector Association="AWModel.FK_ProductProductPhoto_Product_ProductID" />
+        <EntityTypeShape EntityType="AWModel.ProductReview" Width="1.5" PointX="14" PointY="14.875" FillColor="Green" />
+        <AssociationConnector Association="AWModel.FK_ProductReview_Product_ProductID" />
+        <EntityTypeShape EntityType="AWModel.ProductVendor" Width="1.5" PointX="3.375" PointY="9.875" FillColor="Green" />
+        <AssociationConnector Association="AWModel.FK_ProductVendor_Product_ProductID" />
+        <EntityTypeShape EntityType="AWModel.PurchaseOrderDetail" Width="1.5" PointX="5" PointY="14.5" FillColor="Green" />
+        <AssociationConnector Association="AWModel.FK_PurchaseOrderDetail_Product_ProductID" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
