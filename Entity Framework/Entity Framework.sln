@@ -54,6 +54,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database First - Enum Mappi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code First - Data Migration", "Code First - Data Migration\Code First - Data Migration.csproj", "{02DA0D00-5D85-4546-95DF-2E051190B52E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database First - Data Load Methods", "Database First - Data Load Methods\Database First - Data Load Methods.csproj", "{3184E1DB-9100-4FB3-9F32-432189D41131}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -140,6 +142,10 @@ Global
 		{02DA0D00-5D85-4546-95DF-2E051190B52E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02DA0D00-5D85-4546-95DF-2E051190B52E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02DA0D00-5D85-4546-95DF-2E051190B52E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3184E1DB-9100-4FB3-9F32-432189D41131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3184E1DB-9100-4FB3-9F32-432189D41131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3184E1DB-9100-4FB3-9F32-432189D41131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3184E1DB-9100-4FB3-9F32-432189D41131}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,5 +170,6 @@ Global
 		{CE0F8589-A1E6-42CA-8CB5-DA23B7E8F855} = {A8CF071F-6321-4312-9AC7-B8FE1C973CD0}
 		{C65628E7-CFC7-4BC5-AB43-2F885CC8C78A} = {A8CF071F-6321-4312-9AC7-B8FE1C973CD0}
 		{02DA0D00-5D85-4546-95DF-2E051190B52E} = {B742B708-5B31-47E8-A013-526DCBCA7E51}
+		{3184E1DB-9100-4FB3-9F32-432189D41131} = {A8CF071F-6321-4312-9AC7-B8FE1C973CD0}
 	EndGlobalSection
 EndGlobal
