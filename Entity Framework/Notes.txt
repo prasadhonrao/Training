@@ -1,0 +1,11 @@
+DATABASE FIRST
+
+MODEL FIRST
+
+CODE FIRST
+
+
+CODE FIRST FROM DESIGNER
+1. Option is available only in EF 6 and above 
+2. Code First From Designer wizard does not allow you to pull database stored procedures into your model
+3. Blend of database first and code first approaches as it generates the entity code separately and also adds fluent API configuration
