@@ -2,99 +2,78 @@
 	"folders":
 	[
 		{
-			"follow_symlinks": true,
 			"path": "Introduction"
 		},
 		{
-			"follow_symlinks": true,
-			"path": "Variables"
+			"path": "Operators"
 		},
 		{
-			"follow_symlinks": true,
-			"path": "Control Statements"
+			"path": "Variables and Types"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "Null - Undefined"
 		},
 		{
-			"follow_symlinks": true,
+			"path": "Control Statements"
+		},
+		{
 			"path": "Objects"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "Equality"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "Types"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "NaN"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "Functions"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "Error Handling"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "External JS"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "DOM Manipulation"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "OOP"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "Namespace"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "Regular Expression"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "Eval"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "Math Lib"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "UnderscoreJS"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "Closure"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "IIFE"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "Strict"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "Bugs"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "__Proto__"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "Crazy"
 		}
 	]
