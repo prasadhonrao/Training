@@ -1,4 +1,4 @@
- function hello(msg) {
+function hello(msg) {
     console.log('Hello');
 };
 
