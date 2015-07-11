@@ -10,3 +10,5 @@ console.log("isNaN(isNaN) - " + isNaN(isNaN));
 console.log("isNaN(NaN) - " + isNaN(NaN));
 
 console.log(10 / "zero"); // this returns NaN
+
+console.log(NaN !== NaN); // NaN is the only value which returns true for Nan !== Nan
