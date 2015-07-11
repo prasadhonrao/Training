@@ -4,7 +4,7 @@ var h = function hello(msg) {
 h();
 
 
-Below example owner of 'this' is obj.
+//Below example owner of 'this' is obj.
 var obj = {
     name: 'Prasad',
     greet: function () {
