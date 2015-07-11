@@ -11,7 +11,13 @@
 			"path": "Variables and Types"
 		},
 		{
+			"path": "Types"
+		},
+		{
 			"path": "Null - Undefined"
+		},
+		{
+			"path": "NaN"
 		},
 		{
 			"path": "Control Statements"
@@ -21,12 +27,6 @@
 		},
 		{
 			"path": "Equality"
-		},
-		{
-			"path": "Types"
-		},
-		{
-			"path": "NaN"
 		},
 		{
 			"path": "Functions"
