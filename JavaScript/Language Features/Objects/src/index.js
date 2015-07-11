@@ -76,6 +76,16 @@ console.log(customer["address"]["postcode"]);
 console.log(customer["telephone number"]); // cant use customer."telephone number"
 console.log(customer.colors[0].name);
 
+// Object property key stored in a variable
+var obj = {
+    a : "Hello World",
+    b : 42
+};
+
+var b = "a";
+console.log(obj[b]);
+console.log(obj["b"]);
+
 // Dynamic properties and methods
 var customer = {
     firstName: "Colin"
