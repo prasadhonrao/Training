@@ -13,3 +13,9 @@ let add2 = (x, y) => {
   return temp;
 }
 console.log(add2(10,20));
+
+// array function
+let arr = [1, 2, 3, 4, 5];
+var sum = 0;
+arr.forEach(n => sum +=n);
+console.log(sum);
