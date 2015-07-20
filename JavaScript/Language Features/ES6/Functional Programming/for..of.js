@@ -7,4 +7,3 @@ for (let v of arr) {
 }
 
 console.log('1 + 2 + 3 + 4 + 5 =', sum);
-
