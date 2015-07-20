@@ -13,5 +13,3 @@ var players = ["Sachin Tendular", "Roger Federer", "Shane Warne", "Mike Tyson", 
 for (var i = 0; i < players.length; i++) {
     console.log("\t" + players[i]);
 };
-
-
