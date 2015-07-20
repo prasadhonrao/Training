@@ -7,11 +7,11 @@ var foo = function bar () {
 		console.log(foo);
 	}
 
-	//console.log("Before baz executes foo = " + foo);
+	console.log("Before baz executes foo = " + foo);
 
 	baz();
 
-	//console.log("After baz executes foo = " + foo);
+	console.log("After baz executes foo = " + foo);
 };
 
 foo();

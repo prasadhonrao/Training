@@ -6,6 +6,7 @@ function foo() {
 	console.log("In foo function");
 }
 
-function foo() {
+//overrides earlier foo function
+function foo() { 
 	console.log("In foo2 function");	
 }

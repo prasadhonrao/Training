@@ -11,7 +11,7 @@ function baz(foo) {
 	console.log("In baz : " + foo);
 }
 
-console.log(foo);
+console.log(foo); 
 bar();
 baz();
 console.log(foo);
