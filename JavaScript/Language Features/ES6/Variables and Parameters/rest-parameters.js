@@ -1,23 +1,14 @@
-var doWork = function(hours = 8) {
-  for (var i=0; i< hours; i++) {
-    console.log("Doing work " + i);
-  }
+/* RULEs
+1. Function can contain only one rest paramter
+2. Cannot contain default value
+3. Must be the last paramter
+4. Cannot use 'arguments' once declared a rest parameter
+*/
+
+var doWork = function(name,...other) {
+  console.log("Hello " + name);
+  console.log(other.join (' '));
 }
 
-doWork(5);
-doWork();
-
-let add = function (number1, number2 = 10) {
-  return number1 + number2;
-};
-
-console.log(add(1));
-
-// value gets assigned only in case the value is undefined
-var displayName = function(name = "Prasad") {
-  console.log(name);
-}
-displayName();
-displayName(undefined);
-displayName("");
-displayName(null);
+doWork("Prasad");
+doWork("Prasad", "analysis", "development", "defect fixing");

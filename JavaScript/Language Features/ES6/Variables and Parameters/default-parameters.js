@@ -12,3 +12,12 @@ let add = function (number1, number2 = 10) {
 };
 
 console.log(add(1));
+
+// value gets assigned only in case the value is undefined
+var displayName = function(name = "Prasad") {
+  console.log(name);
+}
+displayName();
+displayName(undefined);
+displayName("");
+displayName(null);
