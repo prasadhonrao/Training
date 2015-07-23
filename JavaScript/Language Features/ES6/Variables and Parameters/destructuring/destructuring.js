@@ -14,3 +14,4 @@ console.log("X = " + x + ", Y = " + y);
 // Another way to declare variable using destructuring
 let [firstName, lastName] = ["Prasad", "Honrao"];
 console.log(firstName + " " + lastName);
+
