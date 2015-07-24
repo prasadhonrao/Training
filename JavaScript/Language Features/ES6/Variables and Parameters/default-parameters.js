@@ -3,7 +3,6 @@ var doWork = function(hours = 8) {
     console.log("Doing work " + i);
   }
 }
-
 doWork(5);
 doWork();
 
@@ -21,3 +20,15 @@ displayName();
 displayName(undefined);
 displayName("");
 displayName(null);
+
+// Value can be extracted from a function
+function getNumber() {
+  return Math.floor(Math.random() * 10 )
+}
+
+function display(num = getNumber()) {
+  console.log(num);
+}
+
+display();
+
