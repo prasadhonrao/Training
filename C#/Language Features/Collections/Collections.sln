@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayList Collection", "ArrayList Collection\ArrayList Collection.csproj", "{C1584E49-1F7A-46E3-A90C-7A16DACA64AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hashtable Collection", "Hashtable Collection\Hashtable Collection.csproj", "{7C67BAE9-D27E-406A-A961-1D3C505F73C5}"
@@ -9,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		Index.txt = Index.txt
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Array", "Array", "{68193C63-6568-476A-B6EC-9FED7C559F0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array.Tests", "Array\Array.Tests\Array.Tests.csproj", "{A8F9E671-D318-407E-9E98-22DBDC270F1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,8 +30,15 @@ Global
 		{7C67BAE9-D27E-406A-A961-1D3C505F73C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C67BAE9-D27E-406A-A961-1D3C505F73C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C67BAE9-D27E-406A-A961-1D3C505F73C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8F9E671-D318-407E-9E98-22DBDC270F1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8F9E671-D318-407E-9E98-22DBDC270F1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8F9E671-D318-407E-9E98-22DBDC270F1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8F9E671-D318-407E-9E98-22DBDC270F1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8F9E671-D318-407E-9E98-22DBDC270F1F} = {68193C63-6568-476A-B6EC-9FED7C559F0F}
 	EndGlobalSection
 EndGlobal
