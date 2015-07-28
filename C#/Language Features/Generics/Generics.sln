@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FBFF2E05-80E9-49B6-BBD5-FB157FA4BE36}"
 	ProjectSection(SolutionItems) = preProject
@@ -141,6 +141,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentBag.Collection", "Collections\ConcurrentBag\ConcurrentBag.Collection\ConcurrentBag.Collection.csproj", "{EB9C68B9-DB15-4853-A63B-7B70F62DECFF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentDictionary.Performance", "Collections\ConcurrentDictionary\ConcurrentDictionary.Performance\ConcurrentDictionary.Performance.csproj", "{26F875DA-50EF-459B-8630-53B63926412D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadonlyList", "ReadonlyList", "{F2B73BC1-2828-452E-9971-B515DBB8EB8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadOnlyList.Tests", "Collections\ReadOnlyList\ReadOnlyList.Tests\ReadOnlyList.Tests.csproj", "{962B1FDC-DE97-4EF3-B99B-129E86416F04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadOnlyDictionary", "ReadOnlyDictionary", "{5DEBB26F-A851-4799-AC16-AEAB07FE5136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadOnlyDictionary.Tests", "Collections\ReadOnlyDictionary\ReadOnlyDictionary.Tests\ReadOnlyDictionary.Tests.csproj", "{EEDBAF82-049A-4AA7-829E-9EE6E7FDBE1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -336,6 +344,14 @@ Global
 		{26F875DA-50EF-459B-8630-53B63926412D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26F875DA-50EF-459B-8630-53B63926412D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26F875DA-50EF-459B-8630-53B63926412D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{962B1FDC-DE97-4EF3-B99B-129E86416F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{962B1FDC-DE97-4EF3-B99B-129E86416F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{962B1FDC-DE97-4EF3-B99B-129E86416F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{962B1FDC-DE97-4EF3-B99B-129E86416F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEDBAF82-049A-4AA7-829E-9EE6E7FDBE1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEDBAF82-049A-4AA7-829E-9EE6E7FDBE1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEDBAF82-049A-4AA7-829E-9EE6E7FDBE1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEDBAF82-049A-4AA7-829E-9EE6E7FDBE1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -402,5 +418,9 @@ Global
 		{45DF0501-D98C-4E51-81F8-97DF6EC43038} = {5B983C93-741D-4ABA-B198-A9CF52014398}
 		{EB9C68B9-DB15-4853-A63B-7B70F62DECFF} = {5B983C93-741D-4ABA-B198-A9CF52014398}
 		{26F875DA-50EF-459B-8630-53B63926412D} = {56D91CA7-3ACE-4757-AB02-B7C899E56E4D}
+		{F2B73BC1-2828-452E-9971-B515DBB8EB8B} = {AF9E5A1D-397F-45C2-B836-C583A56D64E6}
+		{962B1FDC-DE97-4EF3-B99B-129E86416F04} = {F2B73BC1-2828-452E-9971-B515DBB8EB8B}
+		{5DEBB26F-A851-4799-AC16-AEAB07FE5136} = {AF9E5A1D-397F-45C2-B836-C583A56D64E6}
+		{EEDBAF82-049A-4AA7-829E-9EE6E7FDBE1E} = {5DEBB26F-A851-4799-AC16-AEAB07FE5136}
 	EndGlobalSection
 EndGlobal
