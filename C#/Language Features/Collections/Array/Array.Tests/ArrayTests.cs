@@ -77,5 +77,29 @@ namespace Array.Tests
                 Console.WriteLine(day);
             }
         }
+
+        [TestMethod]
+        public void Array_Modification_Using_For_Test()
+        {
+            string[] daysOfWeek = {
+                                    "Monday",
+                                    "Tuesday",
+                                    "Wednesday",
+                                    "Thursday",
+                                    "Friday",
+                                    "Saturday",
+                                    "Sunday"
+                                    };
+            for (int index = 0; index < daysOfWeek.Length; index++)
+            {
+                daysOfWeek[index] = daysOfWeek[index] + "s";
+            }
+
+            // Foreach is a readonly loop, cant be used to modify array elements like for loop
+            foreach (var day in daysOfWeek)
+            {
+                Console.WriteLine(day);
+            }
+        }
     }
 }
