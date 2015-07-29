@@ -150,6 +150,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadOnlyDictionary", "ReadO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadOnlyDictionary.Tests", "Collections\ReadOnlyDictionary\ReadOnlyDictionary.Tests\ReadOnlyDictionary.Tests.csproj", "{EEDBAF82-049A-4AA7-829E-9EE6E7FDBE1E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ObservableCollection", "ObservableCollection", "{42F1179E-FAD3-4AB6-9CF2-1C12E25F557B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObservableCollection.Tests", "Collections\ObservableCollection\ObservableCollection.Tests\ObservableCollection.Tests.csproj", "{0C87DC39-38F4-4088-AFF6-459152124674}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -352,6 +356,10 @@ Global
 		{EEDBAF82-049A-4AA7-829E-9EE6E7FDBE1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEDBAF82-049A-4AA7-829E-9EE6E7FDBE1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEDBAF82-049A-4AA7-829E-9EE6E7FDBE1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C87DC39-38F4-4088-AFF6-459152124674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C87DC39-38F4-4088-AFF6-459152124674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C87DC39-38F4-4088-AFF6-459152124674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C87DC39-38F4-4088-AFF6-459152124674}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -422,5 +430,7 @@ Global
 		{962B1FDC-DE97-4EF3-B99B-129E86416F04} = {F2B73BC1-2828-452E-9971-B515DBB8EB8B}
 		{5DEBB26F-A851-4799-AC16-AEAB07FE5136} = {AF9E5A1D-397F-45C2-B836-C583A56D64E6}
 		{EEDBAF82-049A-4AA7-829E-9EE6E7FDBE1E} = {5DEBB26F-A851-4799-AC16-AEAB07FE5136}
+		{42F1179E-FAD3-4AB6-9CF2-1C12E25F557B} = {AF9E5A1D-397F-45C2-B836-C583A56D64E6}
+		{0C87DC39-38F4-4088-AFF6-459152124674} = {42F1179E-FAD3-4AB6-9CF2-1C12E25F557B}
 	EndGlobalSection
 EndGlobal
