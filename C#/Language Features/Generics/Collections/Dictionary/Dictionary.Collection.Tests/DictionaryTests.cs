@@ -88,12 +88,40 @@ namespace Dictionary.Collection.Tests
         public void Dictionary_Add_CustomObject_Test()
         {
             var employees = new Dictionary<int, Employee>();
-            employees.Add(1, new Employee { Name = "Prasad", DepartmentId = 1 });
-            employees.Add(2, new Employee { Name = "Amit", DepartmentId = 2 });
-            employees.Add(3, new Employee { Name = "Colin", DepartmentId = 3 });
+            employees.Add(1, new Employee(1, "Prasad"));
+            employees.Add(1, new Employee(2, "Amit"));
+            employees.Add(1, new Employee(3, "Colin"));
 
             Assert.AreEqual(3, employees.Count);
             Assert.AreSame("Prasad", employees[1].Name);
         }
+
+        [TestMethod]
+        public void Dictionary_Enumarate_Test()
+        {
+            var employees = new Dictionary<int, Employee>();
+            employees.Add(1, new Employee(1, "Prasad"));
+            employees.Add(1, new Employee(2, "Amit"));
+            employees.Add(1, new Employee(3, "Colin"));
+
+            Console.WriteLine("Enumerating Dictionary Items");
+            foreach (var item in employees)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("Enumerating Dictionary Keys");
+            foreach (var item in employees.Keys)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("Enumerating Dictionary Values");
+            foreach (var item in employees.Values)
+            {
+                Console.WriteLine(item);
+            }
+        }
     }
+
 }

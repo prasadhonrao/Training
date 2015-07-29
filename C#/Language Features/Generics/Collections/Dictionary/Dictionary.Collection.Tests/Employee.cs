@@ -1,14 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Dictionary.Collection.Tests
+﻿namespace Dictionary.Collection.Tests
 {
-    class Employee
+    public class Employee
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int DepartmentId { get; set; }
+        public int Id { get; private set; }
+        public string Name { get; private set; }
+
+        public Employee(int id, string name)
+        {
+            this.Id = id;
+            this.Name = name;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("Id : " + this.Id + ", Name : " + this.Name);
+        }
     }
 }
