@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6A9B455E-2B45-469C-8648-4C727A24674C}"
 	ProjectSection(SolutionItems) = preProject
@@ -58,6 +58,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database First - Data Load Methods", "Database First - Data Load Methods\Database First - Data Load Methods.csproj", "{3184E1DB-9100-4FB3-9F32-432189D41131}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Approach - Code First From Database", "Approach - Code First From Database\Approach - Code First From Database.csproj", "{610E329B-BC8B-44DB-9C5C-91504C1E71C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code First - EF Power Tools", "Code First - EF Power Tools\Code First - EF Power Tools.csproj", "{D4CB9DC6-8477-44DF-B0B6-EC5ECAA5A820}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{610E329B-BC8B-44DB-9C5C-91504C1E71C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{610E329B-BC8B-44DB-9C5C-91504C1E71C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{610E329B-BC8B-44DB-9C5C-91504C1E71C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4CB9DC6-8477-44DF-B0B6-EC5ECAA5A820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4CB9DC6-8477-44DF-B0B6-EC5ECAA5A820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4CB9DC6-8477-44DF-B0B6-EC5ECAA5A820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4CB9DC6-8477-44DF-B0B6-EC5ECAA5A820}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -179,5 +185,6 @@ Global
 		{02DA0D00-5D85-4546-95DF-2E051190B52E} = {B742B708-5B31-47E8-A013-526DCBCA7E51}
 		{3184E1DB-9100-4FB3-9F32-432189D41131} = {A8CF071F-6321-4312-9AC7-B8FE1C973CD0}
 		{610E329B-BC8B-44DB-9C5C-91504C1E71C6} = {B7E3615B-23C6-4C10-AB41-4019CD4EE54E}
+		{D4CB9DC6-8477-44DF-B0B6-EC5ECAA5A820} = {B742B708-5B31-47E8-A013-526DCBCA7E51}
 	EndGlobalSection
 EndGlobal
