@@ -14,8 +14,9 @@ namespace Dictionary.Collection.Tests
             numbers.Add(1, "One");
             numbers.Add(2, "Two");
             numbers.Add(3, "Three");
+            numbers[4] = "Four"; // add using indexer
 
-            Assert.AreEqual(3, numbers.Count);
+            Assert.AreEqual(4, numbers.Count);
         }
 
         [TestMethod]
