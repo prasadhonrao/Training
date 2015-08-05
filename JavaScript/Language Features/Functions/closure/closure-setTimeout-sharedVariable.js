@@ -1,5 +1,5 @@
 function foo() {
-	var bar = 0;
+	var bar = 2;
 
 	setTimeout(function(){
 		console.log(bar++);
