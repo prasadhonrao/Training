@@ -14,10 +14,10 @@
 			"path": "Types"
 		},
 		{
-			"path": "Null - Undefined"
+			"path": "NaN"
 		},
 		{
-			"path": "NaN"
+			"path": "Array"
 		},
 		{
 			"path": "Control Statements"

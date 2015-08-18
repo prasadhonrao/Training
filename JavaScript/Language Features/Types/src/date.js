@@ -54,4 +54,3 @@ someDate.setDate(20);
 someDate.setMonth(05);
 someDate.setYear(1999);
 console.log(someDate);
-
