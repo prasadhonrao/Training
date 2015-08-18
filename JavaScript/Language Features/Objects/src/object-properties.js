@@ -20,3 +20,11 @@ var obj = {
 var b = "a";
 console.log(obj[b]);
 console.log(obj["b"]);
+
+// Computed Property
+var prefix = "foo";
+var newObject = {
+	[prefix + "bar"]:'Hello',
+	[prefix + "baz"]:'World',
+};
+console.log(newObject.foobar  + " " + newObject.foobaz);

@@ -1,3 +1,4 @@
+/*
 function foo() {
   // "use strict";
 	console.log(this.a);
@@ -8,4 +9,26 @@ var obj = {
 	foo: foo
 };
 
-obj.foo();
+obj.foo(); // setting obj as context for function foo
+
+*/
+
+/*
+In case of reference chain, only the last level of an object property matters
+*/
+
+function bar() {
+	console.log(this.a);
+}
+
+var bar2 = {
+	a: 100,
+	bar: bar
+};
+
+var bar1 = {
+	a: 99,
+	bar2: bar2
+};
+
+console.log(bar1.bar2.bar());

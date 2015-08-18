@@ -1,13 +1,14 @@
+'use strict';
 // Function Declaration
 function callback() {
-	console.log("Done")
+	console.log("Done");
 }
 setTimeout(callback, 1000);
 
 // Converted to anonymous function
-setTimeout(function() {
+setTimeout(function () {
 	console.log("Done again!");
-},2000)
+}, 2000);
 
 // Always provide a way to anonymous function for 
 // 1. Better debugging support
@@ -15,4 +16,4 @@ setTimeout(function() {
 
 setTimeout(function callme() {
 	console.log("Thanks for naming me!");
-},3000)
+}, 3000);
