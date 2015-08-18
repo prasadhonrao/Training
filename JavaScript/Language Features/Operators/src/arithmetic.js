@@ -1,6 +1,6 @@
-var firstNumber = 10;
-var secondNumber = 4;
-var result = 0;
+var firstNumber = 10,
+ 	secondNumber = 4,
+	result = 0;
 
 result = firstNumber + secondNumber;
 console.log("Addition : "  + result);

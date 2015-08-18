@@ -2,6 +2,7 @@
 
 var a = "42";
 console.log(typeof(a));
+
 var b = Number(a);
 console.log(typeof(b));
 
@@ -16,9 +17,9 @@ joining all the values with commas (,) in between. You might think
 that two arrays with the same contents would be == equal, but
 they’re not:
 */
-var a = [1,2,3];
-var b = [1,2,3];
-var c = "1,2,3";
+var a = [1, 2, 3];
+var b = [1, 2, 3];
+var c = "1, 2, 3";
 console.log(a == c); // true
 console.log(b == c); // true
 console.log(a == b); // false

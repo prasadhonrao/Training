@@ -1,4 +1,6 @@
-firstNumber = 10;
+var firstNumber = 10,
+	result = 0;
+	
 result = ++firstNumber;
 console.log("Pre Increment : "  + result);
 
