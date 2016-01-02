@@ -1,3 +1,8 @@
+/*
+ Q. - What is null? 
+ A. - It represents absence of a value
+ */
+
 // 1. Declare a null variable
 var customer = null;
 if (!customer) {
