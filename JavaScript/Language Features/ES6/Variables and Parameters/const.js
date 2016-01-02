@@ -9,7 +9,7 @@ console.log(language);
 A const cannot share its name with variable or function in same scope
 */
 const tool = "Sublime";
-var tool = "SublimeText";
+var tool = "SublimeText"; // Error to redeclare a variable 
 
 
 /*
