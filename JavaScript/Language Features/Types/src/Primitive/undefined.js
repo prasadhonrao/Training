@@ -1,3 +1,9 @@
+/*
+ Q. - What is undefine? 
+ A. - It represents an unknown value
+ */
+
+
 // 1. Undefined variable
 var customer; // even though variable has been defined, its not initialized
 console.log("customer variable value : " + customer);
