@@ -1,10 +1,14 @@
-(function() {
-	var language = "JavaScript";
-	var version = "5.0";
+/*
+	IIFE can be declared using both function expression or function statement syntax
+*/
 
-	function PrintInfo() {
-		console.log("Language " + language + " Version " + version);
-	}
+// Function Expression Syntax
+var greeting = function (name) {
+	return 'Hello ' + name;
+}('Prasad');
+console.log(greeting);
 
-	return PrintInfo();
-}());
+// Function Statement Syntax
+(function greet(name) {
+	console.log('Hello ' + name);
+}('John'));
