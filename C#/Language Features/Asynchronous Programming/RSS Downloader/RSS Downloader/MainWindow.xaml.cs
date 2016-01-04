@@ -1,23 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace RSS_Downloader
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         int counter = 0;
@@ -31,24 +18,47 @@ namespace RSS_Downloader
         #region Synchronous Operation
         //private void DownloadRSSButton_Click(object sender, RoutedEventArgs e)
         //{
-            
+
         //    var client = new WebClient();
         //    var rss = client.DownloadString(channel9RSSUrl);
         //    RSSTextBox.Text = rss;
         //}
         #endregion
 
-        #region Asynchronous Operation
+        #region Asynchronous Operation using event
+        //private void DownloadRSSButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    var client = new WebClient();
+
+        //    client.DownloadStringCompleted += (s, args) =>
+        //    {
+        //        RSSTextBox.Text = args.Result;
+        //    };
+
+        //    client.DownloadStringAsync(new Uri(channel9RSSUrl));
+        //}
+        #endregion
+
+        #region Asynchronous Operation using TPL
         private void DownloadRSSButton_Click(object sender, RoutedEventArgs e)
         {
             var client = new WebClient();
+            var rss = string.Empty;
+
+            var downloadTask = Task.Run(() =>
+            {
+                client.DownloadStringAsync(new Uri(channel9RSSUrl));
+            });
+
+            downloadTask.Wait();
 
             client.DownloadStringCompleted += (s, args) =>
             {
-                RSSTextBox.Text = args.Result;
+                Dispatcher.Invoke(() =>
+                {
+                    RSSTextBox.Text = args.Result;
+                });
             };
-
-            client.DownloadStringAsync(new Uri(channel9RSSUrl));
         }
         #endregion
 
