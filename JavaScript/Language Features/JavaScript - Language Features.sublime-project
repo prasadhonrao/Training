@@ -5,13 +5,16 @@
 			"path": "Introduction"
 		},
 		{
-			"path": "Operators"
-		},
-		{
 			"path": "Variables and Types"
 		},
 		{
 			"path": "Types"
+		},
+		{
+			"path": "Operators"
+		},
+		{
+			"path": "Equality"
 		},
 		{
 			"path": "NaN"
@@ -26,10 +29,13 @@
 			"path": "Objects"
 		},
 		{
-			"path": "Equality"
+			"path": "Functions"
 		},
 		{
-			"path": "Functions"
+			"path": "Functional Programming"
+		},
+		{
+			"path": "Inheritance"
 		},
 		{
 			"path": "Prototype"
