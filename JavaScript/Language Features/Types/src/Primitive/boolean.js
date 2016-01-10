@@ -12,6 +12,8 @@ console.log("Value : " + isActive + " Type : " + typeof (isActive));
 		undefined
 		null
 		empty string
+        0
+        -0
 */
 
 var flag = "some text";
@@ -48,4 +50,20 @@ if (flag) {
 }
 else {
     console.log("Empty string is a false condition");
+}
+
+flag = 0;
+if (flag) {
+    console.log("0 is a true condition");
+}
+else {
+    console.log("0 is a false condition");
+}
+
+flag = -0;
+if (flag) {
+    console.log("-0 is a true condition");
+}
+else {
+    console.log("-0 is a false condition");
 }
