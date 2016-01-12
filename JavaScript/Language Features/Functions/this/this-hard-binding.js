@@ -26,6 +26,7 @@ var obj2 = {
 	a:2
 };
 
+//bind creates a copy of the function
 var bar2 = foo2.bind(obj2);
 var b2 = bar2(3);
 console.log(b2);
