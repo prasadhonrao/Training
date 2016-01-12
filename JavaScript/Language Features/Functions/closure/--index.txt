@@ -1,0 +1,5 @@
+closure-intro
+closure-function-in-a-loop
+closure-factory -- FRAMEWORK ASIDE
+closure-setTimeout
+closure-setTimeout-sharedVariable
