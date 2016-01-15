@@ -1,4 +1,3 @@
-
 // Object with single property and single function
 var customer = {
     name: "Prasad",
@@ -6,5 +5,6 @@ var customer = {
         console.log("Hello " + userName);
     }
 }
+
 console.log(customer.name);
 customer.Greet("Prasad");

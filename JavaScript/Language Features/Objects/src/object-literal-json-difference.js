@@ -3,6 +3,7 @@ var customer = {
 	firstName: 'Prasad',
 	isProgrammer: true
 };
+
 var objectAsJSON = JSON.stringify(customer)
 console.log(objectAsJSON); // Properties are enclosed in ""
 
