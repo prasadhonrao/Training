@@ -16,4 +16,3 @@ function Customer(fname, lname) {
 
 var cust = new Customer("Prasad", "Honrao");
 cust.talk();
-
