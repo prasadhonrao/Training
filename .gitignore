@@ -186,3 +186,6 @@ UpgradeLog*.htm
 FakesAssemblies/
 
 /AngularJS/Apps/FlightPicker/packages
+/Java/Language Features/HelloWorld/.idea
+/Java/Language Features/HelloWorld/out/production/HelloWorld
+*.iml
