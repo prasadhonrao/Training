@@ -1,0 +1,580 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pu",
+				"public"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"fu",
+				"fluffy"
+			],
+			[
+				"arr",
+				"arr2"
+			],
+			[
+				"cus",
+				"customer4"
+			],
+			[
+				"cust",
+				"customer3"
+			],
+			[
+				"get",
+				"getFullName"
+			],
+			[
+				"g",
+				"greaterThanTwo"
+			],
+			[
+				"t",
+				"tripe"
+			],
+			[
+				"new",
+				"newArr"
+			],
+			[
+				"en",
+				"englishGreeting"
+			],
+			[
+				"S",
+				"Syntax"
+			],
+			[
+				"gr",
+				"greetEnglish"
+			],
+			[
+				"fun",
+				"functionCode"
+			],
+			[
+				"con",
+				"convertedObject"
+			],
+			[
+				"str",
+				"str2"
+			],
+			[
+				"bar",
+				"bar1"
+			],
+			[
+				"co",
+				"company"
+			],
+			[
+				"c",
+				"const"
+			],
+			[
+				"P",
+				"Person"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"ba",
+				"baz"
+			],
+			[
+				"is",
+				"isNaN"
+			],
+			[
+				"Con",
+				"Coercion"
+			],
+			[
+				"vr",
+				"variable"
+			],
+			[
+				"var",
+				"variable"
+			],
+			[
+				"ob",
+				"obj2"
+			],
+			[
+				"fo",
+				"foo"
+			],
+			[
+				"ski",
+				"skillLevel"
+			],
+			[
+				"lik",
+				"likeResult"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Java/JavaC.sublime-build",
+	"command_palette":
+	{
+		"height": 384.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"pa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Git/Training/Java/Language Features/Class Abstract/src/Employee.java",
+		"/D/Git/Training/Java/Language Features/Class Abstract/src/Person.java",
+		"/D/Git/Training/Java/Language Features/Class Abstract/src/Main.java",
+		"/D/Git/Training/Java/Language Features/Constructor/src/Customer.java",
+		"/D/Git/Training/Java/Language Features/Constructor/src/Main.java",
+		"/D/Git/Training/Java/Language Features/Object Equality/src/Main.java",
+		"/D/Git/Training/Java/Language Features/Object Equality/src/Person.java",
+		"/D/Git/Training/Java/Language Features/Object Equality/src/Customer.java",
+		"/D/Git/Training/Java/Language Features/Class/src/Main.java",
+		"/D/Git/Training/Java/Language Features/Package/src/Main.java",
+		"/D/Git/Training/Java/Language Features/Class Method Overriding/src/Main.java",
+		"/D/Git/Training/Java/Language Features/Class Method Overriding/src/CargoFlight.java",
+		"/D/Git/Training/Java/Language Features/Class Method Overriding/src/Flight.java",
+		"/D/Git/Training/Java/Language Features/Class Inheritance/src/Main.java",
+		"/D/Git/Training/Java/Language Features/Class Inheritance Member Hiding/src/com/prasadhonrao/member/hiding/CargoFlight.java",
+		"/D/Git/Training/Java/Language Features/Class Inheritance Member Hiding/src/com/prasadhonrao/member/hiding/Flight.java",
+		"/D/Git/Training/Java/Language Features/Class Inheritance/src/com/prasadhonrao/inheritance/Person.java",
+		"/D/Git/Training/Java/Language Features/Class Inheritance/src/com/prasadhonrao/inheritance/Employee.java",
+		"/D/Git/Training/Java/Language Features/Class Inheritance/src/com/prasadhonrao/inheritance/Main.java",
+		"/D/Git/Training/Java/Language Features/Class/src/com/prasadhonrao/Customer.java",
+		"/D/Git/Training/Java/Language Features/Class/src/com/prasadhonrao/Main.java",
+		"/D/Git/Training/Java/Language Features/Class Inheritance Member Hiding/src/com/prasadhonrao/member/hiding/Main.java",
+		"/C/Users/130043/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/class-properties.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/class-events.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/inheritance.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/extension-methods.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/class.js",
+		"/D/Git/Training/JavaScript/Language Features/Namespace/src/namespace.js",
+		"/D/Git/Training/JavaScript/Language Features/Error Handling/src/try-catch-block-scope.js",
+		"/D/Git/Training/JavaScript/Language Features/Error Handling/src/try-catch-finally.js",
+		"/D/Git/Training/JavaScript/Language Features/Strict/src/use-strict.js",
+		"/D/Git/Training/JavaScript/Language Features/Crazy/crazy.js",
+		"/D/Git/Training/JavaScript/Language Features/Bugs/src/switchBreak.js",
+		"/D/Git/Training/JavaScript/Language Features/Bugs/src/missingNew.js",
+		"/D/Git/Training/JavaScript/Language Features/Bugs/src/globalObjectCount.html",
+		"/D/Git/Training/JavaScript/Language Features/Bugs/src/equality.js",
+		"/D/Git/Training/JavaScript/Language Features/Bugs/src/decimalPrecision.js",
+		"/D/Git/Training/JavaScript/Language Features/Bugs/src/commaOperator.js",
+		"/D/Git/Training/JavaScript/Language Features/Operators/src/comma.js",
+		"/D/Git/Training/JavaScript/Language Features/Variables and Types/src/local-global.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/class-methods.js",
+		"/D/Git/Training/JavaScript/Language Features/Array/array-intro.js",
+		"/D/Git/Training/JavaScript/Language Features/Objects/src/object-declaration.js",
+		"/D/Git/Training/JavaScript/Language Features/Objects/src/object-delete-property.js",
+		"/D/Git/Training/JavaScript/Language Features/Objects/src/object-dynamic-properties-methods.js",
+		"/D/Git/Training/JavaScript/Language Features/Objects/src/object-literal-json-difference.js",
+		"/D/Git/Training/JavaScript/Language Features/Objects/src/object-methods.js",
+		"/D/Git/Training/JavaScript/Language Features/Objects/src/object-nesting.js",
+		"/D/Git/Training/JavaScript/Language Features/Objects/src/object-primitives.js",
+		"/D/Git/Training/JavaScript/Language Features/Objects/src/object-properties-configuration.js",
+		"/D/Git/Training/JavaScript/Language Features/Objects/src/object-properties.js",
+		"/D/Git/Training/JavaScript/Language Features/Objects/src/object-reference-type-behavior.js",
+		"/D/Git/Training/JavaScript/Language Features/Objects/src/object-retrieval.js",
+		"/D/Git/Training/JavaScript/Language Features/IIFE/src/app.js",
+		"/D/Git/Training/JavaScript/Language Features/Array/array-weird.js",
+		"/D/Git/Training/JavaScript/Language Features/Array/array-methods.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/src/function-overloading.js",
+		"/D/Git/Training/JavaScript/Language Features/Error Handling/src/try-catch.js",
+		"/D/Git/Training/JavaScript/Language Features/Inheritance/prototype/prototype-with-built-in-functions.js",
+		"/D/Git/Training/JavaScript/Language Features/Inheritance/prototype/prototype-with-custom-functions.js",
+		"/D/Git/Training/JavaScript/Language Features/Inheritance/prototype/prototype-change-at-runtime.js",
+		"/D/Git/Training/JavaScript/Language Features/Inheritance/__proto__/inheritance-proto.js",
+		"/D/Git/Training/JavaScript/Language Features/Array/array.js",
+		"/D/Git/Training/JavaScript/Language Features/Types/src/Primitive/boolean.js",
+		"/D/Git/Training/JavaScript/Language Features/Prototype/prototype-intro.js",
+		"/D/Git/Training/JavaScript/Language Features/Prototype/prototype-introduction.js",
+		"/D/Git/Training/JavaScript/Language Features/Inheritance/prototype/prototype-__proto__comparison.js",
+		"/D/Git/Training/JavaScript/Language Features/Control Statements/src/for-in.js",
+		"/D/Git/Training/JavaScript/Language Features/ES6/Classes/class.js",
+		"/D/Git/Training/JavaScript/Language Features/Array/array-underscorejs.js",
+		"/D/Git/Training/JavaScript/Language Features/Types/src/date.js",
+		"/D/Git/Training/JavaScript/Language Features/Math Lib/src/math-lib.js",
+		"/D/Git/Training/JavaScript/Language Features/UnderscoreJS/src/app.js",
+		"/D/Git/Training/JavaScript/Language Features/UnderscoreJS/src/lib/underscore-min.js",
+		"/D/Git/Training/JavaScript/Language Features/Types/src/Primitive/string.js",
+		"/D/Git/Training/JavaScript/Language Features/Types/src/Primitive/number.js",
+		"/D/Git/Training/JavaScript/Language Features/Introduction/src/index.js",
+		"/D/Git/Training/JavaScript/Language Features/Types/src/Primitive/null.js",
+		"/D/Git/Training/JavaScript/Language Features/Types/src/Primitive/undefined.js",
+		"/D/Git/Training/JavaScript/Language Features/Control Statements/src/switch.js",
+		"/D/Git/Training/JavaScript/Language Features/Control Statements/src/for.js",
+		"/D/Git/Training/JavaScript/Language Features/ES6/Variables and Parameters/const.js",
+		"/D/Git/Training/JavaScript/Language Features/Variables and Types/src/const.js",
+		"/D/Git/Training/JavaScript/Language Features/Operators/src/logical.js",
+		"/D/Git/Training/JavaScript/Language Features/Operators/src/operator-precedence.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/src/function-callback.js",
+		"/D/Git/Training/JavaScript/Language Features/Crazy/crazy-comparison-operators.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/scope/scope-traversal-2.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/scope/scope-traversal-1.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/src/function-execution-context.js",
+		"/D/Git/Training/JavaScript/Language Features/__Proto__/index.js",
+		"/D/Git/Training/JavaScript/Language Features/ES6/Built In Objects/array.js",
+		"/D/Git/Training/JavaScript/Language Features/ES6/Built In Objects/number.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/closure/closure-intro.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/closure/closure-setTimeout.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/closure/closure-factory.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/closure/closure-gotcha-1.js",
+		"/D/Git/Training/JavaScript/Language Features/Crazy/automatic-semicolon.js",
+		"/D/Git/Training/JavaScript/Language Features/Crazy/crazy-recursion.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/hoisting/function-variable-hoisting.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/hoisting/hoisting-sequence.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/hoisting/function-hoisting.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/declarations/function-anonymous.js",
+		"/D/Git/Training/JavaScript/Language Features/Prototype/index.txt",
+		"/D/Git/Training/JavaScript/Language Features/Functional Programming/intro.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/closure/closure-function-in-a-loop.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/closure/closure-setTimeout-sharedVariable.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/closure/--index.txt",
+		"/D/Git/Training/JavaScript/Language Features/Functions/src/call.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/this/this-implicit-binding.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/this/this-1.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/this/this-default-binding.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/this/this-explicit-binding.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/this/this-hard-binding.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/closure/closure-1.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/closure/closure-nested-scope.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/closure/closure-2.js",
+		"/D/Git/Training/JavaScript/Language Features/Functions/src/function-object.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/classFunctions.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/classProperties.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/events.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/extensionMethod.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/instanceVsstatic.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/interface.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/prototypeInhertiance.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/reflection.js",
+		"/D/Git/Training/JavaScript/Language Features/OOP/src/strictness.js"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 176.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"local",
+				"Variables and Types/src/local-global.js"
+			],
+			[
+				"try",
+				"Error Handling/src/try-catch.js"
+			],
+			[
+				"for",
+				"Control Statements/src/for-in.js"
+			],
+			[
+				"under",
+				"UnderscoreJS/src/lib/underscore-min.js"
+			],
+			[
+				"sw",
+				"Control Statements/src/switch.js"
+			],
+			[
+				"object",
+				"Objects/src/object-nesting.js"
+			],
+			[
+				"obj",
+				"Objects/src/object-declaration.js"
+			],
+			[
+				"nu",
+				"Types/src/Primitive/null.js"
+			],
+			[
+				"und",
+				"Types/src/Primitive/undefined.js"
+			],
+			[
+				"nul",
+				"Types/src/Primitive/null.js"
+			],
+			[
+				"const",
+				"ES6/Variables and Parameters/const.js"
+			],
+			[
+				"cra",
+				"Crazy/crazy.js"
+			],
+			[
+				"function-call",
+				"Functions/src/function-callback.js"
+			],
+			[
+				"funciton-exe",
+				"Functions/src/function-execution-context.js"
+			],
+			[
+				"unde",
+				"Types/src/Primitive/undefined.js"
+			],
+			[
+				"bind",
+				"Functions/this/this-default-binding.js"
+			],
+			[
+				"call",
+				"Functions/src/call.js"
+			],
+			[
+				"closu",
+				"Functions/closure/closure-intro.js"
+			],
+			[
+				"iife",
+				"Functions/declarations/function-iife.js"
+			],
+			[
+				"aut",
+				"Crazy/automatic-semicolon.js"
+			],
+			[
+				"over",
+				"Functions/src/overloading.js"
+			],
+			[
+				"spre",
+				"ES6/Variables and Parameters/spread.js"
+			],
+			[
+				"argum",
+				"Functions/src/function-arguments.js"
+			],
+			[
+				"boo",
+				"Types/src/Primitive/boolean.js"
+			],
+			[
+				"incre",
+				"Operators/src/increment-decrement.js"
+			],
+			[
+				"undefi",
+				"Null - Undefined/src/undefined.js"
+			],
+			[
+				"binar",
+				"ES6/Built In Objects/array.js"
+			],
+			[
+				"arra",
+				"Types/src/array.js"
+			],
+			[
+				"type",
+				"Variables and Types/src/typeof.js"
+			],
+			[
+				"inst",
+				"Crazy/instance-of.js"
+			],
+			[
+				"retur",
+				"Functions/src/functionWithNoReturn.js"
+			],
+			[
+				"let",
+				"ES6/Variables and Parameters/let-statement.js"
+			],
+			[
+				"let-wi",
+				"ES6/Variables and Parameters/let-with-loop.js"
+			],
+			[
+				"eq",
+				"Equality/.gitignore"
+			],
+			[
+				"instance",
+				"OOP/src/instanceVsstatic.js"
+			],
+			[
+				"h",
+				"Bugs/src/Functions/hoisting.js"
+			],
+			[
+				"cls",
+				"Functions/src/closure.js"
+			],
+			[
+				"nan",
+				"Bugs/src/Variables/checkNaN.js"
+			],
+			[
+				"this",
+				"Functions/src/this.js"
+			],
+			[
+				"hoi",
+				"Bugs/src/Functions/variableHoisting.js"
+			],
+			[
+				"iif",
+				"IIFE/src/app.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true
+}
