@@ -1,5 +1,3 @@
-package com.prasadhonrao.inheritance;
-
 public class Main {
 
     public static void main(String[] args) {

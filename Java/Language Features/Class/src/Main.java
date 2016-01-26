@@ -1,4 +1,3 @@
-package com.prasadhonrao;
 import java.lang.String;
 
 public class Main {
@@ -8,4 +7,3 @@ public class Main {
         System.out.println(newCustomer.name + " " + newCustomer.age);
     }
 }
-

@@ -1,4 +1,3 @@
-package com.prasadhonrao.inheritance;
 public class Person {
     private int id;
     private String name;

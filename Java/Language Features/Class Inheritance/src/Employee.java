@@ -1,4 +1,3 @@
-package com.prasadhonrao.inheritance;
 public class Employee extends Person{
     private int employeeId;
 
