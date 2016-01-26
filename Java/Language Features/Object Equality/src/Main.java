@@ -6,6 +6,10 @@ public class Main {
 		System.out.println(c1 == c2); // reference equality check
 		System.out.println(c1.equals(c2)); // reference equality check
 
+		Customer c3 = c1;
+		System.out.println(c1 == c3); // reference equality check
+		System.out.println(c1.equals(c3)); // reference equality check
+
 		Person p1 = new Person(1);
 		Person p2 = new Person(1);
 		
