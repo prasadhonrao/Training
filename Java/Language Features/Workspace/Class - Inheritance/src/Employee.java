@@ -1,6 +1,4 @@
 public class Employee extends Person{
-    private int employeeId;
-
     public Employee(int id, String name) {
         this.SetId(id);
         this.SetName(name);
