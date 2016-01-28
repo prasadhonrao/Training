@@ -8,6 +8,8 @@ public class Main {
 		try {
 			int result = i / (j-2);
 			System.out.println(result);
+		} catch (ArithmeticException e) {
+			System.out.println("Invalid Value" + e.getMessage());
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
