@@ -32,10 +32,8 @@ public class Main {
 				System.out.println("Friday Weekend Near");
 				break;
 			case 6:
-				System.out.println("Saturday Night");
-				break;
 			case 7:
-				System.out.println("Happy Sunday!");
+				System.out.println("Happy Weekend!");
 				break;
 			default:
 				System.out.println("Invalid input");
