@@ -26,11 +26,32 @@ public class Main {
         }
 
         // FOR EACH
+        System.out.println("FOR...EACH");
         int[] numbers = {1, 2, 3, 4, 5};
         int sum = 0;
         for (int num: numbers) {
             sum = sum + num;
         }
         System.out.println("Sum is " + sum);
+        
+        // BREAK
+        System.out.println("BREAK");
+        String[] colors = new String[] {"red", "orange", "blue", "green"};
+        for(String color: colors) {
+        	if ("blue".equals(color)){
+        		break;
+        	}
+        	System.out.println(color);
+        }
+        
+        // CONTINUE
+        System.out.println("BREAK");
+        String[] colors2 = new String[] {"red", "orange", "blue", "green"};
+        for(String color: colors2) {
+        	if ("blue".equals(color)){
+        		continue;
+        	}
+        	System.out.println(color);
+        }
     }
 }
