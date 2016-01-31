@@ -45,7 +45,7 @@ public class Main {
         }
         
         // CONTINUE
-        System.out.println("BREAK");
+        System.out.println("CONTINUE");
         String[] colors2 = new String[] {"red", "orange", "blue", "green"};
         for(String color: colors2) {
         	if ("blue".equals(color)){
