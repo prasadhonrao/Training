@@ -14,3 +14,10 @@ console.log("function body: " + functionbody);
 // Since functions are objects, you can add new members on the fly
 hello.language = 'english';
 console.log(hello.language);
+
+// new function can be added as a property to user defined functions
+hello.say = function() {
+	console.log('Hello again!');
+};
+
+hello.say();

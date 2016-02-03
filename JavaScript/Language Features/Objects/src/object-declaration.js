@@ -10,10 +10,12 @@ console.log(customer.firstName + " " + customer.lastName + " " + customer.gender
 // Object constructor syntax
 var employee = new Object();
 employee.firstName = 'Prasad';
-employee.lastName = 'Honrao';
+employee["lastName"] = 'Honrao';
 employee.gender = 'M';
 
-console.log(employee.firstName + " " + employee.lastName + " " + employee.gender)
+console.log(employee.firstName + " " + employee.lastName + " " + employee["gender"])
+var lastnameProperty = "lastName";
+console.log(employee[lastnameProperty]);
 
 // Object.create
 var dog = Object.create(Object.prototype, {
