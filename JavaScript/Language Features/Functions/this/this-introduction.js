@@ -20,6 +20,7 @@ var person = {
     greet: function () {
     	console.log(this);
         console.log(this.name);
+        
         this.name = "Prasad Honrao"; // property can be mutated as well
         console.log(this.name);
     }
