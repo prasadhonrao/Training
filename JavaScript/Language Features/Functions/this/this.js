@@ -1,5 +1,8 @@
+/* this applies to owner of the function. Since its a global function, 
+this ex will return Window / globals object */
+
 var h = function hello(msg) {
-    console.log(this); // this applies to owner of the function. Since its a global function, this ex will return Window / globals object
+    console.log(this); 
 };
 h();
 
