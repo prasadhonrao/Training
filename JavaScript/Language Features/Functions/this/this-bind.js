@@ -1,21 +1,3 @@
-/* this applies to owner of the function. Since its a global function, 
-this ex will return Window / globals object */
-
-var h = function hello(msg) {
-    console.log(this); 
-};
-h();
-
-
-//Below example owner of 'this' is obj.
-var obj = {
-    name: 'Prasad',
-    greet: function () {
-        console.log(this.name);
-    }
-};
-obj.greet();
-
 // bind
 var obj = {
     findThis: function () {
