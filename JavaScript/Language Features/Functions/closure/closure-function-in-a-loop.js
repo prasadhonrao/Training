@@ -17,7 +17,7 @@ fs[2]();
 
 console.log('---------------------------------')
 
-// Solution
+// Solution using IIFE
 
 function buildFunctions2() {
 	var arr = [];
@@ -39,3 +39,24 @@ var fs2 = buildFunctions2();
 fs2[0]();
 fs2[1]();
 fs2[2]();
+
+console.log('---------------------------------')
+
+// ES 6 Solution using 'let'
+
+function buildFunctions3() {
+	var arr = [];
+
+	for (let i = 0; i < 3; i++) {
+		arr.push( function() {
+			console.log(i);	// remember function is not executed here.
+		});
+	};
+
+	return arr;
+}
+
+var fs3 = buildFunctions3();
+fs3[0]();
+fs3[1]();
+fs3[2]();
