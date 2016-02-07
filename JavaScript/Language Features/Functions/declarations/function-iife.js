@@ -12,3 +12,14 @@ console.log(greeting);
 (function greet(name) {
 	console.log('Hello ' + name);
 }('John'));
+
+// IIFE creates separate execution context and avoids member collission
+
+var message = "Hello";
+
+(function greetWithMessage(name) {
+
+	var message = "Inside IIFE :  Hello";
+	console.log(message + ' ' + name);
+
+}('Roy'));
