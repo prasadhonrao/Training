@@ -1,8 +1,12 @@
-function foo(message) {
+function sayHiLater() {
 
-	setTimeout(function(){
-		console.log(message);
-	}, 2000);
+	var greeting = "Hi";
+
+	setTimeout(function() {
+
+		console.log(greeting);
+		
+	}, 3000);
 }
 
-foo('Hello, closure');
+sayHiLater();
