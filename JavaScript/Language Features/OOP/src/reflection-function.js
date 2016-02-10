@@ -12,6 +12,7 @@ function Customer(name, company) {
 }
 
 var cust = new Customer("Prasad", "MyCompany");
+cust.__proto__ = Array.__proto__;
 
 for (var prop in cust) {
     // DETECT PROPERTY
