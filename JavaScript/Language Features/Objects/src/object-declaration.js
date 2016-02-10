@@ -4,7 +4,6 @@ var customer = {
 	lastName: 'Honrao',
 	gender: 'M'
 };
-
 console.log(customer.firstName + " " + customer.lastName + " " + customer.gender)
 
 // Object constructor syntax
@@ -24,5 +23,13 @@ var dog = Object.create(Object.prototype, {
 })
 
 console.log(dog.name + " is a " + dog.color + " dog");
+
+// Function Constructor OR 'new' operator
+function Book(id, name) {
+	this.id = id;
+	this.name = name;
+}
+var kiterunner = new Book(1,'Kite Runner');
+console.log(kiterunner.name);
 
 // ES6 classes
