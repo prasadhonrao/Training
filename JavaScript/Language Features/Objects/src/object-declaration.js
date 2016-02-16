@@ -33,3 +33,15 @@ var kiterunner = new Book(1,'Kite Runner');
 console.log(kiterunner.name);
 
 // ES6 classes
+class Person {
+	constructor(firstName, lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName; 
+	}
+
+	greet() {
+		return 'Hi' + this.firstName;
+	}
+}
+var john = new Person('John','Papa');
+console.log(john.greet());
