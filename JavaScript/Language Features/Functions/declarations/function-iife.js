@@ -6,6 +6,7 @@
 var greeting = function (name) {
 	return 'Hello ' + name;
 }('Prasad');
+
 console.log(greeting);
 
 // Function Statement Syntax
@@ -15,7 +16,7 @@ console.log(greeting);
 
 // IIFE creates separate execution context and avoids member collission
 
-var message = "Hello";
+var message = "Outside IIFE: Hello";
 
 (function greetWithMessage(name) {
 
@@ -23,3 +24,5 @@ var message = "Hello";
 	console.log(message + ' ' + name);
 
 }('Roy'));
+
+console.log(message);
