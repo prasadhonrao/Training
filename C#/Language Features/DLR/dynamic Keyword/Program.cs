@@ -2,9 +2,9 @@
 
 namespace Training.CSharp
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var text = "Hello World!";
             Console.WriteLine("Text length is {0}", text.Length);
