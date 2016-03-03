@@ -1,0 +1,8 @@
+function-as-value
+higher-order-function
+higher-order-function-filter
+higher-order-function-find
+higher-order-function-custom-map
+higher-order-function-map
+higher-order-function-reduce
+function-currying
