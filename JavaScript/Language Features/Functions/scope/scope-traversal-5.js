@@ -7,6 +7,7 @@ var obj = {
 obj.a = obj.b + obj.c;
 obj.c = obj.b - obj.a;
 
+// with creates a new lexical scope at runtime
 with(obj) {
 	a = b + c;
 	c = b - a;
