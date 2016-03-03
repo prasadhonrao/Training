@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Training.CSharp
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Predicate<double> isEvenNumber = d => d % 2 == 0;
             Console.WriteLine("10 is even number? - " + isEvenNumber(10));

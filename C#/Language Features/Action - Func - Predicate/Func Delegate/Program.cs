@@ -4,9 +4,9 @@ namespace Training.CSharp
 {
     public delegate int AddDelegate(int x, int y);
     
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             // Delegate with method reference
             AddDelegate addMethod = new AddDelegate(AddMethod);

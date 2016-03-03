@@ -5,9 +5,9 @@ namespace Training.CSharp
     delegate void LogMessage();
     delegate void LogCustomMessage(string message);
 
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             #region LogMessage delegate
             
