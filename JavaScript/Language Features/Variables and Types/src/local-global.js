@@ -1,7 +1,7 @@
-var message = "Global Variable"
+var message = "Global Variable";
 
 function displayMessage(){
-	var message = "Local Variable";
+	var message = "Local Variable"; // variable declared using 'var'
 	console.log(message);
 }
 
