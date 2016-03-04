@@ -1,4 +1,7 @@
 /*
+Implicit Binding - Defines the object in context for the callsite
+*/
+
 function foo() {
   // "use strict";
 	console.log(this.a);
@@ -11,7 +14,7 @@ var obj = {
 
 obj.foo(); // setting obj as context for function foo
 
-*/
+console.log('---------------------------------------------');
 
 /*
 In case of reference chain, only the last level of an object property matters

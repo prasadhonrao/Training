@@ -1,11 +1,15 @@
 // In case of function declaration / expression 'this' always points to global object
 console.log(this);
+console.log('----------------------------------------------------')
 
+/*
 function sayHello() {
 	console.log('hello');
 	console.log(this);
 }
 sayHello();
+
+console.log('----------------------------------------------------')
 
 var sayBye = function () {
 	console.log('bye');
@@ -13,6 +17,7 @@ var sayBye = function () {
 };
 sayBye();
 
+console.log('----------------------------------------------------')
 
 // If 'this' is referred in a method of an object, then 'this' refers to the object itself
 var person = {
@@ -26,3 +31,4 @@ var person = {
     }
 };
 person.greet();
+*/
