@@ -3,8 +3,8 @@ function Person(firstname, lastname){
 	this.lastname = lastname;
 }
 
-// Adding a method on prototype creates just one copy of the method, rather than in constructor which
-// creates separate copy for each object instance.
+/* Adding a method on prototype creates just one copy of the method, rather than 
+   in constructor which creates separate copy for each object instance. */
 Person.prototype.getFullName = function() {
 	return this.firstname + ' ' + this.lastname;
 }

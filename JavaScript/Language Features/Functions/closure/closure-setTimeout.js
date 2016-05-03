@@ -1,12 +1,6 @@
 function sayHiLater() {
-
 	var greeting = "Hi";
-
-	setTimeout(function() {
-
-		console.log(greeting);
-		
-	}, 3000);
+	setTimeout(10, 3000);
 }
 
 sayHiLater();

@@ -1,6 +1,7 @@
+'use strict';
+
 function buildFunctions() {
 	var arr = [];
-
 	for (var i = 0; i < 3; i++) {
 		arr.push( function() {
 			console.log(i);	// remember function is not executed here.
@@ -21,7 +22,6 @@ console.log('---------------------------------')
 
 function buildFunctions2() {
 	var arr = [];
-
 	for (var i = 0; i < 3; i++) {
 		arr.push(
 			(function(j) {
@@ -46,7 +46,6 @@ console.log('---------------------------------')
 
 function buildFunctions3() {
 	var arr = [];
-
 	for (let i = 0; i < 3; i++) {
 		arr.push( function() {
 			console.log(i);	// remember function is not executed here.

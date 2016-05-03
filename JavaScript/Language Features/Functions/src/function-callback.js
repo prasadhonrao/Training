@@ -1,4 +1,4 @@
-`var KBC = {
+var KBC = {
     ans: "Red",
     askQuestion: function (answered) {
         console.log("Your fav color :" + this.ans);

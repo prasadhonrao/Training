@@ -1,14 +1,15 @@
-function Foo(who) {
-	this.me = who;
+function Person(firstname, lastname){
+	this.firstname = firstname;
+	this.lastname = lastname;
 }
 
-Foo.prototype.identify = function() {
-	return "I am " + this.me;
+Person.prototype.identify = function() {
+	return "I am " + this.firstname + ' ' + this.lastname;
 };
 
-Foo.prototype.speak = function() {
+Person.prototype.speak = function() {
 	return "Hello " + this.identify() + "."; // speak is delegating work to identify within same prototype
 };
 
-var a1 = new Foo("a1");
-console.log(a1.speak());
+var prasad = new Person("Prasad", "Honrao");
+console.log(prasad.speak());
