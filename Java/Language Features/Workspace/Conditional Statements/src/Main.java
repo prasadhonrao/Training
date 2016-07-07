@@ -1,21 +1,36 @@
+import java.util.Calendar;
+import java.util.Date;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		// if...else
-		
+		//1. if...else
 		if (args.length > 0) {
 			System.out.println("You have provided command line argument : " + args[0]);
 		} else {
 			System.out.println("There are no command line argument");
 		}
 		
-		// switch...case
+		// relational operator works on all integer and character types
+		if ('c' > 'a') {
+			System.out.println("Character c is greater than character a");
+		} 
 		
-		int weekdayNumber = 7;
+		// 2. Conditional assignment using ?
+		int students = 30;
+		int rooms = 5;
+		int studentsPerRoom = rooms == 0 ? 0 : students / rooms;
+		System.out.println("Students per room " + studentsPerRoom);
 		
-		switch(weekdayNumber) {
+		// 3. switch...case
+		Calendar c = Calendar.getInstance();
+		int dayOfWeek = c.get(Calendar.DAY_OF_WEEK) - 1;
+				
+		switch(dayOfWeek) {
+			case 0:
+				System.out.println("OMG, its Sunday!!!");
+				break;
 			case 1:
 				System.out.println("Hello, Monday!");
 				break;
@@ -32,15 +47,11 @@ public class Main {
 				System.out.println("Friday Weekend Near");
 				break;
 			case 6:
-			case 7:
-				System.out.println("Happy Weekend!");
+				System.out.println("Saturday Night!");
 				break;
 			default:
 				System.out.println("Invalid input");
 				break;
 		}
-		
-
 	}
-
 }
