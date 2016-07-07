@@ -1,5 +1,4 @@
 public class Main {
-
     public static void main(String[] args) {
         int number = 1;
 
@@ -46,7 +45,7 @@ public class Main {
         
         // CONTINUE
         System.out.println("CONTINUE");
-        String[] colors2 = new String[] {"red", "orange", "blue", "green"};
+        String[] colors2 = {"red", "orange", "blue", "green"};
         for(String color: colors2) {
         	if ("blue".equals(color)){
         		continue;
