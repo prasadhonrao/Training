@@ -12,7 +12,7 @@ public class Main {
         int intValue = 1000;
         System.out.println(intValue);
 
-        long longValue = 222222L;
+        long longValue = 22222235654677L;
         System.out.println(longValue);
 
         // 2. FLOATING POINT TYPE - float (32), double (64)
@@ -25,9 +25,12 @@ public class Main {
         // 3. CHARACTER - char
         char charValue = 'c';
         System.out.println(charValue);
+        
+        char accentedU = '\u00DA'; 
+        System.out.println(accentedU);
 
         // 4. BOOLEAN
-        boolean booleanValue = true;
-        System.out.println(booleanValue);
+        boolean iLoveJava = true;
+        System.out.println(iLoveJava);
     }
 }
