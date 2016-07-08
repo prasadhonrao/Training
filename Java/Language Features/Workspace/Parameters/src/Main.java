@@ -25,6 +25,9 @@ public class Main {
         System.out.println("After Reference Type Swap");
         Swap(c1, c2);
         System.out.println("First : " + c1.GetId() + " Second: " + c2.GetId());
+        
+        System.out.println("Variable number of parameters");
+        PrintCustomers(c1, c2);
     }
 
     private static void Swap(int first, int second)
@@ -39,6 +42,12 @@ public class Main {
         Customer temp = first;
         first = second;
         second = temp;
+    }
+    
+    private static void PrintCustomers(Customer...customers){
+    	for (Customer customer : customers) {
+			System.out.println(customer.GetId());
+		}
     }
 }
 
