@@ -15,5 +15,8 @@ public class Main {
 		
 		System.out.println(p1 == p2); // reference equality check
 		System.out.println(p1.equals(p2)); // overridden equals
+		
+		Person self = new Person(1); // self equality check
+		System.out.println(self.equals(self));
 	}
 }
