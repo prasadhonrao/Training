@@ -6,3 +6,4 @@ Query DB
 Query ODataService
 Deferred Execution
 Query Vs Expression
+Patterns

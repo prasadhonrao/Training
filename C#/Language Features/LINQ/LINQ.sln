@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{001275CF-FFC6-4A91-B4A3-7CFE20596E11}"
 	ProjectSection(SolutionItems) = preProject
 		Index.txt = Index.txt
@@ -21,6 +23,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deferred Execution", "Deferred Execution\Deferred Execution.csproj", "{DF4D41DA-7DC5-4AA4-88BD-A4848B1309E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Query vs Expression", "Query vs Expression\Query vs Expression.csproj", "{D9551A93-BD14-47B5-8169-72E58D0B73FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns", "Patterns\Patterns.csproj", "{135464E6-C729-4453-B3CF-C752F704B5EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +64,10 @@ Global
 		{D9551A93-BD14-47B5-8169-72E58D0B73FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9551A93-BD14-47B5-8169-72E58D0B73FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9551A93-BD14-47B5-8169-72E58D0B73FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{135464E6-C729-4453-B3CF-C752F704B5EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{135464E6-C729-4453-B3CF-C752F704B5EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{135464E6-C729-4453-B3CF-C752F704B5EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{135464E6-C729-4453-B3CF-C752F704B5EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
