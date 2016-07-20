@@ -12,6 +12,7 @@ namespace Patterns
 
         static void Main(string[] args)
         {
+
             orders = Order.GetSampleData();
 
             #region Where Pattern
@@ -38,10 +39,27 @@ namespace Patterns
 
             #endregion
 
+            #region Chaining Pattern
+            ChainingPattern();
+            #endregion
+
             // Distinct across multiple columns
             GetDistinctDataAcrossMultipleColumns();
-
+            
             Console.ReadLine();
+        }
+
+        private static void ChainingPattern()
+        {
+            // Calculate sum of numbers in the series excluding 3 min numbers
+            var sum = "10, 20, 30, 40, 50, 40, 30, 20, 10"
+                .Split(',')
+                .Select(int.Parse)
+                .OrderBy(n => n)
+                .Skip(3)
+                .Sum();
+
+            Console.WriteLine("Sum is = " + sum);
         }
 
         private static void GetDistinctDataAcrossMultipleColumns()
