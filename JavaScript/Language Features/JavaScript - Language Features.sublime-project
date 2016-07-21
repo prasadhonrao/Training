@@ -2,31 +2,37 @@
 	"folders":
 	[
 		{
-			"path": "Introduction"
-		},
-		{
-			"path": "Variables and Types"
-		},
-		{
-			"path": "Types"
-		},
-		{
-			"path": "Operators"
-		},
-		{
-			"path": "Equality"
-		},
-		{
-			"path": "NaN"
-		},
-		{
 			"path": "Array"
+		},
+		{
+			"path": "Async"
+		},
+		{
+			"path": "Bugs"
 		},
 		{
 			"path": "Control Statements"
 		},
 		{
-			"path": "Objects"
+			"path": "Crazy"
+		},
+		{
+			"path": "DOM Manipulation"
+		},
+		{
+			"path": "Error Handling"
+		},
+		{
+			"path": "ES6"
+		},
+		{
+			"path": "Equality"
+		},
+		{
+			"path": "External JS"
+		},
+		{
+			"path": "Eval"
 		},
 		{
 			"path": "Functions"
@@ -35,58 +41,52 @@
 			"path": "Functional Programming"
 		},
 		{
+			"path": "IIFE"
+		},
+		{
 			"path": "Inheritance"
 		},
 		{
-			"path": "Prototype"
-		},
-		{
-			"path": "Error Handling"
-		},
-		{
-			"path": "External JS"
-		},
-		{
-			"path": "DOM Manipulation"
-		},
-		{
-			"path": "OOP"
-		},
-		{
-			"path": "Namespace"
-		},
-		{
-			"path": "Regular Expression"
-		},
-		{
-			"path": "Eval"
+			"path": "Introduction"
 		},
 		{
 			"path": "Math Lib"
 		},
 		{
-			"path": "UnderscoreJS"
+			"path": "Namespace"
 		},
 		{
-			"path": "IIFE"
+			"path": "NaN"
 		},
 		{
-			"path": "Strict"
+			"path": "Objects"
 		},
 		{
-			"path": "Bugs"
+			"path": "Operators"
+		},
+		{
+			"path": "OOP"
+		},
+		{
+			"path": "Prototype"
 		},
 		{
 			"path": "__Proto__"
 		},
 		{
-			"path": "Crazy"
+			"path": "Regular Expression"
 		},
 		{
-			"path": "ES6"
+			"path": "Strict"
 		},
 		{
-			"path": "Async"
+			"path": "Types"
+		},
+		{
+			"path": "UnderscoreJS"
+		},
+		{
+			"path": "Variables and Types"
 		}
 	]
 }
