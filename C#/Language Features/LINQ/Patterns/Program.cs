@@ -41,12 +41,25 @@ namespace Patterns
 
             #region Chaining Pattern
             ChainingPattern();
+            DoubleItAndDisplayDescending();
             #endregion
 
             // Distinct across multiple columns
             GetDistinctDataAcrossMultipleColumns();
             
             Console.ReadLine();
+        }
+
+        private static void DoubleItAndDisplayDescending()
+        {
+            "10, 20, 30, 40, 50, 40, 30, 20, 10"
+            .Split(',')
+            .Select(int.Parse)
+            .Select(n => n * 2)
+            .OrderByDescending(n => n)
+            .ToList()
+            .ForEach(n => Console.WriteLine(n));
+           
         }
 
         private static void ChainingPattern()
