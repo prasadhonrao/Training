@@ -1,3 +1,10 @@
+'use strict';
+
+// In ES5
+var hours = hours || 8;
+console.log(hours);
+
+// In ES6
 var doWork = function(hours = 8) {
   for (var i=0; i< hours; i++) {
     console.log("Doing work " + i);
@@ -31,4 +38,3 @@ function display(num = getNumber()) {
 }
 
 display();
-
