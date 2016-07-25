@@ -1,4 +1,4 @@
-//Evaluates bothe the oprands from left to right and returns the value of second oprand - MDN
+//Evaluates both the operands from left to right and returns the value of second oprand - MDN
 /*jslint white: true */
 
 var single,
