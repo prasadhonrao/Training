@@ -1,7 +1,15 @@
-// Callback
+// Callback Basic Example
 setTimeout(function() {
 	console.log("callback function called");
 },1000);
+
+// Anoter way to use callback functions with setTimeout
+var anotherCallbackFunction = function() {
+	console.log("Another callback function called!")
+};
+setTimeout(anotherCallbackFunction,1000);
+
+//-------------------------------------------------------------------------------------------------------------
 
 // Callback Hell!
 setTimeout(function(){
@@ -14,6 +22,7 @@ setTimeout(function(){
 	},1000)
 },1000);
 
+//-------------------------------------------------------------------------------------------------------------
 
 // Solving callback Hell
 function one(cb) {
@@ -25,7 +34,6 @@ function two(cb) {
 	setTimeout(cb,1000);
 }
 function three() {
-	
 	console.log("Three");
 }
 one(function(){
