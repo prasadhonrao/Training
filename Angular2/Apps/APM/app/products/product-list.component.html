@@ -41,12 +41,12 @@
                         <td>
                             <img *ngIf='showImage'
                                  [src]='product.imageUrl'
-                                 [title]='product.productName | uppercase'
+                                 [title]='product.ProductName | uppercase'
                                  [style.width.px]='imageWidth' 
                                  [style.margin.px]='imageMargin'>
                         </td>
                         <td>
-                            {{product.productName}}
+                            {{product.ProductName}}
                             <!-- 
                             <a [routerLink]="['ProductDetail',{id: product.productId}]">
                             

@@ -1,8 +1,8 @@
 {
     "name": "product-management",
     "version": "1.0.0",
-    "author": "Prasad Honrao",
-    "description": "Package for the Product Management sample application",
+    "author": "Deborah Kurata",
+    "description": "Package for the Acme Product Management sample application",
     "scripts": {
         "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
         "tsc": "tsc",
@@ -18,6 +18,7 @@
         "es6-shim": "^0.35.0",
         "reflect-metadata": "0.1.2",
         "rxjs": "5.0.0-beta.2",
+        "zone.js": "0.6.10",
         "bootstrap": "^3.3.6"
     },
     "devDependencies": {
