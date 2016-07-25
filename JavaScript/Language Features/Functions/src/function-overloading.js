@@ -13,7 +13,7 @@ console.log(add(1, 2));
 console.log(add(1, 2, 3));
 
 /*
-	Implement smaller functions and pass on default values 
+	Implement smaller functions and pass on default values
 */
 function greet(firstName, lastName, language) {
 	language = language || 'en';
