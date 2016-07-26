@@ -2,14 +2,14 @@
 A const cannot be re-assigned
 */
 const language = "JavaScript";
-language = "JS"; // Error
+// language = "JS"; // Error
 console.log(language);
 
 /*
 A const cannot share its name with variable or function in same scope
 */
 const tool = "Sublime";
-var tool = "SublimeText"; // Error to redeclare a variable 
+//var tool = "SublimeText"; // Error to redeclare a variable
 
 
 /*
@@ -21,9 +21,9 @@ Similar to let, a const is a block scoped and does not hoist
   	const company = "Microsoft";
   	console.log(company);
   }
-  console.log(company); // Error
+  //console.log(company); // Error
 
-  console.log(pi); // Error
+  //console.log(pi); // Error
   const pi = 3.14;
   console.log(pi);
 
