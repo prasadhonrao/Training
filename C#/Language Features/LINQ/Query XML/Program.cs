@@ -14,7 +14,7 @@ namespace Training.CSharp
 		{
 			#region LINQ with XElement
 			
-			XElement employees = new XElement("Employess",
+			XElement employees = new XElement("Employees",
 										new XElement("Employee", "Prasad"),
 										new XElement("Employee", "Amit"),
 										new XElement("Employee", "Colin"),
@@ -25,7 +25,7 @@ namespace Training.CSharp
 			employees.Save("EmployeeInfo.XML");
 
 			var NumberOfEmpWithPrasadAsName = employees.Descendants("Employee").Where(e => e.Value.Equals("Prasad")).Count();
-			Console.WriteLine("Number of employess with Prasad as Name are {0}", NumberOfEmpWithPrasadAsName);
+			Console.WriteLine("Number of employees with Prasad as Name are {0}", NumberOfEmpWithPrasadAsName);
 
 			#endregion
 
@@ -48,8 +48,8 @@ namespace Training.CSharp
 			
 			#region Expression
 			var pidsExpression = processDocument.Descendants("Process")
-													 .Where(e => e.Attribute("Name").Value.Equals("devenv"))
-													 .Select(e => (int)e.Attribute("PID"));
+												.Where(e => e.Attribute("Name").Value.Equals("devenv"))
+												.Select(e => (int)e.Attribute("PID"));
 
 			foreach (var item in pidsExpression)
 			{
