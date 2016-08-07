@@ -36,11 +36,11 @@ console.log(kiterunner.name);
 class Person {
 	constructor(firstName, lastName) {
 		this.firstName = firstName;
-		this.lastName = lastName; 
+		this.lastName = lastName;
 	}
 
 	greet() {
-		return 'Hi' + this.firstName;
+		return 'Hi ' + this.firstName;
 	}
 }
 var john = new Person('John','Papa');
