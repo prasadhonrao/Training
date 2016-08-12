@@ -1,4 +1,6 @@
-﻿var counter = 10;
+﻿console.log("do...while demo");
+
+var counter = 10;
 do {
     console.log(counter);
     counter = counter - 1;
