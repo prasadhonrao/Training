@@ -1,0 +1,15 @@
+public static bool RenameFiles(string strDirectoryPath,string strFileEndPath, string strRenamePath)
+{
+    string[] strFiles = Directory.GetFiles(strDirectory);
+    bool flag = false;
+    foreach(string f in files)
+    {
+      FileInfo file = new FileInfo(f);
+      if(file.Name.EndsWith(strFileEndPath))
+      {
+        File.Move(file.FullName,Path.Combine(file.DirectoryName,file.Name.Replace(strFileEndPath,strRenamePath)));
+      }
+      flag = true;
+    }
+    return flag;
+}
