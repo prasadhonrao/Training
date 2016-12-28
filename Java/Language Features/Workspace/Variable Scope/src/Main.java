@@ -6,6 +6,7 @@ public class Main {
 		
 		System.out.println(message);
 		
+		// Anonymous block!
 		{
 			String message = "Block level variable";
 			System.out.println(message);
