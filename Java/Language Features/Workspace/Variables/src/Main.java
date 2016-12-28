@@ -8,6 +8,8 @@ public class Main {
         
         if ( args.length > 0 ){
         	System.out.println("First command line argument value is : " + args[0]);
+        } else {
+        	System.out.println("No command line arguments were passed");
         }
     }
 }
