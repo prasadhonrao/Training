@@ -3,7 +3,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		// Before Java 5 valueof and xxxValue pattern was compulsory
+		// Before Java 5 valueOf and xxxValue pattern was compulsory
 		Integer i1 = Integer.valueOf(100); // boxing
 		int i2 = i1.intValue(); // unboxing
 		System.out.println(i1);
