@@ -15,4 +15,8 @@ public class Person {
     public void SetName(String name) {
         this.name = name;
     }
+    
+    public String GetInformation() {
+        return this.GetId() + " " + this.GetName();
+    }
 }

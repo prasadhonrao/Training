@@ -5,7 +5,6 @@ public class Employee extends Person{
     }
 
     public String GetEmployeeInformation() {
-        String value = this.GetId() + " " + this.GetName();
-        return  value;
+        return this.GetId() + " " + this.GetName();
     }
 }
