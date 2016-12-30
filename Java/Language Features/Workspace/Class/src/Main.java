@@ -1,5 +1,3 @@
-import java.lang.String;
-
 public class Main {
     public static void main(String[] args) {
  
@@ -10,5 +8,6 @@ public class Main {
         anotherCustomer.age = 50;
         anotherCustomer.name ="Jacob";
         System.out.println(anotherCustomer.name + " " + anotherCustomer.age);
+    
     }
 }
