@@ -16,6 +16,7 @@ namespace DebugIt
 
         protected void AddButton_Click(object sender, EventArgs e)
         {
+            Trace.Write("Calling Add function");
             ResultLabel.Text = (int.Parse(FirstNumber.Text) + int.Parse(SecondNumber.Text)).ToString();
         }
     }
