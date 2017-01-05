@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace DebugIt
 {
@@ -16,7 +11,7 @@ namespace DebugIt
 
         protected void AddButton_Click(object sender, EventArgs e)
         {
-            Trace.Write("Calling Add function");
+            System.Diagnostics.Trace.TraceInformation("Calling Add function");
             ResultLabel.Text = (int.Parse(FirstNumber.Text) + int.Parse(SecondNumber.Text)).ToString();
         }
     }
