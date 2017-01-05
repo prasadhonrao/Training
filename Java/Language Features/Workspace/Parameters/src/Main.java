@@ -30,6 +30,7 @@ public class Main {
         PrintCustomers(c1, c2);
     }
 
+    // Value type swap
     private static void Swap(int first, int second)
     {
         int temp = first;
@@ -37,6 +38,7 @@ public class Main {
         second = temp;
     }
 
+    // Reference type swap
     private static void Swap(Customer first, Customer second)
     {
         Customer temp = first;
@@ -44,6 +46,7 @@ public class Main {
         second = temp;
     }
     
+    // Rest parameter
     private static void PrintCustomers(Customer...customers){
     	for (Customer customer : customers) {
 			System.out.println(customer.GetId());
