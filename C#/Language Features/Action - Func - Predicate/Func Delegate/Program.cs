@@ -2,6 +2,7 @@
 
 namespace Training.CSharp
 {
+    // delegate declaration	
     public delegate int AddDelegate(int x, int y);
     
     public class Program
