@@ -10,6 +10,11 @@ public class Main {
 		// String is an object so can be declared using constructor
 		String greeting = new String("Hello World 2!");
 		System.out.println(greeting);
+		
+		// Strings are immutable 
+		String user = "Prasad";
+		user = user + " Honrao";  // creates a new string (immutable)
+		System.out.println(user);
 
 		// String Methods
 		
