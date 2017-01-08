@@ -27,6 +27,11 @@ public class Main {
 		System.out.println(greeting1 == greeting2); // Reference equality check
 		System.out.println(greeting1.equals(greeting2)); // character by character comparison
 		
+		String greeting3 = greeting1.intern();
+		String greeting4 = greeting2.intern();
+		System.out.print("Intern : ");
+		System.out.println(greeting3 == greeting4); // Useful for lot of string comparison, inexpensive as compared to character by character comparison 
+		
 		// 2. Length
 		System.out.println("Number of characters in "  + message + " are " +  message.length());
 		
