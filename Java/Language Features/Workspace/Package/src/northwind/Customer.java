@@ -1,4 +1,4 @@
-package prasadhonrao.com;
+package northwind;
 
 public class Customer {
 	private int id;

@@ -1,3 +1,4 @@
+package hardware;
 
 public class Machine implements IMachine {
 
