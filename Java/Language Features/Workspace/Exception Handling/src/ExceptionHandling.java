@@ -9,8 +9,27 @@ public class ExceptionHandling {
 	public static void main(String[] args) {
 		HandleDivideByZeroException();
 		HandleFileException();
+		CatchThrownException();
 	}
 	
+	private static void CatchThrownException() {
+		int i = 10;
+		int j = 0; // accept this input from user in real example
+		
+		try {
+			if (j == 0) { 
+				throw new IllegalArgumentException("Can not divide by zero");
+			}
+			else {
+				int result = i / (j);
+				System.out.println(result);	
+			}
+		} 
+		catch (IllegalArgumentException e) {
+			System.out.println("Invalid Value : Message : " + e.getMessage());
+		} 
+	}
+
 	public static void HandleDivideByZeroException() {
 		int i = 10;
 		int j = 2;
