@@ -4,10 +4,18 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class IO {
 
 	public static void main(String[] args) {
+		
+		CreateFile();
+		DeleteFile();
+		//MoveFile();
+		
 		ReadFileCharacterByCharacter(); // FileReader
 		ReadFileLineByLine(); // BufferedReader
 		
@@ -15,6 +23,36 @@ public class IO {
 		CreateFileUsingPrintWriter();
 		
 		ReadFileUsingCustomReader();
+	}
+
+	private static void CreateFile() {
+		Path p = Paths.get("D:\\test.txt");
+		try {
+			if (!Files.exists(p))
+				Files.createFile(p);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private static void DeleteFile() {
+		Path p = Paths.get("D:\\test.txt");
+		try {
+			Files.deleteIfExists(p);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private static void MoveFile() {
+		Path source = Paths.get("D:\\numbers.txt");
+		Path target = Paths.get("D:\\temp\\numbers.txt");
+		
+		try {
+			Files.move(source, target);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	private static void ReadFileUsingCustomReader() {
