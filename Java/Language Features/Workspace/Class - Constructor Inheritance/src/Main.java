@@ -5,5 +5,5 @@ public class Main {
 
 		new CargoFlight();
 		new CargoFlight(200);
-	}	
+	}
 }
