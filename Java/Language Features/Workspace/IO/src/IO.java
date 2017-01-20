@@ -11,17 +11,17 @@ import java.nio.file.Paths;
 public class IO {
 
 	public static void main(String[] args) {
-		
+
 		CreateFile();
 		DeleteFile();
-		//MoveFile();
-		
+		// MoveFile();
+
 		ReadFileCharacterByCharacter(); // FileReader
 		ReadFileLineByLine(); // BufferedReader
-		
+
 		CreateFileUsingFileWriter();
 		CreateFileUsingPrintWriter();
-		
+
 		ReadFileUsingCustomReader();
 	}
 
@@ -34,7 +34,7 @@ public class IO {
 			e.printStackTrace();
 		}
 	}
-	
+
 	private static void DeleteFile() {
 		Path p = Paths.get("D:\\test.txt");
 		try {
@@ -43,11 +43,11 @@ public class IO {
 			e.printStackTrace();
 		}
 	}
-	
+
 	private static void MoveFile() {
 		Path source = Paths.get("D:\\numbers.txt");
 		Path target = Paths.get("D:\\temp\\numbers.txt");
-		
+
 		try {
 			Files.move(source, target);
 		} catch (IOException e) {
@@ -59,18 +59,17 @@ public class IO {
 		FileReader reader = null;
 		try {
 			reader = new FileReader("D:\\Numbers.txt");
-			
+
 			CapitalizationReader capReader = new CapitalizationReader(reader);
 			String line;
 			try {
-				while((line = capReader.readLine()) != null) {
+				while ((line = capReader.readLine()) != null) {
 					System.out.println(line);
 				}
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
-			finally {
+			} finally {
 				if (capReader != null) {
 					try {
 						capReader.close();
@@ -81,8 +80,7 @@ public class IO {
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-		}
-		finally {
+		} finally {
 			if (reader != null) {
 				try {
 					reader.close();
@@ -94,7 +92,7 @@ public class IO {
 	}
 
 	private static void CreateFileUsingPrintWriter() {
-		FileWriter writer  = null;
+		FileWriter writer = null;
 		PrintWriter pWriter = null;
 		try {
 			writer = new FileWriter("D:\\newNumbers2.txt");
@@ -102,24 +100,22 @@ public class IO {
 			pWriter.println("Created using PrintWriter");
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		finally {
+		} finally {
 			if (pWriter != null) {
 				pWriter.close();
 			}
 		}
-	
+
 	}
 
 	private static void CreateFileUsingFileWriter() {
-		FileWriter writer  = null;
+		FileWriter writer = null;
 		try {
 			writer = new FileWriter("D:\\newNumbers.txt");
 			writer.write("Created using File Writer");
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		finally {
+		} finally {
 			if (writer != null) {
 				try {
 					writer.close();
@@ -135,18 +131,17 @@ public class IO {
 		FileReader reader = null;
 		try {
 			reader = new FileReader("D:\\Numbers.txt");
-			
+
 			BufferedReader bReader = new BufferedReader(reader);
 			String line;
 			try {
-				while((line = bReader.readLine()) != null) {
+				while ((line = bReader.readLine()) != null) {
 					System.out.println(line);
 				}
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
-			finally {
+			} finally {
 				if (bReader != null) {
 					try {
 						bReader.close();
@@ -158,8 +153,7 @@ public class IO {
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-		}
-		finally {
+		} finally {
 			if (reader != null) {
 				try {
 					reader.close();
@@ -169,18 +163,18 @@ public class IO {
 				}
 			}
 		}
-		
+
 	}
 
 	private static void ReadFileCharacterByCharacter() {
 		FileReader reader = null;
 		try {
 			reader = new FileReader("D:\\Numbers.txt");
-			
+
 			int c = -1;
-			
+
 			try {
-				while (( c = reader.read()) != -1) {
+				while ((c = reader.read()) != -1) {
 					char ch = (char) c;
 					System.out.print(ch);
 				}
@@ -188,11 +182,10 @@ public class IO {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-		}
-		finally {
+		} finally {
 			if (reader != null) {
 				try {
 					reader.close();

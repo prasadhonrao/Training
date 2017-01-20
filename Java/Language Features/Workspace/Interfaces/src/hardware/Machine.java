@@ -3,7 +3,7 @@ package hardware;
 public class Machine implements IMachine {
 
 	private boolean isOn;
-	
+
 	@Override
 	public void turnOn() {
 		this.setOn(true);

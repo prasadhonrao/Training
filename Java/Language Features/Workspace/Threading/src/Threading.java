@@ -4,7 +4,7 @@ public class Threading {
 		// create a thread and start running in parallel of main thread
 		MessageProcessor mp = new MessageProcessor();
 		mp.start();
-		
+
 		for (int i = 0; i < 10; i++) {
 			System.out.println("Main thread : " + i);
 		}
