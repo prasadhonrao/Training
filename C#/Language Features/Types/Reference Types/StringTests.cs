@@ -8,7 +8,7 @@ namespace Training.CSharp
     public class StringTests
     {
         [TestMethod]
-        public void Check_If_Two_Strings_Are_Equal_Test()
+        public void String_With_Same_Content_Equal_Test()
         {
             string first = "hello";
             string second = "hello";
@@ -17,7 +17,7 @@ namespace Training.CSharp
         }
 
         [TestMethod]
-        public void Check_If_Two_Strings_With_Different_Casing_Are_Not_Equal_Test()
+        public void String_Different_Case_Are_Not_Equal_Test()
         {
             string first = "hello";
             string second = "Hello";
@@ -25,7 +25,7 @@ namespace Training.CSharp
         }
 
         [TestMethod]
-        public void Check_Copied_Strings_Are_Equal_Test()
+        public void String_Two_Instance_Equal_Test()
         {
             string first = "hello";
             string second = first;
@@ -33,7 +33,7 @@ namespace Training.CSharp
         }
 
         [TestMethod]
-        public void Check_String_Immutability_Test()
+        public void String_Immutability_Test()
         {
             string first = "hello";
             first = first.Replace('h', 'j');
@@ -41,11 +41,13 @@ namespace Training.CSharp
         }
 
         [TestMethod]
-        public void Check_String_Immutability_And_Copy_Test()
+        public void String_Immutability_And_Copy_Test()
         {
             string first = "hello";
             string second = first;
             first = first.Replace('h', 'j');
+            Console.WriteLine(first);
+            Console.WriteLine(second);
             Assert.IsTrue(second == "hello");
         }
 
@@ -62,7 +64,7 @@ namespace Training.CSharp
         }
 
         [TestMethod]
-        public void Strings_Concatenation_Equal_Test()
+        public void String_Concatenation_Equal_Test()
         {
             string first = "hello";
             string second = "he" + "llo";
@@ -71,7 +73,7 @@ namespace Training.CSharp
         }
 
         [TestMethod]
-        public void Strings_Concatenation_Equal_Without_Constant_Test()
+        public void String_Concatenation_Equal_Without_Constant_Test()
         {
             string he = "he";
             string first = he + "llo";
@@ -81,7 +83,7 @@ namespace Training.CSharp
         }
 
         [TestMethod]
-        public void Strings_Concatenation_Equal_With_Constant_Test()
+        public void String_Concatenation_Equal_With_Constant_Test()
         {
             const string he = "he";
             string first = he + "llo"; // creates new string every time this code executes
@@ -91,7 +93,7 @@ namespace Training.CSharp
         }
 
         [TestMethod]
-        public void Bad_Concatenation_Test()
+        public void String_Bad_Concatenation_Test()
         {
             string simple = new string('X', 100000);
 
@@ -105,7 +107,7 @@ namespace Training.CSharp
         }
 
         [TestMethod]
-        public void Good_Concatenation_Using_StringBuilder_Test()
+        public void String_Good_Concatenation_Using_StringBuilder_Test()
         {
             string simple = new string('X', 100000);
             StringBuilder sb = new StringBuilder();
@@ -119,7 +121,7 @@ namespace Training.CSharp
         }
 
         [TestMethod]
-        public void Good_Concatenation_Using_String_Test()
+        public void String_Good_Concatenation_Using_String_Test()
         {
             string x = "x";
             string y = "y";
@@ -128,7 +130,7 @@ namespace Training.CSharp
         }
 
         [TestMethod]
-        public void Compiler_Translation_Of_Concatenation_Using_String_Test()
+        public void String_Compiler_Translation_Of_Concatenation_Using_String_Test()
         {
             string x = "x";
             string y = "y";
