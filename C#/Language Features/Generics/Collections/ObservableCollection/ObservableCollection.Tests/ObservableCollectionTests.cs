@@ -17,14 +17,15 @@ namespace ObservableCollection.Tests
                 "Blue"
             };
 
-            colors.CollectionChanged += (s, e) => 
+            colors.CollectionChanged += (s, e) =>
             {
                 Console.WriteLine(e.Action);
-            }; 
+            };
 
             colors.Add("Voilet");
             colors.Add("Black");
             colors.Remove("Voilet");
             Assert.IsTrue(colors.Count == 4);
         }
+    }
 }
