@@ -86,6 +86,19 @@ namespace Dictionary.Collection.Tests
         }
 
         [TestMethod]
+        [ExpectedException(typeof(KeyNotFoundException))]
+        public void Dictionary_Key_Not_Found_Exception_Test()
+        {
+            var numbers = new Dictionary<int, string>();
+            numbers.Add(1, "One");
+            numbers.Add(2, "Two");
+            numbers.Add(3, "Three");
+
+            var item = numbers[4]; // Throws KeyNotFound exception
+            Assert.AreEqual(item, "Four");
+        }
+
+        [TestMethod]
         public void Dictionary_Add_CustomObject_Test()
         {
             var employees = new Dictionary<int, Employee>();
