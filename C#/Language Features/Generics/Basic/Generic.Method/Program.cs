@@ -12,23 +12,17 @@ namespace Generic.Method
         {
             #region MakeList
             List<string> morningWords = MakeList<string>("Good", "Morning");
-            foreach (var word in morningWords)
-            {
-                Console.Write(word + " ");
-            }
-            Console.WriteLine(); 
+            DisplayContents(morningWords);
+            Console.WriteLine();
             #endregion
 
-            #region Compiler infering type info
+            #region Compiler inference
             var nightWords = MakeList("Good", "Night!");
-            foreach (var word in nightWords)
-            {
-                Console.Write(word + " ");
-            } 
+            DisplayContents(nightWords);
             #endregion
 
             #region ConvertAll int -> double
-            // Generic method ConvertAll in List<T> class - converts from one datatype into another
+            // Generic method ConvertAll in List<T> class - converts from one data type into another
             List<int> numbers = new List<int>();
             numbers.Add(1);
             numbers.Add(2);
@@ -37,14 +31,17 @@ namespace Generic.Method
             numbers.Add(5);
 
             var sqrts = numbers.ConvertAll<double>(e => Math.Sqrt(e));
-            Dump<Double>(sqrts);
-            // Dump(sqrts); Valid as compiler will infer the type 
+            DisplayContents<Double>(sqrts);
+            // DisplayContents(sqrts); Valid as compiler will infer the type 
             #endregion
 
             #region ConvertAll int -> string
             var numberAsStrings = numbers.ConvertAll<string>(e => e.ToString());
-            Dump(numberAsStrings); 
+            DisplayContents(numberAsStrings);
             #endregion
+
+            DisplayContents<int>(new int[] { 1, 2, 3, 4, 5 });
+            DisplayContents<char>(new List<char> { 'a', 'b', 'c' });
 
             Console.ReadLine();
         }
@@ -57,12 +54,13 @@ namespace Generic.Method
             return newlist;
         }
 
-        private static void Dump<T>(IEnumerable<T> items)
+        private static void DisplayContents<T>(IEnumerable<T> collection)
         {
-            foreach (var item in items)
+            foreach (var item in collection)
             {
-                Console.WriteLine(item);
+                Console.Write(item + " ");
             }
+            Console.WriteLine();
         }
     }
 }
