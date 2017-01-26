@@ -8,8 +8,8 @@ namespace Introduction
         static void Main()
         {
             #region Non Generic implementation
-            var cat = new Animal() { Name = "Mini" };
-            var dog = new Animal() { Name = "Tuffy" };
+            var cat = new Animal("Mini");
+            var dog = new Animal("Tuffy");
 
             var animals = new AnimalCollection();
             animals.Add(cat);
@@ -18,7 +18,7 @@ namespace Introduction
             var firstAnimal = animals[0] as Animal;
             Console.WriteLine("Name of first animals is {0}", firstAnimal.Name);
 
-            var pe = new Person() { Name = "Prasad Honrao" };
+            var pe = new Person("Prasad Honrao");
 
             // Adding person in Animal collection!
             animals.Add(pe);
