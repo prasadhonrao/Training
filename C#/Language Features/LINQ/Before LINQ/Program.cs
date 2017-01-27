@@ -50,7 +50,7 @@ namespace Training.CSharp
             Console.WriteLine();
             #endregion
 
-            #region Named Method
+            #region Extension Method
             Console.WriteLine("Named Method");
             citiesStartsWithL = cities.Where(StartsWithL);
             Print(citiesStartsWithL);
