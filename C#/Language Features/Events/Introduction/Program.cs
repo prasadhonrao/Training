@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Training.CSharp
 {
@@ -12,7 +8,7 @@ namespace Training.CSharp
         {
             var analyst = new Worker();
             analyst.WorkPerformed += analyst_WorkPerformed;
-            analyst.DoWork(8, WorkType.Analysis);
+            analyst.DoWork(2, WorkType.Analysis);
 
             Console.ReadLine();
         }

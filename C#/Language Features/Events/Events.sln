@@ -1,10 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F3E6FDE1-9C61-45B1-B2E7-BE774A64EA1D}"
 	ProjectSection(SolutionItems) = preProject
 		Notes.txt = Notes.txt
-		Sequence.txt = Sequence.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Introduction", "Introduction\Introduction.csproj", "{7FC27DED-808B-4B65-B3CE-83C4FACCE298}"

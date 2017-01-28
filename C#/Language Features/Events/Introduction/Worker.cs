@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Training.CSharp
+﻿namespace Training.CSharp
 {
     public delegate void WorkPerformedHandler(int hours, WorkType workType);
 
@@ -22,11 +16,8 @@ namespace Training.CSharp
 
         private void OnWorkPerformed(int hours, WorkType type)
         {
-            // Ensure that there is at least one subscriber to the event
-            if (WorkPerformed != null)
-            {
-                WorkPerformed(hours, type);
-            }
+            // ?. ensures checks for null instance hence checks that there is at least one subscriber to the event
+            WorkPerformed?.Invoke(hours, type);
         }
     }
 }
