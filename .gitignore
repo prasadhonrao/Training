@@ -230,3 +230,5 @@ FakesAssemblies/
 /Java/Language Features/Workspace/.recommenders/index/http___download_eclipse_org_recommenders_models_neon_
 /Java/Language Features/Workspace/Array/.settings
 *.prefs
+/ASP.NET Core/DeliciousPieShop/.vs
+/ASP.NET Core/DeliciousPieShop/src/DeliciousPieShop/wwwroot/lib
