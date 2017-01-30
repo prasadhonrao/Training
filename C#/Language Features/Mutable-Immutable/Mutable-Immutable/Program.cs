@@ -7,13 +7,13 @@ namespace Mutable_Immutable
     {
         static void Main(string[] args)
         {
-            #region Mutable
+            #region 1. Mutable
             var m = new Mutable();
             m.Value = 10;
             m.Value = 20;
             #endregion
 
-            #region ShallowMutable
+            #region 2. ShallowMutable
             StringBuilder builder = new StringBuilder();
             builder.Append("foo");
             var sm = new ShallowMutable(10, builder);
@@ -21,12 +21,18 @@ namespace Mutable_Immutable
             Console.WriteLine(sm.Builder);
             #endregion
 
-            #region Popsicle
+            #region 3. Popsicle
             var p = new Popsicle();
             p.Value = 10;
             p.Freeze();
-            p.Value = 20; //Bang
+            //p.Value = 20; //Bang!
             #endregion
+
+            #region 4. ObservableImmutable
+        
+            #endregion
+
+            Console.ReadLine();
         }
     }
 }

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Mutable.cs" />
+    <Compile Include="ObservableImmutable.cs" />
     <Compile Include="Popsicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
