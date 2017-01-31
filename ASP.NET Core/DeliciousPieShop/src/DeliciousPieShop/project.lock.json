@@ -713,6 +713,23 @@
           "lib/netstandard1.3/Microsoft.AspNetCore.Server.Kestrel.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Session/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.DataProtection": "1.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "1.0.0",
+          "Microsoft.Extensions.Caching.Abstractions": "1.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0",
+          "Microsoft.Extensions.Options": "1.0.0",
+          "System.Security.Cryptography.Algorithms": "4.2.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Session.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Session.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.StaticFiles/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -4527,6 +4544,19 @@
         "lib/net451/Microsoft.AspNetCore.Server.Kestrel.xml",
         "lib/netstandard1.3/Microsoft.AspNetCore.Server.Kestrel.dll",
         "lib/netstandard1.3/Microsoft.AspNetCore.Server.Kestrel.xml"
+      ]
+    },
+    "Microsoft.AspNetCore.Session/1.0.0": {
+      "sha512": "RPoUeyNC0OXCcelURzsf5PZnrFC97HNUhQJMMEhBjmDNSAhFpKxgLJydKC3J/G7FxPkO4ciXu37zafPlA8AZqw==",
+      "type": "package",
+      "path": "Microsoft.AspNetCore.Session/1.0.0",
+      "files": [
+        "Microsoft.AspNetCore.Session.1.0.0.nupkg.sha512",
+        "Microsoft.AspNetCore.Session.nuspec",
+        "lib/net451/Microsoft.AspNetCore.Session.dll",
+        "lib/net451/Microsoft.AspNetCore.Session.xml",
+        "lib/netstandard1.3/Microsoft.AspNetCore.Session.dll",
+        "lib/netstandard1.3/Microsoft.AspNetCore.Session.xml"
       ]
     },
     "Microsoft.AspNetCore.StaticFiles/1.0.0": {
@@ -10331,13 +10361,16 @@
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.AspNetCore.Diagnostics >= 1.0.0",
+      "Microsoft.AspNetCore.Http.Extensions >= 1.0.0",
       "Microsoft.AspNetCore.Mvc >= 1.0.1",
       "Microsoft.AspNetCore.Razor.Tools >= 1.0.0-preview2-final",
       "Microsoft.AspNetCore.Server.IISIntegration >= 1.0.0",
       "Microsoft.AspNetCore.Server.Kestrel >= 1.0.1",
+      "Microsoft.AspNetCore.Session >= 1.0.0",
       "Microsoft.AspNetCore.StaticFiles >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 1.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 1.0.0-preview2-final",
+      "Microsoft.Extensions.Caching.Memory >= 1.0.0",
       "Microsoft.Extensions.Configuration.Json >= 1.0.0",
       "Microsoft.NETCore.App >= 1.0.1"
     ],
