@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Array.Tests
 {
@@ -31,17 +30,11 @@ namespace Array.Tests
             // Value Type Array
             var numbers = new int[5];
             Assert.IsTrue(numbers.Length == 5);
-            foreach (var number in numbers)
-            {
-                Assert.IsTrue(number == 0);
-            }
+            Assert.IsTrue(numbers.All(n => n == 0));
 
             // Reference Type Array
             var colors = new string[10];
-            foreach (var color in colors)
-            {
-                Assert.IsTrue(color == null);
-            }
+            Assert.IsTrue(colors.All(c => c == null));
         }
 
         [TestMethod]
