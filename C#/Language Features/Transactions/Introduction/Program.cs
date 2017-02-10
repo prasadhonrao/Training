@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Messaging;
-using System.Text;
-using System.Threading.Tasks;
 using System.Transactions;
+using System.Configuration;
 
 namespace Introduction
 {
@@ -68,7 +65,7 @@ namespace Introduction
 
         public static void FirstUpdateToDb()
         {
-            var conn = new SqlConnection(@"Data Source=LT030028\SQLExpress;Initial Catalog=tempdb;Integrated Security=True");
+            var conn = new SqlConnection(ConfigurationManager.AppSettings["connection"].ToString());
             var query = @"Insert into Temp Values('Transaction Test 1')";
             var cmd = new SqlCommand(query,conn);
             conn.Open();
@@ -78,7 +75,7 @@ namespace Introduction
 
         public static void SecondUpdateToDb()
         {
-            var conn = new SqlConnection(@"Data Source=LT030028\SQLExpress;Initial Catalog=tempdb;Integrated Security=True");
+            var conn = new SqlConnection(ConfigurationManager.AppSettings["connection"].ToString());
             var query = @"Insert into Temp Values('Transaction Test 2')";
             var cmd = new SqlCommand(query, conn);
             conn.Open();
