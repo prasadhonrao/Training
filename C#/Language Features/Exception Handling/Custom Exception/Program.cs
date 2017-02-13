@@ -12,7 +12,7 @@ namespace Training.CSharp
                 Employee emp = new Employee();
                 Console.WriteLine(emp.GetEmployeeName(accountNo));
             }
-            catch (InvalidAccountException ex)
+            catch (InvalidAccountException)
             {
                 Console.WriteLine("Account number {0} is invalid", accountNo);
             }
