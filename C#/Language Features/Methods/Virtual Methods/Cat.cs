@@ -6,7 +6,7 @@ namespace Training.CSharp
         public override void PerformTricks()
         {
             Console.WriteLine("Lazy cat {0} is not doing any trick", this.Name);
-            // Cat dont want to do any spcial tricks
+            // Cat don't want to do any special tricks
             base.PerformTricks();
         }
     }
