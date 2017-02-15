@@ -8,4 +8,3 @@ console.log(arr.findIndex(n => n > 3));
 // fill function fills the array with passed value
 console.log(arr.fill("p"));
 console.log(arr.fill("A", 2, 3));
-

@@ -16,7 +16,7 @@ let four = () => { return 4 };
 console.log(four());
 
 // Multiple statements needs a return keyword
-let add2 = (x, y) => { 
+let add2 = (x, y) => {
   var temp = x + y;
   return temp;
 }

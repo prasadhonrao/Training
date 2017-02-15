@@ -5,7 +5,6 @@ Two rules of module pattern
 */
 
 var greeter = (function() {
-	
 	// private variable
 	var message = "Hello "
 

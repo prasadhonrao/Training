@@ -14,4 +14,3 @@ while(!next.done){
 }
 
 console.log(sum);
-  

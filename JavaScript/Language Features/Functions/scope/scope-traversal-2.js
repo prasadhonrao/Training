@@ -4,8 +4,8 @@ function bar() {
 	var foo = "baz";
 	console.log("In bar : " + foo);
 
-	function baz(foo) { 
-		foo = "bam"; 
+	function baz(foo) {
+		foo = "bam";
 		bam = "yay";
 		console.log("In baz : " + foo);
 	}

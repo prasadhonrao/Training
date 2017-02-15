@@ -19,5 +19,4 @@ console.log(binaryParse);
     isNan
     isInteger
     isSafeInteger
-    
 */

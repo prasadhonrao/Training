@@ -39,7 +39,7 @@ var alpha = ['1', '2', 'c', 'd', '%'];
 for (i = 0; i < alpha.length; i++) {
     console.log(alpha[i]);
 }
-    
+
 // associative array
 console.log("Associative Array");
 var rainbow = [];
@@ -71,7 +71,7 @@ var funcArray = [
 	},
 	function(name) {
 		console.log('Hello ' + name);
-	}	
+	}
 ];
 
 funcArray[4](funcArray[3].name);

@@ -2,7 +2,7 @@ class Person {
   constructor (name) {
     this._name = name;
     console.log("Person constructor called");
-  } 
+  }
 
   get name() {
     return this._name.toUpperCase();
@@ -23,7 +23,7 @@ class Employee extends Person {
     this._title = title;
     console.log("Employee constructor called");
   }
-  
+
   get title() {
     return this._title.toUpperCase();
   }
