@@ -1,5 +1,5 @@
 var arr = [1, 2, 3, 4, 5];
-console.log(arr.length)
+console.log(arr.length);
 
 arr.push(6);
 console.log(arr.length);
@@ -8,7 +8,6 @@ console.log(arr.pop());
 console.log(arr.__proto__);
 console.log(Object.getPrototypeOf(arr)); //recommended
 console.log(arr.__proto__ == Object.getPrototypeOf(arr));
-
 
 // Define hierarchy using __proto__
 

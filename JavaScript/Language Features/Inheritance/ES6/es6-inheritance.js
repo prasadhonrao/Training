@@ -9,10 +9,10 @@ class Person {
 	}
 }
 
-// set the prototype using extends 
+// set the prototype using extends
 
 class InformalPerson extends Person {
-	
+
 	constructor (firstName, lastName) {
 		super(firstName, lastName);
 	}
