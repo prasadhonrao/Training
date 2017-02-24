@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace StockHoldingsApp
@@ -10,7 +7,7 @@ namespace StockHoldingsApp
     {
         async internal static Task<Tuple<string, int>> GetStockAsync(string userName)
         {
-            await Task.Delay(1000);
+            await Task.Delay(5000);
 
             switch (userName)
             {

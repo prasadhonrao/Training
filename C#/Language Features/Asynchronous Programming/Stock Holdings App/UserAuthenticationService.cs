@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace StockHoldingsApp
@@ -18,7 +15,7 @@ namespace StockHoldingsApp
 
         public async static Task<bool> AuthenticateAsync(string userName, string password)
         {
-            await Task.Delay(1000);
+            await Task.Delay(5000);
 
             foreach (KeyValuePair<string,string> item in users)
             {
