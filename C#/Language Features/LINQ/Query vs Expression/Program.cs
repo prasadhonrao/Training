@@ -49,6 +49,7 @@ namespace Training.CSharp
             //Take();
             //TakeWhile();
             //ToDictionary();
+            //ThenBy();
             //Union();
             //Where();
             //Zip();
@@ -789,6 +790,14 @@ namespace Training.CSharp
             }
 
             Console.WriteLine();
+        }
+
+        private static void ThenBy()
+        {
+            var customers = CustomerRepository.GetSampleCustomers();
+            var orderedCustomers = customers.OrderBy(c => c.City)
+                                                       .ThenBy(c => c.Name);
+            orderedCustomers.ToList().ForEach(c => Console.WriteLine(c.Name + " " + c.City));
         }
 
         private static void ToDictionary()
