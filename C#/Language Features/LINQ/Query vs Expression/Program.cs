@@ -8,7 +8,6 @@ namespace Training.CSharp
 {
     class Program
     {
-        static string[] cities = CityRepository.GetSampleCities();
         static List<Product> products = ProductRepository.GetSampleProducts();
         static List<Product> productsWithSupplier = ProductRepository.GetSampleProductsWithSupplier();
         static List<Supplier> suppliers = SupplierRepository.GetSampleSuppliers();
@@ -46,7 +45,7 @@ namespace Training.CSharp
             //Range();
             //Repeat();
             //Reverse();
-            Select();
+            //Select();
             //SelectMany();
             //SequenceEqual();
             //Single();
@@ -62,8 +61,6 @@ namespace Training.CSharp
 
             Console.ReadLine();
         }
-
-        
 
         private static void All()
         {
@@ -154,17 +151,17 @@ namespace Training.CSharp
         {
             #region Expression
 
-            Console.WriteLine("Total number of cities {0}", cities.Count());
+            Console.WriteLine("Total number of cities {0}", customers.Count());
 
             Console.WriteLine("Count Expression ");
-            Console.WriteLine("Total number of cities starts with L {0}", cities.Count(c => c.StartsWith("L")));
+            Console.WriteLine("Total number of cities starts with L {0}", customers.Count(c => c.City.StartsWith("L")));
             Console.WriteLine();
             #endregion
 
             #region Query
             Console.WriteLine("Count Query");
-            var query = (from city in cities
-                         where city.StartsWith("L")
+            var query = (from city in customers
+                         where city.City.StartsWith("L")
                          select city).Count();
             Console.WriteLine("Total number of cities starts with L {0}", query);
 
@@ -236,12 +233,12 @@ namespace Training.CSharp
         {
             #region Expression
             // First
-            var firstCity = cities.First();
-            Console.WriteLine("First city in the collection is {0}", firstCity);
+            var firstCustomer = customers.First();
+            Console.WriteLine("First customer in the collection is {0}", firstCustomer);
 
             // First Expression 
             Console.WriteLine("First Expression");
-            var firstCity5 = cities.First(c => c.Length == 5);
+            var firstCity5 = customers.First(c => c.City.Length == 5);
             Console.WriteLine("First city in the collection is with 5 letter {0}", firstCity5);
 
             Console.WriteLine();
@@ -249,9 +246,9 @@ namespace Training.CSharp
 
             #region Query
             Console.WriteLine("First Query");
-            var firstCity6 = (from city in cities
-                              where city.Length == 6
-                              select city).First();
+            var firstCity6 = (from c in customers
+                              where c.City.Length == 6
+                              select c).First();
 
             Console.WriteLine("First city in the collection is with 6 letter {0}", firstCity6);
 
@@ -406,14 +403,18 @@ namespace Training.CSharp
         private static void Join()
         {
             #region Expression
+
             Console.WriteLine("Join Expression");
+
             var joinExpression = productsWithSupplier.Join(suppliers, p => p.SupplierId, s => s.Id, (p, s) => new { ProductName = p.Name, Supplier = s });
 
             foreach (var item in joinExpression)
             {
                 Console.WriteLine("Product : {0}, Supplier : {1} {2}", item.ProductName, item.Supplier.Id, item.Supplier.Name);
             }
+
             Console.WriteLine();
+            
             #endregion
 
             #region Query
@@ -471,12 +472,12 @@ namespace Training.CSharp
         private static void Last()
         {
             // Last
-            var lastCity = cities.Last();
-            Console.WriteLine("Last city in the collection is {0}", lastCity);
+            var lastCity = customers.Last();
+            Console.WriteLine("Last customer in the collection is {0}", lastCity);
 
             #region Expression
             Console.WriteLine("Last Expression");
-            var lastCity5 = cities.Last(c => c.Length == 5);
+            var lastCity5 = customers.Last(c => c.City.Length == 5);
             Console.WriteLine("Last city in the collection is with 5 letter {0}", lastCity5);
 
             Console.WriteLine();
@@ -484,9 +485,9 @@ namespace Training.CSharp
 
             #region Query
             Console.WriteLine("Last Query");
-            var lastCity6 = (from city in cities
-                             where city.Length == 6
-                             select city).Last();
+            var lastCity6 = (from c in customers
+                             where c.City.Length == 6
+                             select c).Last();
             Console.WriteLine("Last city in the collection is with 6 letter {0}", lastCity6);
 
             Console.WriteLine();
@@ -530,7 +531,7 @@ namespace Training.CSharp
         {
             #region Expression
             Console.WriteLine("Max length");
-            var maxQuery = cities.Max(x => x.Length);
+            var maxQuery = customers.Max(x => x.City.Length);
             Console.WriteLine("Max length of a city {0}", maxQuery);
 
             Console.WriteLine();
@@ -541,7 +542,7 @@ namespace Training.CSharp
         {
             #region Expression
             Console.WriteLine("Min length");
-            var minQuery = cities.Min(x => x.Length);
+            var minQuery = customers.Min(x => x.City.Length);
             Console.WriteLine("Min length of a city {0}", minQuery);
 
             Console.WriteLine();
@@ -610,8 +611,8 @@ namespace Training.CSharp
         {
             #region Expression
             Console.WriteLine("OrderBy Expression");
-            var orderExpression = cities.OrderBy(o => o);
-            var descendingOrderExpression = cities.OrderByDescending(o => o);
+            var orderExpression = customers.OrderBy(o => o);
+            var descendingOrderExpression = customers.OrderByDescending(o => o);
 
             foreach (var city in orderExpression)
             {
@@ -622,17 +623,17 @@ namespace Training.CSharp
 
             #region Query
             Console.WriteLine("OrderBy Query");
-            var orderQuery = from city in cities
-                             orderby city
-                             select city;
+            var orderQuery = from c in customers
+                             orderby c
+                             select c;
 
-            var descendingOrderQuery = from city in cities
-                                       orderby city descending
-                                       select city;
+            var descendingOrderQuery = from c in customers
+                                       orderby c descending
+                                       select c;
 
-            foreach (var city in orderQuery)
+            foreach (var c in orderQuery)
             {
-                Console.WriteLine(city);
+                Console.WriteLine(c);
             }
             Console.WriteLine();
             #endregion
@@ -716,7 +717,9 @@ namespace Training.CSharp
         {
             // Reverse
             Console.WriteLine("Reverse list items");
-            var reverseQuery = cities.Reverse();
+
+            var reverseQuery = Enumerable.Reverse(customers);
+
             foreach (var item in reverseQuery)
             {
                 Console.WriteLine(item);
@@ -734,6 +737,7 @@ namespace Training.CSharp
             var query2 = customers.Select(c => new { UpperName = c.Name.ToUpper() }).ToList();
             query2.ForEach(c => Console.WriteLine(c.UpperName));
         }
+
         private static void SelectMany()
         {
             string[] quotes = {
@@ -778,7 +782,7 @@ namespace Training.CSharp
         {
             #region Expression
             Console.WriteLine("Skip Expression");
-            var skipExpression = cities.Skip(2).OrderBy(o => o);
+            var skipExpression = customers.Skip(2).OrderBy(o => o);
 
             foreach (var item in skipExpression)
             {
@@ -790,9 +794,9 @@ namespace Training.CSharp
 
             #region Query
             Console.WriteLine("Skip Query");
-            var skipQuery = from city in cities
-                            orderby city
-                            select city;
+            var skipQuery = from c in customers
+                            orderby c
+                            select c;
 
             var skip2 = skipQuery.Skip(2);
 
@@ -827,8 +831,8 @@ namespace Training.CSharp
         private static void Take()
         {
             #region Expression
-            Console.WriteLine("Skip first two cities and display two cities");
-            var skipTakeQuery = cities.Skip(2).Take(2).OrderBy(o => o);
+            Console.WriteLine("Skip first two customers and display two customers");
+            var skipTakeQuery = customers.Skip(2).Take(2).OrderBy(o => o);
             foreach (var item in skipTakeQuery)
             {
                 Console.WriteLine(item);
@@ -878,7 +882,6 @@ namespace Training.CSharp
             Console.WriteLine();
         }
 
-        
         private static void Union()
         {
             Console.WriteLine("Union");
@@ -896,7 +899,7 @@ namespace Training.CSharp
         {
             #region Expression
             Console.WriteLine("Where Expression");
-            var whereExpression = cities.Where(c => c.StartsWith("L"));
+            var whereExpression = customers.Where(c => c.City.StartsWith("L"));
 
             foreach (var city in whereExpression)
             {
@@ -907,9 +910,9 @@ namespace Training.CSharp
 
             #region Query
             Console.WriteLine("Where Query");
-            var whereQuery = from city in cities
-                             where city.StartsWith("L")
-                             select city;
+            var whereQuery = from c in customers
+                             where c.City.StartsWith("L")
+                             select c;
             foreach (var city in whereQuery)
             {
                 Console.WriteLine(city);

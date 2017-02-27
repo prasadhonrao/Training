@@ -8,7 +8,7 @@ namespace Training.CSharp
         {
             return new List<Product>
             {
-                new Product { ID = 1,  Name = "CD", Price=5.5m},
+                new Product { ID = 1, Name = "CD", Price=5.5m},
                 new Product { ID = 2, Name = "Laptop", Price = 299.00m },
                 new Product { ID = 3, Name = "Surface RT", Price = 399.99m },
                 new Product { ID = 4, Name = "iPad", Price = 499m },
