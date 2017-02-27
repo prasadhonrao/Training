@@ -12,6 +12,7 @@ namespace Training.CSharp
         static List<Product> products = ProductRepository.GetSampleProducts();
         static List<Product> productsWithSupplier = ProductRepository.GetSampleProductsWithSupplier();
         static List<Supplier> suppliers = SupplierRepository.GetSampleSuppliers();
+        static List<Customer> customers = CustomerRepository.GetSampleCustomers();
 
         static void Main()
         {
@@ -22,11 +23,13 @@ namespace Training.CSharp
             //Contains();
             //Cast();
             //Count();
+            //Distinct();
+            //Except();
             //First();
             //FirstOrDefault();
-            //Distinct();
             //GroupBy();
             //GroupByProjection();
+            //Intersect();
             //Into();
             //Join();
             //JoinCross();
@@ -41,8 +44,9 @@ namespace Training.CSharp
             //OfType();
             //Projection();
             //Range();
-            Repeat();
+            //Repeat();
             //Reverse();
+            Select();
             //SelectMany();
             //SequenceEqual();
             //Single();
@@ -59,14 +63,7 @@ namespace Training.CSharp
             Console.ReadLine();
         }
 
-        private static void Single()
-        {
-            Console.WriteLine("Single");
-            string[] notEmpty = { "Hello" };
-            var result = notEmpty.Single();
-            Console.WriteLine(result);
-            Console.WriteLine();
-        }
+        
 
         private static void All()
         {
@@ -133,13 +130,13 @@ namespace Training.CSharp
         private static void Concat()
         {
             Console.WriteLine("Concat");
-            string[] firstGroup = { "One", "Two", "Three" };
-            string[] secondGroup = { "One", "Two", "Three", "Four", "Five", "Six" };
-            var concat = firstGroup.Concat(secondGroup);
-            foreach (var item in concat)
-            {
-                Console.WriteLine(item);
-            }
+
+            var seq1 = Enumerable.Range(0, 10);
+            var seq2 = Enumerable.Range(0, 10).Select(n => n * n); ;
+            // Enumerable.Intersect(seq1, seq2); // Can be called using Enumerable class as well
+            var intersect = seq1.Concat(seq2);
+            intersect.ToList().ForEach(n => Console.WriteLine(n));
+          
             Console.WriteLine();
         }
 
@@ -224,6 +221,15 @@ namespace Training.CSharp
             }
             #endregion
 
+        }
+
+        private static void Except()
+        {
+            var seq1 = Enumerable.Range(0, 10); ;
+            var seq2 = Enumerable.Range(0, 10).Select(n => n * n); ;
+            // Enumerable.Intersect(seq1, seq2); // Can be called using Enumerable class as well
+            var intersect = seq1.Except(seq2);
+            intersect.ToList().ForEach(n => Console.WriteLine(n));
         }
 
         private static void First()
@@ -351,6 +357,15 @@ namespace Training.CSharp
             #endregion
 
             Console.WriteLine();
+        }
+
+        private static void Intersect()
+        {
+            var seq1 = Enumerable.Range(0, 10); ;
+            var seq2 = Enumerable.Range(0, 10).Select(n => n * n); ;
+            // Enumerable.Intersect(seq1, seq2); // Can be called using Enumerable class as well
+            var intersect = seq1.Intersect(seq2);
+            intersect.ToList().ForEach(n => Console.WriteLine(n));
         }
 
         private static void Into()
@@ -692,7 +707,7 @@ namespace Training.CSharp
 
         private static void Repeat()
         {
-            Enumerable.Repeat(1, 10).ToList().ForEach(i => Console.Write(i + " ")) ;
+            Enumerable.Repeat(1, 10).ToList().ForEach(i => Console.Write(i + " "));
 
             Enumerable.Repeat("hello", 5).ToList().ForEach(text => Console.Write(text.ToUpper() + " "));
         }
@@ -710,6 +725,15 @@ namespace Training.CSharp
             Console.WriteLine();
         }
 
+        private static void Select()
+        {
+            var query = customers.Select(c => c.Name + ", " + c.City).ToList();
+            query.ForEach(c => Console.WriteLine(c));
+
+
+            var query2 = customers.Select(c => new { UpperName = c.Name.ToUpper() }).ToList();
+            query2.ForEach(c => Console.WriteLine(c.UpperName));
+        }
         private static void SelectMany()
         {
             string[] quotes = {
@@ -736,6 +760,17 @@ namespace Training.CSharp
             var list3 = new List<Customer>() { c1, c2, c3 };
             Console.WriteLine("List1 == List2 " + list1.SequenceEqual(list2));
             Console.WriteLine("List1 == List3 " + list1.SequenceEqual(list3));
+            Console.WriteLine();
+        }
+
+        private static void Single()
+        {
+            Console.WriteLine("Single");
+
+            string[] notEmpty = { "Hello" };
+            var result = notEmpty.Single();
+            Console.WriteLine(result);
+
             Console.WriteLine();
         }
 
@@ -843,16 +878,17 @@ namespace Training.CSharp
             Console.WriteLine();
         }
 
+        
         private static void Union()
         {
-            Console.WriteLine("Concat");
-            string[] firstGroup = { "One", "Two", "Three" };
-            string[] secondGroup = { "One", "Two", "Three", "Four", "Five", "Six" };
-            var concat = firstGroup.Union(secondGroup);
-            foreach (var item in concat)
-            {
-                Console.WriteLine(item);
-            }
+            Console.WriteLine("Union");
+
+            var seq1 = Enumerable.Range(0, 10);
+            var seq2 = Enumerable.Range(0, 10).Select(n => n * n); ;
+            // Enumerable.Union(seq1, seq2); // Can be called using Enumerable class as well
+            var intersect = seq1.Union(seq2);
+            intersect.ToList().ForEach(n => Console.Write(n + " "));
+
             Console.WriteLine();
         }
 
