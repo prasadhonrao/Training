@@ -40,6 +40,8 @@ namespace Training.CSharp
             //OrderBy();
             //OfType();
             //Projection();
+            //Range();
+            Repeat();
             //Reverse();
             //SelectMany();
             //SequenceEqual();
@@ -109,7 +111,7 @@ namespace Training.CSharp
             Console.WriteLine();
             #endregion
         }
-        
+
         private static void Cast()
         {
             // Converts a non-generic collection to IEnumerable<T>
@@ -175,7 +177,7 @@ namespace Training.CSharp
 
         private static void Distinct()
         {
-            var customers = new List<Customer> 
+            var customers = new List<Customer>
             {
               new Customer { Name = "Prasad", City= "NY"},
               new Customer { Name = "Rahul", City= "Pune"},
@@ -309,11 +311,11 @@ namespace Training.CSharp
             var groupQuery = from p in productsWithSupplier
                              group p by p.SupplierId
                                  into ps
-                                 select new
-                                 {
-                                     SupplierId = ps.Key,
-                                     Products = ps
-                                 };
+                             select new
+                             {
+                                 SupplierId = ps.Key,
+                                 Products = ps
+                             };
 
             foreach (var group in groupQuery)
             {
@@ -331,10 +333,10 @@ namespace Training.CSharp
             Console.WriteLine("Group by Expression");
             var groupQuery2 = productsWithSupplier.GroupBy(p => p.SupplierId)
                                                   .Select(ps => new
-                                                     {
-                                                         SupplierId = ps.Key,
-                                                         Products = ps
-                                                     });
+                                                  {
+                                                      SupplierId = ps.Key,
+                                                      Products = ps
+                                                  });
 
             foreach (var group in groupQuery2)
             {
@@ -359,8 +361,8 @@ namespace Training.CSharp
                             where p.Name.ToLower().StartsWith("i")
                             select p
                                 into iProduct // original range variable p goes out of scope
-                                where iProduct.Price > 400
-                                select iProduct;
+                            where iProduct.Price > 400
+                            select iProduct;
 
             foreach (var product in intoQuery)
             {
@@ -375,8 +377,8 @@ namespace Training.CSharp
                                  on p.SupplierId equals s.Id
                              select new { Product = p, Supplier = s }
                                  into ps
-                                 where ps.Product.Price > 400 && ps.Supplier.Id > 1
-                                 select new { ProductName = ps.Product.Name };
+                             where ps.Product.Price > 400 && ps.Supplier.Id > 1
+                             select new { ProductName = ps.Product.Name };
 
             foreach (var product in intoQuery2)
             {
@@ -667,6 +669,34 @@ namespace Training.CSharp
             #endregion
         }
 
+        private static void Range()
+        {
+            // Range is NOT an extension method
+
+            // generate integers 1 to 10
+            var integers = Enumerable.Range(1, 10);
+            integers.ToList().ForEach(n => Console.Write(n + " "));
+
+            Console.WriteLine();
+
+            // generate integers 1 to 10 and double it
+            var integersDoubled = Enumerable.Range(1, 10).Select(n => n * 2);
+            integersDoubled.ToList().ForEach(n => Console.Write(n + " "));
+
+            Console.WriteLine();
+
+            // generate list of alphabets A to Z
+            var alphabets = Enumerable.Range(0, 26).Select(n => ((char)('A' + n)).ToString());
+            alphabets.ToList().ForEach(c => Console.Write(c + " "));
+        }
+
+        private static void Repeat()
+        {
+            Enumerable.Repeat(1, 10).ToList().ForEach(i => Console.Write(i + " ")) ;
+
+            Enumerable.Repeat("hello", 5).ToList().ForEach(text => Console.Write(text.ToUpper() + " "));
+        }
+
         private static void Reverse()
         {
             // Reverse
@@ -682,9 +712,9 @@ namespace Training.CSharp
 
         private static void SelectMany()
         {
-            string[] quotes = { 
-                                  "This is a sample quote", 
-                                  "C# is the most powerful language" 
+            string[] quotes = {
+                                  "This is a sample quote",
+                                  "C# is the most powerful language"
                               };
             var query = quotes.SelectMany(s => s.Split(' '));
             foreach (var item in query)
