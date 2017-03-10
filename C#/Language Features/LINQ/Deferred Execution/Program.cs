@@ -15,17 +15,17 @@ namespace Training.CSharp
                          select e;
 
             PrintEmployeeList(query1);
-            repo.AddEmployee(new Employee { Id =7, Name = "Robert" });
+            repo.AddEmployee(new Employee(7, "Robert"));
             PrintEmployeeList(query1);
 
             Console.WriteLine("Using ToList() greedy operator");
             var query2 = (from e in repo.GetEmployees()
-                         where e.Name.StartsWith("P")
-                         select e).ToList(); // ToList() executes the query 
+                          where e.Name.StartsWith("P")
+                          select e).ToList(); // ToList() executes the query 
             PrintEmployeeList(query2);
-            repo.AddEmployee(new Employee { Id = 8, Name = "Prajakta" });
+            repo.AddEmployee(new Employee(8, "Prajakta"));
             PrintEmployeeList(query2);
-           
+
             Console.ReadLine();
         }
 

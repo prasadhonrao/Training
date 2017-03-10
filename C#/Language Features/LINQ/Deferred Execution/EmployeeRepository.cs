@@ -8,14 +8,14 @@ namespace Training.CSharp
 
         public List<Employee> GetEmployees()
         {
-            _employee = new List<Employee> 
+            _employee = new List<Employee>
             {
-                new Employee { Id = 1, Name = "Prasad"},
-                new Employee { Id = 2, Name = "Amit"},
-                new Employee { Id = 3, Name = "Rahul"},
-                new Employee { Id = 4, Name = "John"},
-                new Employee { Id = 5, Name = "Rita"},
-                new Employee { Id = 6, Name = "Paul"}
+                new Employee (1,"Prasad"),
+                new Employee (2,"Amit"),
+                new Employee (3,"Rahul"),
+                new Employee (4,"John"),
+                new Employee (5,"Rita"),
+                new Employee (6,"Paul")
             };
 
             return _employee;
