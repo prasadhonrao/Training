@@ -232,3 +232,7 @@ FakesAssemblies/
 *.prefs
 /ASP.NET Core/DeliciousPieShop/.vs
 /ASP.NET Core/DeliciousPieShop/src/DeliciousPieShop/wwwroot/lib
+
+/F#/**/*.exe
+/F#/**/FSharp.Core.dll
+
