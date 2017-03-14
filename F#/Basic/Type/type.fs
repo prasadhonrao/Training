@@ -1,6 +1,10 @@
-//int
-let age = 10
-printfn "Age is %d" age
+// int
+let myAge, yourAge = 10, 20
+printfn "My age is %d, and your age is %d" myAge yourAge
+
+// big integer
+let big = 12345678901234567890I
+printfn "Big integer value is %A" big
 
 // float
 let pi = 3.14
@@ -21,6 +25,10 @@ printfn "Decimal value %f" decimalValue
 // char
 let c = 'A'
 printfn "Character value %c" c
+
+// bool
+let boolValue = true
+printfn "Bool value %b" boolValue
 
 // string
 let hello = "Hello" + " World"
