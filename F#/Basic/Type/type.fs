@@ -1,3 +1,27 @@
+//int
+let age = 10
+printfn "Age is %d" age
+
+// float
+let pi = 3.14
+printfn "Pi value is %f" pi
+
+let randomFloat = 12.
+printfn "Random float %f" randomFloat
+
+// byte
+open System.Text
+let byteValue = [| 104uy; 101uy; 108uy; 108uy; 111uy |]
+printfn "%s" (Encoding.ASCII.GetString(byteValue))
+
+// decimal
+let decimalValue = 1234.5678M
+printfn "Decimal value %f" decimalValue
+
+// char
+let c = 'A'
+printfn "Character value %c" c
+
 // string
 let hello = "Hello" + " World"
 printfn "%s" hello
