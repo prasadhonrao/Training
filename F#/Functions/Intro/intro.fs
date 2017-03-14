@@ -19,4 +19,10 @@ printfn "Distance is %d" dist
 dist <- distance 10 20 + 1
 printfn "Distance 10 20 + 1 is %d" dist
 
-//[for x in 1.0 .. 10.0 -> (x, linear)] |> printfn "%d"
+let negate x = x * -1
+let square x = x * x
+let print x = printfn "The number is: %d" x
+
+let squareNegateThenPrint x = print (negate (square x))
+
+squareNegateThenPrint 10
