@@ -1,3 +1,5 @@
+module HackerRank
+
 open System
 
 let n = Console.ReadLine() |> int

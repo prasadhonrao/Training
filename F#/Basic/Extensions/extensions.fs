@@ -1,7 +1,7 @@
 type System.String with
     member x.IsCapitalized
         with get() =
-            Char.IsUpper(x.[0])
+            System.Char.IsUpper(x.[0])
 
 let name = "F# is really cool language"
 

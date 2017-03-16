@@ -1,4 +1,4 @@
-let numbers = [3;2;1]
+let numbers = [3; 2; 1]
 let moreNumbers = 4 :: numbers // prepend 4 with numbers
 
 printfn "numbers..."
