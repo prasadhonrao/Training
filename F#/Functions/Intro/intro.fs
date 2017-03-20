@@ -1,3 +1,14 @@
+// Usual way of declaring a function
+let GreetUser (userName, greeting) = printfn "%s %s" userName greeting
+GreetUser("Prasad", "Hello")
+
+let SayHiToYou (you) = printfn "Hi %s" you
+SayHiToYou("John")
+
+// fsharp way
+let SayHiTo me = printfn "Hi %s" me
+SayHiTo "Scott"
+
 let square x = x * x // function declaration
 printfn "Square of 4 is %d" (square 4) // function call
 printfn "Square of 3 + 1 is %d" (square 3 + 1) // same as square(3) + 1
@@ -20,9 +31,8 @@ dist <- distance 10 20 + 1
 printfn "Distance 10 20 + 1 is %d" dist
 
 let negate x = x * -1
-let square x = x * x
+let squareplus1 x = x * x + 1
 let print x = printfn "The number is: %d" x
 
-let squareNegateThenPrint x = print (negate (square x))
-
-squareNegateThenPrint 10
+let squareplus1NegateThenPrint x = print (negate (squareplus1 x))
+squareplus1NegateThenPrint 10
