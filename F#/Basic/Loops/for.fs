@@ -4,9 +4,10 @@ for n in numbers do
     printf "%d " n
 printfn " "
 
-// Print a dynamic series 
+// Print a dynamic series
 let PrintNumbers min max =
     for n in min..max do
         printf "%d " n
     printfn " "
 
+PrintNumbers 1 10
