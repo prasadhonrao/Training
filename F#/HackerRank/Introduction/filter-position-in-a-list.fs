@@ -2,8 +2,6 @@ module HackerRank
 
 open System
 
-let filterArray arr = arr |> Array.filter(fun x -> x % 2 <> 0)
-
 let read_and_parse()=
     let mutable arr = []
     let mutable buff = Console.ReadLine()
@@ -14,4 +12,6 @@ let read_and_parse()=
 
 let main =
     let arr = read_and_parse()
-    printf "%A" <| filterArray arr
+    let temp_array = Array.rev arr // Original input array has to be reversed!!
+    for i in 1 .. 2 .. temp_array.Length - 1 do
+    printfn "%d" temp_array.[i]
