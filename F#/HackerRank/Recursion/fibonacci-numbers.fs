@@ -1,3 +1,5 @@
+module HackerRank
+
 open System
 
 let rec fib n =
