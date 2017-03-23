@@ -1,6 +1,13 @@
+open System.Numerics
+
 // int
 let myAge, yourAge = 10, 20
 printfn "My age is %d, and your age is %d" myAge yourAge
+(* Be default variables are immutable so you can not override its values unless your declared them mutable explicitly *)
+let mutable mutableAge = 30
+printfn "Mutable Age %d" mutableAge
+mutableAge <- 40
+printfn "Mutable Age %d" mutableAge
 
 // big integer
 let big = 12345678901234567890I
