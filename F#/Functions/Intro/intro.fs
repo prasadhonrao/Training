@@ -1,6 +1,10 @@
 // Usual way of declaring a function
-let GreetUser (userName, greeting) = printfn "%s %s" userName greeting
-GreetUser("Prasad", "Hello")
+let GreetUser (userName,  greeting) = printfn "%s %s" userName greeting
+GreetUser ("Prasad", "Hello")
+
+// same function rewritten without brackets
+let GreetUser2 userName greeting = printfn "%s %s" userName greeting
+GreetUser2 "Prasad" "Hello"
 
 let SayHiToYou (you) = printfn "Hi %s" you
 SayHiToYou("John")
@@ -30,9 +34,18 @@ printfn "Distance is %d" dist
 dist <- distance 10 20 + 1
 printfn "Distance 10 20 + 1 is %d" dist
 
+// function nesting
 let negate x = x * -1
 let squareplus1 x = x * x + 1
 let print x = printfn "The number is: %d" x
 
 let squareplus1NegateThenPrint x = print (negate (squareplus1 x))
 squareplus1NegateThenPrint 10
+
+// functions can be declared using multiple lines
+let add' x y =
+    let result =
+        x + y
+    result
+
+printfn "10 + 10 = %d" (add' 10 10)
