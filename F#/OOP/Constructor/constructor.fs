@@ -3,7 +3,7 @@ module OOP
 open System
 
 type Person(firstName: string, lastName: string) =
-    let validateString str =
+    let validateString str = // local function to validate inputs
         if String.IsNullOrWhiteSpace str then
             raise (ArgumentException())
     do
