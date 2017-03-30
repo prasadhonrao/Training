@@ -1,0 +1,13 @@
+{{#each model as |order|}}
+  {{#link-to "orders.order" order}}
+    Order {{order.id}} for {{order.name}}<br>
+  {{/link-to}}
+{{/each}}
+
+<br>
+
+{{outlet}}
+
+<br>
+<br>
+Navigate to {{#link-to "index"}} Index {{/link-to}}

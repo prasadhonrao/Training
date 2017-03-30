@@ -1,0 +1,13 @@
+Order details
+<p>Order {{model.id}} for {{model.name}} </p>
+
+<p>Items Details</p>
+
+{{#each model.items as |item| }}
+  {{!--{{ log item }}--}}
+   {{item.item}} {{item.quantity}} <br>
+{{/each}}
+
+<p>The order is ready! </p>
+
+{{!--Navigate to {{#link-to "orders"}} Orders {{/link-to}} <br>--}}
