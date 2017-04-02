@@ -5,6 +5,13 @@ Unlike other programming languages, array in JavaScript can hold data of differe
 // Empty array
 var empty = [];
 console.log('Empty array length is ' + empty.length);
+empty[0] = 0;
+console.log('array length is ' + empty.length);
+empty[4] = 0; // adding elements at 5th Index changes the length and adds undefined elements
+console.log('array length is ' + empty.length);
+for (var index = 0; index < empty.length; index++) {
+	console.log(empty[index]);
+}
 
 // Array declaration and initialization
 console.log("Numeric Array");
