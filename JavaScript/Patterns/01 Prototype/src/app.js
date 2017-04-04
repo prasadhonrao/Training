@@ -1,5 +1,6 @@
 var Calculator = function(){
 	// instance shared code goes here...
+	console.log("New instance created");
 };
 
 Calculator.prototype = {
