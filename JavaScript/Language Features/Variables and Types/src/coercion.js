@@ -2,7 +2,7 @@
 var a = "42";
 console.log(typeof(a));
 
-var b = Number(a);
+var b = Number(a); // using Number class
 console.log(typeof(b));
 
 // Implicit Coercion
