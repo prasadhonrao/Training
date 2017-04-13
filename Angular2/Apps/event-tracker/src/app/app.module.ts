@@ -5,26 +5,27 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InitCapsDirective } from './shared/init-caps/init-caps.directive';
-import { RatingDirective } from './shared/rating/rating.directive';
-import { SessionModule } from './session/session.module';
-import { SpeakerModule } from './speaker/speaker.module';
+import { RatingDirective } from './shared/directives/rating/rating.directive';
+import { ExceptionService } from './shared/services/exception/exception.service';
+import { InitCapsPipe } from './shared/pipes/init-caps/init-caps.pipe';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InitCapsDirective,
-    RatingDirective
+    RatingDirective,
+    InitCapsPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    SpeakerModule,
-    SessionModule
+    DashboardModule,
+    AdminModule
   ],
-  providers: [],
+  providers: [ExceptionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

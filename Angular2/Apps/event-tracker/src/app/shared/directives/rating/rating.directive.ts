@@ -1,7 +1,7 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[appRating]'
+  selector: '[etRating]'
 })
 export class RatingDirective {
 

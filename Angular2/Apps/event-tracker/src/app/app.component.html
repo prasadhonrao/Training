@@ -1,4 +1,10 @@
 <h1>
   {{title}}
 </h1>
+<nav>
+  <ul>
+    <li><a href="dashboard" [routerLink] = "['/dashboard']" >Dashboard</a></li>
+    <li><a href="admin" [routerLink] = "['/admin']" >Admin</a></li>
+  </ul>
+</nav>
 <router-outlet></router-outlet>
