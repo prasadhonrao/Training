@@ -12,6 +12,7 @@ import { InitCapsPipe } from './shared/pipes/init-caps/init-caps.pipe';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { AdminModule } from './admin/admin.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { EventsModule } from './events/events.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     DashboardModule,
-    AdminModule
+    AdminModule,
+    EventsModule
   ],
   providers: [ExceptionService],
   bootstrap: [AppComponent]
