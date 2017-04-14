@@ -1,0 +1,61 @@
+.borange{
+	background:#f88529 !important;
+	color: #fff !important;	
+	border: 0px !important;	
+}
+
+.blightblue{
+	background:#52b9e9 !important;
+	color: #fff !important;
+	border: 0px !important;
+}
+
+.today-datas{
+	list-style-type: none;
+	padding: 0px;
+	margin: 10px 0px;
+}
+
+.today-datas li{
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-right: 10px;
+    padding: 20px 15px;
+    background-color: #f8f8f8;	
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    max-width: 100%;
+    text-align: center;
+}
+
+.today-datas li .spark{
+	margin-right: 10px;
+}
+
+.today-datas li .datas-text{
+	font-size: 13px;
+	padding: 7px 0px 0px 0px;
+	font-weight: normal;
+}
+
+.today-datas li .datas-text span{
+	display: block;
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+
+.today-datas li i{
+	font-size: 50px;
+	margin-right: 10px;
+}
+
+.today-datas li .dial{
+	margin-right: 10px !important;
+}
+
+.widget {
+  margin-top: 10px;
+  margin-bottom: 20px; 
+  background: #fff;
+}
+
