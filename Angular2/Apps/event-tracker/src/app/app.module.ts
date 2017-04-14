@@ -10,12 +10,14 @@ import { ExceptionService } from './shared/services/exception/exception.service'
 import { InitCapsPipe } from './shared/pipes/init-caps/init-caps.pipe';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { AdminModule } from './admin/admin.module';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RatingDirective,
-    InitCapsPipe
+    InitCapsPipe,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
