@@ -17,12 +17,6 @@ def delete_from_cart(item,cart):
         cart[item] -= 1
         if cart[item] == 0:
             cart.pop(item, None)
-
-def remove_items_wit_zero_qualitity(cart):
-    for key in cart:
-        if cart[key] == 0:
-            cart.pop(key, None)
-        
     
 def process_order(order, cart):
     command, item = order #unpack the tuple
@@ -32,7 +26,6 @@ def process_order(order, cart):
     elif command == "d" and item in cart:
         delete_from_cart(item, cart)
     elif command == "q":
-        #remove_items_wit_zero_qualitity(cart)
         return False
 
     return True
