@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,8 +11,9 @@ import { ExceptionService } from './shared/services/exception/exception.service'
 import { InitCapsPipe } from './shared/pipes/init-caps/init-caps.pipe';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { AdminModule } from './admin/admin.module';
-import { NavbarComponent } from './shared/navbar/navbar.component';
 import { EventsModule } from './events/events.module';
+import { HomeModule } from './home/home.module';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EventsModule } from './events/events.module';
     AppRoutingModule,
     DashboardModule,
     AdminModule,
-    EventsModule
+    EventsModule,
+    HomeModule
   ],
   providers: [ExceptionService],
   bootstrap: [AppComponent]
