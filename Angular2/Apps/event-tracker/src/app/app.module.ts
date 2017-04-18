@@ -14,6 +14,7 @@ import { AdminModule } from './admin/admin.module';
 import { EventsModule } from './events/events.module';
 import { HomeModule } from './home/home.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { ToastModule } from './shared/toast/toast.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     DashboardModule,
     AdminModule,
     EventsModule,
-    HomeModule
+    HomeModule,
+    ToastModule
   ],
   providers: [ExceptionService],
   bootstrap: [AppComponent]

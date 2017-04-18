@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastService } from './../shared/toast/toast.service';
 
 @Component({
   selector: 'et-event-list',
@@ -7,7 +8,6 @@ import { Component } from '@angular/core';
 })
 export class EventListComponent {
   public pageTitle = 'Events';
-
   public events: any[] = [
     {
       'eventId': 1,
@@ -19,6 +19,8 @@ export class EventListComponent {
     }
   ];
 
-  constructor() { }
+  constructor(private toastService: ToastService) {
+    this.toastService.activate('Activated events');
+  }
 
 }
