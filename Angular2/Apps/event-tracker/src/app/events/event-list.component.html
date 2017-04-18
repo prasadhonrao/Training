@@ -1,0 +1,18 @@
+<div class="panel panel-primary">
+
+    <div class="panel-heading">
+        {{pageTitle}}
+    </div>
+
+    <div class='table-responsive'>
+        <table class='table' *ngIf='events && events.length'>
+            <tbody>
+                <tr *ngFor='let event of events'>
+                    <td>
+                         {{event.eventName}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

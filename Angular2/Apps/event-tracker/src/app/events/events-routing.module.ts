@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EventsComponent } from './events.component';
+import { EventListComponent } from './event-list.component';
+import { EventDetailComponent } from './event-detail.component';
 
-const routes: Routes = [{
+const routes: Routes = [
+  {
     path: 'events',
-    component:  EventsComponent
+    component:  EventListComponent
+  },
+  {
+    path: 'events/:',
+    component:  EventDetailComponent
   }
 ];
 
