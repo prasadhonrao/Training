@@ -6,11 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
   title = 'Event Tracker';
+  private _modalElement: any;
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this._modalElement = document.getElementById('aboutApp');
   }
 
+  showInfo() {
+    console.log('hi');
+    this._modalElement.style.display = 'block';
+  }
 }

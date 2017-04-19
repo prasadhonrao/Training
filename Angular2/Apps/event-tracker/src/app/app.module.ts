@@ -15,13 +15,16 @@ import { EventsModule } from './events/events.module';
 import { HomeModule } from './home/home.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ToastModule } from './shared/toast/toast.module';
+import { AboutComponent } from './shared/about/about.component';
+import { ToastService } from './shared/toast/toast.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     RatingDirective,
     InitCapsPipe,
-    NavbarComponent
+    NavbarComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,7 @@ import { ToastModule } from './shared/toast/toast.module';
     HomeModule,
     ToastModule
   ],
-  providers: [ExceptionService],
+  providers: [ExceptionService, ToastService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
