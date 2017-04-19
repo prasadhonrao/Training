@@ -11,3 +11,6 @@ print('')
 for i in range(1, 6, 1):
     print(i * i, end=' ')
 print('')
+
+for j in 5:
+    print(int(j))
