@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+</head>
+<body>
+  <h3> SVG Bar </h3>
+  <svg>
+      <rect width="50" height="200", style="fill:blue"
+  </svg>
+  <h3> D3 Bar </h3>
+    <script>
+      d3.select("body")
+      .append("svg")
+      .append("rect")
+      .attr("width", 50)
+      .attr("height", 200)
+      .style("fill","blue");
+    </script>
+</body>
+</html>
