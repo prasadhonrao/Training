@@ -1,0 +1,10 @@
+{
+    "typeAcquisition": {
+        "include": [
+            "d3"
+        ]
+    },
+    "compilerOptions": {
+        "target": "ES6"
+    }
+}

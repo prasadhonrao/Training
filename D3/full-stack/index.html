@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+<style>
+    body {
+        margin: 0;
+    }
+    
+    .chart {
+        width: 100%;
+        height: 100%;
+        background: #ddd;
+    }
+    
+    text {
+        pointer-events: none;
+    }
+    
+    .grandparent text {
+        font-weight: bold;
+    }
+    
+    rect {
+        fill: rgb(117, 107, 177);
+        stroke: rgb(117, 107, 177);
+    }
+    
+    rect.parent,
+    .grandparent rect {
+        stroke-width: 2px;
+    }
+    /*.grandparent rect {
+        fill: darkblue;
+    }*/
+    
+    .children rect.parent,
+    .grandparent rect {
+        cursor: pointer;
+    }
+    
+    .children rect.parent {
+        fill: #bbb;
+        fill-opacity: .5;
+    }
+    
+    .children:hover rect.child {
+        fill: #bbb;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="chart"></div>
+        <script src="full-stack.js"></script>
+    </div>
+</body>
+
+</html>
