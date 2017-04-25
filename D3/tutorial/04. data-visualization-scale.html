@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>d3 - data visualization scale</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id='container'></div>
+    <script>
+        var elements = [20, 10, 17, 40, 80];
+        var width = 500;
+        var height = 500;
+
+        var widthScale = d3.scale.linear()
+            .domain([0, 80])
+            .range([0, width]);
+
+        var colorScale = d3.scale.linear()
+            .domain([0, 80])
+            .range(['red', 'green', 'blue']);
+
+        var svg = d3.select('body')
+            .append('svg')
+            .attr('width', width)
+            .attr('height', height);
+
+        var bars = svg.selectAll('rect')
+            .data(elements)
+            .enter()
+            .append('rect')
+            .attr('width', d => widthScale(d)) // for each rect
+            .attr('height', 50)
+            .attr('y', (d, i) => {
+                return i * 100;
+            })
+            .attr('fill', d => colorScale(d))
+    </script>
+</body>
+
+</html>

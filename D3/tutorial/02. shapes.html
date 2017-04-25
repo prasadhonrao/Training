@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>d3 - shapes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id='container'></div>
+    <script>
+        // add svg
+        var svg = d3.select('body')
+            .append('svg')
+            .attr('width', 500)
+            .attr('height', 500);
+
+        var cicle = svg.append('circle')
+            .attr('cx', 250)
+            .attr('cy', 250)
+            .attr('r', 100)
+            .attr('fill', 'green')
+
+        var rect = svg.append('rect')
+            .attr('width', '100')
+            .attr('height', '100')
+
+        var line = svg.append('line')
+            .attr('x1', '0')
+            .attr('y1', '100')
+            .attr('x2', '400')
+            .attr('y2', '400')
+            .attr('stroke', 'blue')
+            .attr('stroke-width', '10');
+    </script>
+</body>
+
+</html>
