@@ -1,0 +1,43 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>d3 - transition</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id='container'></div>
+    <script>
+          // add svg
+        var svg = d3.select('body')
+            .append('svg')
+            .attr('width', 500)
+            .attr('height', 500);
+
+        var cicle = svg.append('circle')
+            .attr('cx', 100)
+            .attr('cy', 100)
+            .attr('r', 50)
+            .attr('fill', 'green')
+            .transition()
+            .duration(1000)
+            .delay(1000)
+            .attr('cx',450)
+            .transition()
+            .duration(1000)
+            .attr('cy',450)
+            .transition()
+            .duration(1000)
+            .attr('cx',100)
+            .transition()
+            .duration(1000)
+            .attr('cy',100)
+
+    </script>
+</body>
+
+</html>
