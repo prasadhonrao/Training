@@ -74,12 +74,12 @@
         <FlowDecision x:Name="__ReferenceID0" Condition="[year mod 4 = 0]" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
           <FlowDecision.True>
             <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_2">
-              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message box" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Year &quot; + year.ToString() + &quot; is a leap year&quot;]" TopMost="True" />
+              <ui:MessageBox ChosenButton="{x:Null}" Buttons="Ok" Caption="Leap Year Result" DisplayName="Message leap year" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Year &quot; + year.ToString() + &quot; is a leap year&quot;]" TopMost="True" />
             </FlowStep>
           </FlowDecision.True>
           <FlowDecision.False>
             <FlowStep x:Name="__ReferenceID2" sap2010:WorkflowViewState.IdRef="FlowStep_3">
-              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message box" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Year &quot; + year.ToString() + &quot; is not a leap year&quot;]" TopMost="True" />
+              <ui:MessageBox ChosenButton="{x:Null}" Buttons="Ok" Caption="Leap Year Result" DisplayName="Message Not leap year" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Year &quot; + year.ToString() + &quot; is not a leap year&quot;]" TopMost="True" />
             </FlowStep>
           </FlowDecision.False>
         </FlowDecision>
@@ -88,7 +88,7 @@
     <x:Reference>__ReferenceID0</x:Reference>
     <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
-    <sads:DebugSymbol.Symbol>dzNEOlxHaXRcVHJhaW5pbmdcUlBBXFVpUGF0aFxMZWFwWWVhckZpbmRlclxNYWluLnhhbWwLPANcDwIBAT4zPjkCAQJEB0gYAgELSjlKSwIBCVIPUv8BAgEGTQ9N+wECAQNEjgFEmgECAQ9GMkY4AgENRKEBRLkBAgEMUqQBUu0BAgEHTaQBTekBAgEE</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>dzNEOlxHaXRcVHJhaW5pbmdcUlBBXFVpUGF0aFxMZWFwWWVhckZpbmRlclxNYWluLnhhbWwNPANcDwIBAT4zPjkCAQJEB0gYAgENSjlKSwIBC1IPUpECAgEHTQ9NiQICAQNEjgFEmgECARFGMkY4AgEPRKEBRLkBAgEOUktSXQIBClK2AVL/AQIBCE1LTV0CAQZNsgFN9wECAQQ=</sads:DebugSymbol.Symbol>
   </Flowchart>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
