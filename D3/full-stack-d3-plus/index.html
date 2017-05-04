@@ -1,0 +1,79 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<script src="d3.min.js"></script>
+<script src="d3plus.full.min.js"></script>
+
+<div id="viz"></div>
+
+<script>
+    var sample_data = [
+
+        { "domain": "Languages", "value": 50 },
+        { "domain": "Languages", "sub-domain": "UI Markup", "value": 50 },
+        { "domain": "Languages", "sub-domain": "Data Markup", "value": 50 },
+        { "domain": "Languages", "sub-domain": "Style Sheet", "value": 50 },
+        { "domain": "Languages", "sub-domain": "Data Languages", "value": 50 },
+        { "domain": "Languages", "sub-domain": "Compiled APL", "value": 50 },
+        { "domain": "Languages", "sub-domain": "Scripted APL", "value": 50 },
+        { "domain": "Languages", "sub-domain": "Shell Scripts", "value": 50 },
+
+        { "domain": "SDLC Methodologies", "value": 50 },
+        { "domain": "SDLC Methodologies", "sub-domain": "Waterfall", "value": 50 },
+        { "domain": "SDLC Methodologies", "sub-domain": "Agile", "value": 50 },
+        { "domain": "SDLC Methodologies", "sub-domain": "RUP", "value": 50 },
+
+        { "domain": "Software Platforms", "value": 50 },
+        { "domain": "Software Platforms", "sub-domain": "J2EE", "value": 50 },
+        { "domain": "Software Platforms", "sub-domain": ".NET", "value": 50 },
+        { "domain": "Software Platforms", "sub-domain": "MEAN", "value": 50 },
+        { "domain": "Software Platforms", "sub-domain": "Data", "value": 50 },
+        { "domain": "Software Platforms", "sub-domain": "Integration", "value": 50 },
+
+        { "domain": "Infrastructure Platforms", "value": 50 },
+        { "domain": "Infrastructure Platforms", "sub-domain": "SaaS", "value": 50 },
+        { "domain": "Infrastructure Platforms", "sub-domain": "PaaS", "value": 50 },
+        { "domain": "Infrastructure Platforms", "sub-domain": "IaaS", "value": 50 },
+
+        { "domain": "Layers", "value": 50 },
+        { "domain": "Layers", "sub-domain": "Data Persistence", "value": 50 },
+        { "domain": "Layers", "sub-domain": "Data Processing", "value": 50 },
+        { "domain": "Layers", "sub-domain": "Channel", "value": 50 },
+        { "domain": "Layers", "sub-domain": "EndPoint", "value": 50 },
+        { "domain": "Layers", "sub-domain": "Analytics", "value": 50 },
+        { "domain": "Layers", "sub-domain": "Data Ingestion", "value": 50 },
+        { "domain": "Layers", "sub-domain": "Integration", "value": 50 },
+        { "domain": "Layers", "sub-domain": "Core Business Logic", "value": 50 },
+
+
+        { "domain": "Architecture Patterns", "value": 50 },
+        { "domain": "Architecture Patterns", "sub-domain": "MVC", "value": 50 },
+        { "domain": "Architecture Patterns", "sub-domain": "Microservices", "value": 50 },
+        { "domain": "Architecture Patterns", "sub-domain": "Event Driven", "value": 50 },
+        { "domain": "Architecture Patterns", "sub-domain": "Service Oriented Architecture", "value": 50 },
+        { "domain": "Architecture Patterns", "sub-domain": "EAI Patterns", "value": 50 },
+        { "domain": "Architecture Patterns", "sub-domain": "Microkernal", "value": 50 },
+        { "domain": "Architecture Patterns", "sub-domain": "Lambda Architecture", "value": 50 },
+
+        { "domain": "Ancillary Capabilities", "value": 50 },
+        { "domain": "Ancillary Capabilities", "sub-domain": "Build", "value": 50 },
+        { "domain": "Ancillary Capabilities", "sub-domain": "Scripting", "value": 50 },
+        { "domain": "Ancillary Capabilities", "sub-domain": "Source Control", "value": 50 },
+        { "domain": "Ancillary Capabilities", "sub-domain": "Collaboration", "value": 50 },
+        { "domain": "Ancillary Capabilities", "sub-domain": "Tooling", "value": 50 },
+        { "domain": "Ancillary Capabilities", "sub-domain": "IDE", "value": 50 },
+        { "domain": "Ancillary Capabilities", "sub-domain": "Assurance", "value": 50 },
+        { "domain": "Ancillary Capabilities", "sub-domain": "OS", "value": 50 },
+        { "domain": "Ancillary Capabilities", "sub-domain": "Debugging", "value": 50 },
+    ];
+
+    var visualization = d3plus.viz()
+        .container("#viz")
+        .data(sample_data)
+        .type("tree_map")
+        .id(["domain", "sub-domain", "aspect"])
+        .size("value")
+        .depth(0)
+        .draw()
+
+</script>

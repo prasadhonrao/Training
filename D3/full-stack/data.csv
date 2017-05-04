@@ -1,0 +1,456 @@
+
+Languages,UI Markup,UI Markup,JSP,1
+Languages,UI Markup,UI Markup,Markdown,1
+Languages,UI Markup,UI Markup,HTML,2
+Languages,UI Markup,UI Markup,SVG,1
+Languages,UI Markup,UI Markup,VRML,1
+
+Languages,Data Markup,Data Markup,XML,2
+Languages,Data Markup,Data Markup,JSON,2
+
+Languages,Style Sheet,Style Sheet,XSL,1
+Languages,Style Sheet,Style Sheet,CSS,2
+Languages,Style Sheet,Style Sheet,XSL-FO,1
+
+Languages,Data Languages,Data Languages,SQL,2
+Languages,Data Languages,Data Languages,OQL,1
+Languages,Data Languages,Data Languages,PL SQL,1
+Languages,Data Languages,Data Languages,CQL,1
+
+Languages,Compile APL,Compile APL,Java,2
+Languages,Compile APL,Compile APL,C,1
+Languages,Compile APL,Compile APL,C++,1
+Languages,Compile APL,Compile APL,C#,1
+Languages,Compile APL,Compile APL,Visual Basic,1
+Languages,Compile APL,Compile APL,Scala,1
+
+Languages,Scripted APL,Scripted APL,JavaScript,2
+Languages,Scripted APL,Scripted APL,CoffeeScript,1
+Languages,Scripted APL,Scripted APL,PHP,1
+Languages,Scripted APL,Scripted APL,PERL,1
+Languages,Scripted APL,Scripted APL,Python,1
+Languages,Scripted APL,Scripted APL,Ruby,1
+
+Languages,Shell Scripts,Shell Scripts,Sh,2
+Languages,Shell Scripts,Shell Scripts,Sed,1
+Languages,Shell Scripts,Shell Scripts,PowerShell,1
+Languages,Shell Scripts,Shell Scripts,Bash,2
+
+
+Infrastructure Platforms, SaaS, SalesForce, SalesForce CRM, 1
+Infrastructure Platforms, SaaS, SalesForce, Force.com, 1
+Infrastructure Platforms, PaaS, AWS, AWS Cloud, 1
+Infrastructure Platforms, PaaS, Azure, Azure Cloud, 1
+Infrastructure Platforms, PaaS, Cloud Foundary, Cloud Foundary Cloud, 1
+Infrastructure Platforms, PaaS, PCF, PCF Cloud, 1
+Infrastructure Platforms, PaaS, Open Shift, Open Shift Cloud, 1
+Infrastructure Platforms, IaaS, AWS, EC2, 1
+Infrastructure Platforms, IaaS, AWS, ECS, 1
+
+
+SDLC Methodologies, Waterfall, Requirement Analysis, System decomposition using DFD (Data Flow Diagrams),1
+SDLC Methodologies, Waterfall, Requirement Analysis, Object oriented analysis,2
+SDLC Methodologies, Waterfall, Requirement Analysis, Domain Objet Model,1
+SDLC Methodologies, Waterfall, Requirement Analysis, Change request,2
+SDLC Methodologies, Waterfall, Requirement Analysis, RTM(requirement tracebility matrix),2
+
+SDLC Methodologies, Waterfall, Planning, Estimation methods - FP - UCP - CP or WBS,2
+SDLC Methodologies, Waterfall, Planning, Estimation using COCOMO model,1
+
+SDLC Methodologies, Waterfall, Design, Functional-oriented system design,1
+SDLC Methodologies, Waterfall, Design, Domain driven design,1
+SDLC Methodologies, Waterfall, Design, Object-oriented system design,2
+SDLC Methodologies, Waterfall, Design, Detailed design specification,1
+
+SDLC Methodologies, Waterfall, Coding, Ability to covert system design into code,2
+SDLC Methodologies, Waterfall, Coding, knowledge about unit testing,2
+SDLC Methodologies, Waterfall, Coding, Coding best practices (cohesion coupling etc),2
+
+SDLC Methodologies, Waterfall, Testing, Deriving test cases from the requirements,2
+SDLC Methodologies, Waterfall, Testing, Importance of test coverage (boundary - negative - positive),2
+
+SDLC Methodologies, Waterfall, Installation / Release, Change management,2
+SDLC Methodologies, Waterfall, Installation / Release, Backout process,1
+SDLC Methodologies, Waterfall, Installation / Release, Disaster recovery,1
+
+SDLC Methodologies, Agile, Requirement Analysis, System decomposition into epics - features and user stories,1
+SDLC Methodologies, Agile, Requirement Analysis, Object oriented analysis,2
+SDLC Methodologies, Agile, Requirement Analysis, Domain object model,1
+SDLC Methodologies, Agile, Requirement Analysis, Change request,2
+SDLC Methodologies, Agile, Requirement Analysis, RTM(requirement tracebility matrix),2
+
+SDLC Methodologies, Agile, Planning, Story point estimation,2
+SDLC Methodologies, Agile, Planning, Done criteria,2
+SDLC Methodologies, Agile, Planning, Release and spring planning,1
+SDLC Methodologies, Agile, Planning, Backlock grooming,1
+
+SDLC Methodologies, Agile, Coding, Test driven development (TDD),2
+SDLC Methodologies, Agile, Coding, ATDD,1
+SDLC Methodologies, Agile, Coding, Coding best practices(cohesion - coupling etc),1
+SDLC Methodologies, Agile, Coding, Pair programming,1
+SDLC Methodologies, Agile, Coding, Technical debt,2
+
+SDLC Methodologies, Agile, Testing, Deriving test cases from the requirements,2
+SDLC Methodologies, Agile, Testing, Importance of test coverage (boundary - negative - positive),2
+
+SDLC Methodologies, Agile, Release/Iteration, sprint demo,2
+SDLC Methodologies, Agile, Release/Iteration, spring retrospection,2
+SDLC Methodologies, Agile, Release/Iteration, backout process,1
+SDLC Methodologies, Agile, Release/Iteration, disaster recovery,1
+
+SDLC Methodologies, RUP (Rational Unified Process), Inception, Vision,1
+SDLC Methodologies, RUP (Rational Unified Process), Inception, Busienss case,2
+SDLC Methodologies, RUP (Rational Unified Process), Inception, Change request,1
+SDLC Methodologies, RUP (Rational Unified Process), Inception, RTM(requirement tracebility matrix),2
+SDLC Methodologies, RUP (Rational Unified Process), Inception, Usecase based estimation,2
+
+SDLC Methodologies, RUP (Rational Unified Process), Elaboration, Usecase model from Analysis & Design ,2
+SDLC Methodologies, RUP (Rational Unified Process), Elaboration, Supplementary / non-functional requirements,1
+SDLC Methodologies, RUP (Rational Unified Process), Elaboration, Software architecture description,1
+
+SDLC Methodologies, RUP (Rational Unified Process), Construction, Ability to covert usecase model into code,2
+SDLC Methodologies, RUP (Rational Unified Process), Construction, knowledge about unit testing,1
+SDLC Methodologies, RUP (Rational Unified Process), Construction, Coding best practices (cohesion - coupling etc),2
+SDLC Methodologies, RUP (Rational Unified Process), Construction, Deriving test cases from the usecases ,2
+SDLC Methodologies, RUP (Rational Unified Process), Construction, Importance of test coverage (boundary - negative - positive),2
+
+SDLC Methodologies, RUP (Rational Unified Process), Transition, User manual,2
+SDLC Methodologies, RUP (Rational Unified Process), Transition, Change management,2
+SDLC Methodologies, RUP (Rational Unified Process), Transition, Backout process,1
+SDLC Methodologies, RUP (Rational Unified Process), Transition, Disaster recovery,1
+
+
+Software Platforms, JEE, Platform Concepts, Background, 1
+Software Platforms, JEE, Platform Concepts, Platform architecture, 1
+Software Platforms, JEE, Platform Concepts, Platform Containers, 1
+Software Platforms, JEE, Platform Concepts, Packaging & Deployment, 1
+Software Platforms, JEE, Platform Concepts, Platform Management, 1
+
+Software Platforms, JEE, Platform Products, Websphere, 1
+Software Platforms, JEE, Platform Products, Weblogic, 1
+Software Platforms, JEE, Platform Products, Tomcat, 1
+Software Platforms, JEE, Platform Products, Jboss, 1
+
+Software Platforms, .NET, Platform Concepts, Background, 1
+Software Platforms, .NET, Platform Concepts, Platform architecture, 1
+Software Platforms, .NET, Platform Concepts, Platform Containers, 1
+Software Platforms, .NET, Platform Concepts, Packaging & Deployment, 1
+Software Platforms, .NET, Platform Concepts, Platform Management, 1
+
+Software Platforms, .NET, Platform Products, BizTalk, 1
+Software Platforms, .NET, Platform Products, IIS, 1
+Software Platforms, .NET, Platform Products, Windows Server, 1
+Software Platforms, .NET, Platform Products, Azure Fabric, 1
+
+Software Platforms, MEAN Platform, Platform Concepts, Background, 1
+Software Platforms, MEAN Platform, Platform Concepts, Platform architecture, 1
+Software Platforms, MEAN Platform, Platform Concepts, Platform Containers, 1
+Software Platforms, MEAN Platform, Platform Concepts, Packaging & Deployment, 1
+Software Platforms, MEAN Platform, Platform Concepts, Platform Management, 1
+
+Software Platforms, MEAN Platform, Platform Products, NodeJS, 1
+
+Software Platforms, Data Platform, Platform Concepts, Background, 1
+Software Platforms, Data Platform, Platform Concepts, Platform architecture, 1
+Software Platforms, Data Platform, Platform Concepts, Platform Containers, 1
+Software Platforms, Data Platform, Platform Concepts, Packaging & Deployment, 1
+Software Platforms, Data Platform, Platform Concepts, Platform Management, 1
+
+Software Platforms, Data Platform, Platform Products, Hadoop, 1
+Software Platforms, Data Platform, Platform Products, Cloudera, 1
+Software Platforms, Data Platform, Platform Products, Hotyonworks, 1
+Software Platforms, Data Platform, Platform Products, MapR, 1
+
+Software Platforms, Integration Platform, Platform Concepts, Background, 1
+Software Platforms, Integration Platform, Platform Concepts, Platform architecture, 1
+Software Platforms, Integration Platform, Platform Concepts, Platform Containers, 1
+Software Platforms, Integration Platform, Platform Concepts, Packaging & Deployment, 1
+Software Platforms, Integration Platform, Platform Concepts, Platform Management, 1
+
+Software Platforms, Integration Platform, Platform Products, Mulesoft, 1
+Software Platforms, Integration Platform, Platform Products, IBM Interation Bus, 1
+Software Platforms, Integration Platform, Platform Products, Oracle Integration Server, 1
+
+
+Layers, Channel, Patterns, Native Mobile,1
+Layers, Channel, Patterns, Hybrid Mobile,1
+Layers, Channel, Patterns, Client Side MVC,1
+Layers, Channel, Patterns, Client Side Frameworks,1
+Layers, Channel, Patterns, Omni Channel Architecture,1
+Layers, Channel, Patterns, Responsive Web Design,1
+
+Layers, Channel, Frameworks, Bootstrap,1
+Layers, Channel, Frameworks, Foundation,1
+Layers, Channel, Frameworks, DOJO,1
+Layers, Channel, Frameworks, jQuery,1
+Layers, Channel, Frameworks, Angular 1.X,1
+Layers, Channel, Frameworks, Angular 2.0,1
+Layers, Channel, Frameworks, PolymerJS,1
+Layers, Channel, Frameworks, EmberJS,1
+Layers, Channel, Frameworks, Sencha extJS,1
+Layers, Channel, Frameworks, Xamarin,1
+Layers, Channel, Frameworks, Ionic,1
+Layers, Channel, Frameworks, KendoUI,1
+Layers, Channel, Frameworks, Corodova,1
+Layers, Channel, Frameworks, Phonegap,1
+Layers, Channel, Frameworks, Native iOS,1
+Layers, Channel, Frameworks, Native Android,1
+Layers, Channel, Frameworks, Native Windows,1
+
+Layers, Channel, Products, Knoy,1
+Layers, Channel, Products, Backbase,1
+Layers, Channel, Products, Crealogix,1
+Layers, Channel, Products, CR2,1
+Layers, Channel, Products, Temenoes Edge Connect,1
+
+Layers, Endpoint, Patterns, Traditional Web Rendering,1
+Layers, Endpoint, Patterns, Server Side MVC,1
+Layers, Endpoint, Patterns, REST API,1
+Layers, Endpoint, Patterns, SOAP,1
+Layers, Endpoint, Patterns, Event Driven,1
+
+Layers, Endpoint, Frameworks, PHP,1
+Layers, Endpoint, Frameworks, ASP.NET MVC,1
+Layers, Endpoint, Frameworks, WCF.NET,1
+Layers, Endpoint, Frameworks, Apache Axis 2,1
+Layers, Endpoint, Frameworks, JMS,1
+Layers, Endpoint, Frameworks, JSP / Servlet,1
+Layers, Endpoint, Frameworks, Spring MVC,1
+Layers, Endpoint, Frameworks, Jersey,1
+Layers, Endpoint, Frameworks, JAX-WS,1
+Layers, Endpoint, Frameworks, AMQP,1
+Layers, Endpoint, Frameworks, ASP.NET,1
+Layers, Endpoint, Frameworks, Struts,1
+Layers, Endpoint, Frameworks, Spring MVC,1
+Layers, Endpoint, Frameworks, MSMQ,1
+Layers, Endpoint, Frameworks, DJANGO REST,1
+Layers, Endpoint, Frameworks, JAX-RS,1
+
+Layers, Endpoint, Products, Weblogic Portal,1
+Layers, Endpoint, Products, Websphere Portal,1
+Layers, Endpoint, Products, Liferay Portal,1
+
+Layers, Data Ingestion, Patterns, File Ingestion,1
+Layers, Data Ingestion, Patterns, Streaming Data,1
+Layers, Data Ingestion, Patterns, Traditional Data,1
+
+Layers, Data Ingestion, Frameworks, Log Stash,1
+
+Layers, Data Ingestion, Products, Splunk,1
+Layers, Data Ingestion, Products, Informatica,1
+Layers, Data Ingestion, Products, IBM Data Stage,1
+Layers, Data Ingestion, Products, Oracle Data Integrator,1
+Layers, Data Ingestion, Products, Pentaho Data Integration,1
+Layers, Data Ingestion, Products, SAP Data Services,1
+Layers, Data Ingestion, Products, SSIS,1
+Layers, Data Ingestion, Products, Talend,1
+
+Layers, Core Business Logic, Patterns, Logic Containers,1
+Layers, Core Business Logic, Patterns, Transaction Management,1
+
+Layers, Core Business Logic, Frameworks, JTA,1
+Layers, Core Business Logic, Frameworks, Spring Transaction Management,1
+Layers, Core Business Logic, Frameworks, Bitronix,1
+Layers, Core Business Logic, Frameworks, Atomikos,1
+Layers, Core Business Logic, Frameworks, Spring IOT,1
+Layers, Core Business Logic, Frameworks, Google Guic3,1
+Layers, Core Business Logic, Frameworks, JBoss Microcontainer,1
+Layers, Core Business Logic, Frameworks, Windows Service Container,1
+Layers, Core Business Logic, Frameworks, EJB,1
+
+Layers, Data Processing, Patterns, Async Processing,1
+Layers, Data Processing, Patterns, Batch Processing,1
+Layers, Data Processing, Patterns, Stream Processing,1
+Layers, Data Processing, Patterns, Business Process Orchestration,1
+Layers, Data Processing, Patterns, Microservices,1
+Layers, Data Processing, Patterns, Data Access,1
+Layers, Data Processing, Patterns, Grid Computing,1
+
+Layers, Data Processing, Frameworks, Akka,1
+Layers, Data Processing, Frameworks, Map Reduce,1
+Layers, Data Processing, Frameworks, Storm,1
+Layers, Data Processing, Frameworks, Play,1
+Layers, Data Processing, Frameworks, Apache Pig,1
+Layers, Data Processing, Frameworks, Spark,1
+Layers, Data Processing, Frameworks, Apache Hive,1
+Layers, Data Processing, Frameworks, Spring Batch,1
+Layers, Data Processing, Frameworks, Easy Batch,1
+Layers, Data Processing, Frameworks, Trident Storm,1
+Layers, Data Processing, Frameworks, Spring Boot,1
+Layers, Data Processing, Frameworks, Azure Data Fabric,1
+Layers, Data Processing, Frameworks, JPA,1
+Layers, Data Processing, Frameworks, Hibernate,1
+Layers, Data Processing, Frameworks, iBatis,1
+Layers, Data Processing, Frameworks, Spring Data,1
+Layers, Data Processing, Frameworks, ADO.NET,1
+
+Layers, Data Processing, Products, IBM BPM,1
+Layers, Data Processing, Products, PEGA,1
+Layers, Data Processing, Products, Appain,1
+Layers, Data Processing, Products, JBPM,1
+Layers, Data Processing, Products, Activiti,1
+Layers, Data Processing, Products, MS BizTalk,1
+Layers, Data Processing, Products, Windows Workflow Foundation,1
+Layers, Data Processing, Products, InRule,1
+Layers, Data Processing, Products, AWS Lambda,1
+Layers, Data Processing, Products, NodeJS,1
+Layers, Data Processing, Products, SAP Hana,1
+Layers, Data Processing, Products, Apache Spaces,1
+Layers, Data Processing, Products, Giga Spaces,1
+
+Layers, Analytics, Patterns, Reporting,1
+Layers, Analytics, Patterns, Data Mining,1
+
+Layers, Analytics, Frameworks, R Analytics,1
+
+Layers, Analytics, Products, Oracle ODM,1
+Layers, Analytics, Products, TIBCO Spotfire,1
+Layers, Analytics, Products, IBM Cognos,1
+Layers, Analytics, Products, HP Vertica,1
+Layers, Analytics, Products, JASPER,1
+Layers, Analytics, Products, IBM SPSS,1
+Layers, Analytics, Products, BIRT,1
+Layers, Analytics, Products, Open Text,1
+Layers, Analytics, Products, Qlik,1
+Layers, Analytics, Products, Teradata Miner,1
+Layers, Analytics, Products, Tableau,1
+Layers, Analytics, Products, SAS,1
+Layers, Analytics, Products, Crystal Reports,1
+Layers, Analytics, Products, Pantaho BA,1
+Layers, Analytics, Products, Apache Mahout,1
+Layers, Analytics, Products, Micro Strategy,1
+
+Layers, Integration, Patterns, EAI Patterns,1
+Layers, Integration, Patterns, Enterprise Service Bus,1
+Layers, Integration, Patterns, Messaging,1
+
+Layers, Integration, Frameworks, Spring Integration,1
+Layers, Integration, Frameworks, Apache Camel,1
+
+Layers, Integration, Products, JBoss Fuse,1
+Layers, Integration, Products, IBM Interation Bus,1
+Layers, Integration, Products, Oracle Fusion,1
+Layers, Integration, Products, Mulesoft,1
+Layers, Integration, Products, Kafka,1
+Layers, Integration, Products, Rabbit MQ,1
+Layers, Integration, Products, Active MQ,1
+Layers, Integration, Products, Websphere MQ,1
+
+Layers, Data Persistence, Patterns, Relational DB,1
+Layers, Data Persistence, Patterns, Distributed File System,1
+Layers, Data Persistence, Patterns, NoSQL DB,1
+Layers, Data Persistence, Patterns, NewSQL DB,1
+Layers, Data Persistence, Patterns, Data Warehouse,1
+Layers, Data Persistence, Patterns, Caching,1
+
+Layers, Data Persistence, Frameworks, Memcached,1
+Layers, Data Persistence, Frameworks, EH Cache,1
+Layers, Data Persistence, Frameworks, JBoss Cache,1
+Layers, Data Persistence, Frameworks, JBoss Cache,1
+
+Layers, Data Persistence, Products, Redis,1
+Layers, Data Persistence, Products, Hazelcast,1
+Layers, Data Persistence, Products, HBase,1
+Layers, Data Persistence, Products, Google Spanner,1
+Layers, Data Persistence, Products, Oracle Exa Data,1
+Layers, Data Persistence, Products, Cassandra,1
+Layers, Data Persistence, Products, MemSQL,1
+Layers, Data Persistence, Products, TeraData,1
+Layers, Data Persistence, Products, MongoDB,1
+Layers, Data Persistence, Products, VoltDB,1
+Layers, Data Persistence, Products, Ab Initio,1
+Layers, Data Persistence, Products, Neo4j,1
+Layers, Data Persistence, Products, CockroachDB,1
+Layers, Data Persistence, Products, Amazon Redshift,1
+Layers, Data Persistence, Products, CouchDB,1
+Layers, Data Persistence, Products, Clustrix,1
+Layers, Data Persistence, Products, Greenplum,1
+Layers, Data Persistence, Products, Amazon Dynamo,1
+Layers, Data Persistence, Products, Nuo DB,1
+Layers, Data Persistence, Products, Mark Logic,1
+Layers, Data Persistence, Products, Azure SQL,1
+Layers, Data Persistence, Products, Oracle,1
+Layers, Data Persistence, Products, HDFS,1
+Layers, Data Persistence, Products, MySQL,1
+Layers, Data Persistence, Products, Amazon S3,1
+Layers, Data Persistence, Products, SQL Server,1
+Layers, Data Persistence, Products, DB2,1
+Layers, Data Persistence, Products, PostgresSQL,1
+Layers, Data Persistence, Products, Apache Derby,1
+Layers, Data Persistence, Products, Sybase,1
+
+
+Ancillary Capabilities, Build, Build, Ant / nAnt, 1
+Ancillary Capabilities, Build, Build, Node / NPM, 1
+Ancillary Capabilities, Build, Build, Grunt, 1
+Ancillary Capabilities, Build, Build, Gulp, 1
+Ancillary Capabilities, Build, Build, Rake, 1
+Ancillary Capabilities, Build, Build, PyBuilder, 1
+
+Ancillary Capabilities, Scripting, Scripting, Powershell, 1
+Ancillary Capabilities, Scripting, Scripting, PHP, 1
+Ancillary Capabilities, Scripting, Scripting, Bash, 1
+
+Ancillary Capabilities, Source Control, Source Control, Git, 1
+Ancillary Capabilities, Source Control, Source Control, SVN, 1
+Ancillary Capabilities, Source Control, Source Control, VSS, 1
+Ancillary Capabilities, Source Control, Source Control, TFS, 1
+Ancillary Capabilities, Source Control, Source Control, Mercurial, 1
+
+Ancillary Capabilities, Collaboration, Collaboration, SharePoint, 1
+Ancillary Capabilities, Collaboration, Collaboration, GitHub, 1
+Ancillary Capabilities, Collaboration, Collaboration, GitLab, 1
+Ancillary Capabilities, Collaboration, Collaboration, Trello, 1
+Ancillary Capabilities, Collaboration, Collaboration, Slack, 1
+Ancillary Capabilities, Collaboration, Collaboration, BitBucket, 1
+
+Ancillary Capabilities, Tooling, Tooling, BabelJS, 1
+Ancillary Capabilities, Tooling, Tooling, TypeScript Compiler, 1
+Ancillary Capabilities, Tooling, Tooling, Docker, 1
+
+Ancillary Capabilities, IDE, IDE, BitBucket, 1
+Ancillary Capabilities, IDE, IDE, Git GUI, 1
+Ancillary Capabilities, IDE, IDE, Tortoise SVN Client, 1
+
+Ancillary Capabilities, Assurance, Testing, Jasmine, 1
+Ancillary Capabilities, Assurance, Testing, PhantomJS, 1
+Ancillary Capabilities, Assurance, Testing, Protractor, 1
+Ancillary Capabilities, Assurance, Testing, qUnit, 1
+Ancillary Capabilities, Assurance, Testing, Karma, 1
+
+Ancillary Capabilities, Assurance, Code Quality, ESLint, 1
+Ancillary Capabilities, Assurance, Code Quality, Pylint, 1
+Ancillary Capabilities, Assurance, Code Quality, Google Closure Compiler, 1
+Ancillary Capabilities, Assurance, Code Quality, FxCop, 1
+Ancillary Capabilities, Assurance, Code Quality, RIPS, 1
+
+Ancillary Capabilities, OS, OS, Windows, 1
+Ancillary Capabilities, OS, OS, Linux, 1
+Ancillary Capabilities, OS, OS, Mac, 1
+Ancillary Capabilities, OS, OS, Android, 1
+Ancillary Capabilities, OS, OS, iOS, 1
+
+Ancillary Capabilities, Debugging, Debugging, Firefox JavaScript Debugger, 1
+Ancillary Capabilities, Debugging, Debugging, Chrome Debugger, 1
+Ancillary Capabilities, Debugging, Debugging, Visual Studio Debugger, 1
+Ancillary Capabilities, Debugging, Debugging, GNU Debugger, 1
+
+Architectural Patterns, MVC, Server Side MVC, Server Side MVC, 1
+Architectural Patterns, MVC, Client Side MVC, Client Side MVC, 1
+
+Architectural Patterns, Microservices, 12 Factor App, 12 Factor App, 1
+Architectural Patterns, Microservices, Circuit Breaker, Circuit Breaker, 1
+
+Architectural Patterns, Event Driven, Service Invocation, Service Invocation, 1
+Architectural Patterns, Event Driven, Complex Event Processing, Complex Event Processing, 1
+Architectural Patterns, Event Driven, Event Routing, Event Routing, 1
+
+Architectural Patterns, Service Oriented Architecture, Service Registry, Service Registry, 1
+Architectural Patterns, Service Oriented Architecture, Service Composition, Service Composition, 1
+
+Architectural Patterns, EAI Patterns, EAI Patterns, EAI Patterns, 1
+
+Architectural Patterns, Microkernel, Microkernel, Microkernel, 1
+
+Architectural Patterns, Lambda Architecture, Lambda Architecture, Lambda Architecture, 1
+

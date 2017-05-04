@@ -1,0 +1,13 @@
+{
+  "name": "ExcelReader",
+  "version": "2017.1.6332.35952",
+  "description": "Read excel file and display list of all the complted courses",
+  "entryPoint": "Main.xaml",
+  "dependencies": {},
+  "excludedData": [
+    "Private:*",
+    "*password*"
+  ],
+  "packOptions": {},
+  "runtimeOptions": {}
+}
