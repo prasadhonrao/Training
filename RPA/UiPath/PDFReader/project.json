@@ -1,0 +1,13 @@
+{
+  "name": "PDFReader",
+  "version": "2017.1.6333.34994",
+  "description": "Project to read PDF File",
+  "entryPoint": "Main.xaml",
+  "dependencies": {},
+  "excludedData": [
+    "Private:*",
+    "*password*"
+  ],
+  "packOptions": {},
+  "runtimeOptions": {}
+}
