@@ -1,0 +1,13 @@
+{
+  "name": "GenericList",
+  "version": "2017.1.6334.20446",
+  "description": "How to use Generic List collection ",
+  "entryPoint": "Main.xaml",
+  "dependencies": {},
+  "excludedData": [
+    "Private:*",
+    "*password*"
+  ],
+  "packOptions": {},
+  "runtimeOptions": {}
+}
