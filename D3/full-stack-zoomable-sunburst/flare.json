@@ -1,0 +1,2201 @@
+[
+    {
+        "name": "developer",
+        "children": [
+            {
+                "name": "Languages",
+                "children": [
+                    {
+                        "name": "UI Markup",
+                        "children": [
+                            {
+                                "name": "UI Markup",
+                                "children": [
+                                    {
+                                        "name": "JSP",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "Markdown",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "HTML",
+                                        "size": 2000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "SVG",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "VRML",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Data Markup",
+                        "children": [
+                            {
+                                "name": "Data Markup",
+                                "children": [
+                                    {
+                                        "name": "XML",
+                                        "size": 2000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "JSON",
+                                        "size": 2000,
+                                        "colour": "#C49500"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Style Sheet",
+                        "children": [
+                            {
+                                "name": "Style Sheet",
+                                "children": [
+                                    {
+                                        "name": "XSL",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "CSS",
+                                        "size": 2000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "XSL-FO",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Data Languages",
+                        "children": [
+                            {
+                                "name": "Data Languages",
+                                "children": [
+                                    {
+                                        "name": "SQL",
+                                        "size": 2000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "OQL",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "PL SQL",
+                                        "size": 2000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "CQL",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Compile APL",
+                        "children": [
+                            {
+                                "name": "Compile APL",
+                                "children": [
+                                    {
+                                        "name": "Java",
+                                        "size": 2000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "C",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "C++",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "C#",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "Scala",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Scripted APL",
+                        "children": [
+                            {
+                                "name": "Scripted APL",
+                                "chidren": [
+                                    {
+                                        "name": "JavaScript",
+                                        "size": 2000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "CoffeeScript",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "PHP",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "PERL",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "Python",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "Ruby",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shell Scripts",
+                        "children": [
+                            {
+                                "name": "Shell Scripts",
+                                "children": [
+                                    {
+                                        "name": "Sh",
+                                        "size": 2000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "Sed",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "PowerShell",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    },
+                                    {
+                                        "name": "Bash",
+                                        "size": 1000,
+                                        "colour": "#C49500"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Infrastructure Platforms",
+                "children": [
+                    {
+                        "name": "SaaS",
+                        "children": [
+                            {
+                                "name": "SalesForce",
+                                "children": [
+                                    {
+                                        "name": "SalesForce CRM,",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Force.com,",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "PaaS",
+                        "children": [
+                            {
+                                "name": "AWS",
+                                "children": [
+                                    {
+                                        "name": "AWS Cloud",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Azure",
+                                "children": [
+                                    {
+                                        "name": "Azure Cloud",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Cloud Foundary",
+                                "children": [
+                                    {
+                                        "name": "Cloud Foundary Cloud",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "PCF",
+                                "children": [
+                                    {
+                                        "name": "PCF Cloud",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Open Shift",
+                                "children": [
+                                    {
+                                        "name": "Open Shift Cloud",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "IaaS",
+                        "children": [
+                            {
+                                "name": "AWS",
+                                "children": [
+                                    {
+                                        "name": "EC2,",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "ECS,",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "SDLC Methodologies",
+                "children": [
+                    {
+                        "name": "Waterfall",
+                        "children": [
+                            {
+                                "name": "Requirement Analysis",
+                                "children": [
+                                    {
+                                        "name": "System decomposition using DFD (Data Flow Diagrams)",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Object oriented analysis",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Domain Objet Model",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Change request",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "RTM(requirement tracebility matrix)",
+                                        "size": 2000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Planning",
+                                "children": [
+                                    {
+                                        "name": "Estimation methods - FP - UCP - CP or WBS",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Estimation using COCOMO model",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Design",
+                                "children": [
+                                    {
+                                        "name": "Functional-oriented system design",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Domain driven design",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Object-oriented system design",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Detailed design specification",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Coding",
+                                "children": [
+                                    {
+                                        "name": "bility to covert system design into code",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "knowledge about unit testing",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Coding best practices (cohesion coupling etc)",
+                                        "size": 2000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Testing",
+                                "children": [
+                                    {
+                                        "name": "Deriving test cases from the requirements",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Importance of test coverage (boundary - negative - positive)",
+                                        "size": 2000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Installation / Release",
+                                "children": [
+                                    {
+                                        "name": "Change management",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Backout process",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Disaster recovery",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Agile",
+                        "children": [
+                            {
+                                "name": "Requirement Analysis",
+                                "children": [
+                                    {
+                                        "name": "System decomposition into epics - features and user stories",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Object oriented analysis",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Domain Objet Model",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Change request",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "RTM(requirement tracebility matrix)",
+                                        "size": 2000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Planning",
+                                "children": [
+                                    {
+                                        "name": "Story point estimation",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Done criteria",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Release and spring planning",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Backlock grooming",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Coding",
+                                "children": [
+                                    {
+                                        "name": "Test driven development (TDD)",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "ATDD",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Coding best practices (cohesion coupling etc)",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Pair programming",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Technical debt",
+                                        "size": 2000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Testing",
+                                "children": [
+                                    {
+                                        "name": "Deriving test cases from the requirements",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Importance of test coverage (boundary - negative - positive)",
+                                        "size": 2000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Installation / Release",
+                                "children": [
+                                    {
+                                        "name": "sprint demo",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "spring retrospection",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "backout process",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "disaster recovery",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "RUP (Rational Unified Process)",
+                        "children": [
+                            {
+                                "name": "Inception",
+                                "children": [
+                                    {
+                                        "name": "Vision",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Busienss case",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Change request",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "RTM(requirement tracebility matrix)",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Usecase based estimation",
+                                        "size": 2000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Elaboration",
+                                "children": [
+                                    {
+                                        "name": "Usecase model from Analysis & Design",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Supplementary / non-functional requirements",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Software architecture description",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Construction",
+                                "children": [
+                                    {
+                                        "name": "Ability to covert usecase model into code",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "knowledge about unit testing",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Coding best practices (cohesion - coupling etc)",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Deriving test cases from the usecases",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Importance of test coverage (boundary - negative - positive)",
+                                        "size": 2000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Transition",
+                                "children": [
+                                    {
+                                        "name": "User manual",
+                                        "size": 2000
+                                    },
+                                    {
+                                        "name": "Change management",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Backout process",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Disaster recovery",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Software Platforms",
+                "children": [
+                    {
+                        "name": "JEE",
+                        "children": [
+                            {
+                                "name": "Platform Concepts",
+                                "children": [
+                                    {
+                                        "name": "Background",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform architecture",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform Containers",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Packaging & Deployment",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform Management",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Platform Products",
+                                "children": [
+                                    {
+                                        "name": "Websphere",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Weblogic",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Tomcat",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Jboss",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": ".NET",
+                        "children": [
+                            {
+                                "name": "Platform Concepts",
+                                "children": [
+                                    {
+                                        "name": "Background",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform architecture",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform Containers",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Packaging & Deployment",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform Management",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Platform Products",
+                                "children": [
+                                    {
+                                        "name": "BizTalk",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "IIS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Windows Server",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Azure Fabric",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "MEAN Platform",
+                        "children": [
+                            {
+                                "name": "Platform Concepts",
+                                "children": [
+                                    {
+                                        "name": "Background",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform architecture",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform Containers",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Packaging & Deployment",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform Management",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Platform Products",
+                                "children": [
+                                    {
+                                        "name": "NodeJS",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Data Platform",
+                        "children": [
+                            {
+                                "name": "Platform Concepts",
+                                "children": [
+                                    {
+                                        "name": "Background",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform architecture",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform Containers",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Packaging & Deployment",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform Management",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Platform Products",
+                                "children": [
+                                    {
+                                        "name": "Hadoop",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Cloudera",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Hotyonworks",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "MapR",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Integration Platform",
+                        "children": [
+                            {
+                                "name": "Platform Concepts",
+                                "children": [
+                                    {
+                                        "name": "Background",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform architecture",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform Containers",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Packaging & Deployment",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Platform Management",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Platform Products",
+                                "children": [
+                                    {
+                                        "name": "Mulesoft",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "IBM Interation Bus",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Oracle Integration Server",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Layers",
+                "children": [
+                    {
+                        "name": "Channel",
+                        "children": [
+                            {
+                                "name": "Patterns",
+                                "children": [
+                                    {
+                                        "name": "Native Mobile",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Hybrid Mobile",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Client Side MVC",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Client Side Frameworks",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Omni Channel Architecture",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Responsive Web Design",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Frameworks",
+                                "children": [
+                                    {
+                                        "name": "Bootstrap",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Foundation",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "DOJO",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "jQuery",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Angular 1.X",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Angular 2.0",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "PolymerJS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "EmberJS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Sencha extJS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Xamarin",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Ionic",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "KendoUI",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Corodova",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Phonegap",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Native iOS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Native Android",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Native Windows",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Products",
+                                "children": [
+                                    {
+                                        "name": "Knoy",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Backbase",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Crealogix",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "CR2",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Temenoes Edge Connect",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Endpoint",
+                        "children": [
+                            {
+                                "name": "Patterns",
+                                "children": [
+                                    {
+                                        "name": "Traditional Web Rendering",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Server Side MVC",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "REST API",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "SOAP",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Event Driven",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Frameworks",
+                                "children": [
+                                    {
+                                        "name": "PHP",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "ASP.NET MVC",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "WCF.NET",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Apache Axis",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "JMS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "JSP / Servlet",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Spring MVC",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Jersey",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "JAX-WS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "AMQP",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "ASP.NET",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Struts",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Spring MVC",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "MSMQ",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "DJANGO REST",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "JAX-RS",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Products",
+                                "children": [
+                                    {
+                                        "name": "Weblogic Portal",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Websphere Portal",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Liferay Portal",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Data Ingestion",
+                        "children": [
+                            {
+                                "name": "Patterns",
+                                "children": [
+                                    {
+                                        "name": "File Ingestion",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Streaming Data",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Traditional Data",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Frameworks",
+                                "children": [
+                                    {
+                                        "name": "Log Stash",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Products",
+                                "children": [
+                                    {
+                                        "name": "Splunk",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Informatica",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "IBM Data Stage",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Oracle Data Integrator",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Pentaho Data Integration",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "SAP Data Services",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "SSIS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Talend",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Core Business Logic",
+                        "children": [
+                            {
+                                "name": "Patterns",
+                                "children": [
+                                    {
+                                        "name": "Logic Containers",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Transaction Management",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Frameworks",
+                                "children": [
+                                    {
+                                        "name": "JTA",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Spring Transaction Management",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Bitronix",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Atomikos",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Spring IOT",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Google Guic3",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "JBoss Microcontainer",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Windows Service Container",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "EJB",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Data Processing",
+                        "children": [
+                            {
+                                "name": "Patterns",
+                                "children": [
+                                    {
+                                        "name": "Async Processing",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Batch Processing",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Stream Processing",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Business Process Orchestration",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Microservices",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Data Access",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Grid Computing",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Frameworks",
+                                "children": [
+                                    {
+                                        "name": "Akka",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Map Reduce",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Storm",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Play",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Apache Pig",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Spark",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Apache Hive",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Spring Batch",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Easy Batch",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Trident Storm",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Spring Boot",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Azure Data Fabric",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "JPA",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Hibernate",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "iBatis",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Spring Data",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "ADO.NET",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Products",
+                                "children": [
+                                    {
+                                        "name": "IBM BPM",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "PEGA",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Appain",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "JBPM",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Activiti",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "MS BizTalk",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Windows Workflow Foundation",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "InRule",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "AWS Lambda",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "NodeJS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "SAP Hana",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Apache Spaces",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Giga Spaces",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Analytics",
+                        "children": [
+                            {
+                                "name": "Patterns",
+                                "children": [
+                                    {
+                                        "name": "Reporting",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Data Mining",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Frameworks",
+                                "children": [
+                                    {
+                                        "name": "R Analytics",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Products",
+                                "children": [
+                                    {
+                                        "name": "Oracle ODM",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "TIBCO Spotfire",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "IBM Cognos",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "HP Vertica",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "JASPER",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "IBM SPSS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "BIRT",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Open Text",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Qlik",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Teradata Miner",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Tableau",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "SAS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Crystal Reports",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Pantaho BA",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Apache Mahout",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Micro Strategy",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Integration",
+                        "children": [
+                            {
+                                "name": "Patterns",
+                                "children": [
+                                    {
+                                        "name": "EAI Patterns",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Enterprise Service Bus",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Messaging",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Frameworks",
+                                "children": [
+                                    {
+                                        "name": "Spring Integration",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Apache Camel",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Products",
+                                "children": [
+                                    {
+                                        "name": "JBoss Fuse",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "IBM Interation Bus",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Oracle Fusion",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Mulesoft",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Kafka",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Rabbit MQ",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Active MQ",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Websphere MQ",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Data Persistence",
+                        "children": [
+                            {
+                                "name": "Patterns",
+                                "children": [
+                                    {
+                                        "name": "Relational DB",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Distributed File System",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "NoSQL DB",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "NewSQL DB",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Data Warehouse",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Caching",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Frameworks",
+                                "children": [
+                                    {
+                                        "name": "Memcached",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "EH Cache",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "JBoss Cache",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "JBoss Cache",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Products",
+                                "children": [
+                                    {
+                                        "name": "Redis",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Hazelcast",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "HBase",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Google Spanner",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Oracle Exa Data",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Cassandra",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "MemSQL",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "TeraData",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "MongoDB",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "VoltDB",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Ab Initio",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Neo4j",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "CockroachDB",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Amazon Redshift",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "CouchDB",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Clustrix",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Greenplum",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Amazon Dynamo",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Nuo DB",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Mark Logic",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Azure SQL",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Oracle",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "HDFS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "MySQL",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Amazon S3",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "SQL Server",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "DB2",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "PostgresSQL",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Apache Derby,",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Sybases",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ancillary Capabilities",
+                "children": [
+                    {
+                        "name": "Build",
+                        "children": [
+                            {
+                                "name": "Build",
+                                "children": [
+                                    {
+                                        "name": "Ant / nAnt",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Node / NPM",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Grunt",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Gulp",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Rake",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "PyBuilder",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Scripting",
+                        "children": [
+                            {
+                                "name": "Scripting",
+                                "children": [
+                                    {
+                                        "name": "Powershell",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "PHP",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Bash",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Source Control",
+                        "children": [
+                            {
+                                "name": "Source Control",
+                                "children": [
+                                    {
+                                        "name": "Git",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "SVN",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "VSS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "TFS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Mercurial",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Collaboration",
+                        "children": [
+                            {
+                                "name": "Collaboration",
+                                "children": [
+                                    {
+                                        "name": "SharePoint",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "GitHub",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "GitLab",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Trello",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Slack",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "BitBucket",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Tooling",
+                        "children": [
+                            {
+                                "name": "Tooling",
+                                "children": [
+                                    {
+                                        "name": "BabelJS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "TypeScript Compiler",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "IDE",
+                        "children": [
+                            {
+                                "name": "IDE",
+                                "children": [
+                                    {
+                                        "name": "BitBucket",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Git GUI",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Tortoise SVN Client",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Assurance",
+                        "children": [
+                            {
+                                "name": "Testing",
+                                "children": [
+                                    {
+                                        "name": "Jasmine",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "PhantomJS",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Protractor",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "qUnit",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Karma",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Code Quality",
+                                "children": [
+                                    {
+                                        "name": "ESLint",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Pylint",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Google Closure Compiler",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "FxCop",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "RIPS",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "OS",
+                        "children": [
+                            {
+                                "name": "OS",
+                                "children": [
+                                    {
+                                        "name": "Windows",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Linux",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Mac",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Android",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "iOS",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Debugging",
+                        "children": [
+                            {
+                                "name": "Debugging",
+                                "children": [
+                                    {
+                                        "name": "Firefox JavaScript Debugger",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Chrome Debugger",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "Visual Studio Debugger",
+                                        "size": 1000
+                                    },
+                                    {
+                                        "name": "GNU Debugger",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Architectural Patterns",
+                "children": [
+                    {
+                        "name": "MVC",
+                        "children": [
+                            {
+                                "name": "Server Side MVC",
+                                "children": [
+                                    {
+                                        "name": "Server Side MVC",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Client Side MVC",
+                                "children": [
+                                    {
+                                        "name": "Client Side MVC",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Microservices",
+                        "children": [
+                            {
+                                "name": "12 Factor App",
+                                "children": [
+                                    {
+                                        "name": "12 Factor App",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Circuit Breaker",
+                                "children": [
+                                    {
+                                        "name": "Circuit Breaker",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Event Driven",
+                        "children": [
+                            {
+                                "name": "Service Invocation",
+                                "children": [
+                                    {
+                                        "name": "Service Invocation",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Complex Event Processing",
+                                "children": [
+                                    {
+                                        "name": "Complex Event Processing",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Event Routing",
+                                "children": [
+                                    {
+                                        "name": "Event Routing",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Service Oriented Architecture",
+                        "children": [
+                            {
+                                "name": "Service Registry",
+                                "children": [
+                                    {
+                                        "name": "Service Registry",
+                                        "size": 1000
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Service Composition",
+                                "children": [
+                                    {
+                                        "name": "Service Composition",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "EAI Patterns",
+                        "children": [
+                            {
+                                "name": "EAI Patterns",
+                                "children": [
+                                    {
+                                        "name": "EAI Patterns",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Microkernel",
+                        "children": [
+                            {
+                                "name": "Microkernel",
+                                "children": [
+                                    {
+                                        "name": "Microkernel",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Lambda Architecture",
+                        "children": [
+                            {
+                                "name": "Lambda Architecture",
+                                "children": [
+                                    {
+                                        "name": "Lambda Architecture",
+                                        "size": 1000
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
