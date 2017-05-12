@@ -1,0 +1,13 @@
+{
+  "name": "ExcelReader2",
+  "version": "2017.1.6341.32536",
+  "description": "Blank Project",
+  "entryPoint": "Main.xaml",
+  "dependencies": {},
+  "excludedData": [
+    "Private:*",
+    "*password*"
+  ],
+  "packOptions": {},
+  "runtimeOptions": {}
+}
