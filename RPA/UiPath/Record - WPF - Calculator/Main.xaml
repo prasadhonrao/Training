@@ -114,12 +114,12 @@
                 <OutArgument x:TypeArguments="ui:GenericValue">[returnText]</OutArgument>
               </ui:GetValue.Value>
             </ui:GetValue>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message box" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[returnText]" TopMost="True" />
+            <WriteLine DisplayName="Write line" Text="[returnText]" sap2010:WorkflowViewState.IdRef="WriteLine_1" />
           </Sequence>
         </ActivityAction>
       </ui:WindowScope.Body>
     </ui:WindowScope>
-    <sads:DebugSymbol.Symbol>dz5EOlxHaXRcVHJhaW5pbmdcUlBBXFVpUGF0aFxSZWNvcmQgLSBXUEYgLSBDYWxjdWxhdG9yXE1haW4ueGFtbB06A3sOAgEBOwV5FgIBAjuUAjviAgIBHkELdhYCAQNFDUwYAgEaTQ1UGAIBFlUNXBgCARJdDWQYAgEOZQ1sGAIBCm0NdBsCAQZ1DXXCAQIBBEqgAUrOAQIBHUc4RzwCARxHLEcvAgEbUqABUswBAgEZTzhPPAIBGE8sTy8CARdaoAFa1QECARVXOFc8AgEUVyxXLwIBE2KgAWLMAQIBEV85Xz0CARBfLF8wAgEPaqABaswBAgENZzlnPQIBDGcsZzACAQtyQHJMAgEHb6ABb8IBAgEJdaIBdbABAgEF</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>dz5EOlxHaXRcVHJhaW5pbmdcUlBBXFVpUGF0aFxSZWNvcmQgLSBXUEYgLSBDYWxjdWxhdG9yXE1haW4ueGFtbB06A3sOAgEBOwV5FgIBAjuUAjviAgIBHkELdhYCAQNFDUwYAgEaTQ1UGAIBFlUNXBgCARJdDWQYAgEOZQ1sGAIBCm0NdBsCAQZ1DXV1AgEESqABSs4BAgEdRzhHPAIBHEcsRy8CARtSoAFSzAECARlPOE88AgEYTyxPLwIBF1qgAVrVAQIBFVc4VzwCARRXLFcvAgETYqABYswBAgERXzlfPQIBEF8sXzACAQ9qoAFqzAECAQ1nOWc9AgEMZyxnMAIBC3JAckwCAQdvoAFvwgECAQl1NnVEAgEF</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
@@ -129,23 +129,23 @@
       <sap2010:ViewStateData Id="Click_4" sap:VirtualizedContainerService.HintSize="314,106" />
       <sap2010:ViewStateData Id="Click_5" sap:VirtualizedContainerService.HintSize="314,106" />
       <sap2010:ViewStateData Id="GetValue_1" sap:VirtualizedContainerService.HintSize="314,106" />
-      <sap2010:ViewStateData Id="MessageBox_1" sap:VirtualizedContainerService.HintSize="314,59" />
-      <sap2010:ViewStateData Id="Sequence_3" sap:VirtualizedContainerService.HintSize="336,1059">
+      <sap2010:ViewStateData Id="WriteLine_1" sap:VirtualizedContainerService.HintSize="314,61" />
+      <sap2010:ViewStateData Id="Sequence_3" sap:VirtualizedContainerService.HintSize="336,1061">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="WindowScope_2" sap:VirtualizedContainerService.HintSize="414,1205" />
-      <sap2010:ViewStateData Id="Sequence_4" sap:VirtualizedContainerService.HintSize="436,1329">
+      <sap2010:ViewStateData Id="WindowScope_2" sap:VirtualizedContainerService.HintSize="414,1207" />
+      <sap2010:ViewStateData Id="Sequence_4" sap:VirtualizedContainerService.HintSize="436,1331">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Main_1" sap:VirtualizedContainerService.HintSize="476,1409" />
+      <sap2010:ViewStateData Id="Main_1" sap:VirtualizedContainerService.HintSize="476,1411" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>

@@ -8,9 +8,13 @@ for number in numbers:
     print(number, end=' ')
 print('')
 
+for i in range(10):
+    print(i, end=' ')
+
 for i in range(1, 6, 1):
     print(i * i, end=' ')
 print('')
 
 for j in 5:
     print(int(j))
+    

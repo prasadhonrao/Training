@@ -17,6 +17,22 @@ message = str("this is a messsage")
 print(message)
 print(type(message))
 
-cap = message.capitalize() # capitalize first letter
+# Methods
+text = message.capitalize() # capitalize first letter
+print(text)
 
-print(cap)
+text = "hello".replace("e","a")
+print(text)
+
+print("python".isalpha())
+
+print("123".isdigit())
+
+print(("red, green, blue").split(","))
+
+#string interpolation
+name = "Prasad"
+machine = "Windows"
+print("{0} is using {1} machine".format(name, machine))
+print(f"{name} is using {machine} machine")
+

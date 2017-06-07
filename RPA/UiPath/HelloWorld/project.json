@@ -1,13 +1,12 @@
 {
-  "name": "HelloWorld",
-  "version": "2017.1.6332.35612",
-  "description": "Hello UiPath World",
-  "entryPoint": "Main.xaml",
+  "description": "Hello World",
+  "version": "2016.2.6274.33252",
+  "main": "Main.xaml",
+  "id": "HelloWorld",
   "dependencies": {},
+  "configurationOptions": {},
   "excludedData": [
     "Private:*",
     "*password*"
-  ],
-  "packOptions": {},
-  "runtimeOptions": {}
+  ]
 }

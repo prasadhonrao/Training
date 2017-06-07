@@ -11,8 +11,8 @@ print(hex)
 ten = int(10)
 print(ten)
 
-negative_ten = int(-10)
+negative_ten = -10
 print(negative_ten)
 
-str_int = int("123")
+str_int = int("123") #conversion
 print(str_int)
