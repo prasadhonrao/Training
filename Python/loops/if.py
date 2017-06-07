@@ -1,3 +1,8 @@
+# Truty Falsy Rule
+# Any number other than 0 is true
+# Any string other than empty string is true
+# None is falsy value
+
 if True:
     print("This will be printed")
 
@@ -9,6 +14,9 @@ if (bool(0)):
 
 if (bool("0")):
     print("This will be printed as zero is a string here")
+
+if (not None):
+    print("None2 is a falsy value")
 
 number = 100
 if number > 10:

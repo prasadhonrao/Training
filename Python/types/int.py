@@ -16,3 +16,6 @@ print(negative_ten)
 
 str_int = int("123") #conversion
 print(str_int)
+
+random = int(123.12)
+print(random)

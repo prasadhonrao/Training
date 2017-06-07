@@ -10,3 +10,5 @@ print(bool(' '))
 print(bool(''))
 print(bool([]))
 print(bool([1, 2, 3]))
+
+print(type(str(true)))
