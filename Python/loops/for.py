@@ -1,20 +1,12 @@
-colors = ['red', 'blue', 'green', 'orange']
-for color in colors:
-    print(color, end=' ')
+languages = ["Python", "Scala", "Haskell", "F#"]
+for l in languages:
+    print(l, end=' ')
 print('')    
 
-numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10} #set contains unique values only, so 10 wont be saved twice
-for number in numbers:
-    print(number, end=' ')
-print('')
-
-for i in range(10):
-    print(i, end=' ')
-
-for i in range(1, 6, 1):
+for i in range(10): # iterate 10 times from 0 to 9
     print(i * i, end=' ')
 print('')
 
-for j in 5:
-    print(int(j))
-    
+for i in range(10, 20, 2): #start, end, step
+    print(i, end=' ')
+print('')

@@ -1,10 +1,10 @@
 # declaration
-numbers = [1, 2, 3]
-print(numbers)
+languages = ["Python", "Scala", "Haskell", "F#"]
+print(languages)
 
 # iterate through the list
-for i in numbers:
-    print(i, end=' ')
+for i in languages:
+    print(i, end=' -- ')
 print(' ')
 
 # declaration using list constructor
@@ -12,40 +12,46 @@ name = list("PYTHON")
 print(name)
 
 # multiline declaration 
-animals = ['dog',
-           'cat',
-           'mouse']
-print (animals)
+languages = ['Python',
+           'Scala',
+           'Haskell',
+           'F#']
+print (languages)
 
 # list length
 print("number of chars in PYTHON : {0}".format(len(list("PYTHON"))))
 
 # list methods
-words = "python is one of the most powerful languages".split()
-print(words)
-print(words[0:]) #slice till the end
-print(words[1:3])
-print(words[-5:])
+languages = ["Python", "Scala", "Haskell", "F#"]
+print(languages)
+print(languages[0:]) #slice till the end
+print(languages[1:3])
+print(languages[-2:])
 
 # append to list
-words = "python is one of the most powerful languages".split()
-words.append("it's true")
-print(words)
+languages = ["Python", "Scala", "Haskell", "F#"]
+languages.append("Clojure")
+print(languages)
 
 # copy list using slice
-same_words = words[:]
-print(same_words)
+functional_languages = languages[:]
+print(functional_languages)
 
-print(words == same_words)
-print(words is same_words)
+print(languages == functional_languages)
+print(languages is functional_languages)
 
 # copy list using copy
-v = words.copy()
+functional_languages = languages.copy()
 
 # copy list using constructor
-v1 = list(v)
+functional_languages = list(languages)
 
 # element exists check
-students = ["Prasad", "Mark", "Susan"]
-print("Prasad" in students)
-print("Jack" in students)
+languages = ["Python", "Scala", "Haskell", "F#"]
+print("Python" in languages)
+print("C#" in languages)
+
+# delete an element
+languages = ["Python", "Scala", "Haskell", "F#"]
+del languages[0]
+print("Python exist? {0}".format("Python" in languages))
