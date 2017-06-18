@@ -1,6 +1,9 @@
 students = []
 
 class Student:
+    #static variable
+    school_name = "Kennedy Park International"
+
     #constructor
     def __init__(self, name, id=0):
         self.name = name
@@ -11,10 +14,9 @@ class Student:
     def __str__(self):
         return "Student " + self.name.capitalize()
 
-mark = Student("mark")
-jack = Student("jack", 101)
+    def get_school_name(self):
+        return self.school_name
 
-print(mark)
-print(jack)
-
-print(students)
+print(Student.school_name)
+mark = Student("Mark")
+print(mark.get_school_name())
