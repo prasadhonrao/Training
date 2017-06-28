@@ -1,0 +1,18 @@
+﻿@using System.Configuration
+    @{
+        Layout = null;
+    }
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title></title>
+    </head>
+    <body>
+        <div>
+            @ConfigurationManager.AppSettings["Greeting"]
+    </div>
+</body>
+</html>
