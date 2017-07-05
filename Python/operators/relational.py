@@ -1,9 +1,9 @@
-###    ==
-###    !=
-###    >
-###    <
-###    >=
-###    <=
+###    == equal to 
+###    != not equal to 
+###    > greater than 
+###    < less then
+###    >= greater than or equal to
+###    <= less than or equal to
 
 first = 10
 second = 20

@@ -16,7 +16,7 @@ if (bool("0")):
     print("This will be printed as zero is a string here")
 
 if (not None):
-    print("None2 is a falsy value")
+    print("None is a falsy value")
 
 number = 100
 if number > 10:
