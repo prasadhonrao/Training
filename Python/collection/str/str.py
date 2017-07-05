@@ -1,18 +1,24 @@
-s1 = 'new' + 'found' + 'land'
-print(s1)
+# Declaration
+message1 = 'python ' + 'language '
+print(message1)
 
-s2 = 'new'
-s2 += 'found'
-s2 += 'land'
-print(s2)
+# Multiline string
+message2 = 'python '
+message2 += 'language '
+print(message2)
 
-print(s1 == s2)
-print(s1 is s2)
+# Multiline string using '''
+message3 = '''python
+           language '''
+print(message3)
 
-# join method
-s3 = ' -- '.join(['prasad','subhash','honrao'])
-print(s3)
+# String comparison
+print(message1 == message2)
+print(message1 is message2)
 
-# partition method, it returns tuple
-s4 = 'prasadsubhashhonrao'.partition('subhash')
-print(s4)
+# Adding escape sequence
+escape = 'Escape Sequence Character \' !!!'
+print(escape)
+
+# Method - Capitalize
+print('pune'.capitalize())
