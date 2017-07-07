@@ -12,6 +12,8 @@ print("Dictionary length is {0}".format(len(customers)))
 print(customers.keys()) #get all keys
 print(customers.values()) # get all values
 
+print(customers[1].values())
+
 # use get method to get a value using key, and pass default value if key doesn't exists in the dictionary
 first = customers.get('11', 'unknown value')
 print(first)
