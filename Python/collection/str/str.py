@@ -19,13 +19,3 @@ print(message1 is message2)
 # Adding escape sequence
 escape = 'Escape Sequence Character \' !!!'
 print(escape)
-
-# Method - Capitalize
-print('pune'.capitalize())
-
-# Method - Join 
-print ('--'.join('[1, 2, 3, 4, 5]'))
-
-# Method - Partition -> Returns 3 part string seperated by seperator. 
-# It returns tuple
-print("unforgettable".partition("forget"))
