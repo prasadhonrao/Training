@@ -9,10 +9,17 @@ class Student:
 
     #override toString
     def __str__(self):
-        return "Student " + self.name.capitalize()
+        return "Student {0}'s id is {1} and age is {2}".format(self.name.capitalize(), self.id, self.age)
+
+    #define age property
+    def age(self, age):
+        selg.age = age
 
 mark = Student("mark")
 jack = Student("jack", 101)
+
+mark.age = 25
+jack.age = 33
 
 print(mark)
 print(jack)
