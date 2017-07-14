@@ -1,9 +1,8 @@
-# n = int(raw_input())
-
-# nums = map(int, raw_input().split())	
-# print sorted(list(set(nums)))[-2]
-
 if __name__ == '__main__':
     n = int(input())
     arr = map(int, input().split())
-    print(arr)
+    sortedSet = sorted(set(arr)) # convert to set to remove duplicate
+    if len(sortedSet) > 1: # this condition is required to check if sorted set contains more than 1 item for e.g. for input 0 0 0 0 0
+        print(sortedSet[-2])
+    else: 
+        print(sortedSet[0])    
