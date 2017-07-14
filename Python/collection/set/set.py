@@ -9,3 +9,8 @@ print(type(emptySet))
 
 for c in numbers:
     print(c) # printing order in set is not fixed
+
+import itertools
+top5 = itertools.islice({1, 2, 3, 4, 5, 6, 7}, 5)
+for c in top5:
+    print(c) # printing order in set is not fixed

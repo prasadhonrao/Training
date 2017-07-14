@@ -1,7 +1,7 @@
 students = []
 class Student:
     #constructor
-    def __init__(self, name, id=0):
+    def __init__(self, name, id = 0):
         s = {"name" : name, "id" : id}
         students.append(s)
 
