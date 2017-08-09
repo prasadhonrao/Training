@@ -1,0 +1,11 @@
+{
+  "generator-express": {
+    "promptValues": {
+      "type": "MVC",
+      "viewEngine": "Jade",
+      "cssPreprocessor": "None",
+      "database": "None",
+      "buildTool": "Gulp"
+    }
+  }
+}
