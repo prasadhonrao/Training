@@ -21,3 +21,7 @@ print(s[2:])
 print(s[:2])
 s1 = s[:] # creating a copy of string
 print(s1)
+
+# Format
+print("My full name is {0} {1}".format('Prasad', 'Honrao'))
+print("My full name is {firstname} {lastname}".format(firstname = 'Prasad', lastname = 'Honrao'))
