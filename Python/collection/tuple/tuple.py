@@ -26,18 +26,36 @@ print(type(e))
 e = e + t
 print(e)
 
-# tuple in a function
-def minmax(items):
-    return min(items), max(items)
+# tuple repition using multiplication
+t = ('a' ,'b')
+print (t * 3)
 
-# tuple as return value
-lower, upper = minmax([1,2,3,4,5,6,7,8,9,10])
-print(lower, upper)
+# Gotcha ! - Single element tuple needs to be declared either using trailing comma or tupe constructor
+t = (123) # here t will be considered as of type int
+print(type(t))
+t = (123, ) # now its tuple
+print(type(t))
 
 # declare tuple using constructor
 c = tuple('Prasad')
 print (c)
 
+# tuple in a function
+def minmax(items):
+    return min(items), max(items)
+
+# tuple as return value
+lower, upper = minmax([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+print(lower, upper)
+
 # element exist check
 print ( 5 in (1, 2, 3, 4, 5))
 print ( 6 not in (1, 2, 3, 4, 5))
+
+# element swapping using tuple
+a = '1'
+b = '2'
+print('Before swap : ' + a + " " + b )
+a, b = b , a
+print('After swap : ' + a + " " + b )
+
