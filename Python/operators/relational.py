@@ -14,3 +14,10 @@ print(str(first) + " > " + str(second) + '? : ', first > second)
 print(str(first) + " < " + str(second) + '? : ', first < second)
 print(str(first) + " >= " + str(second) + '? : ', first >= second)
 print(str(first) + " <= " + str(second) + '? : ', first <= second)
+
+# string comparison
+print('carl' < 'chris')
+print('carl' <= 'carl')
+
+# cross data type comparison
+print( 3 < 4.1)
