@@ -2,6 +2,7 @@
 # pip install matplotlib
 
 import matplotlib.pyplot as plt
+# from matplotlib import pyplot as plt     # recommended way of importing package
 
 year = [1950, 1970, 1990, 2010]
 population = [2.159, 3.692, 5.263, 6.972]
