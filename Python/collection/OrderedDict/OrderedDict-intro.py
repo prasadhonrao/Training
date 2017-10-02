@@ -1,3 +1,6 @@
+# An OrderedDict is a dictionary that remembers the order of the keys that were inserted first. 
+# If a new entry overwrites an existing entry, the original insertion position is left unchanged.
+
 from collections import OrderedDict
 import random
 
