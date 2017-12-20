@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Mutable_Immutable.Basic;
+using Mutable_Immutable.Patterns;
+using System;
 using System.Text;
 
 namespace Mutable_Immutable
@@ -7,6 +9,19 @@ namespace Mutable_Immutable
     {
         static void Main(string[] args)
         {
+            #region Basic
+
+            var r1 = new MutableRectangle();
+            r1.Height = 10;
+            r1.Length = 5;
+            r1.Grow(10, 5);
+
+            Console.WriteLine(r1.ToString());
+
+            #endregion
+
+            #region Patterns
+
             #region 1. Mutable
             var m = new Mutable();
             m.Value = 10;
@@ -29,7 +44,9 @@ namespace Mutable_Immutable
             #endregion
 
             #region 4. ObservableImmutable
-        
+
+            #endregion
+
             #endregion
 
             Console.ReadLine();

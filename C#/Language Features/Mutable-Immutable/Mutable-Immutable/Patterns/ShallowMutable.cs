@@ -2,7 +2,7 @@
 
 namespace Mutable_Immutable
 {
-    class ShallowMutable
+    class ShallowMutable.Patterns
     {
         public int Value { get; }
 

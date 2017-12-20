@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Mutable_Immutable
+namespace Mutable_Immutable.Patterns
 {
     public sealed class Popsicle
     {
