@@ -34,5 +34,40 @@ namespace Extensions
             var occurenceCount = "prasad".Occurrence("xxx");
             Assert.AreEqual(0, occurenceCount);
         }
+
+        [TestMethod]
+        public void WordCount_Test()
+        {
+            var result = "My name is Prasad Honrao".CountWords();
+            Assert.AreEqual(5, result);
+        }
+
+        [TestMethod]
+        public void WordCount_Blank_String_Test()
+        {
+            var result = "".CountWords();
+            Assert.AreEqual(0, result);
+        }
+
+        [TestMethod]
+        public void WordCount_Long_Blank_String_Test()
+        {
+            var result = "        ".CountWords();
+            Assert.AreEqual(0, result);
+        }
+
+        [TestMethod]
+        public void CountUniqueWords_Test()
+        {
+            var result = "Twinkle Twinkle Litte Star".CountUniqueWords();
+            Assert.AreEqual(3, result);
+        }
+
+        [TestMethod]
+        public void CountCharactersWithoutSpace_Test()
+        {
+            var result = "Twinkle Twinkle Litte Star".CountCharactersWithoutSpace();
+            Assert.AreEqual(23, result);
+        }
     }
 }
