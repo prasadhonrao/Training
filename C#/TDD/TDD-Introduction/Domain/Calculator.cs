@@ -2,7 +2,7 @@
 
 namespace Domain
 {
-    public class Calculator
+    public class Calculator : ICalculator
     {
         public int Add(int firstNumber, int secondNumber)
         {
