@@ -69,5 +69,48 @@ namespace Extensions
             var result = "Twinkle Twinkle Litte Star".CountCharactersWithoutSpace();
             Assert.AreEqual(23, result);
         }
+
+        [TestMethod]
+        public void IsAllUpper_Invalid_Input_Test()
+        {
+            var result = "Twinkle Twinkle Litte Star".IsAllUpper();
+            Assert.AreEqual(false, result);
+        }
+
+        [TestMethod]
+        public void IsAllUpper_Valid_Input_Test()
+        {
+            var result = "TWINKLE TWINKLE LITTE STAR".IsAllUpper();
+            Assert.AreEqual(true, result);
+        }
+
+        [TestMethod]
+        public void IsAllLower_Invalid_Input_Test()
+        {
+            var result = "Twinkle Twinkle Litte Star".IsAllLower();
+            Assert.AreEqual(false, result);
+        }
+
+        [TestMethod]
+        public void IsAllLower_Valid_Input_Test()
+        {
+            var result = "twinkle twinkle litte star".IsAllLower();
+            Assert.AreEqual(true, result);
+        }
+
+        [TestMethod]
+        public void ToTitleCase_Lower_Case_Input_Test()
+        {
+            var result = "twinkle twinkle litte star".ToTitleCase();
+            Assert.AreEqual("Twinkle twinkle litte star", result);
+        }
+
+        [TestMethod]
+        public void ToTitleCase_Upper_Case_Input_Test()
+        {
+            var result = "Twinkle Twinkle Litte Star".ToTitleCase();
+            Assert.AreEqual("Twinkle Twinkle Litte Star", result);
+        }
+
     }
 }

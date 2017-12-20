@@ -17,12 +17,11 @@ namespace Extensions.Library
             }
             return result;
         }
-
-
+        
         // Usage: var count = "supercalifragilisticexpealidocious".Occurrence("li"); // returns 3
-        public static int Occurrence(this String instr, string search)
+        public static int Occurrence(this String input, string search)
         {
-            return Regex.Matches(instr, search).Count;
+            return Regex.Matches(input, search).Count;
         }
 
         public static int CountWords(this string input)
@@ -46,6 +45,30 @@ namespace Extensions.Library
             string[] words = input.Split(' ');
             words.ToList().ForEach(w => characterCount += w.Length);
             return characterCount;
+        }
+
+        public static bool IsAllUpper(this string input)
+        {
+            char[] chars = input.ToCharArray();
+            return chars.All(c => (char.IsUpper(c) || char.IsWhiteSpace(c)));
+        }
+
+        public static bool IsAllLower(this string input)
+        {
+            char[] chars = input.ToCharArray();
+            return chars.All(c => (char.IsLower(c) || char.IsWhiteSpace(c)));
+        }
+
+        // Upper case first letter
+        public static string ToTitleCase(this string input)
+        {
+            if (input.Length > 0)
+            {
+                char[] array = input.ToCharArray();
+                array[0] = char.ToUpper(array[0]);
+                return new string(array);
+            }
+            return input;
         }
     }
 }
