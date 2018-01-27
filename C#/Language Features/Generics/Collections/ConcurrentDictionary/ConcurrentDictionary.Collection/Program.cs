@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConcurrentDictionary.Collection
 {
@@ -13,6 +9,7 @@ namespace ConcurrentDictionary.Collection
         {
             var stock = new ConcurrentDictionary<string, int>();
 
+            #region Add
             // Try Add is thread safe method
             stock.TryAdd("Levis", 100);
             stock.TryAdd("Killer", 35);
@@ -23,6 +20,9 @@ namespace ConcurrentDictionary.Collection
             {
                 Console.WriteLine("{0} : {1}", item.Key, item.Value);
             }
+            #endregion
+
+            #region Add Duplicate
 
             // Try to add duplicate key
             var success = stock.TryAdd("Killer", 10);
@@ -30,11 +30,17 @@ namespace ConcurrentDictionary.Collection
 
             Console.WriteLine();
 
+            #endregion
+
+            #region Remove
+            
             // TryRemove
             int levis;
             var levisRemoved = stock.TryRemove("Levis", out levis);
             Console.WriteLine("Levis stock value {0}", levis);
             Console.WriteLine("Levis removed successfully? {0}", levisRemoved);
+
+            #endregion
 
             Console.ReadLine();
         }

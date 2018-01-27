@@ -49,6 +49,21 @@ namespace ConcurrentDictionary.Collection.Tests
         }
 
         [TestMethod]
+        public void ConcurrentDictionary_Remove_Missing_Item_Test()
+        {
+            var stock = new ConcurrentDictionary<string, int>();
+            stock.TryAdd("Levis", 100);
+
+            int unknown;
+            bool isMissingItemRemoved = stock.TryRemove("Unknown Item", out unknown);
+
+            Assert.IsTrue(stock.Count == 1);
+            Assert.IsTrue(unknown == 0);
+            Assert.IsFalse(isMissingItemRemoved);
+        }
+
+
+        [TestMethod]
         public void ConcurrentDictionary_TryUpdate_Test()
         {
             var stock = new ConcurrentDictionary<string, int>();
@@ -100,11 +115,16 @@ namespace ConcurrentDictionary.Collection.Tests
             stock.TryAdd("Killer", 35);
             stock.TryAdd("Mufti", 75);
 
+            // GetorAdd method either gets the 'value' of provided 'key' item if it exists
+            // If not, then it will add the new 'key-value' pair in the concurrent dictionary
             int localCount = stock.GetOrAdd("Local", 0);
+            int levisCount = stock.GetOrAdd("Levis", 0);
             Assert.IsTrue(stock.Count == 4);
             Assert.IsTrue(stock["Local"] == 0);
+            Assert.AreEqual(100, levisCount);
             Console.WriteLine("Local stock count {0}", localCount);
         }
 
+        
     }
 }
