@@ -12,3 +12,5 @@ print(y)
 #creating infinity using float constructor
 print(float("inf"))
 print(float("-inf"))
+
+print(3.1 + 4) # any operation which involes float will result into float
