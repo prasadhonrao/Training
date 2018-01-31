@@ -1,11 +1,14 @@
-# Method - Capitalize
+# Capitalize
 print('python'.capitalize())
 
-# Method - Join 
-print ('--'.join('[1, 2, 3, 4, 5]'))
+# Format
+print("My full name is {0} {1}".format('Prasad', 'Honrao'))
+print("My full name is {firstname} {lastname}".format(firstname = 'Prasad', lastname = 'Honrao'))
 
-# Method - Partition -> Returns 3 part string seperated by seperator. 
-# It returns tuple
+# Join 
+print ('*'.join(['1', '2', '3', '4', '5']))
+
+# Partition -> Returns 3 part string seperated by seperator. It returns a tuple.
 print("unforgettable".partition("forget"))
 
 # Split
@@ -19,9 +22,7 @@ print(s[1:4])
 print(s[1:-1])
 print(s[2:])
 print(s[:2])
-s1 = s[:] # creating a copy of string
-print(s1)
 
-# Format
-print("My full name is {0} {1}".format('Prasad', 'Honrao'))
-print("My full name is {firstname} {lastname}".format(firstname = 'Prasad', lastname = 'Honrao'))
+# creating a copy of string
+s1 = s[:] 
+print(s1)

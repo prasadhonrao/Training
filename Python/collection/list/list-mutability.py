@@ -7,7 +7,6 @@ def modify(list):
 modify(numbers)
 print("numbers = ", numbers)
 
-
 numbers2 = [1, 2, 3]
 
 def modify2(list):
