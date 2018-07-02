@@ -1,1 +1,0 @@
-﻿Each closed type has its own set of static fields

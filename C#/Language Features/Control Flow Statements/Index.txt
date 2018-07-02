@@ -1,8 +1,0 @@
-If - Else
-Switch - Case
-While
-Do - While
-For
-For - Each
-Break - Continue
-Yield

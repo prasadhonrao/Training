@@ -1,1 +1,0 @@
-﻿Static class cannot contain instance members i.e. all the member needs to be declared using static keyword

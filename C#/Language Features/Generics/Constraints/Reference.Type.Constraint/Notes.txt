@@ -1,1 +1,0 @@
-﻿When Type constraints is class, the type argument can be any class, interface, array, delegate 

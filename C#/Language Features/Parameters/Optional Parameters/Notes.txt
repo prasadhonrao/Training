@@ -1,3 +1,0 @@
-1. Optional parameters must appear at the end of parameter lists.
-
-2. Either decorate parameter using [Optional] attribute or specify its default value
