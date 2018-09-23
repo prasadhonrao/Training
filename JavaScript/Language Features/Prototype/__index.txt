@@ -1,7 +1,0 @@
-prototype-intro
-prototype-on-built-in-constructor
-prototype-delegation
-prototype-shadowing-functions
-prototype-shadowing-properties
-prototype-inheritance
-prototype-with-built-in-functions
