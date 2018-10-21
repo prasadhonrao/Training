@@ -1,3 +1,0 @@
-Introduction
-Async with WPF
-Stock Holdings App
